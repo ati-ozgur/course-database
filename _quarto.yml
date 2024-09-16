@@ -2,12 +2,19 @@ project:
   type: book
 
 book:
-  title: "."
-  author: "Norah Jones"
-  date: "9/16/2024"
+  title: "Introduction to databases"
+  author: "Atilla Özgür"
+  date: today
+  date-format: "YYYY-MM-DD"
+  cover-image: cover.png
   chapters:
-    - index.qmd
-    - intro.qmd
+    - part: "Introduction"
+      chapters:
+        - index.qmd
+        - intro.qmd
+    - part: "SQL"
+      chapters:
+        - course-contents/sql-introduction.md
     - summary.qmd
     - references.qmd
 

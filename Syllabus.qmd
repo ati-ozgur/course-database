@@ -1,0 +1,4 @@
+# Syllabus
+
+
+{{< include ./course-contents/brief-course-contents.md >}}

@@ -1,0 +1,30 @@
+---
+title: "SQL Introduction"
+author: "Atilla Özgür"
+format: revealjs
+---
+
+## Fundamentals
+
+- introduction
+- select
+- group-by and having
+- join
+- set operations
+- views
+- functions
+- CRUD
+
+## Intermediate
+
+- subqueries
+- Virtual tables 
+- Common Table Expressions
+
+## Advanced 1
+
+- Apply 
+- Grouping sets
+
+
+TODO

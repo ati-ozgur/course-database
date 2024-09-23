@@ -1,5 +1,7 @@
-# Transact-SQL Data Types
+# SQL Data Types
 
+
+## Transact-SQL Data Types
 {{< include ./tables/table-data-types-sqlserver-en.md >}}
 
 ## Transact-SQL Data Types Conversion

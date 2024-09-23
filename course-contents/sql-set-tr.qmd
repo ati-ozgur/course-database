@@ -1,8 +1,9 @@
 # SQL KÜME-SET Komutları 
 
-- UNION [ALL]
-- EXCEPT/MINUS
-- INTERSECT
+- UNION [ALL] - BİRLEŞİM
+- EXCEPT/MINUS - KESİŞİM 
+- INTERSECT - FARK
+
 
 ## SQL Standard
 

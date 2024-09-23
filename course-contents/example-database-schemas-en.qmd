@@ -7,3 +7,5 @@
 
 
 
+{{< include ./example-database-schemas-stack-overflow-en.md >}}
+

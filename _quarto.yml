@@ -17,7 +17,7 @@ book:
         - course-contents/databases-intro-en.qmd
     - part: "SQL"
       chapters:
-        - course-contents/sql-introduction-en.md
+        - course-contents/sql-introduction-en.qmd
     - summary.qmd
     - references.qmd
 

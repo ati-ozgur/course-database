@@ -15,5 +15,10 @@
 - Virtual Tables (Views,WITH,Temp Tables)
 - Grouping Sets and Pivot Tables
 
+{{< include ./sql-standard-en.md >}}
+
+## SQL Standart 
+
+{{< include ./tables/table-sql-standard-history-en.md >}}
 
 

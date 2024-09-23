@@ -1,3 +1,5 @@
 # SQL Select
 
 {{< include ./tables/table-select-basic-en.md >}}
+
+{{< include ./sql-select-examples-en.md >}}

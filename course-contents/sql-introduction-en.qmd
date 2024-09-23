@@ -22,3 +22,5 @@
 {{< include ./tables/table-sql-standard-history-en.md >}}
 
 
+{{< include ./sql-dialect-transact-sql-en.md >}}
+

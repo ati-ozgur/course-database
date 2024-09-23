@@ -1,4 +1,7 @@
 # Syllabus
 
 
-{{< include ./course-contents/brief-course-contents.md >}}
+{{< include ./course-contents/brief-course-contents-en.md >}}
+
+
+{{< include ./course-contents/expectations-and-goals-en.md >}}

@@ -12,7 +12,7 @@ book:
       chapters:
         - index.qmd
         - intro.qmd
-        - Syllabus.qmd        
+        - Syllabus-en.qmd        
         - course-contents/course-introduction-en.qmd
         - course-contents/databases-intro-en.qmd
         - course-contents/open-source-vs-enterprise-databases-en.qmd

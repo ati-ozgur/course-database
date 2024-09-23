@@ -12,7 +12,8 @@ book:
       chapters:
         - index.qmd
         - intro.qmd
-        - Syllabus.qmd
+        - Syllabus.qmd        
+        - course-contents/course-introduction-en.qmd
     - part: "SQL"
       chapters:
         - course-contents/sql-introduction.md

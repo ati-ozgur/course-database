@@ -2,6 +2,10 @@
 
 # Temeller Açıklamalar (Comments)  {#sec-temeller-aciklamalar}
 
+``` sql
+    SELECT * FROM Production.Product;
+```
+
 
 {{< include ./dosyaadi.qmd >}}
 

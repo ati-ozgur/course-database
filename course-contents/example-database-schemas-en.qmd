@@ -1,7 +1,15 @@
-## example database schemas
+# Example database schemas
+
+## Example Schema Chinook
+
+[Chinook](https://github.com/lerocha/chinook-database/) will be used in a lot of examples.
+The sample database has necessary scripts for a lot different databases.
+Necessary files will also be provided in the repository.
+
+![Chinook schema by tool schemaspy](images/chinook-schemaspy.png)
 
 
-### Example Schema Student Information System
+## Example Schema Student Information System
 
 ![Example Schema Student Information System](images/diagramOgrenciBilgiSistemi1.png)
 

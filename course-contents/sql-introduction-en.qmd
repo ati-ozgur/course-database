@@ -15,3 +15,7 @@
 {{< include ./database-schema-object-names-en.md >}}
 
 
+## SQL Command  Types
+
+{{< include ./tables/table-sql-command-types-en.md >}}
+

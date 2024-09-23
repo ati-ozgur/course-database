@@ -2,3 +2,5 @@
 
 {{< include ./database-history-en.qmd >}}
 
+
+{{< include ./example-database-schemas-en.qmd >}}

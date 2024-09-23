@@ -1,0 +1,9 @@
+## example database schemas
+
+
+### Example Schema Student Information System
+
+![Example Schema Student Information System](images/diagramOgrenciBilgiSistemi1.png)
+
+
+

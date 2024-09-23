@@ -1,0 +1,11 @@
+## Örnek Veritaban Şemaları
+
+
+### Örnek Şema Ögrenci Bilgi Sistemi
+
+![Example Schema Student Information System](images/diagramOgrenciBilgiSistemi1.png)
+
+
+
+
+

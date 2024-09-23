@@ -1,6 +1,11 @@
 # server-installation-en.qmd
 
-4. Sunucu Konfigurasyonu
-4.1 Konfigure Durdur - Başlat (Start - Stop)
-4.2 Mixed Authentication
-4.3 Dokumentasyon
+## SQL Server
+
+- SQL Server Farklı Versiyonları Hakkında
+- SQL Server 2016 Express Kurulum
+
+* Sunucu Konfigurasyonu
+- Konfigure Durdur - Başlat (Start - Stop)
+- Mixed Authentication
+- Dokumentasyon

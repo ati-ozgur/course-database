@@ -1,0 +1,1 @@
+# sql-DCL-data-control-language-en.qmd

@@ -33,6 +33,11 @@ book:
         - course-contents/sql-paging-en.qmd
         - course-contents/sql-set-en.qmd
         - course-contents/sql-join-en.qmd
+        - course-contents/sql-DML-data-manipulation-language-en.qmd
+        - course-contents/sql-DDL-data-definition-language-en.qmd
+        - course-contents/sql-DCL-data-control-language-en.qmd
+        - course-contents/sql-TCL-transactional-control-language-en.qmd
+
     - course-contents/suggested-readings-en.md
     - summary.qmd
     - references.qmd

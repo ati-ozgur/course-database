@@ -1,0 +1,4 @@
+# SQL WHERE
+
+
+{{< include ./tables/table-where-operators-en.md >}}

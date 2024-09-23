@@ -1,0 +1,6 @@
+# SQL WHERE
+
+{{< include ./tables/table-where-operators-tr.md >}}
+
+
+

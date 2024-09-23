@@ -1,0 +1,9 @@
+# SQL Select Order by
+
+- Sorting can be done with one or more columns using ORDER BY.
+- Aliases created during SELECT can be used.
+- Columns not retrieved with SELECT can be used.
+- ASC (Ascending-Ascending) or DESC (Descending-Descending) can be specified. 
+- ASC is the default word.
+- Instead of column name, column number in the result set could be used.
+

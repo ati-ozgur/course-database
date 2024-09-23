@@ -24,6 +24,7 @@ book:
         - course-contents/sql-select-distinct-en.md
         - course-contents/sql-where-en.qmd
         - course-contents/sql-null-en.qmd
+        - course-contents/sql-orderby-en.qmd
     - course-contents/suggested-readings-en.md
     - summary.qmd
     - references.qmd

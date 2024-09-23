@@ -1,0 +1,14 @@
+# SQL  Sonuçları Sıralama - ORDER BY
+
+
+- ORDER BY kullanarak bir veya daha fazla kolon ile sıralama yapılabilir.
+- SELECT sırasında oluşturulan takma isimler (alias) kullanılabilir.
+- SELECT ile çekilmeyen kolonlar kullanılabilir.
+- ASC (Ascending-Artarak) veya DESC (Descending-Azalarak) belirtilebilir. 
+ASC varsayılan kelimedir.
+- Kolon adı yerine, gelen sonuç setindeki sıra numara olarak kullanılabilir.
+
+
+
+
+

@@ -1,0 +1,16 @@
+# Transact-SQL Veri Yapıları
+
+{{< include ./tables/table-data-types-sqlserver-tr.md >}}
+
+## Transact-SQL Veri Yapıları Çevirim
+
+- Implicit Conversion - Örtük Çevirim
+	* Uygun veri yapıları otomatikman çevirilir.
+- Explicit Conversion - Açıkça Çevirim
+
+	* Fonksiyon kullanarak çevirim yapılır.
+	* CAST / TRY\_CAST
+	* CONVERT / TRY\_CONVERT
+	* PARSE / TRY\_PARSE
+	* STR
+

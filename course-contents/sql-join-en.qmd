@@ -1,4 +1,12 @@
 # SQL JOIN
 
+## Querying multiple tables with JOIN 
 
+- Join
+- Inner Join  
+- Outer Join  
+- Cross Join  
+- Self Join   
 
+{{< include ./sql-join-cross-en.md >}}
+{{< include ./sql-join-inner-en.md >}}

@@ -12,3 +12,8 @@ See following readings about this topic:
 
 - [Tiobe Index SQL](https://www.tiobe.com/tiobe-index/sql/)
 
+
+Hopefully, at the end of this course, you will know about everything in the following article:
+
+- [Things you should know about databases](https://architecturenotes.co/things-you-should-know-about-databases/)
+

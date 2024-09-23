@@ -1,4 +1,4 @@
-# course introduction
+# Course introduction
 
 
 {{< include ./lecturer-en.md >}}

@@ -1,4 +1,22 @@
-## SQL SET Operations
+# SQL SET Operations
+
+## SQL Standard
+
+- 
+
+
+
+## SQL- UNION - Birleşim
+
+- Birden fazla SELECT komutundan gelen farklı (DISTINCT) sonuçları birleştirir.
+- UNION sorgu sonucundaki mükerrer kayıtları tekilleştirdiği için performans etkilenir.
+- UNION ALL mükerrer kayıtlar ile ilgili işlem yapmadığı için daha hızlı çalışır.
+- Performans açısından mümkün olan her yerde UNION ALL kullanılmalıdır.
+- Kolon takma isimleri ilk sorguda yazılmalıdır.
+- Kolon sayıları birleştirilen tüm sorgularda aynı olmalıdır.
+- Kolon veri yapıları ya örtük çevirime (Implicit Conversion) uygun olmalıdır, yada açıkça çevirilmelidir (Explicit Conversion).
+- Örneğin SELECT cast( GETDATE() as varchar(12))
+
 
 
 

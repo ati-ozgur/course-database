@@ -1,5 +1,20 @@
-## SQL SET Operations
+# SQL SET Operations
 
+- UNION [ALL]
+- EXCEPT/MINUS
+- INTERSECT
+
+
+## UNION
+
+- Combines different (DISTINCT) results from multiple SELECT commands.
+- UNION singles duplicate records in the query result, so performance is affected.
+- UNION ALL works faster because it does not deal with duplicate records.
+- UNION ALL should be used wherever possible for performance reasons.
+- Column aliases should be written in the first query.
+- Column numbers must be the same in all queries that are concatenated.
+- Column data structures should be either implicitly translated or explicitly translated (Explicit Conversion).
+- For example SELECT cast( GETDATE() as varchar(12))
 
 
 UNION Example

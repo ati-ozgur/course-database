@@ -12,4 +12,9 @@
 
 {{< include ./sql-join-inner-en.md >}}
 
+
+{{< include ./sql-join-outer-en.md >}}
+
+{{< include ./sql-join-self-en.md >}}
+
 {{< include ./sql-join-cross-en.md >}}

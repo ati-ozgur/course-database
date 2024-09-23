@@ -1,0 +1,12 @@
+# SQL JOIN
+
+
+## Birden fazla tabloyu JOIN ile sorgulama Konular
+
+- Join-Birleşim Kavramı
+- Join-Birleşim Söz dizimi 
+- Inner Join  - İç Birleşim
+- Outer Join  - Dış Birleşim 
+- Cross Join  - Çapraz Birleşim 
+- Self Join   - Kendi ile Birleşim 
+

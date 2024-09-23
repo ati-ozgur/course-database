@@ -28,6 +28,7 @@ book:
         - course-contents/sql-limit-top-en.md
         - course-contents/sql-paging-en.qmd
         - course-contents/sql-set-en.qmd
+        - course-contents/sql-join-en.qmd
     - course-contents/suggested-readings-en.md
     - summary.qmd
     - references.qmd

@@ -8,6 +8,8 @@
 - Cross Join  
 - Self Join   
 
+{{< include ./sql-join-concept-en.md >}}
+
 {{< include ./sql-join-inner-en.md >}}
 
 {{< include ./sql-join-cross-en.md >}}

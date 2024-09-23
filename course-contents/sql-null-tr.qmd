@@ -1,0 +1,49 @@
+# NULL ile çalışma
+
+
+
+- NULL bilinmeyen veya eksik veri için kullanılır.
+- İşlem yaparken matematikteki $\infty$ gibi düşünebilirsiniz.
+- $\infty$ $!=$ $\infty$
+- NULL $!=$ NULL
+- 3 + NULL = NULL
+- 'str degeri' + NULL = NULL
+- karşılaştırmalar null değerleri için her zaman yanlış(false) döndürür
+    * NULL = NULL returns false
+    * NULL IS NULL returns true
+
+## NULL ile çalışma 2
+
+{{< include ./tables/table-null-3-valued-logic.md >}}
+
+{{< include ./tables/table-null-not-operation.md >}}
+
+
+### NULL ile ilgili fonksiyonlar SQL Server
+
+
+
+- ISNULL(kolon/degisken,**deger**)
+- Eğer kolon/degişken null ise **degeri** döndürür.
+
+- NULLIF(kolon/degisken,**deger**)
+- Eğer kolon/degişken **deger**'e eşitse NULL döndürür.
+- COALESCE(kolon/degisken1,kolon/degisken2,..)
+- kolon/degişken listesi içindeki ilk NULL olmayan değeri döndürür.
+
+### NULL ile çalışma - COALESCE Örnek
+
+
+``` sql
+    SELECT 
+    COALESCE(ADI + ' ' + IKINCIADI + ' ' + SOYADI
+    ,ADI + ' ' + SOYADI
+     ) AS TAMADI FROM ORTAK.KISI;
+```
+
+
+
+
+
+
+

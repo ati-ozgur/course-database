@@ -12,3 +12,6 @@
 
 {{< include ./sql-dialect-transact-sql-en.md >}}
 
+{{< include ./database-schema-object-names-en.md >}}
+
+

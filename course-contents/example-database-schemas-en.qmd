@@ -17,3 +17,16 @@ Necessary files will also be provided in the repository.
 
 {{< include ./example-database-schemas-stack-overflow-en.md >}}
 
+
+## Examples schema from database vendors
+
+There are some well known sample databases that was provided by database vendors like Oracle and Microsoft.
+Some of these samples are discontinued due to bad practices in them.
+Nonetheless, we will learn about them even though, we may not run any queries in these example schemas.
+It is necessary to know about them since they are used in a lot of examples.
+
+- Oracle HR
+- Oracle Scott
+- Microsoft Northwind
+
+

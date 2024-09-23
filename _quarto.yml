@@ -19,6 +19,7 @@ book:
       chapters:
         - course-contents/sql-introduction-en.qmd
         - course-contents/sql-select-en.qmd
+    - course-contents/suggested-readings-en.md
     - summary.qmd
     - references.qmd
 

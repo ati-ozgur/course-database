@@ -1,0 +1,14 @@
+# Suggested Readings
+
+Databases are a very necessary skill to have for developers.
+See following readings about this topic:
+
+
+- [Relational Databases Aren’t Dinosaurs, They’re Sharks](https://www.simplethread.com/relational-databases-arent-dinosaurs-theyre-sharks/)
+
+
+
+- [The Rise of SQL: It’s become the second programming language everyone needs to know](https://spectrum.ieee.org/the-rise-of-sql)
+
+- [Tiobe Index SQL](https://www.tiobe.com/tiobe-index/sql/)
+

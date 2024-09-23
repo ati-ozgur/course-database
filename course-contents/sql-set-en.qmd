@@ -1,0 +1,12 @@
+## SQL SET Operations
+
+
+
+UNION Example
+
+``` sql
+SELECT countryregion, city FROM HR.Employees
+UNION
+SELECT countryregion, city FROM Sales.Customers;
+```
+

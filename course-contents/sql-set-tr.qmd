@@ -1,8 +1,11 @@
-# SQL SET Operations
+# SQL KÜME-SET Komutları 
+
+- UNION [ALL]
+- EXCEPT/MINUS
+- INTERSECT
 
 ## SQL Standard
 
-- 
 
 
 

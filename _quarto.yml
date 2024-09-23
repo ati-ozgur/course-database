@@ -18,6 +18,7 @@ book:
     - part: "SQL"
       chapters:
         - course-contents/sql-introduction-en.qmd
+        - course-contents/sql-select-en.qmd
     - summary.qmd
     - references.qmd
 

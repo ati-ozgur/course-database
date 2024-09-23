@@ -1,0 +1,6 @@
+# server-installation-en.qmd
+
+4. Sunucu Konfigurasyonu
+4.1 Konfigure Durdur - Başlat (Start - Stop)
+4.2 Mixed Authentication
+4.3 Dokumentasyon

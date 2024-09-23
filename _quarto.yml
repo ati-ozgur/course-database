@@ -12,11 +12,14 @@ book:
       chapters:
         - index.qmd
         - intro.qmd
-        - Syllabus-en.qmd        
+        - Syllabus-en.qmd
         - course-contents/course-introduction-en.qmd
         - course-contents/databases-intro-en.qmd
         - course-contents/open-source-vs-enterprise-databases-en.qmd
         - course-contents/example-database-schemas-en.qmd
+        - course-contents/server-installation-en.qmd
+        - course-contents/sql-clients-GUI-en.qmd
+
     - part: "SQL"
       chapters:
         - course-contents/sql-introduction-en.qmd

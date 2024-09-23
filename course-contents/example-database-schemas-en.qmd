@@ -25,8 +25,22 @@ Some of these samples are discontinued due to bad practices in them.
 Nonetheless, we will learn about them even though, we may not run any queries in these example schemas.
 It is necessary to know about them since they are used in a lot of examples.
 
+
+###  Oracle
+
 - Oracle HR
 - Oracle Scott
-- Microsoft Northwind
 
+###  Microsoft
 
+The most well known is Northwind.
+Since Chinook is very similar to it, we will use Chinook.
+But we will look at the tables.
+
+- SQL Server 2000
+	* Northwind
+	* Pubs
+- SQL Server 2005
+	* AdventureWorks
+- SQL Server 2016
+	* Wide World Importers

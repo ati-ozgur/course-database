@@ -1,4 +1,4 @@
-# Open Source ss Enterprise Databases
+# Open Source vs Enterprise Databases
 
 
 

@@ -5,3 +5,8 @@
 
 
 {{< include ./course-contents/expectations-and-goals-en.md >}}
+
+
+## Subjects by week
+
+{{< include ./course-contents/tables/table-subjects-by-week-en.md >}}

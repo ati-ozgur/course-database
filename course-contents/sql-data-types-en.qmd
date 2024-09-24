@@ -2,7 +2,7 @@
 
 
 ## Transact-SQL Data Types
-{{< include ./tables/table-data-types-sqlserver-en.md >}}
+{{< include ../course-contents/tables/table-data-types-sqlserver-en.md >}}
 
 ## Transact-SQL Data Types Conversion
 

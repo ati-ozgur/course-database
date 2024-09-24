@@ -1,13 +1,13 @@
 # Databases introduction 
 
-{{< include ./database-history-en.qmd >}}
+{{< include ../course-contents/database-history-en.qmd >}}
 
 
-{{< include ./database-ranking-en.md >}}
+{{< include ../course-contents/database-ranking-en.md >}}
 
-{{< include ./database-market-share-en.md >}}
+{{< include ../course-contents/database-market-share-en.md >}}
 
 
-{{< include ./connection-string-en.md >}}
+{{< include ../course-contents/connection-string-en.md >}}
 
-{{< include ./database-types-en.md >}}
+{{< include ../course-contents/database-types-en.md >}}

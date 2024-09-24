@@ -1,4 +1,4 @@
 why-databases-still-important.qmd
 
 
-{{< include ./course-contents/databases-arent-dinosaurs-they-are-sharks.md >}}
+{{< include ../course-contents/course-contents/databases-arent-dinosaurs-they-are-sharks.md >}}

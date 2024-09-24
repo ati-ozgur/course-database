@@ -1,6 +1,6 @@
 ## Short History of databases
 
-{{< include ./tables/table-databases-history-en.md >}}
+{{< include ../course-contents/tables/table-databases-history-en.md >}}
 
 
 ## Database Models

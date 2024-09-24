@@ -12,9 +12,9 @@
 
 ## NULL ile çalışma 2
 
-{{< include ./tables/table-null-3-valued-logic.md >}}
+{{< include ../course-contents/tables/table-null-3-valued-logic.md >}}
 
-{{< include ./tables/table-null-not-operation.md >}}
+{{< include ../course-contents/tables/table-null-not-operation.md >}}
 
 
 ### NULL ile ilgili fonksiyonlar SQL Server

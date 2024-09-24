@@ -1,5 +1,5 @@
 # Course introduction
 
 
-{{< include ./lecturer-en.md >}}
+{{< include ../course-contents/lecturer-en.md >}}
 

@@ -1,6 +1,6 @@
 # SQL WHERE
 
-{{< include ./tables/table-where-operators-tr.md >}}
+{{< include ../course-contents/tables/table-where-operators-tr.md >}}
 
 
 

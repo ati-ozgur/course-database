@@ -1,0 +1,15 @@
+---
+title: "Course Introduction"
+author: "Atilla Özgür"
+format: revealjs
+---
+
+{{< include ../course-contents/course-introduction-en.qmd >}}
+
+## Lectures
+
+- lectures will be recorded and published online.
+- If you do not want your face to be recorded, please close your webcam.
+
+
+

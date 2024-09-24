@@ -1,21 +1,21 @@
 # SQL introduction
 
-{{< include ./sql-introduction-contents-en.md >}}
+{{< include ../course-contents/sql-introduction-contents-en.md >}}
 
 
-{{< include ./sql-standard-en.md >}}
+{{< include ../course-contents/sql-standard-en.md >}}
 
 ## SQL Standart 
 
-{{< include ./tables/table-sql-standard-history-en.md >}}
+{{< include ../course-contents/tables/table-sql-standard-history-en.md >}}
 
 
-{{< include ./sql-dialect-transact-sql-en.md >}}
+{{< include ../course-contents/sql-dialect-transact-sql-en.md >}}
 
-{{< include ./database-schema-object-names-en.md >}}
+{{< include ../course-contents/database-schema-object-names-en.md >}}
 
 
 ## SQL Command  Types
 
-{{< include ./tables/table-sql-command-types-en.md >}}
+{{< include ../course-contents/tables/table-sql-command-types-en.md >}}
 

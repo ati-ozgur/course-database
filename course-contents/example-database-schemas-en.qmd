@@ -15,7 +15,7 @@ Necessary files will also be provided in the repository.
 
 
 
-{{< include ./example-database-schemas-stack-overflow-en.md >}}
+{{< include ../course-contents/example-database-schemas-stack-overflow-en.md >}}
 
 
 ## Examples schema from database vendors

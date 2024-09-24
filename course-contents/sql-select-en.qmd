@@ -1,5 +1,5 @@
 # SQL Select
 
-{{< include ./tables/table-select-basic-en.md >}}
+{{< include ../course-contents/tables/table-select-basic-en.md >}}
 
-{{< include ./sql-select-examples-en.md >}}
+{{< include ../course-contents/sql-select-examples-en.md >}}

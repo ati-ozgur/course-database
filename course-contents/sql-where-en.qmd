@@ -1,4 +1,4 @@
 # SQL WHERE
 
 
-{{< include ./tables/table-where-operators-en.md >}}
+{{< include ../course-contents/tables/table-where-operators-en.md >}}

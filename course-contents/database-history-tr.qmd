@@ -1,6 +1,6 @@
 ## Veri Tabanlarının Kısaca Tarihi 
 
-{{< include ./tables/table-databases-history-tr.md >}}
+{{< include ../course-contents/tables/table-databases-history-tr.md >}}
 
 ## Veri Tabanları Modelleri
 

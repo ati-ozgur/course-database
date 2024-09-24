@@ -19,3 +19,7 @@
 
 {{< include ../course-contents/tables/table-sql-command-types-en.md >}}
 
+
+## Modern SQL
+
+https://modern-sql.com/

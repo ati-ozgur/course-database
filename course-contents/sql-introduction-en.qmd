@@ -17,6 +17,8 @@
 
 ## SQL Command  Types
 
+There are [five different sql commands types](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/).
+
 - DDL (Data Definition Language)
 - DQL (Data Query Language)
 - DML (Data Manipulation Language)

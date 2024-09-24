@@ -1,1 +1,5 @@
-# sql-DCL-data-control-language-en.qmd
+# DCL (Data Control Language)
+
+{{< include ../course-contents/database-users-en.md >}}
+
+

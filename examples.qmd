@@ -7,7 +7,8 @@
 ```
 
 
-{{< include ./dosyaadi.qmd >}}
+{{< include ../course-contents/dosyaadi.qmd >}}
+
 
 
 4.

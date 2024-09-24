@@ -20,6 +20,12 @@
 - Navigational DBMS
 - Columnar
 
+### Relational databases
+
+Even though there are a lot of databases types, the relation databases will be the focus of this course.
+The so-called nosql and other types of databases, will not be covered.
+
+
 ### Database types according to architecture
 
 - Server-client

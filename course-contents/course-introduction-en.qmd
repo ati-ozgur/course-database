@@ -3,3 +3,5 @@
 
 {{< include ../course-contents/lecturer-en.md >}}
 
+{{< include ../course-contents/practice-vs-theory-en.md >}}
+

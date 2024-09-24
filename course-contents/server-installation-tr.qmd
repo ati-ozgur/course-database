@@ -1,0 +1,13 @@
+# Server installations
+
+## SQL Server
+
+## SQL Server
+
+- SQL Server Farklı Versiyonları
+- SQL Server Express Kurulum
+
+* Sunucu Konfigurasyonu
+- Konfigure Durdur - Başlat (Start - Stop)
+- Mixed Authentication
+- Dokumentasyon

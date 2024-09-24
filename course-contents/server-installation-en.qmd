@@ -1,11 +1,16 @@
-# server-installation-en.qmd
+# Server installations
 
-## SQL Server
+- Different Versions of SQL Server
 
-- SQL Server Farklı Versiyonları Hakkında
-- SQL Server 2016 Express Kurulum
+	* Express
+	* Developer
+	* Standard
+	* Enterprise
 
-* Sunucu Konfigurasyonu
-- Konfigure Durdur - Başlat (Start - Stop)
-- Mixed Authentication
-- Dokumentasyon
+- SQL Server  Express Installation
+- Server Configuration
+
+	* Configure Stop - Start 
+	* Mixed Authentication
+	* Documentation
+

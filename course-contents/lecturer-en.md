@@ -1,4 +1,4 @@
-## lecturer Atilla Özgür (PhD)
+## Lecturer Atilla Özgür (PhD)
 
 I consider myself: polyglot programmer, database developer, build engineer and researcher. 
 Although I graduated in 2003 from Electrical Engineering, I started programming in 1991. 

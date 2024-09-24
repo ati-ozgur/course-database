@@ -9,6 +9,7 @@
 
 {{< include ../course-contents/tables/table-database-ranking.md >}}
 
+{{< include ../course-contents/which-databases-will-be-covered-en.md >}}
 
 
 

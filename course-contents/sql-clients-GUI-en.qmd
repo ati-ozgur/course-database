@@ -1,18 +1,22 @@
 # SQL Clients GUI
 
-## DBeaver
 
-## Sqlite DB Browser
+## General
 
-## SQL Developer Oracle
+- [Dbeaver](https://dbeaver.io)
 
-## SQL Server Management Studio
+## Sqlite
 
-- Management Studio Turu
-- Yeni veri tabanı oluşturulması - Silinmesi
-- Veri tabanı yedek alma - yedekten geri dönüş
-- SQL Veri Tiplerini Tanıma
-- Yeni Tablo Oluşturma
+- [DB Browser for SQLite](https://sqlitebrowser.org)
+	
+## Oracle
 
-## Azure Data Studio
+- SQL Developer Oracle
+
+## SQL Server
+
+- SQL Server Management Studio
+- Azure Data Studio
+
+
 

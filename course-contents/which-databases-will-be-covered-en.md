@@ -16,9 +16,7 @@ The second most used enterprise database server.
 
 ### Sqlite
 
-According to [website of sqlite](https://www.sqlite.org/index.html), 
-
-What Is SQLite?
+According to [website of sqlite](https://www.sqlite.org/index.html), What Is SQLite?
 
 > .. SQLite is the most used database engine in the world. 
 > SQLite is built into all mobile phones and most computers and comes bundled inside countless other applications that people use every day. 

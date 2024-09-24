@@ -1,0 +1,1 @@
+# DDL (data definition language)

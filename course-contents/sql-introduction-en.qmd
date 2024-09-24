@@ -17,6 +17,13 @@
 
 ## SQL Command  Types
 
+- DDL (Data Definition Language)
+- DQL (Data Query Language)
+- DML (Data Manipulation Language)
+- DCL (Data Control Language)
+- TCL (Transaction Control Language)
+
+
 {{< include ../course-contents/tables/table-sql-command-types-en.md >}}
 
 

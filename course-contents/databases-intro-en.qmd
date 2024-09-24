@@ -8,7 +8,6 @@
 {{< include ./database-market-share-en.md >}}
 
 
-
 {{< include ./connection-string-en.md >}}
 
 {{< include ./database-types-en.md >}}

@@ -1,18 +1,11 @@
 ## Atilla Özgür (PhD)
 
-## Öğretmen Bilgileri - Eğitim
+Kendimi çok farklı dillerde programcı, veritabanı geliştiricisi, devops ve araştırmacı olarak görüyorum. 
+Elektrik Mühendisliğinden 2003 yılında mezun olmama rağmen programlamaya 1991 yılında başladım. 
+6 yılı Proje Yönetimi ve Takım Liderliği, 6 yılı Veritabanı Yöneticiliği olmak üzere 21 yıllık mesleki tecrübeye sahibim. 
+Farklı web uygulama geliştirme platformları ve Veritabanı Sistemleri ile çalıştım. 
+Çok sayıda Microsoft sertifikasına sahibim (MCPD, MCSD, MCT). 
+Oracle (OCA 11g) ve SQL Server (2000-2008) Veritabanları konusunda sertifikalıyım.
 
--  Lisans : Orta Doğu Teknik Üniversitesi - Elektrik Elektronik Mühendisliği (2003)
--  Yüksek Lisans: Atılım Üniversitesi - Bilgisayar Mühendisliği (2007)
--  Doktora: Başkent Üniversitesi -  Elektrik Elektronik Mühendisliği (Halen Devam Etmekte)
-
-  \end{frame}
-
-  \begin{frame}{Öğretmen Bilgileri - Çalışma}
-  \begin{itemize}
-      \item 1991'de Programlamaya Amiga 500 Assembler ile başladım.
-      \item 2003'ten beri SQL Server ve diğer veri tabanları ile çalışıyorum.
-      \item 2011'den beri Veri tabanı yöneticisi olarak çalışıyorum.
-  \end{itemize}
-
-  \end{frame}
+Özgeçmişimi aşağıdaki bağlantıdan görebilirsiniz.
+[Özgeçmiş](https://ati-ozgur.github.io/resume-tr.html)

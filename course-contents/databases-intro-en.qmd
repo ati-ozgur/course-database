@@ -2,12 +2,6 @@
 
 {{< include ../course-contents/database-history-en.qmd >}}
 
-{{< include ../course-contents/database-market-share-en.md >}}
-
-
-{{< include ../course-contents/database-ranking-en.md >}}
-
-{{< include ../course-contents/tables/table-database-ranking.md >}}
 
 {{< include ../course-contents/which-databases-will-be-covered-en.md >}}
 

@@ -1,0 +1,8 @@
+# Database rankings and Market Shares
+
+{{< include ../course-contents/database-market-share-en.md >}}
+
+
+{{< include ../course-contents/database-ranking-en.md >}}
+
+{{< include ../course-contents/tables/table-database-ranking.md >}}

@@ -1,12 +1,13 @@
 ## database drivers
 
-## Native
+### Native
 
-## ODBC Drivers
+### ODBC Drivers
 
-## OLEDB Drivers
+### OLEDB Drivers
 
-## JDBC Drivers
+### Language specific drivers
 
+### JDBC Drivers
 
-## .NET
+### .NET

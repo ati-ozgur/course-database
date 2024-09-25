@@ -1,0 +1,13 @@
+# Command line access
+
+## sqlite
+
+## Oracle
+
+sqlplus
+
+
+## SQL Server
+
+[sqlcmd](https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility)
+

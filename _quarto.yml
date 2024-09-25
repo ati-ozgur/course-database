@@ -21,6 +21,7 @@ book:
         - course-contents/database-connections-en.qmd
         - course-contents/example-database-schemas-en.qmd
         - course-contents/server-installation-en.qmd
+        - course-contents/command-line-access-en.qmd
         - course-contents/sql-clients-GUI-en.qmd
 
     - part: "SQL"

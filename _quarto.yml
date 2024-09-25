@@ -17,7 +17,8 @@ book:
         - course-contents/databases-intro-en.qmd
         - course-contents/database-ranking-market-share-en.qmd
         - course-contents/open-source-vs-enterprise-databases-en.qmd
-        - course-contents/database-playground-en.qmd
+        - course-contents/database-playground-en.md
+        - course-contents/database-connections-en.qmd
         - course-contents/example-database-schemas-en.qmd
         - course-contents/server-installation-en.qmd
         - course-contents/sql-clients-GUI-en.qmd

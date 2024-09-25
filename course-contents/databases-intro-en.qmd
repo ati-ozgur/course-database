@@ -8,6 +8,5 @@
 
 
 
-{{< include ../course-contents/connection-string-en.md >}}
 
 {{< include ../course-contents/database-types-en.md >}}

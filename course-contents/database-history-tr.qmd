@@ -4,7 +4,7 @@
 
 ## Veri Tabanları Modelleri
 
-![Wikipedia2016DatabaseModelsFigure](./images/DatabaseModels.jpg)
+![Wikipedia2016DatabaseModelsFigure](../course-contents/images/DatabaseModels.jpg)
 
 
 @Wikipedia2016DatabaseModelsFigure

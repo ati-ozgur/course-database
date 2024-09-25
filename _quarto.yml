@@ -47,6 +47,7 @@ book:
         - course-contents/sql-TCL-transactional-control-language-en.qmd
 
     - course-contents/suggested-readings-en.md
+    - course-contents/suggested-books-en.md
     - summary.qmd
     - references.qmd
 

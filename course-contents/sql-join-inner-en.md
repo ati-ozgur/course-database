@@ -9,7 +9,7 @@
 - Eşleşme ON kelimesinde verilen kolonlara göre yapılır. Birden fazla kolon birleştirilebilir.
 - Eğer birleştime \textbf{=} ile yapılıyorsa, equi-join diyede adlandırılır.
 
-![join-inner-example1-tr](images/join-inner-example1-tr.png)
+![join-inner-example1-tr](images/join-inner-example1-en.png)
 
 
 

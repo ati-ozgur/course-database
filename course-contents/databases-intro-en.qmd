@@ -5,7 +5,7 @@
 
 {{< include ../course-contents/which-databases-will-be-covered-en.md >}}
 
-{{< include ../course-contents/database-playground-en.md >}}
+
 
 
 {{< include ../course-contents/connection-string-en.md >}}

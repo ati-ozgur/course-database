@@ -6,7 +6,7 @@
 - birleştirme işlemini Venn diagram olarak düşünmek iyi olur.
 
 
-![JoinInnerOrnek1](images/JoinInnerOrnek1.png)
+![join-inner-example1-tr](images/join-inner-example1-tr.png)
 
 
 ## JOIN Birleştirme Söz Dizimi

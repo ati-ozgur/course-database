@@ -7,12 +7,12 @@
 - Örneğin İletişim bilgisi olmayan öğrenciler için iletişim bilgisi kısmında NULL yazılacaktır.
 
 
-![JoinLeftOrnek1](images/JoinLeftOrnek1.png)
-![JoinRightOrnek1](images/JoinRightOrnek1.png)
-![JoinOuterOrnek1](images/JoinOuterOrnek1.png)
+![join-left-example1-tr](images/join-left-example1-tr.png)
+![join-right-example1-tr](images/join-right-example1-tr.png)
+![join-outer-example1-tr](images/join-outer-example1-tr.png)
 
 
-![JoinLeftOrnek1](images/JoinLeftOrnek1.png)
+![join-left-example1-tr](images/join-left-example1-tr.png)
 
 SQL-left-join-syntax-ansi-sql-92
 
@@ -24,7 +24,7 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 
 ## Outer Join Right  - Dıştan Birleşim Sağdan
 
-![JoinLeftOrnek1](images/JoinRightOrnek1.png)
+![join-left-example1-tr](images/join-right-example1-tr.png)
 
 RIGHT JOIN ANSI SQL
 
@@ -38,7 +38,7 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 ## Full Outer Join  - Ful Dış Birleşim
 
 
-![JoinLeftOrnek1](images/JoinOuterOrnek1.png)
+![join-left-example1-tr](images/join-outer-example1-tr.png)
 
 SQL-full-outer-join-syntax-ansi-sql-92
 

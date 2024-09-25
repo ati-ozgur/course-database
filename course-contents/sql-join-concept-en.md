@@ -7,7 +7,7 @@
 - But actually, it is not a set operation
 
 
-![JoinInnerOrnek1](images/JoinInnerOrnek1.png)
+![join-inner-example1-tr](images/join-inner-example1-tr.png)
 
 
 ## JOIN Syntax

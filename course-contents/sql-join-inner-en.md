@@ -1,6 +1,6 @@
 ## Inner Join  - İç Birleşim
 
-![JoinInnerOrnek1](images/JoinInnerOrnek1.png)
+![join-inner-example1-tr](images/join-inner-example1-tr.png)
 
 
 
@@ -9,7 +9,7 @@
 - Eşleşme ON kelimesinde verilen kolonlara göre yapılır. Birden fazla kolon birleştirilebilir.
 - Eğer birleştime \textbf{=} ile yapılıyorsa, equi-join diyede adlandırılır.
 
-![JoinInnerOrnek1](images/JoinInnerOrnek1.png)
+![join-inner-example1-tr](images/join-inner-example1-tr.png)
 
 
 

@@ -6,7 +6,7 @@
 The sample database has necessary scripts for a lot different databases.
 Necessary files will also be provided in the repository.
 
-![Chinook schema by tool schemaspy](images/chinook-schemaspy.png)
+![Chinook schema by tool schemaspy](images/schema-diagram-chinook-schemaspy.png)
 
 
 ## Example Schema Student Information System
@@ -29,6 +29,10 @@ It is necessary to know about them since they are used in a lot of examples.
 ###  Oracle
 
 - Oracle HR
+
+![Oracle HR Schema](../course-contents/images/schema-diagram-oracle-HR-ER.png)
+
+
 - Oracle Scott
 
 ###  Microsoft

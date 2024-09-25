@@ -5,6 +5,13 @@
 - INTERSECT
 
 
+![set-operations-union-intersect-except](../course-contents/images/set-operations-union-intersect-except.png)
+
+Above image is take from [following link](https://medium.com/@sounder.rahul/interesting-read-sql-set-operators-union-union-all-intersect-minus-except-f325f378882f)
+
+
+
+
 ## UNION
 
 - Combines different (DISTINCT) results from multiple SELECT commands.

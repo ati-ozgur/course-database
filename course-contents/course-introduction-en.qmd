@@ -5,5 +5,5 @@
 
 {{< include ../course-contents/practice-vs-theory-en.md >}}
 
-{{< include ../memorization-vs-understanding-en.md >}}
+{{< include ../course-contents/memorization-vs-understanding-en.md >}}
 

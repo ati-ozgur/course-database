@@ -7,3 +7,8 @@
 
 {{< include ../course-contents/memorization-vs-understanding-en.md >}}
 
+
+## Course Materials and Web Site
+
+- you will find every materials in the following [github repo: https://github.com/ati-ozgur/course-database](https://github.com/ati-ozgur/course-database)
+

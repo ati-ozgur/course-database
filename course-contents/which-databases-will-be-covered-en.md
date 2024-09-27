@@ -6,15 +6,15 @@ Following databases will be covered in the course due to familiarity to the lect
 - SQL Server
 - sqlite
 
-### Oracle
+## Oracle
 
 The most used enterprise database server.
 
-### SQL Server
+## SQL Server
 
 The second most used enterprise database server.
 
-### Sqlite
+## Sqlite
 
 According to [website of sqlite](https://www.sqlite.org/index.html), What Is SQLite?
 

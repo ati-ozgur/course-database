@@ -7,6 +7,17 @@ format: revealjs
 {{< include ../course-contents/course-introduction-en.qmd >}}
 {{< include ../course-contents/lectures-2024.md >}}
 
+## Databases are sharks
+
+- [Relational Databases Aren’t Dinosaurs, They’re Sharks](https://www.simplethread.com/relational-databases-arent-dinosaurs-theyre-sharks/)
+
+
+## Database position in career sites
+
+- [TR Kariyernet](kariyer.net)
+- [DE Stepstone](https://www.stepstone.de/)
+- [USA Indeed](https://www.indeed.com/)
+
 
 {{< include ../course-contents/databases-intro-en.qmd >}}
 {{< include ../course-contents/database-ranking-market-share-en.qmd >}}

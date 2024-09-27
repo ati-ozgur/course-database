@@ -8,5 +8,6 @@ format: revealjs
 
 
 
-{{< include ../presentations/lectures-2024.md >}}
+{{< include ../course-contents/example-database-schemas-en.qmd >}}
+
 

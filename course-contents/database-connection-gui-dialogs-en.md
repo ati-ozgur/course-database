@@ -4,11 +4,11 @@
 
 Toad example
 
-![ToadEasyConnect](../course-contents/images/ToadEasyConnect.png)
+![ToadEasyConnect](./images/ToadEasyConnect.png)
 
 
 SQL Developer Oracle
 
-![SqlDeveloperEasyConnect](../course-contents/images/SqlDeveloperEasyConnect.png)
+![SqlDeveloperEasyConnect](./images/SqlDeveloperEasyConnect.png)
 
 

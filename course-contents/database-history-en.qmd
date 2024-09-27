@@ -5,12 +5,12 @@
 
 ## Database Models
 
-![Wikipedia2016DatabaseModelsFigure](../course-contents/images/DatabaseModels.jpg)
+![Wikipedia2016DatabaseModelsFigure](./images/DatabaseModels.jpg)
 
 @Wikipedia2016DatabaseModelsFigure
 
 
-### Graph Database
+## Graph Database
 
-![Wikipedia2016DatabaseModelsFigure](../course-contents/images/database-models-graph-example-opensource-com.png)
+![Wikipedia2016DatabaseModelsFigure](./images/database-models-graph-example-opensource-com.png)
 

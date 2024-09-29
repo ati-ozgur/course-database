@@ -5,8 +5,7 @@ Ancak öğrenme deneyimi için bilgisayarınıza gerekli sunucu ve istemci araç
 
 İyi bilinen veritabanı oyun alanları şunlardır:
 
-
-- [sqlfiddle](https://sqlfiddle.com/) supports
+- [sqlfiddle](https://sqlfiddle.com/) aşağıdaki veri tabanlarını desteklemektedir.
 
     * SQL Server
     * SQLite

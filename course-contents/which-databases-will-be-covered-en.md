@@ -1,4 +1,4 @@
-## which databases will be covered in the course
+## databases in the course
 
 Following databases will be covered in the course due to familiarity to the lecturer, their ranking and their usage in the world.
 

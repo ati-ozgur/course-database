@@ -1,4 +1,4 @@
-## kursta hangi veritabanlarının ele alınacağı
+## kurs veritabanları
 
 Eğitmene aşinalık, sıralamaları ve dünyadaki kullanımları nedeniyle aşağıdaki veritabanları derste ele alınacaktır.
 
@@ -16,7 +16,7 @@ En çok kullanılan ikinci kurumsal veritabanı sunucusu.
 
 ## Sqlite
 
-Sqlite web sitesine] (https://www.sqlite.org/index.html) göre, SQLite Nedir?
+[Sqlite web sitesine](https://www.sqlite.org/index.html) göre, SQLite Nedir?
 
 > ... SQLite dünyada en çok kullanılan veritabanı motorudur. 
 > SQLite, tüm cep telefonlarında ve çoğu bilgisayarda yerleşik olarak bulunur ve insanların her gün kullandığı sayısız başka uygulamanın içinde paketlenmiş olarak gelir. 

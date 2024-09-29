@@ -6,7 +6,6 @@ Following two sites ranks the databases in the world.
 - [statista](https://www.statista.com/statistics/809750/worldwide-popularity-ranking-database-management-systems/)
 
 Two lists are very similar.
-See below table from db-engines.
 
 
 

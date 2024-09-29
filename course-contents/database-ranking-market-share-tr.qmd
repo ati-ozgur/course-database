@@ -5,4 +5,7 @@
 
 {{< include ../course-contents/database-ranking-tr.md >}}
 
-{{< include ../course-contents/tables/table-database-ranking.md >}}
+
+Aşağıdaki db-engines tablosuna bakınız.
+
+{{< include ../course-contents/tables/table-database-ranking-en.md >}}

@@ -1,0 +1,12 @@
+# Veritabanlarına giriş
+
+{{< include ../course-contents/database-history-tr.qmd >}}
+
+
+{{< include ../course-contents/which-databases-will-be-covered-tr.md >}}
+
+
+
+
+
+{{< include ../course-contents/database-types-tr.md >}}

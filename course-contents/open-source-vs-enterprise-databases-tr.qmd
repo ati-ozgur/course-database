@@ -1,13 +1,12 @@
-# Open Source vs Enterprise Databases
+# Açık Kaynak vs Kurumsal Veritabanları
 
-The big companies and government still heavily rely on enterprise databases.
+Büyük şirketler ve devlet hala büyük ölçüde kurumsal veritabanlarına güveniyor.
 
 - Oracle
 - SQL Server
 - IBM DB2
 
-But small to mid sized companies started to work with mostly open source databases in recent decade.
-10 years ago, it was almost impossible to use open source databases in the large companies but mindset is shifted.
-Even in large companies and government, you can find open source databases like postgre and mysql since small applications use them.
-
+Ancak küçük ve orta ölçekli şirketler son on yılda çoğunlukla açık kaynak veritabanlarıyla çalışmaya başladı.
+10 yıl önce büyük şirketlerde açık kaynak veritabanlarını kullanmak neredeyse imkansızdı ancak zihniyet değişti.
+Büyük şirketlerde ve devlet kurumlarında bile postgre ve mysql gibi açık kaynak veritabanları bulabilirsiniz çünkü küçük uygulamalar bunları kullanıyor.
 

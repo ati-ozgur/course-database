@@ -1,0 +1,8 @@
+# Veritabanı Sıralamaları ve Pazar Payları
+
+{{< include ../course-contents/database-market-share-tr.md >}}
+
+
+{{< include ../course-contents/database-ranking-tr.md >}}
+
+{{< include ../course-contents/tables/table-database-ranking.md >}}

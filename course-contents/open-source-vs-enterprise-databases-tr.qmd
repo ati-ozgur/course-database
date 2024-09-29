@@ -1,0 +1,13 @@
+# Open Source vs Enterprise Databases
+
+The big companies and government still heavily rely on enterprise databases.
+
+- Oracle
+- SQL Server
+- IBM DB2
+
+But small to mid sized companies started to work with mostly open source databases in recent decade.
+10 years ago, it was almost impossible to use open source databases in the large companies but mindset is shifted.
+Even in large companies and government, you can find open source databases like postgre and mysql since small applications use them.
+
+

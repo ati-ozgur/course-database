@@ -1,4 +1,4 @@
-# Syllabus
+# Ders İçeriği
 
 
 {{< include ./course-contents/brief-course-contents-tr.md >}}

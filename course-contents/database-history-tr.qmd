@@ -23,7 +23,7 @@
 
 ## Vektor veri tabanları 
 
-{{< include ../course-contents/diagrams/how-vector-databases-works-en.md >}}
+{{< include ../course-contents/diagrams/how-vector-databases-works-tr.md >}}
 
 
 

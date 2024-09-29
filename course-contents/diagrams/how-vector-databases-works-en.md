@@ -1,4 +1,4 @@
-```mermaid
+```{mermaid}
 graph TD
     A[User Query] --> B[RAG System]
     B --> C[Query Embedding]

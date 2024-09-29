@@ -2,7 +2,11 @@
 
 {{< include ../course-contents/tables/table-databases-history-tr.md >}}
 
+## Sıra düzenli (hierarchical) veri tabanları
 
+- Aile Agaçı
+- Dosya sistemi
+- UNS (Unified Namespace)
 
 ## Veri Tabanları Modelleri
 
@@ -12,9 +16,14 @@
 @Wikipedia2016DatabaseModelsFigure
 
 
-
 ## Çizge (graph) veri tabanları 
 
 ![Wikipedia2016DatabaseModelsFigure](./images/database-models-graph-example-opensource-com.png)
+
+
+## Vektor veri tabanları 
+
+{{< include ../course-contents/diagrams/how-vector-databases-works-en.md >}}
+
 
 

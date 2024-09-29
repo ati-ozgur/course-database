@@ -1,0 +1,15 @@
+# Veritabanı bağlantıları
+
+{{< include ../course-contents/database-drivers-tr.md >}}
+
+
+{{< include ../course-contents/database-terms-tr.md >}}
+
+
+{{< include ../course-contents/database-connection-gui-dialogs-tr.md >}}
+
+
+
+
+{{< include ../course-contents/connection-string-tr.md >}}
+

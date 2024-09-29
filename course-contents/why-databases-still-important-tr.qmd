@@ -1,0 +1,4 @@
+# Neden veritabanları hala önemli
+
+
+{{< include ../course-contents/course-contents/databases-arent-dinosaurs-they-are-sharks.md >}}

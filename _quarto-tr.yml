@@ -9,7 +9,7 @@ book:
       chapters:
         - index.qmd
         - Syllabus-tr.qmd
-        - course-contents/course-introduction-en.qmd
+        - course-contents/course-introduction-tr.qmd
     - part: "Database Introduction"
       chapters:        
         - course-contents/databases-intro-en.qmd

@@ -1,0 +1,15 @@
+# Kurs Giriş
+
+
+{{< include ../course-contents/lecturer-tr.md >}}
+
+{{< include ../course-contents/practice-vs-theory-tr.md >}}
+
+{{< include ../course-contents/memorization-vs-understanding-tr.md >}}
+
+
+## Ders malzemeleri ve Web Sitesi
+
+- tüm ders malzemelerini aşağıdaki github deposunda bulabilirsiniz 
+- [github depo](https://github.com/ati-ozgur/course-database)
+

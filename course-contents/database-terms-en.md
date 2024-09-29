@@ -1,6 +1,5 @@
 ## database terms
 
-terms:
 
 - instance
 - database

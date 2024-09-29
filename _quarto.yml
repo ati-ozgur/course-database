@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  author: "Atilla Özgür"
+  date: today
+  date-format: "YYYY-MM-DD"
+  cover-image: cover.png
+
+profile:
+  default: en
+  group: 
+    - [en,tr]
+
+
+
+format:
+  html:
+    theme: cosmo
+    mermaid:
+      theme: forest
+  pdf:
+    documentclass: scrreprt
+    mermaid:
+      theme: forest
+
+

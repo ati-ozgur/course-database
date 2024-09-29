@@ -2,7 +2,8 @@ project:
   type: book
 
 book:
-  title: "Introduction to databases"
+  title: "Veritabanlarına Giriş"
+
   chapters:
     - part: "Course Introduction"
       chapters:

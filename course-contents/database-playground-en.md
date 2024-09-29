@@ -14,26 +14,15 @@ Well known database playgrounds are following:
     * MariaDB
     * Oracle
 
-- [sqlite online](https://sqliteonline.com/)
-
-
-
-
-
-
-
-
-
-
-
 
 ## Oracle
 
-https://livesql.oracle.com/apex/f?p=590:1000
+[livesql oracle](https://livesql.oracle.com/apex/f?p=590:1000)
 
 
 ## Sqlite
 
-https://www.db-book.com/university-lab-dir/sqljs.html
-https://sql.js.org/examples/GUI/index.html
-https://sandboxsql.com/
+
+- [sqlite online](https://sqliteonline.com/)
+
+

@@ -1,4 +1,12 @@
 # Syllabus
 
 
-{{< include ./course-contents/brief-course-contents.md >}}
+{{< include ./course-contents/brief-course-contents-tr.md >}}
+
+
+{{< include ./course-contents/expectations-and-goals-tr.md >}}
+
+
+## Haftalara göre Konular
+
+{{< include ./course-contents/tables/table-subjects-by-week-tr.md >}}

@@ -5,4 +5,26 @@
 - file based
 - in memory
 
-{{< include ../course-contents/diagrams/database-client-server-en.qmd >}}
+### Server Client
+
+{{< include ../course-contents/diagrams/database-client-server-en.md >}}
+
+### File based
+
+In file based architecture, a local file is used as database.
+There is no server, everything is done in the client computer.
+Sqlite and Microsoft Access are well known file based databases.
+
+### In memory
+
+Everything is stored in the memory.
+Thus when the client process ends, database contents are also lost.
+In memory databases are used for testing and caching.
+Sqlite could work as [in memory database](https://www.sqlite.org/inmemorydb.html).
+
+
+
+
+
+
+

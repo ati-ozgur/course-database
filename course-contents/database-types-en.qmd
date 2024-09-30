@@ -25,9 +25,6 @@
 Even though there are a lot of databases types, the relation databases will be the focus of this course.
 The so-called nosql and other types of databases, will not be covered.
 
+{{< include ../course-contents/database-types-architecture.qmd >}}
 
-### Database types according to architecture
 
-- Server-client
-- file based
-- in memory

@@ -9,4 +9,4 @@
 
 
 
-{{< include ../course-contents/database-types-tr.md >}}
+{{< include ../course-contents/database-types-tr.qmd >}}

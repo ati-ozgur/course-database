@@ -1,0 +1,8 @@
+
+### Database types according to architecture
+
+- Server-client
+- file based
+- in memory
+
+{{< include ../course-contents/diagrams/database-client-server-en.qmd >}}

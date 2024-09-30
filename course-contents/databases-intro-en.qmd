@@ -8,8 +8,4 @@
 
 
 
-
-
-
-
-{{< include ../course-contents/database-types-en.md >}}
+{{< include ../course-contents/database-types-en.qmd >}}

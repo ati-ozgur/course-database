@@ -7,6 +7,3 @@
 
 
 
-
-
-{{< include ../course-contents/database-types-tr.qmd >}}

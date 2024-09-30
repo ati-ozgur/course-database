@@ -13,6 +13,7 @@ book:
     - part: "Database Introduction"
       chapters:        
         - course-contents/databases-intro-tr.qmd
+        - course-contents/database-types-tr.qmd
         - course-contents/database-ranking-market-share-tr.qmd
         - course-contents/open-source-vs-enterprise-databases-tr.qmd
         - course-contents/which-databases-will-be-covered-tr.md 

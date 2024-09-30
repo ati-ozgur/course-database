@@ -14,3 +14,6 @@
 
 ![Wikipedia2016DatabaseModelsFigure](./images/database-models-graph-example-opensource-com.png)
 
+## Vector databases
+
+{{< include ../course-contents/diagrams/how-vector-databases-works-en.md >}}

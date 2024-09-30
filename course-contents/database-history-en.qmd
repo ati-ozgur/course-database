@@ -19,7 +19,7 @@
 {{< include ../course-contents/diagrams/how-vector-databases-works-en.md >}}
 
 
-## Database convergence
+## Veritabanı birleşimi
 
 TODO write better.
 

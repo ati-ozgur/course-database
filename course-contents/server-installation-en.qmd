@@ -1,5 +1,12 @@
 # Server installations
 
+## Virtual box and/or docker
+
+- [Virtual box download](https://www.virtualbox.org/wiki/Downloads)
+- [docker download](https://www.docker.com/products/docker-desktop/)
+
+
+
 ## Sqlite
 
 Since sqlite is a file-based very lightweight database, GUI tools also include it.
@@ -12,15 +19,14 @@ If you only use it from programming language or GUI tool, you may not have to do
 
 1. Download sqlite
 2. open command line
-3. show chinook db.
-
-
+3. download [chinook db](https://github.com/ati-ozgur/course-database/raw/refs/heads/main/databases/Chinook-auto-increment.db).
+4. show contents in the command line.
 
 
 ## Oracle
 
-https://www.oracle.com/downloads/developer-vm/community-downloads.html
-
+[Oracle virtual box](https://www.oracle.com/downloads/developer-vm/community-downloads.html)
+[Oracle docker](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-oracle)
 
 ## SQL Server
 

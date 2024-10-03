@@ -25,8 +25,9 @@ If you only use it from programming language or GUI tool, you may not have to do
 
 ## Oracle
 
-[Oracle virtual box](https://www.oracle.com/downloads/developer-vm/community-downloads.html)
-[Oracle docker](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-oracle)
+- [Oracle virtual box](https://www.oracle.com/downloads/developer-vm/community-downloads.html)
+- [Oracle docker](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-oracle)
+- [Oracle downloads]
 
 ## SQL Server
 

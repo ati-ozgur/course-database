@@ -1,5 +1,29 @@
 # Server installations
 
+## Sqlite
+
+Since sqlite is a file-based very lightweight database, GUI tools also include it.
+Also every major programming language has necessary bindings.
+If you only use it from programming language or GUI tool, you may not have to download it.
+
+[sqlite downloads](https://www.sqlite.org/download.html)
+
+### Demo
+
+1. Download sqlite
+2. open command line
+3. show chinook db.
+
+
+
+
+## Oracle
+
+https://www.oracle.com/downloads/developer-vm/community-downloads.html
+
+
+## SQL Server
+
 - Different Versions of SQL Server
 
 	* Express

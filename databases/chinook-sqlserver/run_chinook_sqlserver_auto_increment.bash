@@ -19,7 +19,6 @@ WORKING_DIR=$PWD
 echo $PWD
 
 
-cd ./Karkas.Examples/TestBash/chinook-sqlserver
 
 docker build -t $IMAGE_NAME .
 

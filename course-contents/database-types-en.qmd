@@ -1,6 +1,6 @@
-## Database types
+# Database types
 
-### Database Types according to data structure they store
+## Database Types according to data structure they store
 
 - Relational DBMS
 - Key-value stores
@@ -20,7 +20,7 @@
 - Navigational DBMS
 - Columnar
 
-### Relational databases
+## Relational databases
 
 Even though there are a lot of databases types, the relation databases will be the focus of this course.
 The so-called nosql and other types of databases, will not be covered.

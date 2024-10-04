@@ -18,10 +18,10 @@ book:
         - course-contents/open-source-vs-enterprise-databases-en.qmd
         - course-contents/which-databases-will-be-covered-en.md 
 
+        - course-contents/server-installation-en.qmd
         - course-contents/database-playground-en.md
         - course-contents/database-connections-en.qmd
         - course-contents/example-database-schemas-en.qmd
-        - course-contents/server-installation-en.qmd
         - course-contents/command-line-access-en.qmd
         - course-contents/sql-clients-GUI-en.qmd
 

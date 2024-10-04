@@ -1,15 +1,15 @@
 
-### Database types according to architecture
+## Database types according to architecture
 
 - Server-client
 - file based
 - in memory
 
-### Server Client
+## Server Client
 
 {{< include ../course-contents/diagrams/database-client-server-en.md >}}
 
-### File based
+## File based
 
 In file based architecture, a local file is used as database.
 There is no server, everything is done in the client computer.

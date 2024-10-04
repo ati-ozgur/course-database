@@ -48,25 +48,3 @@ timeout 60s grep -q 'DATABASE IS READY TO USE!' <(docker logs -f $CONTAINER_ID) 
 echo "go to ${WORKING_DIR}"
 cd $WORKING_DIR
 
-rm -rf Karkas.Examples/GeneratedProjects/ChinookOracleAutoIncrement
-
-dotnet run --project Karkas.CodeGeneration/Karkas.CodeGeneration.ConsoleApp -- --connectionname ChinookOracleAutoIncrement
-cd Karkas.Examples/GeneratedProjects/ChinookOracleAutoIncrement
-dotnet new console
-dotnet add package Oracle.ManagedDataAccess.Core
-dotnet add reference "../../../Karkas.Data/Karkas.Data/Karkas.Data.csproj"
-dotnet add reference "../../../Karkas.Data/Karkas.Data.Oracle/Karkas.Data.Oracle.csproj"
-
-cp ../../TestCSharp/ProgramChinookAutoIncrement.cs Program.cs
-cp ../../TestCSharp/GlobalUsings.cs GlobalUsings.cs
-cp ../../TestCSharp/GlobalUsingsChinook.cs GlobalUsingsChinook.cs
-
-
-cp --recursive ../../TestCSharp/Helpers/ .
-cp ../../TestCSharp/HelpersConnection/ConnectionHelperOracle.cs ConnectionHelper.cs
-cp --recursive ../../TestCSharp/Bs/ .
-cp --recursive ../../TestCSharp/Dal/ .
-
-dotnet build
-dotnet run
-

@@ -58,25 +58,3 @@ docker exec $CONTAINER_ID bash /home/create_chinook_sqlserver_autoincrementpks.b
 
 
 
-rm -rf Karkas.Examples/GeneratedProjects/ChinookSqlServerAutoIncrement
-
-dotnet run --project Karkas.CodeGeneration/Karkas.CodeGeneration.ConsoleApp -- --connectionname ChinookSqlServerAutoIncrement
-cd Karkas.Examples/GeneratedProjects/ChinookSqlServerAutoIncrement
-dotnet new console
-dotnet add package Microsoft.Data.SqlClient
-dotnet add reference "../../../Karkas.Data/Karkas.Data/Karkas.Data.csproj"
-dotnet add reference "../../../Karkas.Data/Karkas.Data.SqlServer/Karkas.Data.SqlServer.csproj"
-
-cp ../../TestCSharp/ProgramChinookAutoIncrement.cs Program.cs
-cp ../../TestCSharp/GlobalUsings.cs GlobalUsings.cs
-cp ../../TestCSharp/GlobalUsingsChinook.cs GlobalUsingsChinook.cs
-
-cp --recursive ../../TestCSharp/Helpers/ .
-cp ../../TestCSharp/HelpersConnection/ConnectionHelperSqlServer.cs ConnectionHelper.cs
-cp --recursive ../../TestCSharp/Bs/ .
-cp --recursive ../../TestCSharp/Dal/ .
-
-
-dotnet build
-dotnet run
-

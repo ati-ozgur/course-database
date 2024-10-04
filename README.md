@@ -1,11 +1,8 @@
-# course-database
+# Course database
 
-Following content will be added.
+- [Course notes](https://ati-ozgur.github.io/course-database/)
 
--fonksiyonlar
--group-by
--subqueries
--apply-komutu
--sanal-tablolar
--grouping-sets
--crud
+## Previous Lessons
+
+- [2024-10-04](2024/2024-10-04.md)
+- [2024-09-27](2024/2024-09-27.md)

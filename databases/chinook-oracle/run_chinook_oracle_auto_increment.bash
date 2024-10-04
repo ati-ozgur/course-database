@@ -19,7 +19,6 @@ WORKING_DIR=$PWD
 echo $PWD
 
 
-cd ./Karkas.Examples/TestBash/chinook-oracle
 
 docker build -f DockerfileAutoIncrement -t $IMAGE_NAME .
 

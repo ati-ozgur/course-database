@@ -1,4 +1,4 @@
-# sql-introduction.md
+# SQL Giriş
 
 ## Ders Konuları
 
@@ -14,3 +14,4 @@
 - Grouping Sets ve Pivot Tables
 - Data Değiştirme (Insert,Update,Delete)
 
+{{< include ../course-contents/sql-knowledge-among-developers-tr.md >}}

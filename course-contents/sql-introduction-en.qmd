@@ -5,6 +5,11 @@
 
 {{< include ../course-contents/sql-standard-en.md >}}
 
+{{< include ../course-contents/sql-knowledge-among-developers-en.md >}}
+
+
+
+
 ## SQL Standart 
 
 {{< include ../course-contents/tables/table-sql-standard-history-en.md >}}

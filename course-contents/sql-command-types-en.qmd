@@ -22,5 +22,6 @@ Nonetheless, INSERT/UPDATE/DELETE and other statements are clearly DML.
 
 Also dialects could decide about the statements for example TRUNCATE Table command is DML in SQL Server but DDL in Oracle.
 
+In this course, we see every select statement as DQL.
 
 

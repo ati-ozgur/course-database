@@ -1,5 +1,17 @@
 # Database convergence
 
+## Databases add new technologies to their stacks
+
+1. Objects
+2. XML Data
+3. JSON Data
+4. Graphs
+5. Vectors
+
+Add links from Oracle and others to this one.
+
+## Use cases for relational database is a good choice
+
 You should always start with relational database when starting your application.
 Premature optimization is root of all evil.
 Then, **if needed** add other technologies to your application.
@@ -9,10 +21,13 @@ You could use facade design pattern when you are implementing your API.
 Then **when needed**, you could switch underlying implementation to different technologies as need.
 This could be done with a lot of use case like below:
 
-- Events
+- Events 
 - Logs
 - Documents
 	* Search in documents
+- Key/Value cache like redis
+
+This way, instead of starting with a lot of  technologies like kafka, redis, elastic search; you could start with relational database and later add this technologies if needed.
 
 
 ### Documents

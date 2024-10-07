@@ -7,7 +7,7 @@
 
 
 
-{{< include ../course-contents/sql-dialects-en.qmd >}}
+
 
 {{< include ../course-contents/database-schema-object-names-en.md >}}
 

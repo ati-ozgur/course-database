@@ -29,6 +29,7 @@ book:
       chapters:
         - course-contents/sql-introduction-en.qmd
         - course-contents/sql-standard-en.qmd
+        - course-contents/sql-dialects-en.qmd
     - part: "SQL DQL"
       chapters:
         - course-contents/sql-DQL-data-query-language-en.md

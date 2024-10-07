@@ -1,3 +1,12 @@
 # SQL standard
 
+{{< include ../course-contents/sql-standard-short-tr.md >}}
 
+
+## SQL Standart tarihçesi
+
+{{< include ../course-contents/tables/table-sql-standard-history-tr.md >}}
+
+## Modern SQL
+
+https://modern-sql.com/

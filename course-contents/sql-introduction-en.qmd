@@ -26,6 +26,4 @@ There are [five different sql commands types](https://www.geeksforgeeks.org/sql-
 {{< include ../course-contents/tables/table-sql-command-types-en.md >}}
 
 
-## Modern SQL
 
-https://modern-sql.com/

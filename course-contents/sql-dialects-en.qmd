@@ -1,0 +1,6 @@
+## SQL dialects
+
+{{< include ../course-contents/sql-dialect-transact-sql-en.md >}}
+
+
+{{< include ../course-contents/sql-dialect-pl-sql-en.md >}}

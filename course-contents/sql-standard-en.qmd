@@ -1,0 +1,8 @@
+# SQL standard
+
+{{< include ../course-contents/sql-standard-short-en.md >}}
+
+
+## SQL Standarts History
+
+{{< include ../course-contents/tables/table-sql-standard-history-en.md >}}

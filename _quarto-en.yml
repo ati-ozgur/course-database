@@ -25,9 +25,12 @@ book:
         - course-contents/command-line-access-en.qmd
         - course-contents/sql-clients-GUI-en.qmd
 
-    - part: "SQL"
+    - part: "SQL Intro"
       chapters:
         - course-contents/sql-introduction-en.qmd
+        - course-contents/sql-standard-en.qmd
+    - part: "SQL DQL"
+      chapters:
         - course-contents/sql-DQL-data-query-language-en.md
         - course-contents/sql-select-en.qmd
         - course-contents/sql-data-types-en.qmd
@@ -40,6 +43,8 @@ book:
         - course-contents/sql-paging-en.qmd
         - course-contents/sql-set-en.qmd
         - course-contents/sql-join-en.qmd
+    - part: "SQL DML-DCL-TCL"
+      chapters:
         - course-contents/sql-DML-data-manipulation-language-en.qmd
         - course-contents/sql-truncate-table-en.md
         - course-contents/sql-DDL-data-definition-language-en.qmd

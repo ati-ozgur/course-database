@@ -2,20 +2,12 @@
 
 {{< include ../course-contents/sql-introduction-contents-en.md >}}
 
-
-{{< include ../course-contents/sql-standard-en.md >}}
-
 {{< include ../course-contents/sql-knowledge-among-developers-en.md >}}
 
 
 
 
-## SQL Standart 
-
-{{< include ../course-contents/tables/table-sql-standard-history-en.md >}}
-
-
-{{< include ../course-contents/sql-dialect-transact-sql-en.md >}}
+{{< include ../course-contents/sql-dialects-en.qmd >}}
 
 {{< include ../course-contents/database-schema-object-names-en.md >}}
 

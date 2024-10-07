@@ -1,5 +1,12 @@
 # Database convergence
 
+Relational databases are boring and boring is good, especially when money is concerned.
+DocumentDBs like MongoDB is popular for their straightforward start but the problems comes later when you need to keep your data consistent.
+
+
+
+
+
 ## Databases add new technologies to their stacks
 
 1. Objects
@@ -30,7 +37,7 @@ This could be done with a lot of use case like below:
 This way, instead of starting with a lot of  technologies like kafka, redis, elastic search; you could start with relational database and later add this technologies if needed.
 
 
-### Documents
+
 
 ### JSON data
 

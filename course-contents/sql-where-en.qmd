@@ -3,7 +3,7 @@
 
 {{< include ../course-contents/tables/table-where-operators-en.md >}}
 
-## Chaining of conditions (logical operators)
+## logical operators
 
 - AND
 - OR
@@ -13,3 +13,11 @@
 
 
 {{< include ../course-contents/tables/table-truth-table-or.md >}}
+
+## Chaining of conditions
+
+- Use parentheses when you need to chain more than 3 conditions.
+Like mathematics, parentheses change the order of operations.
+
+- (2+3)*5
+- 2+3*5

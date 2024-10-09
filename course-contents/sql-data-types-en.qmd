@@ -3,7 +3,7 @@
 ## ANSI SQL Data Types
 
 
-
+See below table by Microsoft @Access2024Equivalent
 
 {{< include ../course-contents/tables/table-ansi-sql-data-types.md >}}
 

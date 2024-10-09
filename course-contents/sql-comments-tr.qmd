@@ -1,29 +1,29 @@
-# SQL Comments
+# SQL Yorumlar
 
-Normal sql comments are double dash -- characters.
-They could start anywhere in the line and whatever written after -- characters in that line is ignored by database engine.
-Comments can appear anywhere white space can come.
+Normal sql yorumları çift tire -- karakterleridir.
+Yorumlar satırın herhangi bir yerinden başlayabilirler.
+O satırda -- karakterlerinden sonra yazılanlar veritabanı motoru tarafından işlenmez.
+Yorumlar, boşluk karakterlerinin gelebileceği her yerde görünebilir.
 
-See below example
+Aşağıdaki örneğe bakınız.
 
 ``` sql
 SELECT
- * -- * means all columns
+ * -- * tüm sütunlar anlamına gelir
 FROM Employee;
 
 ```
 
-In the middle of other sql statements and inside expressions.
-
-C style /* */ multi line comments are also supported by a lot of different databases, like [Sqlite comments](https://sqlite.org/lang_comment.html), [oracle comments](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comments.html) and [SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/slash-star-comment-transact-sql?view=sql-server-ver16). 
+C stili /* */ çok satırlı yorumlar da birçok farklı veritabanı tarafından desteklenmektedir, örneğin [Sqlite yorumlar](https://sqlite.org/lang_comment.html), [oracle yorumlar](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comments.html) and [SQL Server yorumlar](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/slash-star-comment-transact-sql?view=sql-server-ver16). 
 
 
 ``` sql
 
 /*
-This is a 
-Multi line
-comment
+Bu 
+bir
+çok satırlı
+yorumdur
 */
 
 ```

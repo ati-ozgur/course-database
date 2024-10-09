@@ -1,1 +1,29 @@
-sql-comments-en.qmd
+# SQL Comments
+
+Normal sql comments are double dash -- characters.
+They could start anywhere in the line and whatever written after -- characters in that line is ignored by database engine.
+Comments can appear anywhere white space can come.
+
+See below example
+
+``` sql
+SELECT
+ * -- * means all columns
+FROM Employee;
+
+```
+
+
+C style /* */ multi line comments are also supported by a lot of different databases, like [Sqlite comments](https://sqlite.org/lang_comment.html), [oracle comments](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comments.html) and [SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/slash-star-comment-transact-sql?view=sql-server-ver16). 
+
+
+``` sql
+
+/*
+This is a 
+Multi line
+comment
+*/
+
+```
+

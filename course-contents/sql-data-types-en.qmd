@@ -1,7 +1,21 @@
 # SQL Data Types
 
+## ANSI SQL Data Types
+
+
+
+
+{{< include ../course-contents/tables/table-ansi-sql-data-types.md >}}
+
+## SQL Data Types strings
+
+- difference between quotes "" and ''
+
+
 
 ## Transact-SQL Data Types
+
+
 {{< include ../course-contents/tables/table-data-types-sqlserver-en.md >}}
 
 ## Transact-SQL Data Types Conversion

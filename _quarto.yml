@@ -21,6 +21,7 @@ format:
       theme: forest
   pdf:
     documentclass: scrreprt
+    latex-output-dir: .tex
     mermaid:
       theme: forest
 

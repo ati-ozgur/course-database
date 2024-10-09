@@ -5,7 +5,8 @@
 
 ## Database Models
 
-![Wikipedia2016DatabaseModelsFigure](./images/DatabaseModels.jpg)
+
+![Wikipedia 2016 Database Models](images/database-models.png)
 
 @Wikipedia2016DatabaseModelsFigure
 

@@ -2,3 +2,14 @@
 
 
 {{< include ../course-contents/tables/table-where-operators-en.md >}}
+
+## Chaining of conditions (logical operators)
+
+- AND
+- OR
+- NOT
+
+{{< include ../course-contents/tables/table-truth-table-and.md >}}
+
+
+{{< include ../course-contents/tables/table-truth-table-or.md >}}

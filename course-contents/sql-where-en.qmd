@@ -3,6 +3,16 @@
 
 {{< include ../course-contents/tables/table-where-operators-en.md >}}
 
+
+
+
+## IN Operator
+
+## Between operator
+
+## LIKE Operator
+
+
 ## logical operators
 
 - AND
@@ -21,3 +31,4 @@ Like mathematics, parentheses change the order of operations.
 
 - (2+3)*5
 - 2+3*5
+

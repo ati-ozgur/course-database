@@ -28,9 +28,13 @@ It is necessary to know about them since they are used in a lot of examples.
 
 ###  Oracle
 
+[Oracle sample schemas documentation](https://docs.oracle.com/en/database/oracle/oracle-database/21/comsc/installing-sample-schemas.html).
+
 - Oracle HR
 
 ![Oracle HR Schema](./images/schema-diagram-oracle-HR-ER.png)
+
+
 
 
 - Oracle Scott

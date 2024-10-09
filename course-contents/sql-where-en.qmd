@@ -4,15 +4,35 @@
 {{< include ../course-contents/tables/table-where-operators-en.md >}}
 
 
+## Examples
 
+Chinook
 
-## IN Operator
+``` sql
+select * from Employee where EmployeeId = 5;
+```
 
-## Between operator
+``` sql
+select * from Employee where EmployeeId != 5;
+```
 
-## LIKE Operator
+``` sql
+select * from Employee where EmployeeId <> 5;
+```
 
+``` sql
+select * from Employee where EmployeeId < 5;
+```
+``` sql
+select * from Employee where EmployeeId <= 5;
+```
+``` sql
+select * from Employee where EmployeeId > 5;
+```
 
+``` sql
+select * from Employee where EmployeeId >= 5;
+```
 ## logical operators
 
 - AND
@@ -23,6 +43,19 @@
 
 
 {{< include ../course-contents/tables/table-truth-table-or.md >}}
+
+
+## IN Operator
+
+``` sql
+select * from Employee where EmployeeId IN (2,5,9);  
+```
+
+## Between operator
+
+## LIKE Operator
+
+
 
 ## Chaining of conditions
 

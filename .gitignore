@@ -1,3 +1,4 @@
+_output/*
 temp/*
 ## Core latex/pdflatex auxiliary files:
 *.aux

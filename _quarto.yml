@@ -1,11 +1,14 @@
 project:
   type: book
+  execute-dir: "project"
+  output-dir: _output
 
 book:
   author: "Atilla Özgür"
   date: today
   date-format: "YYYY-MM-DD"
   cover-image: cover.png
+
 
 profile:
   default: en
@@ -21,7 +24,7 @@ format:
       theme: forest
   pdf:
     documentclass: scrreprt
-    latex-output-dir: .tex
+    latex-output-dir: _output
     mermaid:
       theme: forest
 

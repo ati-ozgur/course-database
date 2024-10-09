@@ -35,6 +35,7 @@ book:
       chapters:
         - course-contents/sql-DQL-data-query-language-en.md
         - course-contents/sql-select-en.qmd
+        - course-contents/sql-comments-en.qmd
         - course-contents/sql-data-types-en.qmd
         - course-contents/sql-select-distinct-en.md
         - course-contents/sql-where-en.qmd

@@ -1,3 +1,5 @@
+project:
+  output-dir: ./_site/tr
 book:
   title: "Veritabanlarına Giriş"
 

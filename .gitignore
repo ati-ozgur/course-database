@@ -1,3 +1,4 @@
+_site/*
 _output/*
 temp/*
 ## Core latex/pdflatex auxiliary files:

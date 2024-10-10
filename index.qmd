@@ -1,15 +1,23 @@
+
+::: {.content-visible when-profile="en"}
+# Preface {.unnumbered}
+:::
+
+::: {.content-visible when-profile="en"}
+This the lecture notes for Database Management Systems course.
+:::
+
+
 ::: {.content-visible when-profile="tr"}
 # Önsöz {.unnumbered}
+:::
 
+
+::: {.content-visible when-profile="tr"}
 Bu ders notları veritabanlarına giriş dersi için hazırlanmıştır.
 
 :::
 
-::: {.content-visible when-profile="en"}
-# Preface {.unnumbered}
-This the lecture notes for Database Management Systems course.
-
-:::
 
 
 

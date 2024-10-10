@@ -37,19 +37,16 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
-        with:
           profile: def          
       - name: Render Quarto Project Profile tr
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
-        with:
           profile: tr          
       - name: Render Quarto Project Profile en
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
-        with:
           profile: en          
       - name: Setup Pages
         uses: actions/configure-pages@v4

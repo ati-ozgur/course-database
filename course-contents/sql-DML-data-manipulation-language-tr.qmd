@@ -1,0 +1,37 @@
+# DML (data manipulation language)
+
+
+## Insert into
+
+### Insert into select
+
+### Insert multiple rows
+
+## Update
+
+### Single row
+### Multiple rows
+
+## Delete
+
+### Single row
+
+using PK
+
+### Multiple rows
+
+delete from
+please control with select before running, especially in production.
+
+
+
+
+### Creating table using select
+
+### CREATE TABLE ... AS SELECT (Oracle)
+### SELECT INTO (SQL Server)
+
+
+## Data Import/Export
+
+

@@ -50,6 +50,7 @@ book:
         - course-contents/sql-where-en.qmd
         - course-contents/sql-null-en.qmd
         - course-contents/sql-aggregate-functions-en.qmd
+        - course-contents/sql-group-by-en.qmd
         - course-contents/sql-orderby-en.qmd
         - course-contents/sql-limit-top-en.md
         - course-contents/sql-paging-en.qmd

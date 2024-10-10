@@ -12,12 +12,12 @@ book:
         href: ../tr/index.html
 
   chapters:
-    - part: "Course Introduction"
+    - part: "Kursa Giriş"
       chapters:
         - index.qmd
         - Syllabus-tr.qmd
         - course-contents/course-introduction-tr.qmd
-    - part: "Database Introduction"
+    - part: "Veritabanlarına Giriş"
       chapters:
         - course-contents/databases-intro-tr.qmd
         - course-contents/database-types-tr.qmd

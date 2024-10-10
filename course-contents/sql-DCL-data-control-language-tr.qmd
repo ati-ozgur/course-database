@@ -1,0 +1,5 @@
+# DCL (Data Control Language)
+
+{{< include ../course-contents/database-users-en.md >}}
+
+

@@ -31,5 +31,3 @@ format:
     latex-output-dir: _output
     mermaid:
       theme: forest
-
-

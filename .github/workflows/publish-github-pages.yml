@@ -35,19 +35,22 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Render Quarto Project Profile Def
         uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: def
         with:
-          to: html # If set, it will be equivalent to `quarto render --to html`
-          profile: def          
+          to: html 
       - name: Render Quarto Project Profile tr
         uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: tr
         with:
-          to: html # If set, it will be equivalent to `quarto render --to html`
-          profile: tr          
+          to: html 
       - name: Render Quarto Project Profile en
         uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: en
         with:
-          to: html # If set, it will be equivalent to `quarto render --to html`
-          profile: en          
+          to: html 
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

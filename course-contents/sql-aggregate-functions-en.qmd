@@ -1,9 +1,4 @@
 # Aggregate functions
 
 
-- MIN() - smallest value
-- MAX() - largest value 
-- COUNT() - number of rows
-- SUM() - Total of the given column 
-- AVG() - the average value of a numerical column
-
+{{< include ../course-contents/tables/table-agregate-functions-en.md >}}

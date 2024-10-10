@@ -66,8 +66,8 @@ book:
 
     - course-contents/suggested-readings-en.md
     - course-contents/suggested-books-en.md
-    - summary.qmd
-    - references.qmd
+    - summary-en.qmd
+    - references-en.qmd
 
 
 

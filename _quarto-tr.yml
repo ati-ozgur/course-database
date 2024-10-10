@@ -22,21 +22,28 @@ book:
         - course-contents/databases-intro-tr.qmd
         - course-contents/database-types-tr.qmd
         - course-contents/database-ranking-market-share-tr.qmd
+
         - course-contents/open-source-vs-enterprise-databases-tr.qmd
         - course-contents/which-databases-will-be-covered-tr.md 
-        - course-contents/database-playground-tr.md
-
+        
         - course-contents/server-installation-tr.qmd
+        - course-contents/database-playground-tr.md
         - course-contents/database-connections-tr.qmd
         - course-contents/example-database-schemas-tr.qmd
         - course-contents/command-line-access-tr.qmd
         - course-contents/sql-clients-GUI-tr.qmd
 
-    - part: "SQL"
+    - part: "SQL Giriş"
       chapters:
-        - course-contents/sql-introduction-en.qmd
-        - course-contents/sql-DQL-data-query-language-en.md
+        - course-contents/sql-introduction-tr.qmd
+        - course-contents/sql-standard-tr.qmd
+        - course-contents/sql-dialects-tr.qmd
+        - course-contents/sql-command-types-tr.qmd
+    - part: "SQL DQL"
+      chapters:
+        - course-contents/sql-DQL-data-query-language-tr.md
         - course-contents/sql-select-tr.qmd
+        - course-contents/sql-comments-tr.qmd
         - course-contents/sql-data-types-tr.qmd
         - course-contents/sql-select-distinct-tr.md
         - course-contents/sql-where-tr.qmd
@@ -48,6 +55,8 @@ book:
         - course-contents/sql-paging-tr.qmd
         - course-contents/sql-set-tr.qmd
         - course-contents/sql-join-tr.qmd
+    - part: "SQL DML-DCL-TCL"
+      chapters:
         - course-contents/sql-DML-data-manipulation-language-tr.qmd
         - course-contents/sql-truncate-table-tr.md
         - course-contents/sql-DDL-data-definition-language-tr.qmd

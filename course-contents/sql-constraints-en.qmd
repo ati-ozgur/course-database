@@ -1,0 +1,14 @@
+# SQL Constraints
+
+## Primary key
+
+## Foreign Key
+
+## Unique
+
+## Not null
+
+## Default value
+
+## Check (Custom constraints)
+

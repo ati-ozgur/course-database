@@ -67,6 +67,8 @@ book:
     - part: "Database Design"
       chapters:
         - course-contents/database-design-en.qmd
+        - course-contents/sql-constraints-en.qmd
+
 
     - course-contents/suggested-readings-en.md
     - course-contents/suggested-books-en.md

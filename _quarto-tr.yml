@@ -62,6 +62,9 @@ book:
         - course-contents/sql-DDL-data-definition-language-tr.qmd
         - course-contents/sql-DCL-data-control-language-tr.qmd
         - course-contents/sql-TCL-transactional-control-language-tr.qmd
+    - part: "Veritabanı Tasarımı"
+      chapters:
+        - course-contents/database-design-tr.qmd
 
     - course-contents/suggested-readings-tr.md
     - course-contents/suggested-books-tr.md

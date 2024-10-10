@@ -36,6 +36,7 @@ book:
 
     - part: "SQL Intro"
       chapters:
+        - course-contents/sql-why-learn-en.qmd
         - course-contents/sql-introduction-en.qmd
         - course-contents/sql-standard-en.qmd
         - course-contents/sql-dialects-en.qmd

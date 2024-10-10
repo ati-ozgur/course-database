@@ -3,6 +3,15 @@ project:
 
 book:
   title: "Introduction to databases"
+  navbar:
+    background: primary
+    search: true
+    right:
+      - text: "English"
+        href: ../en/index.html
+      - text: "Türkçe"
+        href: ../tr/index.html
+  
   chapters:
     - part: "Course Introduction"
       chapters:

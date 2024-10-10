@@ -2,6 +2,14 @@ project:
   output-dir: ./_site/tr
 book:
   title: "Veritabanlarına Giriş"
+  navbar:
+    background: primary
+    search: true
+    right:
+      - text: "English"
+        href: ../en/index.html
+      - text: "Türkçe"
+        href: ../tr/index.html
 
   chapters:
     - part: "Course Introduction"

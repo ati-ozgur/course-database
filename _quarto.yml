@@ -1,19 +1,23 @@
 project:
   type: book
   execute-dir: "project"
-  
+  output-dir: ./_site
+
 book:
   author: "Atilla Özgür"
   date: today
   date-format: "YYYY-MM-DD"
   cover-image: cover.png
   output-file: "databases"
+  title: "Introduction to databases (Veri tabanlarına giriş)"
+  chapters:
+      - index.qmd
 
 
 profile:
-  default: en
+  default: def
   group: 
-    - [en,tr]
+    - [def,en,tr]
 
 
 

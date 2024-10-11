@@ -9,6 +9,9 @@ But as [same web page](https://www.tiobe.com/tiobe-index/) says
 
 > The programming language SQL was added to the TIOBE index in 2018 after somebody pointed out that SQL is Turing Complete. So although this language is very old, it has only a short history in the index.
 
+[SQL Tetris in Postgresql for turing complete example](https://github.com/nuno-faria/tetris-sql)
+
+
 ## Reason 2: SQL is used in places other than databases  {.unnumbered} 
 
 SQL widely used in data science with databases and in memory data frames.
@@ -32,6 +35,12 @@ Also, querying csv and excel files using SQL is possible.
 - [Query excel files using SQL](https://stackoverflow.com/questions/18798522/how-to-run-a-sql-query-on-an-excel-table)
 
 
+##  Reason 3: 
+
+SQL is better compared to newer query languages.
+See below:
+
+- [I don't need your query language](https://antonz.org/fancy-ql/)
 
 
 

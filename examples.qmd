@@ -8,6 +8,9 @@
 
 {{< include ../course-contents/tables/table-databases-history-tr.md >}}
 
+{{< include ../course-contents/diagrams/database-client-server-en.md >}}
+
+
 {{< include ../course-contents/dosyaadi.qmd >}}
 
 

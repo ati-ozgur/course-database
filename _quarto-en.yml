@@ -33,6 +33,9 @@ book:
         - course-contents/example-database-schemas-en.qmd
         - course-contents/command-line-access-en.qmd
         - course-contents/sql-clients-GUI-en.qmd
+    - part: "Database Design"
+      chapters:
+        - course-contents/er-model-en.qmd    
 
     - part: "SQL Intro"
       chapters:

@@ -1,0 +1,68 @@
+# ER (Entity Relationship) modelling
+
+ER-modelling work two ways.
+
+{{< include ../course-contents/diagrams/er-model-working-en.md >}}
+
+
+
+
+1. GUI Design E-R Model -> Physical DB model (Create tables)
+2. Create tables (Physical DB Model) -> reverse engineer -> E-R Model
+
+1 Customer has 1-to-many Invoice
+crow foot
+
+1 Employee 1-to-many Employee
+
+- Many employees reports to 1 employee (superior)
+
+- 1 Employee is responsible for many Employees (Correct word choice)
+
+https://www.perplexity.ai/search/please-create-me-a-simple-merm-cB.z9NOZRuiC1.0AszoIeA
+
+erDiagram
+    STUDENT ||--o{ COURSE : enrolls
+    COURSE ||--|{ LESSON : contains
+    TEACHER ||--o{ COURSE : teaches
+    TEACHER ||--o{ LESSON : conducts
+    STUDENT ||--o{ LESSON : attends
+
+
+    STUDENT {
+        int id PK
+        string name
+        date created_at
+        date updated_at
+    }
+    COURSE {
+        int id PK
+        string title
+        string description
+        date created_at
+        date updated_at
+    }
+    LESSON {
+        int id PK
+        int course_id FK
+        string title
+        date scheduled_date
+        date created_at
+        date updated_at
+    }
+    TEACHER {
+        int id PK
+        string name
+        string email
+        date created_at
+        date updated_at
+    }
+
+https://docs.oracle.com/en/database/oracle/oracle-database/18/comsc/schema-diagrams.html#GUID-01BFEF14-C6BD-42CD-8558-DDD214DB3AE0
+
+https://mermaid.js.org/syntax/entityRelationshipDiagram.html
+
+
+https://mermaid.live/
+
+https://duckduckgo.com/?q=organization+chart&iax=images&ia=images&iai=https%3A%2F%2Ftemplatelab.com%2Fwp-content%2Fuploads%2F2018%2F10%2FOrganization-Chart-Template-7-TemplateLab.com_-e1539503563939.jpg

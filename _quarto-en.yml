@@ -10,12 +10,11 @@ book:
       - text: "English"
         href: ../en/index.html
       - text: "Türkçe"
-        href: ../tr/index.html
-  
+        href: ../tr/index.html  
   chapters:
+    - index.qmd
     - part: "Course Introduction"
       chapters:
-        - index.qmd
         - Syllabus-en.qmd
         - course-contents/course-introduction-en.qmd
     - part: "Database Introduction"
@@ -23,10 +22,8 @@ book:
         - course-contents/databases-intro-en.qmd
         - course-contents/database-types-en.qmd
         - course-contents/database-ranking-market-share-en.qmd
-
         - course-contents/open-source-vs-enterprise-databases-en.qmd
         - course-contents/which-databases-will-be-covered-en.md 
-
         - course-contents/server-installation-en.qmd
         - course-contents/database-playground-en.md
         - course-contents/database-connections-en.qmd
@@ -36,7 +33,6 @@ book:
     - part: "Database Design Intro"
       chapters:
         - course-contents/er-model-en.qmd    
-
     - part: "SQL Intro"
       chapters:
         - course-contents/sql-why-learn-en.qmd
@@ -72,8 +68,6 @@ book:
         - course-contents/database-design-en.qmd
         - course-contents/sql-constraints-en.qmd
         - course-contents/sql-indexes-intro-en.qmd
-
-
     - course-contents/suggested-readings-en.md
     - course-contents/suggested-books-en.md
     - summary-en.qmd

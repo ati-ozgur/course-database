@@ -1,18 +1,69 @@
-# ER (Entity Relationship) modelling
+# ER (Entity Relationship) modelling 
+
+
+## How it works
 
 ER-modelling work two ways.
 
 {{< include ../course-contents/diagrams/er-model-working-en.md >}}
 
 Second way of working is most common.
-We reverse engineer an already existing database and get ER model of it.
-For example, DBeaver has ER model.
+We reverse engineer an already existing database and get ER Diagram of it.
+For example, DBeaver has ER Diagrams.
 
 ![DBeaver ER Diagram](images/dbeaver-er-diagram.png)
 
 1. Open a connection
 2. select tables 
 3. in the opened window, select ER Diagram tab
+
+## Mermaid ER Diagrams
+
+We use [mermaid Entity Relationship Diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) for diagramming since it is more easily understood and it is version controllable with tools like git.
+
+
+
+
+## Entity
+
+Entities are most basic part in the diagrams.
+They correspond to database tables normally.
+We can also give their attributes or columns in the diagram too.
+See below example.
+
+
+```{mermaid}
+erDiagram
+	Student {
+	    int student_id PK
+	    string name
+	}
+```
+
+## Entity Relationships
+
+Entities should have relationships.
+That is how they interact with other entities.
+The syntax for it is below:
+
+	    <first-entity> [<relationship> <second-entity> : <relationship-label>]
+
+
+Relationship label should show how it works in the requirements or domain.
+Please try to choose it accordingly.
+
+An example a student enrolls in many courses.
+We could write it like below.
+
+> erDiagram
+>    Student ||--o{ Course : enrolls
+
+This diagram output is like below:
+
+```{mermaid}
+erDiagram
+    Student ||--o{ Course : enrolls
+```
 
 
 
@@ -66,7 +117,7 @@ erDiagram
 
 https://docs.oracle.com/en/database/oracle/oracle-database/18/comsc/schema-diagrams.html#GUID-01BFEF14-C6BD-42CD-8558-DDD214DB3AE0
 
-https://mermaid.js.org/syntax/entityRelationshipDiagram.html
+
 
 
 https://mermaid.live/

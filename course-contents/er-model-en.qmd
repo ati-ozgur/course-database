@@ -95,6 +95,22 @@ We can read this information following way then
 We can use LLMs like ChatGPT and Perplexity to create our draft diagrams.
 [See here](https://www.perplexity.ai/search/please-create-me-a-simple-merm-cB.z9NOZRuiC1.0AszoIeA) 
 
+## Database design patterns
+
+1. Definition Table (Category)
+TODO add example
+
+2. 1 to many
+TODO add example
+
+
+3. Self referencing, hierarchical 
+TODO add example
+
+https://duckduckgo.com/?q=organization+chart&iax=images&ia=images&iai=https%3A%2F%2Ftemplatelab.com%2Fwp-content%2Fuploads%2F2018%2F10%2FOrganization-Chart-Template-7-TemplateLab.com_-e1539503563939.jpg
+
+
+
 ## Others
 
 1 Customer has 1-to-many Invoice
@@ -152,4 +168,3 @@ erDiagram
 
 https://mermaid.live/
 
-https://duckduckgo.com/?q=organization+chart&iax=images&ia=images&iai=https%3A%2F%2Ftemplatelab.com%2Fwp-content%2Fuploads%2F2018%2F10%2FOrganization-Chart-Template-7-TemplateLab.com_-e1539503563939.jpg

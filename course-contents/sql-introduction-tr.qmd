@@ -15,3 +15,11 @@
 - Data Değiştirme (Insert,Update,Delete)
 
 {{< include ../course-contents/sql-knowledge-among-developers-tr.md >}}
+
+
+## Kariyer sitelerin SQL 
+
+- stepstone.de Almanya
+- indeed.com ABD
+- kariyer.net Türkiye
+

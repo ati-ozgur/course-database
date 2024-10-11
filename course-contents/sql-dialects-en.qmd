@@ -27,6 +27,8 @@ SELECT GETDATE()
 But in oracle, to get same information, you need to use dummy table called dual.
 You cannot run select without from in Oracle database.
 
+**Oracle**
+
 ``` sql
 SELECT CURRENT_DATE FROM dual;
 ```

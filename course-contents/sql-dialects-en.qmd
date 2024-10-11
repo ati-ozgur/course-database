@@ -1,5 +1,43 @@
 ## SQL dialects
 
+Even though SQL are set of standards, different database engines and companies may implement these standards differently.
+
+A an example of these differences is basic select.
+If select works only **with from** or **without from**.
+
+From modern-sql website [select without from](https://modern-sql.com/use-case/select-without-from): 
+
+> Let’s get that straight from the beginning: select without from is not standard conforming SQL. Full stop.
+
+But select without from works in SQL server and sqlite.
+See below example queries
+
+**sqlite**
+
+``` sql
+SELECT DATE('now');
+```
+
+**Sql Server**
+
+``` sql
+SELECT GETDATE()  
+```
+
+But in oracle, to get same information, you need to use dummy table called dual.
+You cannot run select without from in Oracle database.
+
+``` sql
+SELECT CURRENT_DATE FROM dual;
+```
+
+
+
+They may also add extensions to SQL standard like procedural language elements.
+
+
+
+
 {{< include ../course-contents/sql-dialect-transact-sql-en.md >}}
 
 

@@ -35,9 +35,8 @@ Also, querying csv and excel files using SQL is possible.
 - [Query excel files using SQL](https://stackoverflow.com/questions/18798522/how-to-run-a-sql-query-on-an-excel-table)
 
 
-##  Reason 3: 
+##  Reason 3: SQL is better compared to newer query languages  {.unnumbered} 
 
-SQL is better compared to newer query languages.
 See below:
 
 - [I don't need your query language](https://antonz.org/fancy-ql/)

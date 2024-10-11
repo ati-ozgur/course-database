@@ -12,6 +12,12 @@ Examples
 
 - [Enterprise Architect](https://sparxsystems.com/products/ea/)
 - [Toad](https://blog.toadworld.com/what-an-er-diagram-is-and-tools-that-help-build-and-alter-them)
+- [LucidChart ER Diagrams](https://www.lucidchart.com/pages/er-diagrams)
+See [LucidChart Tutorial: How to Create an ERD ](https://www.youtube.com/watch?v=RBZtPhZkUZM)
+
+
+
+
 
 Second way of working is most common.
 We reverse engineer an already existing database and get ER Diagram of it.

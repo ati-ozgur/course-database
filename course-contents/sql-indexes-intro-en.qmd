@@ -1,0 +1,21 @@
+# SQL indexes introduction
+
+## Indexes are like book indexes
+
+TODO
+
+
+
+## B+ Tree 
+
+- [Very good B+ Tree visualization](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html)
+
+
+
+## Other tutorials or lessons (Optional)
+
+Below tutorials are extra information for interested students
+
+- [08 - Tree Indexes: B+Trees (CMU Intro to Database Systems)](https://www.youtube.com/watch?v=scUtG_6M_lU) 
+
+

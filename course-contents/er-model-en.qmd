@@ -8,8 +8,10 @@ ER-modelling work two ways.
 {{< include ../course-contents/diagrams/er-model-working-en.md >}}
 
 For first way, there are a lot of tools exits.
-One example is [Enterprise Architect](https://sparxsystems.com/products/ea/)
+Examples
 
+- [Enterprise Architect](https://sparxsystems.com/products/ea/)
+- [Toad](https://blog.toadworld.com/what-an-er-diagram-is-and-tools-that-help-build-and-alter-them)
 
 Second way of working is most common.
 We reverse engineer an already existing database and get ER Diagram of it.

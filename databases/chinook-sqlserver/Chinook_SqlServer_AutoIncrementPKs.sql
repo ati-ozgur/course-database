@@ -31,6 +31,28 @@ GO
 CREATE DATABASE [Chinook_AutoIncrement];
 GO
 
+/*
+******************************************************************************
+   Create user for database
+*******************************************************************************
+*/
+
+USE [master]
+GO
+CREATE LOGIN [chinook] WITH PASSWORD=N'chinook', DEFAULT_DATABASE=[Chinook_AutoIncrement], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
+GO
+
+
+USE [Chinook_AutoIncrement]
+GO
+CREATE USER [chinook] FOR LOGIN [chinook]
+GO
+USE [Chinook_AutoIncrement]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [chinook]
+GO
+
+
 USE [Chinook_AutoIncrement];
 GO
 

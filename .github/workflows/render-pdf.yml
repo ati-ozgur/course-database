@@ -24,7 +24,16 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
-      - name: Render Quarto Project Profile en
+      # Show render to html works
+
+      - name: Render Quarto Project Profile en html
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: en
+        with:
+          to: html
+      # Show render to pdf DOES NOT work
+      - name: Render Quarto Project Profile en pdf
         uses: quarto-dev/quarto-actions/render@v2
         env:
           QUARTO_PROFILE: en

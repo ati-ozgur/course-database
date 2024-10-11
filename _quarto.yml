@@ -13,6 +13,7 @@ book:
   chapters:
       - index.qmd
 
+bibliography: references.bib 
 
 profile:
   default: en
@@ -28,6 +29,13 @@ format:
       theme: forest
   pdf:
     documentclass: scrreprt
-    latex-output-dir: _output
+    keep-tex: true
+    toc: true
+    number-sections: true
+    paper-size: 
+    cite-method: natbib     
+    colorlinks: true    
+    latex-output-dir: .
+    output-file: main
     mermaid:
       theme: forest

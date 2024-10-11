@@ -4,11 +4,17 @@ ER-modelling work two ways.
 
 {{< include ../course-contents/diagrams/er-model-working-en.md >}}
 
+Second way of working is most common.
+We reverse engineer an already existing database and get ER model of it.
+For example, DBeaver has ER model.
+
+![DBeaver ER Diagram](images/dbeaver-er-diagram.png)
+
+1. Open a connection
+2. select tables 
+3. in the opened window, select ER Diagram tab
 
 
-
-1. GUI Design E-R Model -> Physical DB model (Create tables)
-2. Create tables (Physical DB Model) -> reverse engineer -> E-R Model
 
 1 Customer has 1-to-many Invoice
 crow foot

@@ -21,14 +21,11 @@ Bu anahtarların veritabanı mantığına aşina olmayan kişilere aktarılması
 
 Tablo @tbl-table-primary-key-dogal-anahtar-ornek-sehir-tablosu'da plakaKodu birincil anahtar olarak seçilmiştir.
 
-Doğal Anahtarların artısı daha öncede belirttiğim gibi zaten biliniyor olmalarıdır. Eksi olarak
-bu anahtarların sahada anlamı olduğundan dolayı, veritabanı şemamız iş bağımlı hale gelmiştir.
+Doğal Anahtarların artısı daha öncede belirttiğim gibi zaten biliniyor olmalarıdır. 
+Eksi olarak bu anahtarların sahada anlamı olduğundan dolayı, veritabanı şemamız saha bağımlı hale gelmiştir.
 Gereksinim değişimlerinde anahtarların değiştirilmesi gerekir. 
-Örneğin Tablo \ref{table:PrimaryKey:DogalAnahtarOrnek2KisiTablosu}'da TcKimlikNo'nun 
-birincil anahtar olarak seçildiğini düşünelim. 
-Eğer bu anahtar ilk girişte yanlış girildiyse bu anahtara bağlı olan tüm tablolarda
-örneğin (KISI\_EGITIM,KISI\_TECRUBE) Yabancı Anahtar (Foreign Key) olarak girilen bu
-bilginin değiştirilmesi gerekecektir.
+Örneğin Tablo @tbl-table-primary-key-dogal-anahtar-ornek-kisi-tablosu'da TcKimlikNo'nun birincil anahtar olarak seçildiğini düşünelim. 
+Eğer bu anahtar ilk girişte yanlış girildiyse bu anahtara bağlı olan tüm tablolarda örneğin (KISI\_EGITIM,KISI\_TECRUBE) Yabancı Anahtar (Foreign Key) olarak girilen bu bilginin değiştirilmesi gerekecektir.
 
 
 
@@ -40,84 +37,71 @@ bilginin değiştirilmesi gerekecektir.
 : Doğal Anahtar Örnek 1 - Sehir Tablosu  {#tbl-table-primary-key-dogal-anahtar-ornek-sehir-tablosu}
 
 
+|    KISI    |    |
+|:----------:|:--:|
+| TcKimlikNo | PK |
+|     Adi    |    |
+|   Soyadi   |    |
 
-\begin{table}
-  \caption{Doğal Anahtar Örnek 1 - Kişi Tablosu }
+: Doğal Anahtar Örnek 2 - Kişi Tablosu  {#tbl-table-primary-key-dogal-anahtar-ornek-kisi-tablosu}
 
-\begin{tabular}{|c|c|}
-\hline KISI &  \\ 
-\hline TcKimlikNo & PK \\ 
-\hline Adi &  \\ 
-\hline Soyadi &  \\ 
-\hline 
-\end{tabular} 
 
-  \label{table:PrimaryKey:DogalAnahtarOrnek2KisiTablosu}
-\end{table}
 
-\begin{table}
-  \caption{Doğal Anahtar Örnek 3 - Adres Tablosu }
+|     ADRES    |    |
+|:------------:|:--:|
+| AdresSatiri1 | PK |
+| AdresSatiri2 | PK |
+|  ApartmanAdi | PK |
+|  ApartmanNo  | PK |
+|   PostaKodu  | PK |
+|     Semt     | PK |
+|    SehirNo   | PK |
+|    UlkeNo    | PK |
 
-\begin{tabular}{|c|c|}
-\hline ADRES &  \\ 
-\hline AdresSatiri1 & PK \\ 
-\hline AdresSatiri2 & PK \\ 
-\hline ApartmanAdi & PK \\ 
-\hline ApartmanNo & PK \\ 
-\hline PostaKodu & PK \\ 
-\hline Semt & PK \\ 
-\hline SehirNo &  PK \\ 
-\hline UlkeNo &  PK \\ 
-\hline 
-\end{tabular} 
+: Doğal Anahtar Örnek 3 - Adres Tablosu  {#tbl-table-primary-key-dogal-anahtar-ornek-adres-tablosu}
 
-  \label{table:PrimaryKey:DogalAnahtarOrnek3AdresTablosu}
-\end{table}
 
-tablo \ref{table:PrimaryKey:DogalAnahtarOrnek3AdresTablosu}'da biraz uç bir örnek olarak Adres tablosu
-verilmiştir. Adres tablosunda uygun bir doğal anahtar bulmak zordur bundan dolayı girilen tüm bilgiler
-birleşik - composite anahtar olarak yapılması gerekmiştir.
+tablo @tbl-table-primary-key-dogal-anahtar-ornek-adres-tablosu'da biraz uç bir örnek olarak Adres tablosu verilmiştir. 
+Adres tablosunda uygun bir doğal anahtar bulmak zordur bundan dolayı girilen tüm bilgiler birleşik - composite anahtar olarak yapılması gerekmiştir.
 
 
 
 
-\subsection{Sentetik Anahtar - Surrogate Key}
+## Sentetik Anahtar - Surrogate Key
 
 Doğal Anahtar seçmek yerine otomatik üretilen anahtarlarda birincil anahtar olarak kullanılabilir. 
-Yararları arasında doğal anahtarın değişmesi durumunda veritabanınındaki kayıtların bu durumdan etkilenmemesi
-İlk veri girişlerinde bilgi eksikliği durumlarındada var olan bilgiler ile kayıt yapılabilmesi,
-program ve sorgulardaki rahatlık sayılabilir.
+Yararları arasında doğal anahtarın değişmesi durumunda veritabanınındaki kayıtların bu durumdan etkilenmemesidir.
+İlk veri girişlerinde bilgi eksikliği durumlarındada var olan bilgiler ile kayıt yapılabilmesi, program ve sorgulardaki rahatlık sayılabilir.
 
-Daha önce doğal anahtar'da KISI ve TcKimlikNo ile verilen örnekte eğer TcKimlikNo değişimi sadece KISI tablosunu
-etkileyecektir. Bu durumda saha ile uygulama arasında de-coupling sağlanacaktır.
+Daha önce doğal anahtar'da KISI ve TcKimlikNo ile verilen örnekte eğer TcKimlikNo değişimi sadece KISI tablosunu etkileyecektir. 
+Bu durumda saha ile uygulama arasında de-coupling sağlanacaktır.
 
-Ama sentetik anahtar için en etkili arguman, programcılara getirdiği rahatlıktır. Uygun strateji ile kod yazımında
-kolaylık sağlamaktadır.
+Ama sentetik anahtar için en etkili arguman, programcılara getirdiği rahatlıktır. 
+Uygun strateji ile kod yazımında kolaylık sağlamaktadır.
 
-Sentetik anahtarların eksisi olarak , çoğunlukla insanlar tarafından anlaşılması daha zor olması sayılabilir , 
-bu durum özellikle GUID için geçerlidir.
+Sentetik anahtarların eksisi olarak , çoğunlukla insanlar tarafından anlaşılması daha zor olması sayılabilir.
+Bu durum özellikle GUID için geçerlidir.
 
-tablo \ref{table:PrimaryKey:SentetikAnahtarOrnek1KisiTablosu}'da KisiKey sentetik anahtar olarak seçilmiştir. 
+tablo @tbl-table-primary-key-sentetik-anahtar-ornek-kisi-tablosu'da KisiKey sentetik anahtar olarak seçilmiştir. 
 Bu tabloda TcKimlikNo üzerine bir unique index eklenerek, TcKimlikNo'nun birden fazla girilmesi engellenebilir.
 
-\begin{table}
-  \caption{Sentetik Anahtar Örnek 1 - Kişi Tablosu }
 
-\begin{tabular}{|c|c|}
-\hline KISI &  \\ 
-\hline KisiKey & PK \\ 
-\hline TcKimlikNo &  \\ 
-\hline Adi &  \\ 
-\hline Soyadi &  \\ 
-\hline 
-\end{tabular} 
+|    KISI    |    |
+|:----------:|:--:|
+| KisiKey    |    |
+| TcKimlikNo | PK |
+|     Adi    |    |
+|   Soyadi   |    |
 
-  \label{table:PrimaryKey:SentetikAnahtarOrnek1KisiTablosu}
-\end{table}
+: Sentetik Anahtar Örnek - Kişi Tablosu  {#tbl-table-primary-key-sentetik-anahtar-ornek-kisi-tablosu}
 
-Sentetik anahtar konusunda dikkat edilmesi gereken noktalardan biri bu anahtarla iş anlamı (business meaning)
-eklenmemesi gerektiğidir. Örneğin şirketlere ticaret odaları tarafından verilen oda numaraları , veritabanları
-tarafından üretilen bir sentetik anahtardır. Ama burada bunlara iş anlamı yüklenmiş durumdadır. 
+
+
+
+Sentetik anahtar konusunda dikkat edilmesi gereken noktalardan biri bu anahtarla iş anlamı (business meaning) eklenmemesi gerektiğidir. 
+Örneğin şirketlere ticaret odaları tarafından verilen oda numaraları , veritabanları tarafından üretilen bir sentetik anahtardır. 
+Ama burada bunlara iş anlamı yüklenmiş durumdadır. 
+
 Bu konuya örnek şekil \ref{fig:SentetikAnahtarinDogalAnahtarGibiKullanilmasi}'nda görülebilir.
 Bu durumun ne kadar doğru ne kadar yanlış olduğu tartışma konusudur.
 

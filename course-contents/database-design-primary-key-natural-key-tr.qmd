@@ -1,0 +1,52 @@
+## Doğal Anahtar
+
+Doğal Anahtar taraftarları veri tabanı tasarımı yapılırken sahada zaten var olan bilgiler ile birincil anahtarın seçilmesini tavsiye ederler. 
+Kullanıcılar zaten bu bilgilere aşina olduklarından dolayı doğal anahtarların kullanımı ve benimsenmesi çok daha kolay olacaktır. 
+Bu anahtarların veritabanı mantığına aşina olmayan kişilere aktarılması da daha kolaydır. 
+
+Tablo @tbl-table-primary-key-dogal-anahtar-ornek-sehir-tablosu'da plakaKodu birincil anahtar olarak seçilmiştir.
+
+Doğal Anahtarların artısı daha öncede belirttiğim gibi zaten biliniyor olmalarıdır. 
+Eksi olarak bu anahtarların sahada anlamı olduğundan dolayı, veritabanı şemamız saha bağımlı hale gelmiştir.
+Gereksinim değişimlerinde anahtarların değiştirilmesi gerekir. 
+Örneğin Tablo @tbl-table-primary-key-dogal-anahtar-ornek-kisi-tablosu'da TcKimlikNo'nun birincil anahtar olarak seçildiğini düşünelim. 
+Eğer bu anahtar ilk girişte yanlış girildiyse bu anahtara bağlı olan tüm tablolarda örneğin (KISI\_EGITIM,KISI\_TECRUBE) Yabancı Anahtar (Foreign Key) olarak girilen bu bilginin değiştirilmesi gerekecektir.
+
+
+
+|   SEHIR   |    |
+|:---------:|:--:|
+| PlakaKodu | PK |
+|  SehirAdi |    |
+
+: Doğal Anahtar Örnek 1 - Sehir Tablosu  {#tbl-table-primary-key-dogal-anahtar-ornek-sehir-tablosu}
+
+
+|    KISI    |    |
+|:----------:|:--:|
+| TcKimlikNo | PK |
+|     Adi    |    |
+|   Soyadi   |    |
+
+: Doğal Anahtar Örnek 2 - Kişi Tablosu  {#tbl-table-primary-key-dogal-anahtar-ornek-kisi-tablosu}
+
+
+
+|     ADRES    |    |
+|:------------:|:--:|
+| AdresSatiri1 | PK |
+| AdresSatiri2 | PK |
+|  ApartmanAdi | PK |
+|  ApartmanNo  | PK |
+|   PostaKodu  | PK |
+|     Semt     | PK |
+|    SehirNo   | PK |
+|    UlkeNo    | PK |
+
+: Doğal Anahtar Örnek 3 - Adres Tablosu  {#tbl-table-primary-key-dogal-anahtar-ornek-adres-tablosu}
+
+
+tablo @tbl-table-primary-key-dogal-anahtar-ornek-adres-tablosu'da biraz uç bir örnek olarak Adres tablosu verilmiştir. 
+Adres tablosunda uygun bir doğal anahtar bulmak zordur bundan dolayı girilen tüm bilgiler birleşik - composite anahtar olarak yapılması gerekmiştir.
+
+

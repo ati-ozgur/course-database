@@ -102,16 +102,11 @@ Sentetik anahtar konusunda dikkat edilmesi gereken noktalardan biri bu anahtarla
 Örneğin şirketlere ticaret odaları tarafından verilen oda numaraları , veritabanları tarafından üretilen bir sentetik anahtardır. 
 Ama burada bunlara iş anlamı yüklenmiş durumdadır. 
 
-Bu konuya örnek şekil \ref{fig:SentetikAnahtarinDogalAnahtarGibiKullanilmasi}'nda görülebilir.
+Bu konuya örnek şekil @fig-sentetik-anahtarin-dogal-anahtar-gibi-kullanilmasi bu duruma bir örnek olarak görülebilir.
 Bu durumun ne kadar doğru ne kadar yanlış olduğu tartışma konusudur.
 
 
-\begin{figure}[htpb!]
-  \caption{Sentetik Anahtara İş Anlamı Yüklenmesi Örnek}
-  \centering
-    \includegraphics[width=0.9\textwidth]{resimler/SentetikAnahtarinDogalAnahtarGibiKullanilmasi}
-    \label{fig:SentetikAnahtarinDogalAnahtarGibiKullanilmasi}
-\end{figure}
+![](./images/sentetik-anahtarin-dogal-anahtar-gibi-kullanilmasi.png){#fig-sentetik-anahtarin-dogal-anahtar-gibi-kullanilmasi}
  
 
 
@@ -120,7 +115,7 @@ en uygun strateyi seçmeye çalışınız. Unutmayınız veritabanı tasarımın
  
 
  
-\subsection{Sekanslar - Sequences}
+## Sekanslar - Sequences
 
 Sentetik anahtar veritabanı tarafında veya veritabanına ulaşan uygulama tarafında üretilebilir. 
 Veritabanı tarafında en çok tercih edilen sentetik anahtar biçimi otomatik sayı üretimidir.
@@ -128,8 +123,6 @@ Auto Number denilen bu strateji bir çok veri tabanı tarafından desteklenmekte
 
 Auto Number veya IDENTITY kolonları veritabanı tablosuna bağlanırlar ve her Insert cümlesi çalıştığında bir sonraki
 değeri otamatikman üretirler.
-
-Oracle Auto Number kolonları desteklememektedir. Ama aynı işi gören sequence isminde başka bir yapıyı destekler.
 
 
 

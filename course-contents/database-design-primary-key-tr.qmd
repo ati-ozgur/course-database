@@ -99,10 +99,11 @@ Bu tabloda TcKimlikNo üzerine bir unique index eklenerek, TcKimlikNo'nun birden
 
 
 Sentetik anahtar konusunda dikkat edilmesi gereken noktalardan biri bu anahtarla iş anlamı (business meaning) eklenmemesi gerektiğidir. 
-Örneğin şirketlere ticaret odaları tarafından verilen oda numaraları , veritabanları tarafından üretilen bir sentetik anahtardır. 
+Örneğin şirketlere ticaret odaları tarafından verilen oda numaraları genellikle, veritabanları tarafından üretilen bir sentetik anahtardır. 
 Ama burada bunlara iş anlamı yüklenmiş durumdadır. 
 
 Bu konuya örnek şekil @fig-sentetik-anahtarin-dogal-anahtar-gibi-kullanilmasi bu duruma bir örnek olarak görülebilir.
+Bu örnek ticaret odası yazılımlarının eski bir versiyonundan alınmıştır.
 Bu durumun ne kadar doğru ne kadar yanlış olduğu tartışma konusudur.
 
 

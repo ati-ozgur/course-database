@@ -65,6 +65,7 @@ book:
     - part: "Veritabanı Tasarımı"
       chapters:
         - course-contents/database-design-tr.qmd
+        - course-contents/database-design-primary-key-tr.qmd
 
     - course-contents/suggested-readings-tr.md
     - course-contents/suggested-books-tr.md

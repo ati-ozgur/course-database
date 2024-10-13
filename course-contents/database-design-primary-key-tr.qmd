@@ -1,0 +1,154 @@
+# Birincil Anahtar - Primary Key
+
+İlişkisel veri tabanların birincil anahtarlar tablo üzerindeki kayıtları biricik olarak belirlerler. 
+Bir kayıtı biricik olarak bulmanın yararı, bu kayıtı sorgulamanın ve güncellemenin bu anahtar ile çok daha hızlı bir şekilde yapılmasıdır. 
+Aynı şekilde tablolar arasındaki ilişkiler birincil anahtarlara bağlanan yabancı anahtarlar ile sağlanır. 
+
+Örneğin KISI ve KISI_EGITIM tablolarımız olduğunu varsayalım. Bir kişinin hangi eğitimleri aldığını KISI_EGITIM tablosunda Kisi birincil anahtarı kullanılarak yapılır. 
+
+Bundan dolayı veritabanı tasarımında birincil anahtar seçimi çok önemlidir.
+
+Birincil anahtar seçiminde 2 farklı düşünce vardır. 
+Bunlar Doğal Anahtar ve Sentetik Anahtardır.
+
+İkisi arasındaki farklar, artıları ve eksileri anlatmadan önce benim sentetik anahtar taraftarı olduğumu belirteyim.
+
+## Doğal Anahtar
+
+Doğal Anahtar taraftarları veri tabanı tasarımı yapılırken sahada zaten var olan bilgiler ile birincil anahtarın seçilmesini tavsiye ederler. 
+Kullanıcılar zaten bu bilgilere aşina olduklarından dolayı doğal anahtarların kullanımı ve benimsenmesi çok daha kolay olacaktır. 
+Bu anahtarların veritabanı mantığına aşina olmayan kişilere aktarılması da daha kolaydır. 
+
+Tablo @tbl-table-primary-key-dogal-anahtar-ornek-sehir-tablosu'da plakaKodu birincil anahtar olarak seçilmiştir.
+
+Doğal Anahtarların artısı daha öncede belirttiğim gibi zaten biliniyor olmalarıdır. Eksi olarak
+bu anahtarların sahada anlamı olduğundan dolayı, veritabanı şemamız iş bağımlı hale gelmiştir.
+Gereksinim değişimlerinde anahtarların değiştirilmesi gerekir. 
+Örneğin Tablo \ref{table:PrimaryKey:DogalAnahtarOrnek2KisiTablosu}'da TcKimlikNo'nun 
+birincil anahtar olarak seçildiğini düşünelim. 
+Eğer bu anahtar ilk girişte yanlış girildiyse bu anahtara bağlı olan tüm tablolarda
+örneğin (KISI\_EGITIM,KISI\_TECRUBE) Yabancı Anahtar (Foreign Key) olarak girilen bu
+bilginin değiştirilmesi gerekecektir.
+
+
+
+|   SEHIR   |    |
+|:---------:|:--:|
+| PlakaKodu | PK |
+|  SehirAdi |    |
+
+: Doğal Anahtar Örnek 1 - Sehir Tablosu  {#tbl-table-primary-key-dogal-anahtar-ornek-sehir-tablosu}
+
+
+
+\begin{table}
+  \caption{Doğal Anahtar Örnek 1 - Kişi Tablosu }
+
+\begin{tabular}{|c|c|}
+\hline KISI &  \\ 
+\hline TcKimlikNo & PK \\ 
+\hline Adi &  \\ 
+\hline Soyadi &  \\ 
+\hline 
+\end{tabular} 
+
+  \label{table:PrimaryKey:DogalAnahtarOrnek2KisiTablosu}
+\end{table}
+
+\begin{table}
+  \caption{Doğal Anahtar Örnek 3 - Adres Tablosu }
+
+\begin{tabular}{|c|c|}
+\hline ADRES &  \\ 
+\hline AdresSatiri1 & PK \\ 
+\hline AdresSatiri2 & PK \\ 
+\hline ApartmanAdi & PK \\ 
+\hline ApartmanNo & PK \\ 
+\hline PostaKodu & PK \\ 
+\hline Semt & PK \\ 
+\hline SehirNo &  PK \\ 
+\hline UlkeNo &  PK \\ 
+\hline 
+\end{tabular} 
+
+  \label{table:PrimaryKey:DogalAnahtarOrnek3AdresTablosu}
+\end{table}
+
+tablo \ref{table:PrimaryKey:DogalAnahtarOrnek3AdresTablosu}'da biraz uç bir örnek olarak Adres tablosu
+verilmiştir. Adres tablosunda uygun bir doğal anahtar bulmak zordur bundan dolayı girilen tüm bilgiler
+birleşik - composite anahtar olarak yapılması gerekmiştir.
+
+
+
+
+\subsection{Sentetik Anahtar - Surrogate Key}
+
+Doğal Anahtar seçmek yerine otomatik üretilen anahtarlarda birincil anahtar olarak kullanılabilir. 
+Yararları arasında doğal anahtarın değişmesi durumunda veritabanınındaki kayıtların bu durumdan etkilenmemesi
+İlk veri girişlerinde bilgi eksikliği durumlarındada var olan bilgiler ile kayıt yapılabilmesi,
+program ve sorgulardaki rahatlık sayılabilir.
+
+Daha önce doğal anahtar'da KISI ve TcKimlikNo ile verilen örnekte eğer TcKimlikNo değişimi sadece KISI tablosunu
+etkileyecektir. Bu durumda saha ile uygulama arasında de-coupling sağlanacaktır.
+
+Ama sentetik anahtar için en etkili arguman, programcılara getirdiği rahatlıktır. Uygun strateji ile kod yazımında
+kolaylık sağlamaktadır.
+
+Sentetik anahtarların eksisi olarak , çoğunlukla insanlar tarafından anlaşılması daha zor olması sayılabilir , 
+bu durum özellikle GUID için geçerlidir.
+
+tablo \ref{table:PrimaryKey:SentetikAnahtarOrnek1KisiTablosu}'da KisiKey sentetik anahtar olarak seçilmiştir. 
+Bu tabloda TcKimlikNo üzerine bir unique index eklenerek, TcKimlikNo'nun birden fazla girilmesi engellenebilir.
+
+\begin{table}
+  \caption{Sentetik Anahtar Örnek 1 - Kişi Tablosu }
+
+\begin{tabular}{|c|c|}
+\hline KISI &  \\ 
+\hline KisiKey & PK \\ 
+\hline TcKimlikNo &  \\ 
+\hline Adi &  \\ 
+\hline Soyadi &  \\ 
+\hline 
+\end{tabular} 
+
+  \label{table:PrimaryKey:SentetikAnahtarOrnek1KisiTablosu}
+\end{table}
+
+Sentetik anahtar konusunda dikkat edilmesi gereken noktalardan biri bu anahtarla iş anlamı (business meaning)
+eklenmemesi gerektiğidir. Örneğin şirketlere ticaret odaları tarafından verilen oda numaraları , veritabanları
+tarafından üretilen bir sentetik anahtardır. Ama burada bunlara iş anlamı yüklenmiş durumdadır. 
+Bu konuya örnek şekil \ref{fig:SentetikAnahtarinDogalAnahtarGibiKullanilmasi}'nda görülebilir.
+Bu durumun ne kadar doğru ne kadar yanlış olduğu tartışma konusudur.
+
+
+\begin{figure}[htpb!]
+  \caption{Sentetik Anahtara İş Anlamı Yüklenmesi Örnek}
+  \centering
+    \includegraphics[width=0.9\textwidth]{resimler/SentetikAnahtarinDogalAnahtarGibiKullanilmasi}
+    \label{fig:SentetikAnahtarinDogalAnahtarGibiKullanilmasi}
+\end{figure}
+ 
+
+
+Her ne kadar Sentetik Anahtar - Doğal Anahtar tartışması bazı yerlerde dinsel bir tartışmaya dönüşsede uygulamanız için
+en uygun strateyi seçmeye çalışınız. Unutmayınız veritabanı tasarımında tek bir doğru hiç bir zaman yoktur.
+ 
+
+ 
+\subsection{Sekanslar - Sequences}
+
+Sentetik anahtar veritabanı tarafında veya veritabanına ulaşan uygulama tarafında üretilebilir. 
+Veritabanı tarafında en çok tercih edilen sentetik anahtar biçimi otomatik sayı üretimidir.
+Auto Number denilen bu strateji bir çok veri tabanı tarafından desteklenmektedir, Ms SQL Server,MySQL, IBM DB2 ..
+
+Auto Number veya IDENTITY kolonları veritabanı tablosuna bağlanırlar ve her Insert cümlesi çalıştığında bir sonraki
+değeri otamatikman üretirler.
+
+Oracle Auto Number kolonları desteklememektedir. Ama aynı işi gören sequence isminde başka bir yapıyı destekler.
+
+
+
+
+
+

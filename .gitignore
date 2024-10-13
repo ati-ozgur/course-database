@@ -1,6 +1,7 @@
 _site/*
 _output/*
 temp/*
+*.html
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

@@ -17,68 +17,15 @@ Bunlar Doğal Anahtar ve Sentetik Anahtardır.
 
 
 {{< include ../course-contents/database-design-primary-key-natural-key-tr.qmd >}}
+{{< include ../course-contents/database-design-primary-key-synthetic-key-tr.qmd >}}
+
+
+{{< include ../course-contents/database-design-primary-key-auto-number-identity-tr.qmd >}}
 
 
 
-
-
-## Sentetik Anahtar - Surrogate Key
-
-Doğal Anahtar seçmek yerine otomatik üretilen anahtarlarda birincil anahtar olarak kullanılabilir. 
-Yararları arasında doğal anahtarın değişmesi durumunda veritabanınındaki kayıtların bu durumdan etkilenmemesidir.
-İlk veri girişlerinde bilgi eksikliği durumlarındada var olan bilgiler ile kayıt yapılabilmesi, program ve sorgulardaki rahatlık sayılabilir.
-
-Daha önce doğal anahtar'da KISI ve TcKimlikNo ile verilen örnekte eğer TcKimlikNo değişimi sadece KISI tablosunu etkileyecektir. 
-Bu durumda saha ile uygulama arasında de-coupling sağlanacaktır.
-
-Ama sentetik anahtar için en etkili arguman, programcılara getirdiği rahatlıktır. 
-Uygun strateji ile kod yazımında kolaylık sağlamaktadır.
-
-Sentetik anahtarların eksisi olarak , çoğunlukla insanlar tarafından anlaşılması daha zor olması sayılabilir.
-Bu durum özellikle GUID için geçerlidir.
-
-tablo @tbl-table-primary-key-sentetik-anahtar-ornek-kisi-tablosu'da KisiKey sentetik anahtar olarak seçilmiştir. 
-Bu tabloda TcKimlikNo üzerine bir unique index eklenerek, TcKimlikNo'nun birden fazla girilmesi engellenebilir.
-
-
-|    KISI    |    |
-|:----------:|:--:|
-| KisiKey    |    |
-| TcKimlikNo | PK |
-|     Adi    |    |
-|   Soyadi   |    |
-
-: Sentetik Anahtar Örnek - Kişi Tablosu  {#tbl-table-primary-key-sentetik-anahtar-ornek-kisi-tablosu}
-
-
-
-
-Sentetik anahtar konusunda dikkat edilmesi gereken noktalardan biri bu anahtarla iş anlamı (business meaning) eklenmemesi gerektiğidir. 
-Örneğin şirketlere ticaret odaları tarafından verilen oda numaraları genellikle, veritabanları tarafından üretilen bir sentetik anahtardır. 
-Ama burada bunlara iş anlamı yüklenmiş durumdadır. 
-
-Bu konuya örnek şekil @fig-sentetik-anahtarin-dogal-anahtar-gibi-kullanilmasi bu duruma bir örnek olarak görülebilir.
-Bu örnek ticaret odası yazılımlarının eski bir versiyonundan alınmıştır.
-Bu durumun ne kadar doğru ne kadar yanlış olduğu tartışma konusudur.
-
-
-![](./images/sentetik-anahtarin-dogal-anahtar-gibi-kullanilmasi.png){#fig-sentetik-anahtarin-dogal-anahtar-gibi-kullanilmasi}
+{{< include ../course-contents/database-design-primary-key-sequences-tr.qmd >}}
  
-
-
-Her ne kadar Sentetik Anahtar - Doğal Anahtar tartışması bazı yerlerde dinsel bir tartışmaya dönüşsede uygulamanız için
-en uygun strateyi seçmeye çalışınız. Unutmayınız veritabanı tasarımında tek bir doğru hiç bir zaman yoktur.
- 
-
- 
-## Sekanslar - Sequences
-
-Sentetik anahtar veritabanı tarafında veya veritabanına ulaşan uygulama tarafında üretilebilir. 
-Veritabanı tarafında en çok tercih edilen sentetik anahtar biçimi otomatik sayı üretimidir.
-Auto Number denilen bu strateji bir çok veri tabanı tarafından desteklenmektedir, Ms SQL Server,MySQL, IBM DB2 ..
-
-Auto Number veya IDENTITY kolonları veritabanı tablosuna bağlanırlar ve her Insert cümlesi çalıştığında bir sonraki
-değeri otamatikman üretirler.
 
 
 

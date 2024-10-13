@@ -1,0 +1,8 @@
+## Sekanslar - Sequences
+
+Sentetik anahtar veritabanı tarafında veya veritabanına ulaşan uygulama tarafında üretilebilir. 
+Veritabanı tarafında en çok tercih edilen sentetik anahtar biçimi otomatik sayı üretimidir.
+Auto Number denilen bu strateji bir çok veri tabanı tarafından desteklenmektedir, Ms SQL Server,MySQL, IBM DB2 ..
+
+Auto Number veya IDENTITY kolonları veritabanı tablosuna bağlanırlar ve her Insert cümlesi çalıştığında bir sonraki
+değeri otamatikman üretirler.

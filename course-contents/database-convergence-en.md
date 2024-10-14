@@ -73,4 +73,5 @@ Below two links for Postgres but idea is still the same.
 
 - https://mccue.dev/pages/8-16-24-just-use-postgres
 - https://hamy.xyz/labs/2024-09_postgres-over-everything
+- https://dzone.com/articles/postgresql-everywhere-and-for-everything
 

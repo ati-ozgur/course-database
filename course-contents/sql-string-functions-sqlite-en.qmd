@@ -1,0 +1,36 @@
+## SQL string functions: sqlite
+
+https://www.sqlitetutorial.net/sqlite-string-functions/
+https://www.sqlite.org/lang_corefunc.html
+
+
+**format**
+**printf(FORMAT,...)** (alias of format)
+
+
+SQL function works like the  C-language function and the printf() function from the standard C library.
+
+**glob(X,Y)**
+
+whether a string,Y, matches a pattern X.
+Equal to the expression "Y GLOB X".
+
+
+``` sql
+select glob('ati','atilla'); 
+select glob('*ati*','atilla');
+```
+
+
+**octet_length(X)**
+The octet_length(X) function returns the number of bytes in the encoding of text string X. 
+
+**quote(X)**
+
+The quote(X) function returns the text of an SQL literal which is the value of its argument suitable for inclusion into an SQL statement. Strings are surrounded by single-quotes with escapes on interior quotes as needed. 
+
+Useful for sql injection.
+
+**soundex(X)**
+
+    The soundex(X) function returns a string that is the soundex encoding of the string X.

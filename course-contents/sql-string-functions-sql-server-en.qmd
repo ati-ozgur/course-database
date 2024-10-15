@@ -1,0 +1,4 @@
+## SQL string functions: SQL Server
+
+
+

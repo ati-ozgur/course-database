@@ -10,17 +10,12 @@ Sonuçları Sayfalama - OFFSET-FETCH komutu ORDER BY ile KULLANILARAK Yapılabil
 
 
 
-
-
-\begin{frame}[fragile]
-\frametitle{SONUÇ LIMITLEME}
-
-\begin{lstlisting}[language=SQL,caption=OFFSET-FETCH Ornek,label=SQL-function-offset-fetch-ornek1]
-
+``` sql
 ORDER BY <order_by_list>
 OFFSET <offset_value> ROW(S)
 FETCH FIRST|NEXT <fetch_value> ROW(S) ONLY
-\end{lstlisting}
-\end{frame}
+```
+
+
 
 

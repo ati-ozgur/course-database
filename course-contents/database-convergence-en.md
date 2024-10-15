@@ -68,6 +68,11 @@ Also, for the enterprises, with their powerful database servers like exadata fro
 
 ## Other perspectives for same idea:
 
+Best one. databases will own others, json, vector, text ....
+ 
+- [A Short Summary of the Last Decades of Data Management Hannes Mühleisen  GOTO 2024](https://www.youtube.com/watch?v=-wCzn9gKoUk)
+
+
 Below two links for Postgres but idea is still the same.
 
 

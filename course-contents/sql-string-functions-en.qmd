@@ -1,0 +1,99 @@
+# sql-string-functions-en.qmd
+
+## SQL Standard string functions
+
+
+** coalesce(x,y,...) **
+
+SQL standard.
+returns a copy of its first non-null argument.
+Useful, for replacing null values.
+
+**concat**
+
+string concatenation
+
+**length(X)**
+
+return number of characters (not bytes) of given string.
+
+**lower(X)**
+
+return lowercase of given string X
+
+ltrim(X)
+ltrim(X,Y)
+
+left trim character values given in Y from the string X.
+If Y is not given, removes spaces
+**instr(X,Y)**
+
+Find the first occurrence of Y in the given string X and return position number of it.
+if it could not find, return 0.
+
+
+**replace(X,Y,Z)**
+
+The replace(X,Y,Z) function returns a string formed by substituting string Z for every occurrence of string Y in string X. 
+
+rtrim(X)
+rtrim(X,Y)
+
+right trim character values given in Y from the string X.
+If Y is not given, removes spaces
+
+- **substr(X,Y,Z)**
+- **substr(X,Y)**
+- **substring(X,Y,Z)** (alias for substr)
+- **substring(X,Y)** (alias for substr)
+
+The substr(X,Y,Z) function returns a substring of input string X that begins with the Y-th character and which is Z characters long. If Z is omitted then substr(X,Y) returns all characters through the end of the string X beginning with the Y-th. The left-most character of X is number 1.
+
+**trim(X)**
+**trim(X,Y)**
+
+    The trim(X,Y) function returns a string formed by removing any and all characters that appear in Y from both ends of X. If the Y argument is omitted, trim(X) removes spaces from both ends of X. 
+
+**unicode(X)**
+
+The unicode(X) function returns the numeric unicode code point corresponding to the first character of the string X. I
+
+
+**upper(X)**
+Uppercase of given string X.
+
+
+
+
+
+## sqlite
+
+https://www.sqlitetutorial.net/sqlite-string-functions/
+https://www.sqlite.org/lang_corefunc.html
+
+
+**format**
+**printf(FORMAT,...)** (alias of format)
+
+
+SQL function works like the  C-language function and the printf() function from the standard C library.
+
+**glob(X,Y)**
+
+whether a string,Y, matches a pattern X.
+Equal to the expression "Y GLOB X".
+
+
+
+**octet_length(X)**
+The octet_length(X) function returns the number of bytes in the encoding of text string X. 
+
+**quote(X)**
+
+The quote(X) function returns the text of an SQL literal which is the value of its argument suitable for inclusion into an SQL statement. Strings are surrounded by single-quotes with escapes on interior quotes as needed. 
+
+Useful for sql injection.
+
+**soundex(X)**
+
+    The soundex(X) function returns a string that is the soundex encoding of the string X.

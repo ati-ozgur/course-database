@@ -56,6 +56,7 @@ book:
         - course-contents/sql-paging-en.qmd
         - course-contents/sql-set-en.qmd
         - course-contents/sql-join-en.qmd
+        - course-contents/sql-string-functions-en.qmd
     - part: "SQL DML-DCL-TCL"
       chapters:
         - course-contents/sql-DML-data-manipulation-language-en.qmd

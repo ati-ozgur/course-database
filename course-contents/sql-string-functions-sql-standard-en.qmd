@@ -1,26 +1,26 @@
 ## SQL Standard string functions
 
 
-** coalesce(x,y,...) **
+- **coalesce(x,y,...)**
 
 SQL standard.
 returns a copy of its first non-null argument.
 Useful, for replacing null values.
 
-**concat**
+- **concat**
 
 string concatenation
 
-**length(X)**
+- **length(X)**
 
 return number of characters (not bytes) of given string.
 
-**lower(X)**
+- **lower(X)**
 
 return lowercase of given string X
 
-ltrim(X)
-ltrim(X,Y)
+- **ltrim(X)**
+- **ltrim(X,Y)**
 
 left trim character values given in Y from the string X.
 If Y is not given, removes spaces
@@ -30,12 +30,12 @@ Find the first occurrence of Y in the given string X and return position number 
 if it could not find, return 0.
 
 
-**replace(X,Y,Z)**
+- **replace(X,Y,Z)**
 
 The replace(X,Y,Z) function returns a string formed by substituting string Z for every occurrence of string Y in string X. 
 
-rtrim(X)
-rtrim(X,Y)
+- **rtrim(X)**
+- **rtrim(X,Y)**
 
 right trim character values given in Y from the string X.
 If Y is not given, removes spaces

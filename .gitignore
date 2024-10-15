@@ -1,6 +1,7 @@
 index.tex
 databases.tex
 _site/*
+site_libs/*
 _output/*
 temp/*
 *.html

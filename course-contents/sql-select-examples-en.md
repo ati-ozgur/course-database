@@ -1,23 +1,19 @@
 ## SQL Basic Select examples
 
-### Temel SELECT Sorgu Örnekleri
 
-
-#### AdventureWorks2012 Tüm Kolonlar
+**AdventureWorks2012 All columns using * character** 
 
 ``` sql
-    SELECT * FROM Production.Product;
+SELECT * FROM Customer;
 ```
-
-#### AdventureWorks2012  Tablo Takma İsim (Alias)
+** Table Alias **
 
 ``` sql
-SELECT P.* FROM Production.Product P;
+SELECT * FROM Customer c;
 ```
 
 
-
-#### AdventureWorks2012 Kolon Hesaplama
+** Calculated Columns **
 
 ``` sql
    SELECT Name AS UrunAdi
@@ -27,8 +23,8 @@ FROM Production.Product;
 
 
 
+More Complex Example
 
-#### AdventureWorks2012 More Complex Example
 
 Explanation is later
 
@@ -43,8 +39,9 @@ HAVING COUNT(O.SalesOrderID) > 1
 ORDER BY O.OrderDate DESC;
 ```
 
+Using select with column names
 
-#### (AdventureWorks2012) Kolon Adlari ile
+- AdventureWorks2012
 
 
 ``` sql
@@ -57,7 +54,9 @@ ORDER BY O.OrderDate DESC;
     FROM Production.Product;
 ```
 
-#### (AdventureWorks2012) Kolon Takma Adı
+** Column Alias **
+
+AdventureWorks2012
 
 ``` sql
     SELECT Name AS ADI

@@ -16,11 +16,11 @@
 /*******************************************************************************
    Drop database if it exists
 ********************************************************************************/
-IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'Chinook_AutoIncrement')
+IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'Chinook')
 BEGIN
-	ALTER DATABASE [Chinook_AutoIncrement] SET OFFLINE WITH ROLLBACK IMMEDIATE;
-	ALTER DATABASE [Chinook_AutoIncrement] SET ONLINE;
-	DROP DATABASE [Chinook_AutoIncrement];
+	ALTER DATABASE [Chinook] SET OFFLINE WITH ROLLBACK IMMEDIATE;
+	ALTER DATABASE [Chinook] SET ONLINE;
+	DROP DATABASE [Chinook];
 END
 
 GO
@@ -28,7 +28,7 @@ GO
 /*******************************************************************************
    Create database
 ********************************************************************************/
-CREATE DATABASE [Chinook_AutoIncrement];
+CREATE DATABASE [Chinook];
 GO
 
 /*
@@ -39,21 +39,21 @@ GO
 
 USE [master]
 GO
-CREATE LOGIN [chinook] WITH PASSWORD=N'chinook', DEFAULT_DATABASE=[Chinook_AutoIncrement], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
+CREATE LOGIN [chinook] WITH PASSWORD=N'chinook', DEFAULT_DATABASE=[Chinook], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
 GO
 
 
-USE [Chinook_AutoIncrement]
+USE [Chinook]
 GO
 CREATE USER [chinook] FOR LOGIN [chinook]
 GO
-USE [Chinook_AutoIncrement]
+USE [Chinook]
 GO
 ALTER ROLE [db_owner] ADD MEMBER [chinook]
 GO
 
 
-USE [Chinook_AutoIncrement];
+USE [Chinook];
 GO
 
 /*******************************************************************************

@@ -1,23 +1,28 @@
 # SQL Working with NULL
 
 - NULL bilinmeyen veya eksik veri için kullanılır.
+
 - İşlem yaparken matematikteki $\infty$ gibi düşünebilirsiniz.
+
+
 - $\infty$ $!=$ $\infty$
 - NULL $!=$ NULL
 - 3 + NULL = NULL
 - 'str degeri' + NULL = NULL
+
 - karşılaştırmalar null değerleri için her zaman yanlış(false) döndürür
+
     * NULL = NULL returns false
     * NULL IS NULL returns true
 
-## NULL ile çalışma 2
+## NULL Working 1
 
 {{< include ../course-contents/tables/table-null-3-valued-logic.md >}}
 
 {{< include ../course-contents/tables/table-null-not-operation.md >}}
 
 
-### NULL ile ilgili fonksiyonlar SQL Server
+### NULL Functions SQL Server
 
 
 
@@ -29,6 +34,12 @@
 - COALESCE(kolon/degisken1,kolon/degisken2,..)
 - kolon/degişken listesi içindeki ilk NULL olmayan değeri döndürür.
 
+
+SQL NULL Functions
+
+    IFNULL(), ISNULL(), COALESCE(), and NVL() Functions
+    
+
 ### NULL ile çalışma - COALESCE Örnek
 
 
@@ -38,6 +49,8 @@
     ,ADI + ' ' + SOYADI
      ) AS TAMADI FROM ORTAK.KISI;
 ```
+
+
 
 
 

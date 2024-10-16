@@ -1,7 +1,9 @@
 ## SQL string functions: sqlite
 
-https://www.sqlitetutorial.net/sqlite-string-functions/
-https://www.sqlite.org/lang_corefunc.html
+
+- [sqlite documentation string functions](https://www.sqlite.org/lang_corefunc.html)
+
+
 
 
 **format**

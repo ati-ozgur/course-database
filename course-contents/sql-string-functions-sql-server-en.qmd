@@ -1,5 +1,8 @@
 ## SQL string functions: SQL Server
 
-https://learn.microsoft.com/en-us/sql/t-sql/functions/string-functions-transact-sql?view=sql-server-ver16
+
+- [Oracle documentation string functions](https://learn.microsoft.com/en-us/sql/t-sql/functions/string-functions-transact-sql?view=sql-server-ver16)
+
+
 
 

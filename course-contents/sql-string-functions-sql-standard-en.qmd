@@ -73,6 +73,11 @@ If Y is not given, removes spaces
 Find the first occurrence of Y in the given string X and return position number of it.
 if it could not find, return 0.
 
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LTRIM.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#ltrim)
+
+
 
 - **replace(X,Y,Z)**
 

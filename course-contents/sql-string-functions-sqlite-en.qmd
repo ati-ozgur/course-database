@@ -34,3 +34,7 @@ Useful for sql injection.
 **soundex(X)**
 
     The soundex(X) function returns a string that is the soundex encoding of the string X.
+
+**unicode(X)**
+
+The unicode(X) function returns the numeric unicode code point corresponding to the first character of the string X. I

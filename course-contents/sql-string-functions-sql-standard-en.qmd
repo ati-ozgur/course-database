@@ -131,9 +131,7 @@ SQL Server has substring only.
 - [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#trim)
 
 
-**unicode(X)**
 
-The unicode(X) function returns the numeric unicode code point corresponding to the first character of the string X. I
 
 
 **upper(X)**

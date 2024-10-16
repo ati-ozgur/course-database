@@ -7,6 +7,11 @@ SQL standard.
 returns a copy of its first non-null argument.
 Useful, for replacing null values.
 
+- [oracle documentation for coalesce](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/COALESCE.html)
+- [SQL Server documentation for coalesce](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/coalesce-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for coalesce](https://www.sqlite.org/lang_corefunc.html#coalesce)
+
+
 - **concat**
 
 string concatenation

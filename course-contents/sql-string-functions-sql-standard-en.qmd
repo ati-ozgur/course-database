@@ -1,9 +1,6 @@
 ## SQL Standard string functions
 
 
-- [oracle documentation for function]()
-- [SQL Server documentation for function]()
-- [sqlite documentation for function]()
 
 - **coalesce(x,y,...)**
 
@@ -18,7 +15,17 @@ Useful, for replacing null values.
 
 - **concat**
 
+Normally, string concatenation is accomplished using || operator but this function could also be used.
 string concatenation
+
+SQL server has CONCAT_WS function.
+
+
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/CONCAT.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-ws-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#concat)
+
+
 
 - **length(X)**
 
@@ -83,6 +90,11 @@ if it could not find, return 0.
 
 The replace(X,Y,Z) function returns a string formed by substituting string Z for every occurrence of string Y in string X. 
 
+- [oracle documentation for function]()
+- [SQL Server documentation for function]()
+- [sqlite documentation for function]()
+
+
 - **rtrim(X)**
 - **rtrim(X,Y)**
 
@@ -102,10 +114,22 @@ If Y is not given, removes spaces
 
 The substr(X,Y,Z) function returns a substring of input string X that begins with the Y-th character and which is Z characters long. If Z is omitted then substr(X,Y) returns all characters through the end of the string X beginning with the Y-th. The left-most character of X is number 1.
 
+SQL Server has substring only.
+
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/SUBSTR.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/substring-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#substr)
+
+
 **trim(X)**
 **trim(X,Y)**
 
     The trim(X,Y) function returns a string formed by removing any and all characters that appear in Y from both ends of X. If the Y argument is omitted, trim(X) removes spaces from both ends of X. 
+
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/TRIM.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/trim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#trim)
+
 
 **unicode(X)**
 
@@ -122,3 +146,8 @@ select UPPER('atilla özgür');
 ```
 
 > ATILLA öZGüR     
+
+- [oracle documentation for function]()
+- [SQL Server documentation for function]()
+- [sqlite documentation for function]()
+

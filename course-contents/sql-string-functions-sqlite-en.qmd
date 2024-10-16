@@ -31,9 +31,6 @@ The quote(X) function returns the text of an SQL literal which is the value of i
 
 Useful for sql injection.
 
-**soundex(X)**
-
-    The soundex(X) function returns a string that is the soundex encoding of the string X.
 
 **unicode(X)**
 

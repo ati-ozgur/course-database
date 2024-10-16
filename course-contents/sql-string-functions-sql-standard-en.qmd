@@ -80,9 +80,9 @@ If Y is not given, removes spaces
 Find the first occurrence of Y in the given string X and return position number of it.
 if it could not find, return 0.
 
-- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LTRIM.html)
-- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver16)
-- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#ltrim)
+- [oracle documentation for instr](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LTRIM.html)
+- [SQL Server documentation for instr](https://learn.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for instr](https://www.sqlite.org/lang_corefunc.html#ltrim)
 
 
 
@@ -101,10 +101,21 @@ The replace(X,Y,Z) function returns a string formed by substituting string Z for
 right trim character values given in Y from the string X.
 If Y is not given, removes spaces
 
-- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/RTRIM.html)
-- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver16)
-- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#rtrim)
+- [oracle documentation for rtrim](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/RTRIM.html)
+- [SQL Server documentation for rtrim](https://learn.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for rtrim](https://www.sqlite.org/lang_corefunc.html#rtrim)
 
+
+**soundex(X)**
+
+From SQL Server documentation
+
+> Returns a four-character (SOUNDEX) code to evaluate the similarity of two strings.
+
+
+- [oracle documentation for soundex](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/SOUNDEX.html)
+- [SQL Server documentation for soundex](https://learn.microsoft.com/en-us/sql/t-sql/functions/soundex-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for soundex](https://www.sqlite.org/lang_corefunc.html#soundex
 
 
 - **substr(X,Y,Z)**

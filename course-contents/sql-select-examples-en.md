@@ -43,18 +43,14 @@ SELECT FirstName || ' ' || LastName AS FullName FROM Customer;
 
 **More Complex Example**
 
-TODO add more complex example from chinook here.
-Explanation is later
+More explanation is later.
 
 ``` sql
-SELECT 
-O.OrderDate
-, COUNT(O.SalesOrderID) AS OrderCount
-FROM Sales.SalesOrderHeader O
-WHERE O.Status = 5
-GROUP BY O.OrderDate
-HAVING COUNT(O.SalesOrderID) > 1
-ORDER BY O.OrderDate DESC;
+select CustomerId
+,sum(total) as TotalInvoice 
+from Invoice 
+group by CustomerId
+order by TotalInvoice desc;
 ```
 
 

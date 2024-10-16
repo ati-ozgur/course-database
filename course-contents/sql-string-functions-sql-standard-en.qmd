@@ -89,6 +89,12 @@ The replace(X,Y,Z) function returns a string formed by substituting string Z for
 right trim character values given in Y from the string X.
 If Y is not given, removes spaces
 
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/RTRIM.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#rtrim)
+
+
+
 - **substr(X,Y,Z)**
 - **substr(X,Y)**
 - **substring(X,Y,Z)** (alias for substr)

@@ -1,6 +1,10 @@
 ## SQL Standard string functions
 
 
+- [oracle documentation for function]()
+- [SQL Server documentation for function]()
+- [sqlite documentation for function]()
+
 - **coalesce(x,y,...)**
 
 SQL standard.
@@ -53,6 +57,11 @@ SELECT LENGTH(FirstName) from Customer c;
 - **lower(X)**
 
 return lowercase of given string X
+
+- [oracle documentation for lower](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LOWER.html)
+- [SQL Server documentation for lower](https://learn.microsoft.com/en-us/sql/t-sql/functions/lower-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for lower](https://www.sqlite.org/lang_corefunc.html#lower)
+
 
 - **ltrim(X)**
 - **ltrim(X,Y)**

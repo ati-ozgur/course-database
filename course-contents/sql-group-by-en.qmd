@@ -5,6 +5,10 @@ TODO
 - where vs having
 
 
+9. Group by
+Company, city group by example from Ministry of Labor and Social Security
+
+
 {{< lipsum 1 >}}
 
 

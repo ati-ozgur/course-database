@@ -6,6 +6,19 @@
 ``` sql
 SELECT * FROM Customer;
 ```
+
+Using select with column names
+
+
+
+
+``` sql
+SELECT FirstName, LastName FROM Customer;   
+```
+
+
+
+
 ** Table Alias **
 
 ``` sql
@@ -16,16 +29,21 @@ SELECT * FROM Customer c;
 ** Calculated Columns **
 
 ``` sql
-   SELECT Name AS UrunAdi
-   , ListPrice * 0.9 AS SatisFiyati
-FROM Production.Product;
+SELECT FirstName || ' ' || LastName FROM Customer;
+```
+
+** Column Alias **
+
+
+``` sql
+SELECT FirstName || ' ' || LastName AS FullName FROM Customer;
 ```
 
 
 
-More Complex Example
+**More Complex Example**
 
-
+TODO add more complex example from chinook here.
 Explanation is later
 
 ``` sql
@@ -37,31 +55,6 @@ WHERE O.Status = 5
 GROUP BY O.OrderDate
 HAVING COUNT(O.SalesOrderID) > 1
 ORDER BY O.OrderDate DESC;
-```
-
-Using select with column names
-
-- AdventureWorks2012
-
-
-``` sql
-    SELECT Name
-    , ListPrice 
-    FROM Production.Product P;
-    
-    SELECT P.Name
-    , P.ListPrice 
-    FROM Production.Product;
-```
-
-** Column Alias **
-
-AdventureWorks2012
-
-``` sql
-    SELECT Name AS ADI
-    , ListPrice AS "Liste Fiyati" 
-    FROM Production.Product P;
 ```
 
 

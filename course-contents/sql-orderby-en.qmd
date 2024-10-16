@@ -7,3 +7,33 @@
 - ASC is the default word.
 - Instead of column name, column number in the result set could be used.
 
+- Order by
+
+A simple user interface usage of order by cities.
+For example, in an address selection drop box down list, we would like to see most important cities first.
+
+In the below examples, we see cities ordered by names only.
+
+```sql
+SELECT CityId, CityName from Cities
+ORDER BY  CityName
+```
+
+In the below example, we would see 
+
+- İstanbul
+- Ankara
+- Adana
+- ...
+
+since OrderPriority values in İstanbul and Ankara is higher than other cities.
+
+
+```sql
+SELECT CityId, CityName, OrderPriority from Cities
+ORDER BY OrderPriority DESC, CityName ASC
+```
+
+
+
+

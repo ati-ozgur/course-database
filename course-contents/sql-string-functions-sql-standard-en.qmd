@@ -18,11 +18,11 @@ Useful, for replacing null values.
 Normally, string concatenation is accomplished using || operator but this function could also be used.
 string concatenation
 
-SQL server has CONCAT_WS function.
+SQL server has also CONCAT_WS function.
 
 
 - [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/CONCAT.html)
-- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-ws-transact-sql?view=sql-server-ver16)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver16)
 - [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#concat)
 
 

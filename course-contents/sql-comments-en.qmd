@@ -8,7 +8,7 @@ See below example
 
 ``` sql
 SELECT
- * -- * means all columns
+ * -- here character * means all columns
 FROM Employee;
 
 ```

@@ -20,6 +20,36 @@ string concatenation
 
 return number of characters (not bytes) of given string.
 
+For SQL server, LEN function is used.
+
+- [oracle documentation for length](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LENGTH.html)
+- [SQL Server documentation for length](https://learn.microsoft.com/en-us/sql/t-sql/functions/len-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for length](https://www.sqlite.org/lang_corefunc.html#length)
+
+sqlite
+
+``` sql
+SELECT LENGTH('atilla')
+```
+
+
+Oracle
+
+``` sql
+SELECT LENGTH('atilla') from dual;
+```
+
+SQL Server
+
+``` sql
+SELECT LEN('atilla')
+```
+
+``` sql
+SELECT LENGTH(FirstName) from Customer c;
+```
+
+
 - **lower(X)**
 
 return lowercase of given string X

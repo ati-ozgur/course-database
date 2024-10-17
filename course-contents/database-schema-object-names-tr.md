@@ -1,4 +1,4 @@
-## Database Schema Object Names
+## Veri tabanı Şema Nesne isimleri
 
 
 ### Şema Nesne isimleri

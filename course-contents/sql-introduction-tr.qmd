@@ -1,25 +1,16 @@
 # SQL Giriş
 
-## Ders Konuları
 
-- SQL ve Transact-SQL'e Giriş
-- SELECT ile tablo sorgulama
-- Birden fazla tabloyu JOIN ile sorgulama
-- SET operasyonlarının kullanımı
-- Fonksiyonların Kullanımı
-- Group By ve Veri Birleştirme
-- Subqueries - İç Sorgular
-- APPLY Komutu
-- Sanal Tablolar (Views,WITH,Temp Tables)
-- Grouping Sets ve Pivot Tables
-- Data Değiştirme (Insert,Update,Delete)
+{{< include ../course-contents/sql-introduction-contents-tr.md >}}
 
 {{< include ../course-contents/sql-knowledge-among-developers-tr.md >}}
 
+{{< include ../course-contents/sql-in-career-sites-tr.md >}}
 
-## Kariyer sitelerin SQL 
 
-- stepstone.de Almanya
-- indeed.com ABD
-- kariyer.net Türkiye
+{{< include ../course-contents/database-schema-object-names-tr.md >}}
+
+
+{{< include ../course-contents/sql-database-links-tr.md >}}
+
 

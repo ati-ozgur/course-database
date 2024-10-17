@@ -4,18 +4,13 @@
 
 {{< include ../course-contents/sql-knowledge-among-developers-en.md >}}
 
-
-
-## SQL skill in Career sitesSQL 
-
-- stepstone.de Germany
-- indeed.com USA
-- kariyer.net Türkiye
-
-
+{{< include ../course-contents/sql-in-career-sites-en.md >}}
 
 
 {{< include ../course-contents/database-schema-object-names-en.md >}}
+
+
+{{< include ../course-contents/sql-database-links-en.md >}}
 
 
 

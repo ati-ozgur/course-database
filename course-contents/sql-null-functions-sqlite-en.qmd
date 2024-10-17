@@ -1,0 +1,7 @@
+## SQL NULL functions sqlite
+
+See SQL Standard functions.
+There no extra sqlite null handling functions apart from SQL Standard coalesce and nullif.
+
+
+

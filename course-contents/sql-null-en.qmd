@@ -45,38 +45,18 @@ SELECT  * FROM dual WHERE NULL IS NULL;
 {{< include ../course-contents/tables/table-null-not-operation.md >}}
 
 
-{{< include ../course-contents/sql-null-functison-sql-standard-en.qmd >}}
+{{< include ../course-contents/sql-null-functions-sql-standard-en.qmd >}}
+
+{{< include ../course-contents/sql-null-functions-sqlite-en.qmd >}}
+
+
+{{< include ../course-contents/sql-null-functions-oracle-en.qmd >}}
 
 
 
-
-### NULL Functions SQL Server
-
+{{< include ../course-contents/sql-null-functions-sql-server-en.qmd >}}
 
 
-- ISNULL(kolon/degisken,**deger**)
-- Eğer kolon/degişken null ise **degeri** döndürür.
-
-- NULLIF(kolon/degisken,**deger**)
-- Eğer kolon/degişken **deger**'e eşitse NULL döndürür.
-- COALESCE(kolon/degisken1,kolon/degisken2,..)
-- kolon/degişken listesi içindeki ilk NULL olmayan değeri döndürür.
-
-
-SQL NULL Functions
-
-    IFNULL(), ISNULL(), COALESCE(), and NVL() Functions
-    
-
-### NULL ile çalışma - COALESCE Örnek
-
-
-``` sql
-    SELECT 
-    COALESCE(ADI + ' ' + IKINCIADI + ' ' + SOYADI
-    ,ADI + ' ' + SOYADI
-     ) AS TAMADI FROM ORTAK.KISI;
-```
 
 
 

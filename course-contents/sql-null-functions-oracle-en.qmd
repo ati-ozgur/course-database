@@ -1,0 +1,6 @@
+## SQL NULL functions Oracle
+
+See following article [null-related-functions](https://oracle-base.com/articles/misc/null-related-functions)
+
+
+

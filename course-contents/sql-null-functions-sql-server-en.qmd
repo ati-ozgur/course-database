@@ -1,0 +1,38 @@
+## SQL NULL functions SQL Server
+
+
+### NULL Functions SQL Server
+
+
+
+- ISNULL(kolon/degisken,**deger**)
+- Eğer kolon/degişken null ise **degeri** döndürür.
+
+- NULLIF(kolon/degisken,**deger**)
+- Eğer kolon/degişken **deger**'e eşitse NULL döndürür.
+- COALESCE(kolon/degisken1,kolon/degisken2,..)
+- kolon/degişken listesi içindeki ilk NULL olmayan değeri döndürür.
+
+
+
+- [isnull](https://learn.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver16)
+
+
+
+
+
+SQL NULL Functions
+
+    IFNULL(), ISNULL(), COALESCE(), and NVL() Functions
+    
+
+### NULL ile çalışma - COALESCE Örnek
+
+
+``` sql
+    SELECT 
+    COALESCE(ADI + ' ' + IKINCIADI + ' ' + SOYADI
+    ,ADI + ' ' + SOYADI
+     ) AS TAMADI FROM ORTAK.KISI;
+```
+

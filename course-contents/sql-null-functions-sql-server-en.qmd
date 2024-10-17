@@ -1,18 +1,40 @@
 ## SQL NULL functions SQL Server
 
-
-- ISNULL(column/variable,**value**)
-- if column/variable is null, then return **value**.
-
-- NULLIF(column/variable,**value**)
-- if column/variable is equals to **value**, then returns NULL.
-
-- see coalesce above.
+**NULLIF(column/variable,**value**)**
+if column/variable is equals to **value**, then returns NULL.
 
 
-- see is null in sql server documentation:
+``` sql
+SELECT NULLIF(4,4) AS Same, NULLIF(5,7) AS Different;
+```
 
-- [isnull](https://learn.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver16)
+
+
+see [nullif in sql server documentation](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/nullif-transact-sql?view=sql-server-ver16.
+
+
+**ISNULL(column/variable,**value**)**
+if column/variable is null, then return **value**.
+Coalesce is almost always better than this function.
+
+
+
+
+
+
+see [isnull in sql server documentation](https://learn.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver16).
+
+**coalesce**
+
+- see [coalesce in sql server documentation](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/coalesce-transact-sql?view=sql-server-ver16).
+
+
+
+
+
+
+
+
 
 
 

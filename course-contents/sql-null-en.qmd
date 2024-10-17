@@ -40,9 +40,16 @@ SELECT  * FROM dual WHERE NULL IS NULL;
 
 ## NULL Working 1
 
-{{< include ../course-contents/tables/table-null-3-valued-logic.md >}}
+
+### NULL NOT operation
 
 {{< include ../course-contents/tables/table-null-not-operation.md >}}
+
+
+### NULL 3 valued logic
+
+{{< include ../course-contents/tables/table-null-3-valued-logic.md >}}
+
 
 
 {{< include ../course-contents/sql-null-functions-sql-standard-en.qmd >}}

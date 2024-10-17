@@ -44,7 +44,6 @@ book:
         - course-contents/sql-DQL-data-query-language-tr.md
         - course-contents/sql-select-tr.qmd
         - course-contents/sql-comments-tr.qmd
-        - course-contents/sql-data-types-tr.qmd
         - course-contents/sql-select-distinct-tr.md
         - course-contents/sql-where-tr.qmd
         - course-contents/sql-null-tr.qmd
@@ -65,6 +64,7 @@ book:
     - part: "Veritabanı Tasarımı"
       chapters:
         - course-contents/database-design-tr.qmd
+        - course-contents/sql-data-types-tr.qmd
         - course-contents/database-design-primary-key-tr.qmd
 
     - course-contents/suggested-readings-tr.md

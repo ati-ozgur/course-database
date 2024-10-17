@@ -1,0 +1,9 @@
+## SQL NULL functions SQL Standard
+
+
+** coalesce(X,Y,...) **
+
+-     The coalesce() function returns its first non-NULL argument.
+-    If all arguments are null, returns NULL.
+-    It requires at least two arguments.
+

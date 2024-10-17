@@ -1,25 +1,53 @@
 # SQL Working with NULL
 
-- NULL bilinmeyen veya eksik veri için kullanılır.
 
-- İşlem yaparken matematikteki $\infty$ gibi düşünebilirsiniz.
+- NULL is used for unknown or missing values.
+- null means "unknown" so that any comparison or operation results in unknown. 
+- for mathematical operations and logical operations, you may think null as $\infty$ in calculus.
+
 
 
 - $\infty$ $!=$ $\infty$
 - NULL $!=$ NULL
 - 3 + NULL = NULL
-- 'str degeri' + NULL = NULL
+- 'string value' + NULL = NULL
 
-- karşılaştırmalar null değerleri için her zaman yanlış(false) döndürür
+- for comparisons, null comparison always return false.
 
     * NULL = NULL returns false
     * NULL IS NULL returns true
+
+
+sqlite
+``` sql
+select null = null;
+```
+
+``` sql
+select null is null;
+```
+
+oracle
+
+``` sql
+SELECT  * FROM dual WHERE NULL = NULL;
+
+
+SELECT  * FROM dual WHERE NULL IS NULL;
+```
+  
+
 
 ## NULL Working 1
 
 {{< include ../course-contents/tables/table-null-3-valued-logic.md >}}
 
 {{< include ../course-contents/tables/table-null-not-operation.md >}}
+
+
+{{< include ../course-contents/sql-null-functison-sql-standard-en.qmd >}}
+
+
 
 
 ### NULL Functions SQL Server

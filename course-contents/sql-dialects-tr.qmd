@@ -38,6 +38,9 @@ SELECT CURRENT_DATE FROM dual;
 
 Ayrıca SQL standardına prosedürel dil öğeleri gibi uzantılar da ekleyebilirler.
 
+## SQL lehçesi sqlite
+
+Resmi bir isim verilmesede .schema, .table, .explain gibi komutlar, sqlite veri tabanını yönetmemize yardımcı olur ve bir lehçe sayılabilir.
 
 
 

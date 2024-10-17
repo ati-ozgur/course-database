@@ -39,6 +39,11 @@ They may also add extensions to SQL standard like procedural language elements.
 
 
 
+## SQL dialect sqlite
+
+Even though, sqlite has no formal name for its extensions, commands like .schema, .table, .explain allows us to manage sqlite databases and could be described as sqlite dialect.
+
+
 
 {{< include ../course-contents/sql-dialect-transact-sql-en.md >}}
 

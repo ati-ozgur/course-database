@@ -27,3 +27,12 @@ Sonuç:
 - Duru
 
 
+## Chinook Örneği
+
+``` sql
+select FirstName from customer;
+```
+
+``` sql
+select DISTINCT FirstName from customer;
+```

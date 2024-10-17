@@ -27,3 +27,14 @@ Result:
 - Ali
 - Efe
 - Duru
+
+
+## Chinook example
+
+``` sql
+select FirstName from customer;
+```
+
+``` sql
+select DISTINCT FirstName from customer;
+```

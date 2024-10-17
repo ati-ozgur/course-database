@@ -1,26 +1,28 @@
-# SQL Command Types
+# SQL Komut tipleri
 
-There are [five different sql commands types](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/).
+[5 farklı komut tipi](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/) tanımlanır.
 
-- DDL (Data Definition Language)
-- DQL (Data Query Language)
-- DML (Data Manipulation Language)
-- DCL (Data Control Language)
-- TCL (Transaction Control Language)
+- DDL (Data Definition Language: Veri tanım dili)
+- DQL (Data Query Language: Veri sorgu dili)
+- DML (Data Manipulation Language: Veri İşleme Dili)
+- DCL (Data Control Language: Veri Kontrol Dili (DCL))
+- TCL (Transaction Control Language: İşlem Kontrol dili)
 
 
 
-{{< include ../course-contents/tables/table-sql-command-types-en.md >}}
+{{< include ../course-contents/tables/table-sql-command-types-tr.md >}}
 
 
 ## DQL vs DML
 
-Normal SELECT command is clearly DQL but distinction between DQL and DML when it comes to other select statements is not clear.
-Some says that adding joins, group by and other commands make that commands DML.
+Normal SELECT komutu açıkça DQL'dir ancak diğer select kullanımları söz konusu olduğunda DQL ve DML arasındaki ayrım net değildir.
+Bazıları joins, group by ve diğer komutların eklenmesinin bu komutları DML yaptığını söylüyor.
 
-But INSERT/UPDATE/DELETE and other statements are clearly DML.
+Ancak INSERT/UPDATE/DELETE ve diğer ifadeler açıkça DML'dir.
 
-Also dialects could decide about the statements for example TRUNCATE Table command is DML in SQL Server but DDL in Oracle.
+Ayrıca SQL lehçeleri komutları farklı yorumlayabilir.
+Örneğin TRUNCATE Table komutu SQL Server'da DML iken Oracle'da DDL'dir.
+
 
 
 

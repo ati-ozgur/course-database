@@ -1,8 +1,7 @@
-| Data Manipulation Language (DML) | Data Definition Language (DDL)              | Data Control Language (DCL)         |
-|----------------------------------|---------------------------------------------|-------------------------------------|
-| Veri İşleme Dili                 | Veri Tanım Dili                             | Veri Kontrol Dili                   |
-| Sorgu ve Değiştirme Komutları    | Veri tabanı nesnelerini tanımlama komutları | Güvenlik izinlerini atama komutları |
-| SELECT                           | CREATE                                      | GRANT                               |
-| INSERT                           | DROP                                        | REVOKE                              |
-| UPDATE                           | ALTER                                       | DENY                                |
-| DELETE                           |                                             |                                     |
+| Veri Tanımlama Dili (DDL) | Veri Sorgu Dili(DQL) | Veri İşleme Dili (DML) | Veri Kontrol Dili (DCL) | İşlem(Transaction) kontrol Dili (TCL) |
+|--------------------------------|--------------------------|----------------------------------|-----------------------------|------------------------------------|
+| Nesne tanımla                 | SELECT                   | Update/Delete/Insert             | Veri tabanı güvenliği      | begin transaction                  |
+| CREATE                         |                          |                                  | GRANT                       | commit transaction                 |
+| DROP                           |                          | INSERT                           | REVOKE                      | rollback                           |
+| ALTER                          |                          | UPDATE                           | DENY                        | save transaction                   |
+|                                |                          | DELETE                           |                             |                                    |

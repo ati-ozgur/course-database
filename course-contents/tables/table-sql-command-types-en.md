@@ -1,7 +1,7 @@
-| Data Manipulation Language (DML) | Data Definition Language (DDL)              | Data Control Language (DCL)         |
-|----------------------------------|---------------------------------------------|-------------------------------------|
-| Query and Update/Delete/Insert   | Define objects | Security for database |
-| SELECT                           | CREATE                                      | GRANT                               |
-| INSERT                           | DROP                                        | REVOKE                              |
-| UPDATE                           | ALTER                                       | DENY                                |
-| DELETE                           |                                             |                                     |
+| Data Definition Language (DDL) | Data Query Language(DQL) | Data Manipulation Language (DML) | Data Control Language (DCL) | Transaction Control Language (TCL) |
+|--------------------------------|--------------------------|----------------------------------|-----------------------------|------------------------------------|
+| Define objects                 | SELECT                   | Update/Delete/Insert             | Security for database       | begin transaction                  |
+| CREATE                         |                          |                                  | GRANT                       | commit transaction                 |
+| DROP                           |                          | INSERT                           | REVOKE                      | rollback                           |
+| ALTER                          |                          | UPDATE                           | DENY                        | save transaction                   |
+|                                |                          | DELETE                           |                             |                                    |

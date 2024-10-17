@@ -8,6 +8,8 @@ There are [five different sql commands types](https://www.geeksforgeeks.org/sql-
 - DCL (Data Control Language)
 - TCL (Transaction Control Language)
 
+Sometimes, DQL, TCL and DML are considered as one type, DML (Data Manipulation Language) commands.
+
 
 
 {{< include ../course-contents/tables/table-sql-command-types-en.md >}}

@@ -1,4 +1,4 @@
-# SQL Working with NULL
+# SQL NULL
 
 
 - NULL is used for unknown or missing values.

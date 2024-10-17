@@ -21,10 +21,4 @@
 
 
 
-SQL NULL Functions
-
-    IFNULL(), ISNULL(), COALESCE(), and NVL() Functions
-    
-
-
 

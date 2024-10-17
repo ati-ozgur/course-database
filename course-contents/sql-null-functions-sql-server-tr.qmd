@@ -26,13 +26,5 @@ SQL NULL Functions
     IFNULL(), ISNULL(), COALESCE(), and NVL() Functions
     
 
-### NULL ile çalışma - COALESCE Örnek
 
-
-``` sql
-    SELECT 
-    COALESCE(ADI + ' ' + IKINCIADI + ' ' + SOYADI
-    ,ADI + ' ' + SOYADI
-     ) AS TAMADI FROM ORTAK.KISI;
-```
 

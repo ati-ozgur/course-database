@@ -13,6 +13,17 @@ coalesce by itself satisfy a lot of use cases involving null.
 coalesce is better since it is support by a lot of different databases like sqlite, oracle, sql server, postgres, mysql ....
 
 
+### working with NULL  - COALESCE example
+
+
+``` sql
+    SELECT 
+    COALESCE(FirstName + ' ' + SecondName + ' ' + LastName
+    ,FirstName + ' ' + LastName
+     ) AS FullName FROM COMMON.PERSON;
+```
+
+
 ** nullif(X,Y) **
 
 - null if function return first argument,X, if two arguments are different.

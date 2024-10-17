@@ -1,1 +1,47 @@
-## sql-dialects-tr.qmd
+## SQL lehçeleri
+
+SQL bir standartlar kümesi olsa da, farklı veritabanı motorları ve şirketleri, bu standartları farklı şekilde uygulayabilir.
+
+Bu farklılıklara bir örnek temel komut SELECT'tir.
+Eğer select yalnızca **FROM ile** veya **FROM olmadan** çalışıyorsa.
+
+modern-sql web sayfası örneği [select from olmadan](https://modern-sql.com/use-case/select-without-from): 
+
+> Baştan şunu netleştirelim: from olmadan select, standart SQL'e uygun değildir. Nokta.
+
+Ancak select without from SQL Server ve SQLite'da çalışır.
+Aşağıdaki örnek sorgulara bakalım
+
+**sqlite**
+
+``` sql
+SELECT DATE('now');
+```
+
+**Sql Server**
+
+``` sql
+SELECT GETDATE()  
+```
+
+Ama oracle'da aynı bilgiyi almak için **dual** adlı kukla tabloyu kullanmanız gerekir.
+Oracle veritabanında from olmadan select çalıştıramazsınız.
+
+
+**Oracle**
+
+``` sql
+SELECT CURRENT_DATE FROM dual;
+```
+
+
+
+Ayrıca SQL standardına prosedürel dil öğeleri gibi uzantılar da ekleyebilirler.
+
+
+
+
+{{< include ../course-contents/sql-dialect-transact-sql-tr.md >}}
+
+
+{{< include ../course-contents/sql-dialect-pl-sql-tr.md >}}

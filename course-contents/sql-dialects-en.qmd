@@ -2,7 +2,7 @@
 
 Even though SQL are set of standards, different database engines and companies may implement these standards differently.
 
-A an example of these differences is basic select.
+A an example of these differences is basic command SELECT.
 If select works only **with from** or **without from**.
 
 From modern-sql website [select without from](https://modern-sql.com/use-case/select-without-from): 
@@ -24,7 +24,7 @@ SELECT DATE('now');
 SELECT GETDATE()  
 ```
 
-But in oracle, to get same information, you need to use dummy table called dual.
+But in oracle, to get same information, you need to use dummy table called **dual**.
 You cannot run select without from in Oracle database.
 
 **Oracle**

@@ -55,6 +55,16 @@ select * from Employee where EmployeeId IN (2,5,9);
 
 ## LIKE Operator
 
+We use the so called wild cards while searching.
+The characters % and _ are supported by almost all databases while others are supported less.
+
+
+
+- [sql server wild cards](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/wildcard-character-s-to-match-transact-sql?view=sql-server-ver16)
+- [oracle wild cards](https://docs.oracle.com/cd/B13789_01/server.101/b10759/conditions016.htm)
+- [sqlite wild cards](https://sqlite.org/lang_expr.html#like)
+
+
 {{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
 
 - TODO fix above table

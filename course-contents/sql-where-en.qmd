@@ -57,7 +57,18 @@ select * from Employee where EmployeeId IN (2,5,9);
 
 {{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
 
+TODO fix above table
+TODO update examples
 
+**examples in Chinook**
+
+``` sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'L%';
+```
+
+``` sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'Lu_s'
+```
 
 
 ## Chaining of conditions

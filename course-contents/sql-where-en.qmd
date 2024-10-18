@@ -57,8 +57,8 @@ select * from Employee where EmployeeId IN (2,5,9);
 
 {{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
 
-TODO fix above table
-TODO update examples
+- TODO fix above table
+- TODO update examples
 
 **examples in Chinook**
 

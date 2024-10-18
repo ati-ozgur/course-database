@@ -1,7 +1,7 @@
 ## SQL Basic Select examples
 
 
-**AdventureWorks2012 All columns using * character** 
+**Chinook All columns using * character** 
 
 ``` sql
 SELECT * FROM Customer;

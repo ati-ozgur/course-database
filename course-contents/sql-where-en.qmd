@@ -67,8 +67,6 @@ The characters % and _ are supported by almost all databases while others are su
 
 {{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
 
-- TODO fix above table
-- TODO update examples
 
 **examples in Chinook**
 
@@ -86,6 +84,14 @@ Works in SQL Server
 SELECT * from Customer c WHERE C.Address LIKE '%[12]%'
 ```
 
+
+```sql
+-- second character is a
+SELECT * from Customer c WHERE  C.FirstName LIKE '_[a]%'
+
+-- second character is NOT a
+--SELECT * from Customer c WHERE C.FirstName LIKE '_[^a]%'
+```
 
 ## Chaining of conditions
 

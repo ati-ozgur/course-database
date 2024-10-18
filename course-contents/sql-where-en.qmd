@@ -55,6 +55,9 @@ select * from Employee where EmployeeId IN (2,5,9);
 
 ## LIKE Operator
 
+{{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
+
+
 
 
 ## Chaining of conditions

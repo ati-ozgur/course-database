@@ -2,7 +2,7 @@
 
 Even though SQL are set of standards, different database engines and companies may implement these standards differently.
 
-A an example of these differences is basic command SELECT.
+An example of these differences is basic command SELECT.
 If select works only **with from** or **without from**.
 
 From modern-sql website [select without from](https://modern-sql.com/use-case/select-without-from): 

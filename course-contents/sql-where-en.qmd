@@ -62,12 +62,18 @@ TODO update examples
 
 **examples in Chinook**
 
-``` sql
+```sql
 SELECT * from Customer c WHERE C.FirstName LIKE 'L%';
 ```
 
-``` sql
+```sql
 SELECT * from Customer c WHERE C.FirstName LIKE 'Lu_s'
+```
+
+Works in SQL Server
+
+```sql
+SELECT * from Customer c WHERE C.Address LIKE '%[12]%'
 ```
 
 

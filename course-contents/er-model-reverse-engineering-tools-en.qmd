@@ -1,0 +1,21 @@
+## ER model reverse engineering tools
+
+
+Second way of working, reverse engineering existing database is more common.
+We reverse engineer an already existing database and get ER Diagram of it.
+For example, DBeaver has ER Diagrams.
+
+![DBeaver ER Diagram](images/dbeaver-er-diagram.png)
+
+1. Open a connection
+2. select tables 
+3. in the opened window, select ER Diagram tab
+
+Reading ER diagrams is useful skill to have since it allows you to more easily understand existing database structure.
+
+[See oracle sample HR and OE example in their documentation](https://docs.oracle.com/en/database/oracle/oracle-database/18/comsc/schema-diagrams.html#GUID-01BFEF14-C6BD-42CD-8558-DDD214DB3AE0)
+
+Oracle SQL Developer has its own reverse engineering tools for oracle database.
+TODO add links.
+
+Another tool for this purpose is Schema Spy.

@@ -1,5 +1,24 @@
 ## SQL NULL functions Oracle
 
+**coalesce**
+
+See, sql standard. 
+
+**NVL**
+
+NVL function allows you to replace a null value with default value.
+If first argument is null, second argument of NVL is returned.
+Coalesce function is more powerful than nvl and coalesce also works in other databases.
+Use coalesce, do not use NVL.
+
+
+``` sql
+SELECT NVL(NULL,'DEFAUL VALUE') FROM DUAL;
+```
+
+
+
+
 See following article [null-related-functions](https://oracle-base.com/articles/misc/null-related-functions)
 
 

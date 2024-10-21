@@ -1,0 +1,11 @@
+## ER Modelling tools
+
+For first way, there are a lot of tools exits.
+Examples:
+
+- [Enterprise Architect](https://sparxsystems.com/products/ea/)
+- [Toad](https://blog.toadworld.com/what-an-er-diagram-is-and-tools-that-help-build-and-alter-them)
+- [LucidChart ER Diagrams](https://www.lucidchart.com/pages/er-diagrams)
+
+See following video for how one tool works. [LucidChart Tutorial: How to Create an ERD ](https://www.youtube.com/watch?v=RBZtPhZkUZM)
+

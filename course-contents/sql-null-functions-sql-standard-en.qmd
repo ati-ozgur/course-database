@@ -27,3 +27,6 @@ coalesce is always better choice for null handling since coalesce is supported b
 - it returns null if the arguments are same.
 
 
+**case**
+
+SQL Case 

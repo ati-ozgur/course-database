@@ -1,8 +1,13 @@
 ## SQL NULL functions Oracle
 
-**coalesce**
+**COALESCE**
 
-See, sql standard. 
+See, SQL standard. 
+
+**NULLIF**
+
+See, SQL standard. 
+
 
 **NVL(x,y)**
 

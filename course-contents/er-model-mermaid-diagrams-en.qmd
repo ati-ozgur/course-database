@@ -21,3 +21,134 @@ erDiagram
 	}
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+## Entity Relationships
+
+Entities should have relationships.
+That is how they interact with other entities.
+The syntax for it is below:
+
+	    <first-entity> [<relationship> <second-entity> : <relationship-label>]
+
+
+Relationship label should show how it works in the requirements or domain.
+Please try to choose it accordingly.
+
+An example a student enrolls in many courses.
+We could write it like below.
+
+> erDiagram
+>    Student ||--o{ Course : enrolls
+
+This diagram output is like below:
+
+```{mermaid}
+erDiagram
+    Student ||--o{ Course : enrolls
+```
+
+In this syntax, following table shows how we can model cardinality of the entities.
+That is 0,1 or many information between the entities.
+
+
+{{< include ../course-contents/tables/table-er-mermaid-cardinality-en.md >}}
+
+We can read this information following way then
+
+- Student has zero to one advisor
+- Student has exactly one advisor
+- Student enrolls in 0-to-many courses
+- Student enrolls in 1-to-many courses
+ 
+## Use LLMs to generate ER diagrams
+
+We can use LLMs like ChatGPT and Perplexity to create our draft diagrams.
+[See here](https://www.perplexity.ai/search/please-create-me-a-simple-merm-cB.z9NOZRuiC1.0AszoIeA) 
+
+## Database design patterns
+
+1. Definition Table (Category)
+TODO add example
+
+2. 1 to many
+TODO add example
+
+
+3. Self referencing, hierarchical 
+TODO add example
+
+https://duckduckgo.com/?q=organization+chart&iax=images&ia=images&iai=https%3A%2F%2Ftemplatelab.com%2Fwp-content%2Fuploads%2F2018%2F10%2FOrganization-Chart-Template-7-TemplateLab.com_-e1539503563939.jpg
+
+
+
+## Others
+
+1 Customer has 1-to-many Invoice
+crow foot
+
+1 Employee 1-to-many Employee
+
+- Many employees reports to 1 employee (superior)
+
+- 1 Employee is responsible for many Employees (Correct word choice)
+
+
+
+```{mermaid}
+erDiagram
+    STUDENT ||--o{ COURSE : enrolls
+    COURSE ||--|{ LESSON : contains
+    TEACHER ||--o{ COURSE : teaches
+    TEACHER ||--o{ LESSON : conducts
+    STUDENT ||--o{ LESSON : attends
+
+
+    STUDENT {
+        int id PK
+        string name
+        date created_at
+        date updated_at
+    }
+    COURSE {
+        int id PK
+        string title
+        string description
+        date created_at
+        date updated_at
+    }
+    LESSON {
+        int id PK
+        int course_id FK
+        string title
+        date scheduled_date
+        date created_at
+        date updated_at
+    }
+    TEACHER {
+        int id PK
+        string name
+        string email
+        date created_at
+        date updated_at
+    }
+```
+
+
+
+
+
+
+https://mermaid.live/
+
+
+

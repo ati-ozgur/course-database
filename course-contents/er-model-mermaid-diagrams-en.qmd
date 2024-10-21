@@ -1,0 +1,23 @@
+## Mermaid ER Diagrams
+
+We use [mermaid Entity Relationship Diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) for diagramming since it is more easily understood and it is version controllable with tools like git.
+
+
+## Entity
+
+Entities are most basic part in the diagrams.
+They correspond to database tables normally.
+We can also give their attributes or columns in the diagram too.
+See below example.
+
+
+```{mermaid}
+%%| echo: true
+
+erDiagram
+	Student {
+	    int student_id PK
+	    string name
+	}
+```
+

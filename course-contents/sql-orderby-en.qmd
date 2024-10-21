@@ -1,16 +1,53 @@
 # SQL Select Order by
 
 - Sorting can be done with one or more columns using ORDER BY.
+
+If order by is not used in the query, database engine is free to return result set in whichever order it chooses.
+
+``` sql
+SELECT * FROM Customer c 
+order by FirstName
+```
+
+``` sql
+SELECT * FROM Customer c 
+order by Country , State, City
+```
+
 - Aliases created during SELECT can be used.
+
 - Columns not retrieved with SELECT can be used.
-- ASC (Ascending-Ascending) or DESC (Descending-Descending) can be specified. 
+
+``` sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+order by Country , State, City
+```
+
+- ASC (Ascending) or DESC (Descending) can be specified. 
 - ASC is the default word.
+
+``` sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+order by CustomerId DESC
+```
+
+``` sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+order by Country DESC, State DESC, City DESC
+```
+
+
 - Instead of column name, column number in the result set could be used.
 
-- Order by
 
-A simple user interface usage of order by cities.
-For example, in an address selection drop box down list, we would like to see most important cities first.
+``` sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+order by 1 DESC
+```
+
+Order by should be used in the grids and other lists since most users expect the result set to be ordered.
+For example, a simple user interface usage of order by of cities.
+In an address selection drop box down list, we would like to see most important cities first.
 
 In the below examples, we see cities ordered by names only.
 
@@ -19,20 +56,28 @@ SELECT CityId, CityName from Cities
 ORDER BY  CityName
 ```
 
-In the below example, we would see 
+This usage is not very good since most of the users will come from İstanbul and Ankara.
+Lets change the query so that these two cities will come first in the result set.
+We need to add column OrderPriority to cities table.
+And add values to İstanbul and Ankara for this column.
+Since OrderPriority values in İstanbul and Ankara is higher than other cities, 
+we would see city list as below:
 
 - İstanbul
 - Ankara
 - Adana
 - ...
 
-since OrderPriority values in İstanbul and Ankara is higher than other cities.
-
 
 ```sql
 SELECT CityId, CityName, OrderPriority from Cities
 ORDER BY OrderPriority DESC, CityName ASC
 ```
+
+
+
+
+
 
 
 

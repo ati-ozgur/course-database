@@ -47,12 +47,9 @@ Please try to choose it accordingly.
 An example a student enrolls in many courses.
 We could write it like below.
 
-> erDiagram
->    Student ||--o{ Course : enrolls
-
-This diagram output is like below:
 
 ```{mermaid}
+%%| echo: true
 erDiagram
     Student ||--o{ Course : enrolls
 ```
@@ -105,6 +102,8 @@ crow foot
 
 
 ```{mermaid}
+%%| echo: true
+
 erDiagram
     STUDENT ||--o{ COURSE : enrolls
     COURSE ||--|{ LESSON : contains

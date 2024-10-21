@@ -4,7 +4,7 @@
 
 See, sql standard. 
 
-**NVL**
+**NVL(x,y)**
 
 NVL function allows you to replace a null value with default value.
 If first argument is null, second argument of NVL is returned.
@@ -16,7 +16,23 @@ Use coalesce, do not use NVL.
 SELECT NVL(NULL,'DEFAUL VALUE') FROM DUAL;
 ```
 
+**NVL2(x,y,z)**
 
+NVL2 works with 3 parameters.
+If x is not null, it returns y.
+If x is null, it returns z.
+
+This function could also be replaced with coalesce easily.
+Do not use it.
+
+
+``` sql
+SELECT NVL2(NULL,'Y','Z') FROM DUAL;
+```
+
+``` sql
+SELECT NVL2('NOT NULL','Y','Z') FROM DUAL;
+```
 
 
 See following article [null-related-functions](https://oracle-base.com/articles/misc/null-related-functions)

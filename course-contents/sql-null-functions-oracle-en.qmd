@@ -40,7 +40,7 @@ SELECT NVL2('NOT NULL','Y','Z') FROM DUAL;
 ```
 
 
-See following article [null-related-functions](https://oracle-base.com/articles/misc/null-related-functions)
+See following article [null-related-functions](https://oracle-base.com/articles/misc/null-related-functions) for more obscure null related functions in Oracle.
 
 
 

@@ -2,127 +2,16 @@
 
 We use [mermaid Entity Relationship Diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) for diagramming since it is more easily understood and it is version controllable with tools like git.
 
+{{< include ../course-contents/er-model-mermaid-entity-en.qmd >}}
 
-### Entity
+{{< include ../course-contents/er-model-mermaid-entity-relationships-en.qmd >}}
 
-Entities are most basic part in the diagrams.
-They correspond to database tables normally.
-We can also give their attributes or columns in the diagram too.
-See below example.
+{{< include ../course-contents/er-model-mermaid-full-example-en.qmd >}}
 
 
-```{mermaid}
-%%| echo: true
-
-erDiagram
-	Student {
-	    int student_id PK
-	    string name
-	}
-```
+{{< include ../course-contents/er-model-use-llm-en.qmd >}}
 
 
-
-
-
-
-
-
-
-
-
-
-### Entity Relationships
-
-Entities should have relationships.
-That is how they interact with other entities.
-The syntax for it is below:
-
-```
-<first-entity> [<relationship> <second-entity> : <relationship-label>]
-```
-
-
-Relationship label should show how it works in the requirements or domain.
-Please try to choose it accordingly.
-
-An example a student enrolls in many courses.
-We could write it like below.
-
-
-```{mermaid}
-%%| echo: true
-erDiagram
-    Student ||--o{ Course : enrolls
-```
-
-In this syntax, following table shows how we can model cardinality of the entities.
-That is 0,1 or many information between the entities.
-
-
-{{< include ../course-contents/tables/table-er-mermaid-cardinality-en.md >}}
-
-We can read this information following way then
-
-- Student has zero to one advisor
-- Student has exactly one advisor
-- Student enrolls in 0-to-many courses
-- Student enrolls in 1-to-many courses
- 
-## Use LLMs to generate ER diagrams
-
-We can use LLMs like ChatGPT and Perplexity to create our draft diagrams.
-[See here](https://www.perplexity.ai/search/please-create-me-a-simple-merm-cB.z9NOZRuiC1.0AszoIeA) 
-
-
-
-```{mermaid}
-%%| echo: true
-
-erDiagram
-    STUDENT ||--o{ COURSE : enrolls
-    COURSE ||--|{ LESSON : contains
-    TEACHER ||--o{ COURSE : teaches
-    TEACHER ||--o{ LESSON : conducts
-    STUDENT ||--o{ LESSON : attends
-
-
-    STUDENT {
-        int id PK
-        string name
-        date created_at
-        date updated_at
-    }
-    COURSE {
-        int id PK
-        string title
-        string description
-        date created_at
-        date updated_at
-    }
-    LESSON {
-        int id PK
-        int course_id FK
-        string title
-        date scheduled_date
-        date created_at
-        date updated_at
-    }
-    TEACHER {
-        int id PK
-        string name
-        string email
-        date created_at
-        date updated_at
-    }
-```
-
-
-
-
-
-
-https://mermaid.live/
 
 
 

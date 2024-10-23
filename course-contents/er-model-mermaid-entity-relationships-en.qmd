@@ -1,0 +1,38 @@
+ 
+### Entity Relationships
+
+Entities should have relationships.
+That is how they interact with other entities.
+The syntax for it is below:
+
+```
+<first-entity> [<relationship> <second-entity> : <relationship-label>]
+```
+
+
+Relationship label should show how it works in the requirements or domain.
+Please try to choose it accordingly.
+
+An example a student enrolls in many courses.
+We could write it like below.
+
+
+```{mermaid}
+%%| echo: true
+erDiagram
+    Student ||--o{ Course : enrolls
+```
+
+In this syntax, following table shows how we can model cardinality of the entities.
+That is 0,1 or many information between the entities.
+
+
+{{< include ../course-contents/tables/table-er-mermaid-cardinality-en.md >}}
+
+We can read this information following way then
+
+- Student has zero to one advisor
+- Student has exactly one advisor
+- Student enrolls in 0-to-many courses
+- Student enrolls in 1-to-many courses
+ 

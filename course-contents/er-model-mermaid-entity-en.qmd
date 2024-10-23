@@ -1,0 +1,17 @@
+### Entity
+
+Entities are most basic part in the diagrams.
+They correspond to database tables normally.
+We can also give their attributes or columns in the diagram too.
+See below example.
+
+
+```{mermaid}
+%%| echo: true
+
+erDiagram
+	Student {
+	    int student_id PK
+	    string name
+	}
+```

@@ -1,0 +1,50 @@
+```{mermaid}
+%%| echo: true
+
+erDiagram
+    STUDENT ||--o{ COURSE : enrolls
+    COURSE ||--|{ LESSON : contains
+    TEACHER ||--o{ COURSE : teaches
+    TEACHER ||--o{ LESSON : conducts
+    STUDENT ||--o{ LESSON : attends
+
+
+    STUDENT {
+        int id PK
+        string name
+        date created_at
+        date updated_at
+    }
+    COURSE {
+        int id PK
+        string title
+        string description
+        date created_at
+        date updated_at
+    }
+    LESSON {
+        int id PK
+        int course_id FK
+        string title
+        date scheduled_date
+        date created_at
+        date updated_at
+    }
+    TEACHER {
+        int id PK
+        string name
+        string email
+        date created_at
+        date updated_at
+    }
+```
+
+
+
+
+
+
+https://mermaid.live/
+
+
+

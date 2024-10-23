@@ -1,4 +1,4 @@
-## Mermaid ER Diagrams
+# Mermaid ER Diagrams
 
 We use [mermaid Entity Relationship Diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) for diagramming since it is more easily understood and it is version controllable with tools like git.
 

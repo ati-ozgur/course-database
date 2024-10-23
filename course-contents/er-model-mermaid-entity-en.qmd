@@ -1,4 +1,4 @@
-### Entity
+## Entity
 
 Entities are most basic part in the diagrams.
 They correspond to database tables normally.

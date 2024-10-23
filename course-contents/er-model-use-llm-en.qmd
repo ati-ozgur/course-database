@@ -1,5 +1,5 @@
-
 ## Use LLMs to generate ER diagrams
 
-We can use LLMs like ChatGPT and Perplexity to create our draft diagrams.
-[See here](https://www.perplexity.ai/search/please-create-me-a-simple-merm-cB.z9NOZRuiC1.0AszoIeA) 
+We can use LLMs like ChatGPT and Perplexity to create our draft diagrams since mermaid is normal markdown code.
+
+[See an example here using perplexity](https://www.perplexity.ai/search/please-create-me-a-simple-merm-cB.z9NOZRuiC1.0AszoIeA) 

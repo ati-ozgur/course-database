@@ -32,7 +32,8 @@ book:
         - course-contents/sql-clients-GUI-en.qmd
     - part: "Database Design Intro"
       chapters:
-        - course-contents/er-model-en.qmd    
+        - course-contents/er-model-en.qmd
+        - course-contents/er-model-mermaid-diagrams-en.qmd
     - part: "SQL Intro"
       chapters:
         - course-contents/sql-why-learn-en.qmd

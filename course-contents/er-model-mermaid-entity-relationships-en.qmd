@@ -1,5 +1,4 @@
- 
-### Entity Relationships
+## Entity Relationships
 
 Entities should have relationships.
 That is how they interact with other entities.

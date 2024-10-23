@@ -1,0 +1,27 @@
+# Database design patterns
+
+1. Definition Table (Category)
+TODO add example
+
+2. 1 to many
+TODO add example
+
+
+3. Self referencing, hierarchical 
+TODO add example
+
+https://duckduckgo.com/?q=organization+chart&iax=images&ia=images&iai=https%3A%2F%2Ftemplatelab.com%2Fwp-content%2Fuploads%2F2018%2F10%2FOrganization-Chart-Template-7-TemplateLab.com_-e1539503563939.jpg
+
+
+
+## Others
+
+1 Customer has 1-to-many Invoice
+crow foot
+
+1 Employee 1-to-many Employee
+
+- Many employees reports to 1 employee (superior)
+
+- 1 Employee is responsible for many Employees (Correct word choice)
+

@@ -11,6 +11,8 @@ But as [same web page](https://www.tiobe.com/tiobe-index/) says
 
 [SQL Tetris in Postgresql for turing complete example](https://github.com/nuno-faria/tetris-sql)
 
+{{< include ../course-contents/sql-in-career-sites-en.md >}}
+
 
 ## Reason 2: SQL is used in places other than databases  {.unnumbered} 
 

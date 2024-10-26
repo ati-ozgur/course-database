@@ -4,7 +4,6 @@
 
 {{< include ../course-contents/sql-knowledge-among-developers-en.md >}}
 
-{{< include ../course-contents/sql-in-career-sites-en.md >}}
 
 
 {{< include ../course-contents/database-schema-object-names-en.md >}}

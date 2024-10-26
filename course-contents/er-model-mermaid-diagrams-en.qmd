@@ -1,6 +1,6 @@
 # Mermaid ER Diagrams
 
-We use [mermaid Entity Relationship Diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) for diagramming since it is more easily understood and it is version controllable with tools like git.
+We use [mermaid Entity Relationship Diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) for diagramming since markdown syntax of mermaid is more easily understood and markdown as plain text is version controllable with tools like git.
 
 {{< include ../course-contents/er-model-mermaid-entity-en.qmd >}}
 

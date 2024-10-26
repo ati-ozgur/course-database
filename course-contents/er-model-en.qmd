@@ -14,6 +14,5 @@ Or we could reverse engineer our diagrams from our database.
 
 {{< include ../course-contents/er-model-reverse-engineering-tools-en.qmd >}}
 
-{{< include ../course-contents/er-model-mermaid-diagrams-en.qmd >}}
 
 

@@ -1,6 +1,6 @@
 # SQL standard
 
-{{< include ../course-contents/sql-standard-short-tr.md >}}
+
 
 
 ## SQL Standart tarihçesi

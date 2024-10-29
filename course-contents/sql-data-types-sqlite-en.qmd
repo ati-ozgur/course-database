@@ -67,7 +67,7 @@ For these type of insert, we get following error:
 SQL Error [20]: [SQLITE_MISMATCH] Data type mismatch (datatype mismatch)
 ```
 
-Any column in an SQLite version 3 database, except an INTEGER PRIMARY KEY column, may be used to store a value of any storage class.
+> Any column in an SQLite version 3 database, except an INTEGER PRIMARY KEY column, may be used to store a value of any storage class.
 
 
 
@@ -79,6 +79,18 @@ Paraphrased from [Datatypes In SQLite](https://sqlite.org/datatype3.html):
 - REAL:  floating point value, stored as an 8-byte IEEE floating point number.
 - TEXT: text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE).
 - BLOB. The value is a blob of data, stored exactly as it was input.
+
+
+** Boolean ** 
+
+Sqlite do not have boolean.
+These values stored as 0 and 1 integer values.
+
+** Date and Time **
+
+Sqlite do not have date and time storage classes or data types.
+But sqlite has built-in [date and time functions](https://sqlite.org/lang_datefunc.html).
+
 
 
 

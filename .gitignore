@@ -1,3 +1,4 @@
+**/*.sqlite
 index.tex
 databases.tex
 _site/*

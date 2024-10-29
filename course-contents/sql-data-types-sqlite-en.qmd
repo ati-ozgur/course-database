@@ -9,6 +9,8 @@ Other databases like oracle and sql server used static or strict typing.
 
 Dynamic typing vs static typing is almost a religious war between their proponents.
 Therefore, we will not discuss it a lot but we will talk about how it differs and what could you expect.
+Sqlite developers defend their position in following article: [The Advantages Of Flexible Typing](https://sqlite.org/flextypegood.html).
+
 
 Also, with after version 3.37.0 (2021-11-27), SQLite provides STRICT tables, see [same page](https://sqlite.org/datatype3.html).
 

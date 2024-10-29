@@ -1,0 +1,56 @@
+## Sqlite Data Types
+
+
+As [Datatypes In SQLite](https://sqlite.org/datatype3.html) page says, sqlite uses dynamic typing.
+Other databases like oracle and sql server used static or strict typing.
+
+
+
+Dynamic typing vs static typing is almost a religious war between their proponents.
+Therefore, we will not discuss it a lot but we will talk about how it differs and what could you expect.
+
+Also, with after version 3.37.0 (2021-11-27), SQLite provides STRICT tables, see [same page](https://sqlite.org/datatype3.html).
+
+
+Lets see an example:
+
+First create a table with two integer column, first one will primary key.
+
+``` sql
+CREATE TABLE DynamicTyping (
+	DynamicTypingId INTEGER PRIMARY KEY AUTOINCREMENT,
+	ColumnNumber INTEGER
+);
+```
+Then insert some values: 
+
+``` sql
+INSERT INTO DynamicTyping (ColumnNumber) VALUES(2020);
+INSERT INTO DynamicTyping (ColumnNumber) VALUES(1);
+INSERT INTO DynamicTyping (ColumnNumber) VALUES(2021);
+```
+
+and select that values:
+
+``` sql
+SELCT * FROM DynamicTyping;
+```
+
+
+Okay, it works as normal.
+Now, try to insert a name to ColumnNumber:
+
+``` sql
+INSERT INTO DynamicTyping (ColumnNumber) VALUES('Atilla');
+```
+
+
+``` sql
+SELCT * FROM DynamicTyping;
+```
+
+This also works.
+This is the dynamic typing of sqlite.
+The values are 
+
+

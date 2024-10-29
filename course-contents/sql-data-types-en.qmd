@@ -14,4 +14,5 @@ See below table by Microsoft @Access2024Equivalent
 
 {{< include ../course-contents/sql-data-types-sqlserver-en.qmd >}}
 
+{{< include ../course-contents/sql-data-types-sqlite-en.qmd >}}
 

@@ -20,15 +20,15 @@ First create a table with two integer column, first one will primary key.
 ```sql
 CREATE TABLE DynamicTyping (
 	DynamicTypingId INTEGER PRIMARY KEY AUTOINCREMENT,
-	ColumnNumber INTEGER
+	ColumnInteger INTEGER
 );
 ```
 Then insert some values: 
 
 ```sql
-INSERT INTO DynamicTyping (ColumnNumber) VALUES(2020);
-INSERT INTO DynamicTyping (ColumnNumber) VALUES(1);
-INSERT INTO DynamicTyping (ColumnNumber) VALUES(2021);
+INSERT INTO DynamicTyping (ColumnInteger) VALUES(2020);
+INSERT INTO DynamicTyping (ColumnInteger) VALUES(1);
+INSERT INTO DynamicTyping (ColumnInteger) VALUES(2021);
 ```
 
 and select that values:
@@ -39,10 +39,10 @@ SELCT * FROM DynamicTyping;
 
 
 Okay, it works as normal.
-Now, try to insert a name to ColumnNumber:
+Now, try to insert a name to ColumnInteger:
 
 ```sql
-INSERT INTO DynamicTyping (ColumnNumber) VALUES('Atilla');
+INSERT INTO DynamicTyping (ColumnInteger) VALUES('Atilla');
 ```
 
 
@@ -57,7 +57,7 @@ Lets try inserting to text values to both columns:
 
 ```sql
 INSERT INTO DynamicTyping
-(DynamicTypingId, ColumnNumber)
+(DynamicTypingId, ColumnInteger)
 VALUES('value', 'value');
 
 ```
@@ -111,19 +111,19 @@ select sqlite_version();
 ```sql
 CREATE TABLE StrictTyping (
 	DynamicTypingId INTEGER PRIMARY KEY AUTOINCREMENT,
-	ColumnNumber INTEGER) strict;
+	ColumnInteger INTEGER) strict;
 ```
 
 Then try to insert text value to integer column.
 
 ```sql
-INSERT INTO StrictTyping (ColumnNumber) VALUES('Atilla');
+INSERT INTO StrictTyping (ColumnInteger) VALUES('Atilla');
 ```
 
 you will get following error.
 
 ```
-SQL Error [19]: [SQLITE_CONSTRAINT_DATATYPE] An insert or update attempted to store a value inconsistent with the column's declared type in a table defined as STRICT (cannot store TEXT value in INTEGER column StrictTyping.ColumnNumber)
+SQL Error [19]: [SQLITE_CONSTRAINT_DATATYPE] An insert or update attempted to store a value inconsistent with the column's declared type in a table defined as STRICT (cannot store TEXT value in INTEGER column StrictTyping.ColumnInteger)
 ```
 
 

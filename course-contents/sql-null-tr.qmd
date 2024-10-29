@@ -34,7 +34,7 @@
 ### NULL ile çalışma - COALESCE Örnek
 
 
-``` sql
+```sql
     SELECT 
     COALESCE(ADI + ' ' + IKINCIADI + ' ' + SOYADI
     ,ADI + ' ' + SOYADI

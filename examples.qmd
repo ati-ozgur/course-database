@@ -2,9 +2,10 @@
 
 # Temeller Açıklamalar (Comments)  {#sec-temeller-aciklamalar}
 
-``` sql
+```sql
     SELECT * FROM Production.Product;
 ```
+
 ![Note](images/image-name.png)
 
 {{< include ../course-contents/tables/table-databases-history-tr.md >}}

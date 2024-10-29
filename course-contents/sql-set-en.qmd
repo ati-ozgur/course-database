@@ -26,7 +26,7 @@ Above image is take from [following link](https://medium.com/@sounder.rahul/inte
 
 UNION Example
 
-``` sql
+```sql
 SELECT countryregion, city FROM HR.Employees
 UNION
 SELECT countryregion, city FROM Sales.Customers;

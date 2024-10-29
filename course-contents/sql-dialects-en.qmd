@@ -14,13 +14,13 @@ See below example queries
 
 **sqlite**
 
-``` sql
+```sql
 SELECT DATE('now');
 ```
 
 **Sql Server**
 
-``` sql
+```sql
 SELECT GETDATE()  
 ```
 
@@ -29,7 +29,7 @@ You cannot run select without from in Oracle database.
 
 **Oracle**
 
-``` sql
+```sql
 SELECT CURRENT_DATE FROM dual;
 ```
 

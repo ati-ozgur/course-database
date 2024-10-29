@@ -16,7 +16,7 @@
 
 SQL-left-join-syntax-ansi-sql-92
 
-``` sql
+```sql
 SELECT OgrenciNo,IletisimTipi,IletisimDegeri
 FROM   OGRENCI LEFT INNER JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
@@ -28,7 +28,7 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 
 RIGHT JOIN ANSI SQL
 
-``` sql
+```sql
 SELECT OgrenciNo,IletisimTipi,IletisimDegeri
 FROM   OGRENCI RIGHT JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
@@ -42,7 +42,7 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 
 SQL-full-outer-join-syntax-ansi-sql-92
 
-``` sql
+```sql
 SELECT OgrenciNo,IletisimTipi,IletisimDegeri
 FROM   OGRENCI FULL OUTER JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;

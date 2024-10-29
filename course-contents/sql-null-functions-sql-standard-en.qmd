@@ -13,7 +13,7 @@ coalesce is always better choice for null handling since coalesce is supported b
 **working with NULL  - COALESCE example**
 
 
-``` sql
+```sql
     SELECT 
     COALESCE(FirstName + ' ' + SecondName + ' ' + LastName
     ,FirstName + ' ' + LastName

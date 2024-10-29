@@ -1,6 +1,6 @@
 # SQL SELECT DISTINCT MÜKERRER KAYITLAR
 
-``` sql
+```sql
 SELECT ADI FROM ORTAK.KISI;
 ```
 
@@ -15,7 +15,7 @@ Sonuç:
 - Duru
 - Duru
 
-``` sql
+```sql
 SELECT DISTINCT ADI FROM ORTAK.KISI;
 ```
 Sonuç:
@@ -29,10 +29,10 @@ Sonuç:
 
 ## Chinook Örneği
 
-``` sql
+```sql
 select FirstName from customer;
 ```
 
-``` sql
+```sql
 select DISTINCT FirstName from customer;
 ```

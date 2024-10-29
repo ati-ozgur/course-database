@@ -13,7 +13,7 @@
 
 ansi-sql-89 kullanımı
 
-``` sql
+```sql
 SELECT ...
 FROM   Table1, Table2
 WHERE  Table1.KolonA = Table2.KolonA;
@@ -22,7 +22,7 @@ WHERE  Table1.KolonA = Table2.KolonA;
 
 syntax-ansi-sql-92
 
-``` sql
+```sql
 SELECT ...
 FROM   Table1 JOIN Table2
 ON  Table1.KolonA = Table2.KolonA;

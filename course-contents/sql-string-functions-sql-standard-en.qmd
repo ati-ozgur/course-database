@@ -39,24 +39,24 @@ For SQL server, LEN function is used.
 
 sqlite
 
-``` sql
+```sql
 SELECT LENGTH('atilla')
 ```
 
 
 Oracle
 
-``` sql
+```sql
 SELECT LENGTH('atilla') from dual;
 ```
 
 SQL Server
 
-``` sql
+```sql
 SELECT LEN('atilla')
 ```
 
-``` sql
+```sql
 SELECT LENGTH(FirstName) from Customer c;
 ```
 
@@ -150,7 +150,7 @@ Uppercase of given string X.
 sqlite works with ascii only.
 
 
-``` sql
+```sql
 select UPPER('atilla özgür');
 ```
 

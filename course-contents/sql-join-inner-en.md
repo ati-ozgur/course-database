@@ -13,7 +13,7 @@
 
 
 
-``` sql
+```sql
 SELECT OgrenciNo,IletisimTipi,IletisimDegeri
 FROM   OGRENCI INNER JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;

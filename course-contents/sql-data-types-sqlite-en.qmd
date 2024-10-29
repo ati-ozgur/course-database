@@ -16,7 +16,7 @@ Lets see an example:
 
 First create a table with two integer column, first one will primary key.
 
-``` sql
+```sql
 CREATE TABLE DynamicTyping (
 	DynamicTypingId INTEGER PRIMARY KEY AUTOINCREMENT,
 	ColumnNumber INTEGER
@@ -24,7 +24,7 @@ CREATE TABLE DynamicTyping (
 ```
 Then insert some values: 
 
-``` sql
+```sql
 INSERT INTO DynamicTyping (ColumnNumber) VALUES(2020);
 INSERT INTO DynamicTyping (ColumnNumber) VALUES(1);
 INSERT INTO DynamicTyping (ColumnNumber) VALUES(2021);
@@ -32,7 +32,7 @@ INSERT INTO DynamicTyping (ColumnNumber) VALUES(2021);
 
 and select that values:
 
-``` sql
+```sql
 SELCT * FROM DynamicTyping;
 ```
 
@@ -40,17 +40,47 @@ SELCT * FROM DynamicTyping;
 Okay, it works as normal.
 Now, try to insert a name to ColumnNumber:
 
-``` sql
+```sql
 INSERT INTO DynamicTyping (ColumnNumber) VALUES('Atilla');
 ```
 
 
-``` sql
-SELCT * FROM DynamicTyping;
+```sql
+SELECT * FROM DynamicTyping;
 ```
 
 This also works.
 This is the dynamic typing of sqlite.
-The values are 
+
+Lets try inserting to text values to both columns:
+
+```sql
+INSERT INTO DynamicTyping
+(DynamicTypingId, ColumnNumber)
+VALUES('value', 'value');
+
+```
+
+For these type of insert, we get following error:
+
+```
+SQL Error [20]: [SQLITE_MISMATCH] Data type mismatch (datatype mismatch)
+```
+
+Any column in an SQLite version 3 database, except an INTEGER PRIMARY KEY column, may be used to store a value of any storage class.
+
+
+
+The value normally belongs to following classes.
+Paraphrased from [Datatypes In SQLite](https://sqlite.org/datatype3.html):
+
+- NULL
+- INTEGER: signed integer, stored in 0, 1, 2, 3, 4, 6, or 8 bytes according on the magnitude of the value.
+- REAL:  floating point value, stored as an 8-byte IEEE floating point number.
+- TEXT: text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE).
+- BLOB. The value is a blob of data, stored exactly as it was input.
+
+
+
 
 

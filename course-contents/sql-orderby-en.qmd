@@ -4,12 +4,12 @@
 
 If order by is not used in the query, database engine is free to return result set in whichever order it chooses.
 
-``` sql
+```sql
 SELECT * FROM Customer c 
 order by FirstName
 ```
 
-``` sql
+```sql
 SELECT * FROM Customer c 
 order by Country , State, City
 ```
@@ -18,7 +18,7 @@ order by Country , State, City
 
 - Columns not retrieved with SELECT can be used.
 
-``` sql
+```sql
 SELECT CustomerId,FirstName,LastName FROM Customer c 
 order by Country , State, City
 ```
@@ -26,12 +26,12 @@ order by Country , State, City
 - ASC (Ascending) or DESC (Descending) can be specified. 
 - ASC is the default word.
 
-``` sql
+```sql
 SELECT CustomerId,FirstName,LastName FROM Customer c 
 order by CustomerId DESC
 ```
 
-``` sql
+```sql
 SELECT CustomerId,FirstName,LastName FROM Customer c 
 order by Country DESC, State DESC, City DESC
 ```
@@ -40,7 +40,7 @@ order by Country DESC, State DESC, City DESC
 - Instead of column name, column number in the result set could be used.
 
 
-``` sql
+```sql
 SELECT CustomerId,FirstName,LastName FROM Customer c 
 order by 1 DESC
 ```

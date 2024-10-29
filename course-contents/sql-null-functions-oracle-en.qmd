@@ -17,7 +17,7 @@ Coalesce function is more powerful than nvl and coalesce also works in other dat
 Use coalesce, do not use NVL.
 
 
-``` sql
+```sql
 SELECT NVL(NULL,'DEFAUL VALUE') FROM DUAL;
 ```
 
@@ -31,11 +31,11 @@ This function could also be replaced with coalesce easily.
 Do not use it.
 
 
-``` sql
+```sql
 SELECT NVL2(NULL,'Y','Z') FROM DUAL;
 ```
 
-``` sql
+```sql
 SELECT NVL2('NOT NULL','Y','Z') FROM DUAL;
 ```
 

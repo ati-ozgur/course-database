@@ -19,17 +19,17 @@
 
 
 sqlite
-``` sql
+```sql
 select null = null;
 ```
 
-``` sql
+```sql
 select null is null;
 ```
 
 oracle
 
-``` sql
+```sql
 SELECT  * FROM dual WHERE NULL = NULL;
 
 

@@ -2,7 +2,7 @@
 
 It is used for removing duplicate rows from results.
 
-``` sql
+```sql
 SELECT ADI FROM ORTAK.KISI;
 ```
 
@@ -17,7 +17,7 @@ Result:
 - Duru
 - Duru
 
-``` sql
+```sql
 SELECT DISTINCT ADI FROM ORTAK.KISI;
 ```
 Result:
@@ -31,10 +31,10 @@ Result:
 
 ## Chinook example
 
-``` sql
+```sql
 select FirstName from customer;
 ```
 
-``` sql
+```sql
 select DISTINCT FirstName from customer;
 ```

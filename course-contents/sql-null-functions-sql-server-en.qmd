@@ -15,7 +15,7 @@ see [isnull in sql server documentation](https://learn.microsoft.com/en-us/sql/t
 if column/variable is equals to **value**, then returns NULL.
 
 
-``` sql
+```sql
 SELECT NULLIF(4,4) AS Same, NULLIF(5,7) AS Different;
 ```
 

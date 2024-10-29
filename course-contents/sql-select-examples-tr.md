@@ -5,13 +5,13 @@
 
 #### AdventureWorks2012 Tüm Kolonlar
 
-``` sql
+```sql
     SELECT * FROM Production.Product;
 ```
 
 #### AdventureWorks2012  Tablo Takma İsim (Alias)
 
-``` sql
+```sql
 SELECT P.* FROM Production.Product P;
 ```
 
@@ -19,7 +19,7 @@ SELECT P.* FROM Production.Product P;
 
 #### AdventureWorks2012 Kolon Hesaplama
 
-``` sql
+```sql
    SELECT Name AS UrunAdi
    , ListPrice * 0.9 AS SatisFiyati
 FROM Production.Product;
@@ -32,7 +32,7 @@ FROM Production.Product;
 
 Explanation is later
 
-``` sql
+```sql
 SELECT 
 O.OrderDate
 , COUNT(O.SalesOrderID) AS OrderCount
@@ -47,7 +47,7 @@ ORDER BY O.OrderDate DESC;
 #### (AdventureWorks2012) Kolon Adlari ile
 
 
-``` sql
+```sql
     SELECT Name
     , ListPrice 
     FROM Production.Product P;
@@ -59,7 +59,7 @@ ORDER BY O.OrderDate DESC;
 
 #### (AdventureWorks2012) Kolon Takma Adı
 
-``` sql
+```sql
     SELECT Name AS ADI
     , ListPrice AS "Liste Fiyati" 
     FROM Production.Product P;

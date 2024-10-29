@@ -8,29 +8,29 @@
 
 Chinook
 
-``` sql
+```sql
 select * from Employee where EmployeeId = 5;
 ```
 
-``` sql
+```sql
 select * from Employee where EmployeeId != 5;
 ```
 
-``` sql
+```sql
 select * from Employee where EmployeeId <> 5;
 ```
 
-``` sql
+```sql
 select * from Employee where EmployeeId < 5;
 ```
-``` sql
+```sql
 select * from Employee where EmployeeId <= 5;
 ```
-``` sql
+```sql
 select * from Employee where EmployeeId > 5;
 ```
 
-``` sql
+```sql
 select * from Employee where EmployeeId >= 5;
 ```
 ## logical operators
@@ -47,7 +47,7 @@ select * from Employee where EmployeeId >= 5;
 
 ## IN Operator
 
-``` sql
+```sql
 select * from Employee where EmployeeId IN (2,5,9);  
 ```
 

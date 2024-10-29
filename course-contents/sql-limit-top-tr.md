@@ -9,20 +9,20 @@
 - ORDER BY olmadan kullanımda geliş sırasının garantisi yoktur.
 
 
-``` sql
+```sql
 SELECT TOP 1 ADI 
 FROM ORTAK.KISI  
 ORDER BY ADI;
 ```
 
-``` sql
+```sql
 SELECT TOP 10 Percent ADI 
 FROM ORTAK.KISI  
 ORDER BY ADI;
 ```
 
 
-``` sql
+```sql
 SELECT TOP 10 WITH TIES ADI 
 FROM ORTAK.KISI 
 ORDER BY ADI;

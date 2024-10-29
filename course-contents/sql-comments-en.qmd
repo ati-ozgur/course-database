@@ -6,7 +6,7 @@ Comments can appear anywhere white space can come.
 
 See below example
 
-``` sql
+```sql
 SELECT
  * -- here character * means all columns
 FROM Employee;
@@ -17,7 +17,7 @@ FROM Employee;
 C style /* */ multi line comments are also supported by a lot of different databases, like [Sqlite comments](https://sqlite.org/lang_comment.html), [oracle comments](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comments.html) and [SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/slash-star-comment-transact-sql?view=sql-server-ver16). 
 
 
-``` sql
+```sql
 
 /*
 This is a 

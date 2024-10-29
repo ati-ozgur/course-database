@@ -18,7 +18,7 @@ You can see below syntax for join but please do not use it.
 Using join condition explicitly would be better.
 
 
-``` sql
+```sql
 SELECT ...
 FROM   Table1, Table2
 WHERE  Table1.KolonA = Table2.KolonA;
@@ -27,7 +27,7 @@ WHERE  Table1.KolonA = Table2.KolonA;
 
 syntax-ansi-sql-92
 
-``` sql
+```sql
 SELECT ...
 FROM   Table1 JOIN Table2
 ON  Table1.KolonA = Table2.KolonA;

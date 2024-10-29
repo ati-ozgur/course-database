@@ -12,7 +12,7 @@
 - Test için veri üretilmesi haricinde istenmeyen bir durumdur. 
 
 
-``` sql
+```sql
 SELECT OgrenciNo,IletisimTipi,IletisimDegeri
 FROM   OGRENCI CROSS JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;

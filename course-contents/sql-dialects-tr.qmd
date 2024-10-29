@@ -14,13 +14,13 @@ Aşağıdaki örnek sorgulara bakalım
 
 **sqlite**
 
-``` sql
+```sql
 SELECT DATE('now');
 ```
 
 **Sql Server**
 
-``` sql
+```sql
 SELECT GETDATE()  
 ```
 
@@ -30,7 +30,7 @@ Oracle veritabanında from olmadan select çalıştıramazsınız.
 
 **Oracle**
 
-``` sql
+```sql
 SELECT CURRENT_DATE FROM dual;
 ```
 

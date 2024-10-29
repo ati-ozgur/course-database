@@ -18,7 +18,7 @@ whether a string,Y, matches a pattern X.
 Equal to the expression "Y GLOB X".
 
 
-``` sql
+```sql
 select glob('ati','atilla'); 
 select glob('*ati*','atilla');
 ```

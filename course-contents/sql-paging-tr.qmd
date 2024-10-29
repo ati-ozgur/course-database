@@ -10,7 +10,7 @@ Sonuçları Sayfalama - OFFSET-FETCH komutu ORDER BY ile KULLANILARAK Yapılabil
 
 
 
-``` sql
+```sql
 ORDER BY <order_by_list>
 OFFSET <offset_value> ROW(S)
 FETCH FIRST|NEXT <fetch_value> ROW(S) ONLY

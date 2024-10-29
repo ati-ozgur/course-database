@@ -8,7 +8,7 @@
 
 self-join-northwind-example1
 
-``` sql
+```sql
 SELECT E.EmployeeID
       ,E.LastName AS EmployerLastName
       ,E.FirstName AS EmployerFirstName

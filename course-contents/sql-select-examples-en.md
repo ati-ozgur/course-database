@@ -3,7 +3,7 @@
 
 **Chinook All columns using * character** 
 
-``` sql
+```sql
 SELECT * FROM Customer;
 ```
 
@@ -12,7 +12,7 @@ Using select with column names
 
 
 
-``` sql
+```sql
 SELECT FirstName, LastName FROM Customer;   
 ```
 
@@ -21,21 +21,21 @@ SELECT FirstName, LastName FROM Customer;
 
 ** Table Alias **
 
-``` sql
+```sql
 SELECT * FROM Customer c;
 ```
 
 
 ** Calculated Columns **
 
-``` sql
+```sql
 SELECT FirstName || ' ' || LastName FROM Customer;
 ```
 
 ** Column Alias **
 
 
-``` sql
+```sql
 SELECT FirstName || ' ' || LastName AS FullName FROM Customer;
 ```
 
@@ -45,7 +45,7 @@ SELECT FirstName || ' ' || LastName AS FullName FROM Customer;
 
 More explanation is later.
 
-``` sql
+```sql
 select CustomerId
 ,sum(total) as TotalInvoice 
 from Invoice 

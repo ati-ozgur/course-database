@@ -3,3 +3,5 @@
 {{< include ../course-contents/database-users-en.md >}}
 
 
+https://www.sqlite.org/omitted.html
+

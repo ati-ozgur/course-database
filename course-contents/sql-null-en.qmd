@@ -52,6 +52,10 @@ SELECT  * FROM dual WHERE NULL IS NULL;
 
 
 
+### sqlite null handling
+
+see below table from sqlite documentation [NULL Handling in SQLite Versus Other Database Engines](https://www.sqlite.org/nulls.html)
+
 
 
 

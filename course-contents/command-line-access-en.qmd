@@ -2,7 +2,7 @@
 
 ## sqlite
 
-- sqlite3
+- [sqlite3](https://www.sqlite.org/cli.html)
 
 ## Oracle
 

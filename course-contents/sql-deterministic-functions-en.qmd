@@ -1,0 +1,4 @@
+# SQL deterministic functions
+
+
+https://www.sqlite.org/deterministic.html

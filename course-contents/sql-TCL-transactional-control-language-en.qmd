@@ -1,5 +1,15 @@
 # TCL (Transactional control language)
 
-
+https://www.sqlite.org/isolation.html
 
 https://www.sqlite.org/lang_transaction.html
+
+
+https://www.sqlite.org/wal.html
+
+3. The Rollback Journal
+4. The Write-Ahead Log
+https://www.sqlite.org/fileformat2.html
+https://www.sqlite.org/wal.html
+
+https://www.sqlite.org/conflict.html

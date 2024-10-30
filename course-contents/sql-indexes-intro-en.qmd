@@ -11,6 +11,11 @@ TODO
 - [Very good B+ Tree visualization](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html)
 
 
+## Sqlite 
+
+https://www.sqlite.org/lang_createindex.html
+
+
 
 ## Other tutorials or lessons (Optional)
 

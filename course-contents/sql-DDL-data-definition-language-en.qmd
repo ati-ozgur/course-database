@@ -1,1 +1,7 @@
 # DDL (data definition language)
+
+CREATE TABLE
+https://www.sqlite.org/lang_createtable.html
+
+CREATE TABLE ... AS SELECT Statements
+

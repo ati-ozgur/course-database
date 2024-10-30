@@ -2,3 +2,9 @@
 
 
 {{< include ../course-contents/tables/table-agregate-functions-en.md >}}
+
+
+## Sqlite
+
+TODO add them.
+https://www.sqlite.org/lang_aggfunc.html

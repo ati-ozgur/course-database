@@ -1,0 +1,5 @@
+# sql-window-functions-en.qmd
+
+
+https://www.sqlite.org/windowfunctions.html
+

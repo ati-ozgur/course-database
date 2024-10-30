@@ -59,7 +59,13 @@ book:
         - course-contents/sql-paging-en.qmd
         - course-contents/sql-set-en.qmd
         - course-contents/sql-join-en.qmd
+        - course-contents/sql-deterministic-functions-en.qmd
         - course-contents/sql-string-functions-en.qmd
+        - course-contents/sql-mathematical-functions-en.qmd
+        - course-contents/sql-scalar-functions-en.qmd
+        - course-contents/sql-json-functions-en.qmd
+        - course-contents/sql-functions-other-en.qmd 
+       
     - part: "SQL DML-DCL-TCL"
       chapters:
         - course-contents/sql-DML-data-manipulation-language-en.qmd

@@ -1,0 +1,6 @@
+# sql-mathematical-functions-en.qmd
+
+
+
+- [sqlite Built-In Mathematical SQL Functions](https://www.sqlite.org/lang_mathfunc.html)
+

@@ -1,5 +1,7 @@
 ## SQL System Views
 
+### Schema views
+
 System views give dynamic information about the database system itself.
 
 The most useful example to system views are SQL Standard Information schema views:
@@ -11,10 +13,29 @@ These views are used to get table, column, view and other object information fro
 - and others
 
 See database specific documentation for this very useful feature from SQL Standard.
-
-
+Information schema views are supported by Sql server, mysql, [postgre sql](https://www.postgresql.org/docs/current/information-schema.html) and other databases.
+Unfortunately, both sqlite and oracle does not support this standard.
+See following [wikipedia page](https://en.wikipedia.org/wiki/Information_schema) to see which databases support it. 
 
 - [Sql Server Information Schema Views](https://learn.microsoft.com/en-us/sql/relational-databases/system-information-schema-views/system-information-schema-views-transact-sql?view=sql-server-ver16)
 
+
+This information are also accessible by database specific tables.
+
+- [sqlite Schema Table](https://www.sqlite.org/schematab.html)
+
+- [Oracle data dictionary views](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/data-dictionary-and-dynamic-performance-views.html)
+
+- [SQL Server System catalog views](https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq?view=sql-server-ver16)
+
+
+
+### Performance views
+
+There are also views for system performance usage in databases, to see which operations are very CPU intensive, very long, etc.
+
+- [SQL Server DMVs](https://learn.microsoft.com/en-us/sql/relational-databases/performance/use-dmvs-determine-usage-performance-views?view=sql-server-ver16)
+
+- [Oracle Dynamic Performance Views](https://docs.oracle.com/en/database/oracle/oracle-database/21/tgdba/instance-tuning-using-performance-views.html)
 
 

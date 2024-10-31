@@ -60,6 +60,15 @@ Instead of giving access to tables, you could give access to view itself.
 I have never seen this usage.
 
 
+**note**
+
+Views could be target of insert statements if rows in the views correspond to 1-to-1 to underlying tables, for example aggregate queries will never work. 
+
+Sqlite allows this feature when the view is single table only.
+
+I dislike this feature and never uses it.
+
+
 {{< include ../course-contents/sql-views-materialized-en.qmd >}}
 
 

@@ -1,4 +1,4 @@
-## JOIN Concept
+## Join Concept
 
 - joins rows from more than one table according to the given criteria.
 - Generally, primary key and foreign key joined.
@@ -6,8 +6,6 @@
 - It would be good to think of the join process as a Venn diagram.
 - But actually, it is not a set operation
 
-
-![join-inner-example1-tr](images/join-inner-example1-tr.png)
 
 
 

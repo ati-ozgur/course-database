@@ -1,6 +1,6 @@
-# SQL JOIN
+# SQL Join
 
-## Querying multiple tables with JOIN 
+## Querying multiple tables with Join 
 
 - Join
 - Inner Join  
@@ -10,7 +10,11 @@
 
 {{< include ../course-contents/sql-join-concept-en.md >}}
 
-sql-join-syntax-ansi-sql-89-en.qmd
+
+{{< include ../course-contents/sql-join-syntax-en.qmd >}}
+
+
+
 
 
 {{< include ../course-contents/sql-join-inner-en.md >}}

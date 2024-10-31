@@ -37,7 +37,7 @@ INNER JOIN Track T ON T.AlbumId  = B.AlbumId
 **note ANSI-SQL-89 inner join syntax**
 
 You may see below syntax for inner join but please do not use it.
-Using join condition explicitly would be better.
+Using join condition explicitly would always be better.
 
 
 ```sql

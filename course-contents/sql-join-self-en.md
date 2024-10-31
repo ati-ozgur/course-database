@@ -1,12 +1,13 @@
-## SQL JOIN SELF Kendi ile Birleşim 
-
-- Aynı tablonun satırlarını birleştirir.
-- FROM cümlesinden aynı tablonun 2 sanal kopyasını oluşturarak satırları bir biri ile karşılaştır.
-- Bu işlem için en az bir takma ad (alias) gereklidir. 
-- Takma isim verirken anlamlı bir isim vermeniz sql'ı daha sonra daha iyi anlamınız sağlayacaktır.
+## SQL Self Joins
 
 
-self-join-northwind-example1
+- Joins the rows from the same table.
+- Create 2 virtual copies of the same table used in the the FROM clause. Compare the rows with each other using the join condition.
+- At least one alias is required for this operation.
+- Giving a meaningful name to aliases will help you understand sql better later.
+- In the below example, Manager (M) is used for aliases.
+
+Chinook reports to which manager example
 
 ```sql
 SELECT E.EmployeeID
@@ -16,8 +17,8 @@ SELECT E.EmployeeID
       , M.EmployeeID as ManagerID
       , M.LastName AS ManagerLastName
       ,M.FirstName AS ManagerFirstName
-  FROM dbo.Employees E 
-  INNER JOIN dbo.Employees M
+  FROM Employee E 
+  INNER JOIN Employee M
   ON E.ReportsTo = M.EmployeeID 
 ```
 

@@ -1,34 +1,108 @@
 # SQL SET Operations
 
+
 - UNION [ALL]
-- EXCEPT/MINUS
-- INTERSECT
+- EXCEPT
+- INTERSECT 
 
 
 ![set-operations-union-intersect-except](./images/set-operations-union-intersect-except.png)
-
-Above image is take from [following link](https://medium.com/@sounder.rahul/interesting-read-sql-set-operators-union-union-all-intersect-minus-except-f325f378882f)
-
 
 
 
 ## UNION
 
 - Combines different (DISTINCT) results from multiple SELECT commands.
-- UNION singles duplicate records in the query result, so performance is affected.
+- UNION remove duplicate records from the query result, so performance is affected.
+
+See below example:
+
+```sql
+SELECT c.FirstName FROM Customer c
+```
+
+59 rows
+
+```sql
+SELECT e.FirstName FROM Employee e
+```
+
+8 rows
+
+```sql
+SELECT c.FirstName FROM Customer c
+UNION
+SELECT e.FirstName FROM Employee e
+```
+
+63 rows
+
+
+
+
 - UNION ALL works faster because it does not deal with duplicate records.
 - UNION ALL should be used wherever possible for performance reasons.
+
+
+```sql
+SELECT c.FirstName FROM Customer c
+UNION ALL
+SELECT e.FirstName FROM Employee e
+```
+
+67 rows
+
 - Column aliases should be written in the first query.
-- Column numbers must be the same in all queries that are concatenated.
+- Column numbers must be the same in all queries that are combined.
 - Column data structures should be either implicitly translated or explicitly translated (Explicit Conversion).
 - For example SELECT cast( GETDATE() as varchar(12))
 
 
-UNION Example
+## EXCEPT
+
+Second result set is removed from first result set.
+EXCEPT key word is SQL standard.
+
 
 ```sql
-SELECT countryregion, city FROM HR.Employees
-UNION
-SELECT countryregion, city FROM Sales.Customers;
+SELECT c.FirstName FROM Customer c
+EXCEPT
+SELECT e.FirstName FROM Employee e
 ```
+
+55 rows
+
+```sql
+SELECT e.FirstName FROM Employee e
+EXCEPT
+SELECT c.FirstName FROM Customer c
+```
+
+6 rows.
+
+
+
+
+## INTERSECT
+
+Intersection of the both result sets are the output.
+
+
+```sql
+SELECT c.FirstName FROM Customer c
+INTERSECT
+SELECT e.FirstName FROM Employee e
+```
+2 rows
+
+That is only 2 first names are same in Customer and Employee tables.
+
+
+## Oracle
+
+Except is SQL standard but oracle also accept MINUS keyword.
+It is functionality is the same.
+Oracle also accepts ALL to EXCEPT ALL and MINUS ALL so that duplicated will not be removed, same as UNION ALL.
+See following [Oracle tutorial Set operations](https://oracle-base.com/articles/21c/sql-set-operator-enhancements-21c)
+
 

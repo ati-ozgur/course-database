@@ -6,3 +6,7 @@ https://pixabay.com/static/uploads/photo/2012/04/13/19/44/database-33410_640.png
 
 view-image1.png
 https://www.db2tutorial.com/db2-view/
+
+
+./images/set-operations-union-intersect-except.png
+image is take from [following link](https://medium.com/@sounder.rahul/interesting-read-sql-set-operators-union-union-all-intersect-minus-except-f325f378882f)

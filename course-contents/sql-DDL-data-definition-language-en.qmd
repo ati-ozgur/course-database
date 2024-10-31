@@ -5,3 +5,5 @@ https://www.sqlite.org/lang_createtable.html
 
 CREATE TABLE ... AS SELECT Statements
 
+virtual columns
+https://www.sqlite.org/gencol.html

@@ -1,0 +1,11 @@
+# SQL Subqueries
+
+## Subquery single value
+
+## Subquery rows
+
+replace a join with a subquery
+
+
+## Subquery FROM
+

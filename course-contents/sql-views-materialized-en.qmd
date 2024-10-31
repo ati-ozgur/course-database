@@ -1,0 +1,21 @@
+## SQL Views materialized
+
+
+Normally, selecting from a view is not different than using view query in subquery from statement.
+Due to performance reasons, you may need results from views to be faster.
+SQL Server and Oracle offers materialized views for this purpose.
+Sql Server uses both indexed and materialized view for its terminology.
+Indexed could be added Materialized views to make them more faster.
+
+
+- [Oracle Materialized View](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/CREATE-MATERIALIZED-VIEW.html)
+- [SQL Server indexed views](https://learn.microsoft.com/en-us/sql/relational-databases/views/create-indexed-views?view=sql-server-ver16)
+
+
+Other databases like postgre sql, IBM DB2 and  Sybase SQL Anywhere also support this concept
+
+
+How frequently results are updated on physical storage is called refresh frequency.
+These types of views could have problems with frequently updated tables but they are very useful for aggregate queries.
+
+

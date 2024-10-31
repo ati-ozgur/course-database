@@ -59,20 +59,7 @@ In client-server databases, it could also be used to control access.
 Instead of giving access to tables, you could give access to view itself. 
 I have never seen this usage.
 
-**note**
 
-Normally, selecting from a view is not different than using view query in subquery from statement.
-Due to performance reasons, you may need results from views to be faster.
-SQL Server and Oracle offers materialized views for this purpose.
-Sql Server uses both indexed and materialized view for its terminology.
-Indexed could be added Materialized views to make them more faster.
-
-
-- [Oracle Materialized View](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/CREATE-MATERIALIZED-VIEW.html)
-- [SQL Server indexed views](https://learn.microsoft.com/en-us/sql/relational-databases/views/create-indexed-views?view=sql-server-ver16)
-
-
-Other databases like postgre sql, IBM DB2 and  Sybase SQL Anywhere also support this concept
-
+{{< include ../course-contents/sql-views-materialized-en.qmd >}}
 
 

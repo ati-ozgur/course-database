@@ -14,9 +14,6 @@
 {{< include ../course-contents/sql-join-syntax-en.qmd >}}
 
 
-
-
-
 {{< include ../course-contents/sql-join-inner-en.md >}}
 
 

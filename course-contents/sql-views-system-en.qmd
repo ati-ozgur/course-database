@@ -1,0 +1,20 @@
+## SQL System Views
+
+System views give dynamic information about the database system itself.
+
+The most useful example to system views are SQL Standard Information schema views:
+These views are used to get table, column, view and other object information from databases.
+
+- INFORMATION_SCHEMA.TABLES
+- INFORMATION_SCHEMA.COLUMNS
+- INFORMATION_SCHEMA.VIEWS
+- and others
+
+See database specific documentation for this very useful feature from SQL Standard.
+
+
+
+- [Sql Server Information Schema Views](https://learn.microsoft.com/en-us/sql/relational-databases/system-information-schema-views/system-information-schema-views-transact-sql?view=sql-server-ver16)
+
+
+

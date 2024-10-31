@@ -121,7 +121,7 @@ Any not matching information are returned as null in this result set as below.
 
 ![join Full Chinook example](images/join-full-Chinook-result.png)
 
-The Venn diagram for Full join is below.
+The Venn diagram for Full outer join is below.
 
-![join-outer-example1](images/join-outer-example1-en.png)
+![join full outer example 1](images/join-full-outer-example1-en.png)
 

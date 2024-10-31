@@ -56,9 +56,9 @@ book:
         - course-contents/sql-group-by-en.qmd
         - course-contents/sql-orderby-en.qmd
         - course-contents/sql-limit-top-en.md
-        - course-contents/sql-paging-en.qmd
         - course-contents/sql-set-en.qmd
         - course-contents/sql-join-en.qmd
+        - course-contents/sql-paging-en.qmd
         - course-contents/sql-deterministic-functions-en.qmd
         - course-contents/sql-string-functions-en.qmd
         - course-contents/sql-mathematical-functions-en.qmd

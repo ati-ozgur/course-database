@@ -1,0 +1,58 @@
+# SQL Triggers
+
+Triggers are automatic run operations when a specified events occurs.
+Triggers are powerful concept but they should be rarely used in my opinion since they make understanding of database harder.
+
+Most common events for triggers are data manipulation language (DML) events.
+
+- INSERT
+- UPDATE
+- DELETE
+
+All three, oracle, sql server and sqlite, supports DML or table triggers
+
+- [Sqlite Triggers](https://www.sqlite.org/lang_createtrigger.html)
+- [Sql Server DML Triggers](https://learn.microsoft.com/en-us/sql/relational-databases/triggers/dml-triggers?view=sql-server-ver16)
+- [Oracle Triggers](https://docs.oracle.com/en/database/oracle/oracle-database/23/tdddg/using-triggers.html)
+
+
+
+
+## Logon triggers
+
+
+SQL server and oracle supports log on triggers when users logged in databases.
+These type of triggers are meaningless in sqlite since it is file based database.
+
+- [Sql Server Logon Trigger](https://learn.microsoft.com/en-us/sql/relational-databases/triggers/logon-triggers?view=sql-server-ver16)
+
+Oracle Logon triggers are especially useful to change default schema for application users.
+See below example for specific user.
+We do not want to use schema user itself since it has unlimited privileges in its own schema.
+In oracle, it is better to use application user and change the default schema of application user.
+This is necessary in oracle since every schema is also a user in oracle database.
+
+
+
+```sql
+CREATE OR REPLACE TRIGGER set_default_schema
+AFTER LOGON ON DATABASE
+BEGIN
+  EXECUTE IMMEDIATE 'ALTER SESSION SET CURRENT_SCHEMA = your_schema_name';
+END;
+```
+
+## DDL (Data Definition Language) triggers
+
+These triggers corresponds to DDL events, 
+see database specific pages.
+These triggers could be used for simple version control of databases where for example you will log every create/alter/drop staments to a table.
+I suggest that this table should be unaccessible to developers.
+
+- [Sql Server DDL Triggers](https://learn.microsoft.com/en-us/sql/relational-databases/triggers/ddl-triggers?view=sql-server-ver16)
+- [Oracle DDL triggers]
+
+See following youtube video for oracle.
+[Oracle DDL Trigger to log all database object changes](https://www.youtube.com/watch?v=qiAPG2rP3sA).
+
+Same concept also applicable in SQL Server.

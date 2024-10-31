@@ -69,7 +69,9 @@ book:
         - course-contents/sql-scalar-functions-en.qmd
         - course-contents/sql-json-functions-en.qmd
         - course-contents/sql-functions-other-en.qmd 
-       
+        - course-contents/sql-stored-procedures-en.qmd
+        - course-contents/sql-triggers-en.qmd
+
     - part: "SQL DML-DCL-TCL"
       chapters:
         - course-contents/sql-DML-data-manipulation-language-en.qmd

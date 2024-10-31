@@ -10,28 +10,5 @@
 ![join-inner-example1-tr](images/join-inner-example1-tr.png)
 
 
-## JOIN Syntax
 
-Syntax: ansi-sql-89 
-
-You can see below syntax for join but please do not use it.
-Using join condition explicitly would be better.
-
-
-```sql
-SELECT ...
-FROM   Table1, Table2
-WHERE  Table1.KolonA = Table2.KolonA;
-
-```
-
-syntax-ansi-sql-92
-
-```sql
-SELECT ...
-FROM   Table1 JOIN Table2
-ON  Table1.KolonA = Table2.KolonA;
-
-
-```
 

@@ -1,4 +1,4 @@
-# SQL-Select Paging
+# SQL Paging
 
 Paging Results - Can be done by using the OFFSET-FETCH command with ORDER BY.
 

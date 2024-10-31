@@ -50,9 +50,13 @@ These triggers could be used for simple version control of databases where for e
 I suggest that this table should be unaccessible to developers.
 
 - [Sql Server DDL Triggers](https://learn.microsoft.com/en-us/sql/relational-databases/triggers/ddl-triggers?view=sql-server-ver16)
-- [Oracle DDL triggers]
 
-See following youtube video for oracle.
-[Oracle DDL Trigger to log all database object changes](https://www.youtube.com/watch?v=qiAPG2rP3sA).
+
+Oracle DDL triggers are called system triggers in their documentation.
+- [Oracle system triggers](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/CREATE-TRIGGER-statement.html)
+
+See following youtube video for oracle:
+	
+- [Oracle DDL Trigger to log all database object changes](https://www.youtube.com/watch?v=qiAPG2rP3sA).
 
 Same concept also applicable in SQL Server.

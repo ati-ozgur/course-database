@@ -32,7 +32,7 @@ This information are also accessible by database specific tables.
 
 ### Performance views
 
-There are also views for system performance usage in databases, to see which operations are very CPU intensive, very long, etc.
+There are also system views for system performance usage in databases, to see which operations are very CPU intensive, very long, etc.
 
 - [SQL Server DMVs](https://learn.microsoft.com/en-us/sql/relational-databases/performance/use-dmvs-determine-usage-performance-views?view=sql-server-ver16)
 

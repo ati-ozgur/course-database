@@ -58,7 +58,11 @@ book:
         - course-contents/sql-limit-top-en.md
         - course-contents/sql-set-en.qmd
         - course-contents/sql-join-en.qmd
+        - course-contents/sql-subqueries-en.qmd
+        - course-contents/sql-with-en.qmd
         - course-contents/sql-paging-en.qmd
+        - course-contents/sql-views-en.qmd
+        - course-contents/sql-virtual-tables-en.qmd
         - course-contents/sql-deterministic-functions-en.qmd
         - course-contents/sql-string-functions-en.qmd
         - course-contents/sql-mathematical-functions-en.qmd

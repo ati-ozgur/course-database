@@ -1,4 +1,4 @@
-# sql-functions-other-en.qmd
+# SQL functions other
 
 
 

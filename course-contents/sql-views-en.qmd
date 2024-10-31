@@ -1,3 +1,17 @@
 # SQL views
 
+Views allows you to store your select queries in databases.
+It is useful for especially common and complex queries.
+
+- [sqlite views](https://www.sqlite.org/lang_createview.html)
+- [sql server views](https://learn.microsoft.com/en-us/sql/relational-databases/views/views?view=sql-server-ver16)
+- [Oracle views](https://docs.oracle.com/en/database/oracle/oracle-database/23/cncpt/partitions-views-and-other-schema-objects.html#GUID-15E7AEDB-9A3F-4B31-AD2D-66253CC822E5)
+
+In client-server databases, it could also be used to control access.
+Instead of giving access to tables, you could give access to view itself but 
+
+
+
+
+
 

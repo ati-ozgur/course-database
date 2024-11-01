@@ -5,6 +5,9 @@
 - Join
 - Inner Join  
 - Outer Join  
+	* Right outer join
+	* Left outer join
+	* Full outer join
 - Cross Join  
 - Self Join   
 

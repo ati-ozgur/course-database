@@ -1,4 +1,4 @@
-## Cross Join  - Çapraz Birleşim
+## Cross Join 
 
 - Cross join Cartesian multiply the rows in two tables
 

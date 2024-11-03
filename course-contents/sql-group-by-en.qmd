@@ -3,6 +3,44 @@
 
 ## Group by intro
 
+GROUP BY clause in SQL is used to group rows that have the same values in specified columns. 
+GROUP by is often used with aggregate functions like
+
+- avg
+- sum
+- min
+- max
+- count
+
+```sql
+SELECT CustomerId , COUNT(*) as invoice_count, SUM(Total) as total_sales
+FROM Invoice
+GROUP BY CustomerId;
+```
+
+The result will be something like below:
+
+![Count Total invoices](images/count-sum-invoices.png)
+
+
+Above query will
+
+- Group all invoices by CustomerId
+- count number of invoices for each customer 
+- calculate sum of invoices for each customer
+
+If we use order by in this query, like below, we could see which customers are making the most purchases.
+
+```sql
+SELECT CustomerId , COUNT(*) as invoice_count, SUM(Total) as total_sales
+FROM Invoice
+GROUP BY CustomerId
+order By total_sales desc; 
+```
+
+Other aggregate functions could be used to infer more insights to invoice data.
+
+
 
 
 **Group by real life example**

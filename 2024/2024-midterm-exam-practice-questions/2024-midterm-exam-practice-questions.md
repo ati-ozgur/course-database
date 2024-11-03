@@ -8,8 +8,9 @@
 
 Please write if below statements are true (T) or false (F)
 
-| 1 | SQL is the abbreviation of Structured Query Language |  |
+| # | Question |T/F|
 |---|---|---|
+| 1 | SQL is the abbreviation of Structured Query Language |  |
 | 2 | SQL contains sub languages such as DDL, DML, DCL, and TCL |  |
 | 3 | SQL is based on relational data model and set based operations |  |
 | 4 | SQL queries allows quick and efficient retrieval of a large amount of records from a database |  |

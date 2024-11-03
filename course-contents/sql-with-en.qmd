@@ -41,4 +41,6 @@ SELECT * FROM EmployeeManager WHERE ManagerLastName LIKE 'A%'
 
 ```
 
-
+What is good about CTEs is that we can iteratively build our SQL from previous CTEs.
+For example, lets say we would like to find invoices larger than usual average of given customer.
+That is we have a customer, and on the average his invoices 

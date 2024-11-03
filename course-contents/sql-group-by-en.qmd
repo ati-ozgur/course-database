@@ -1,12 +1,17 @@
 # SQL Group by
 
-TODO
 
-- 
+## Group by intro
 
 
-9. Group by
-Company, city group by example from Ministry of Labor and Social Security
+
+**Group by real life example**
+
+- From Ministry of Labor and Social Security
+- how many companies each city has?
+- how many people are employed by companies in each different city?
+
+
 
 ## where vs having
 

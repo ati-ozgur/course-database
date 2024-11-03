@@ -6,6 +6,10 @@
 @Wikipedia2016DatabaseModelsFigure
 
 
+{{< include ../course-contents/database-models-document-en.qmd >}}
+
+
+
 {{< include ../course-contents/database-models-graph-en.qmd >}}
 
 {{< include ../course-contents/database-models-vector-en.qmd >}}

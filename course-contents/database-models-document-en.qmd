@@ -1,0 +1,11 @@
+## Document databases
+
+Most well known example is mongodb.
+Document databases mostly store json documents.
+They are schema-free organization of data.
+That is unlike the relational databases, you do not upfront have to design database schema.
+
+This has advantages and disadvantages.
+
+
+

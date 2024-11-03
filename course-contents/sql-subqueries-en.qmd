@@ -148,7 +148,7 @@ FROM Employee e
 
 ![supported customer count wrong](images/supported-customer-count-wrong.png)
 
-Supported customer count is 3 for all of the rows.
+Supported customer count is 21 for all of the rows.
 This is normal since we are using **c.SupportRepId  = 3** in our where clause.
 Lets replace that one with EmployeeId from outer query.
 That is **c.SupportRepId  = e.EmployeeId**
@@ -165,5 +165,45 @@ FROM Employee e
 ![supported customer count correct](images/supported-customer-count-correct.png)
 
 
-## Subquery FROM
+## Sub-query FROM
+
+This is the most powerful form of sub-query.
+We could use sub-query where we would write a FROM statement.
+
+**simple example 1**
+
+
+```sql
+SELECT * FROM
+(
+SELECT * FROM Customer c 
+WHERE c.Company IS NULL
+)
+```
+
+We are selecting Customers who has no company.
+This is very simple example but shows the usage.
+We could write almost any query between the parentheses and treat query result like view or virtual table.
+
+** simple example 2 **
+
+In the below query, we use self join in Employee table to find Employee and their manager information together.
+Then we filter this result set to find those employees whose Manager Last Name start with 'A'.
+
+```sql
+SELECT * FROM 
+(
+SELECT E.EmployeeID
+      ,E.LastName AS EmployerLastName
+      ,E.FirstName AS EmployerFirstName
+      ,E.ReportsTo
+      , M.EmployeeID as ManagerID
+      , M.LastName AS ManagerLastName
+      ,M.FirstName AS ManagerFirstName
+  FROM Employee E 
+  INNER JOIN Employee M
+  ON E.ReportsTo = M.EmployeeID 
+)
+WHERE ManagerLastName LIKE 'A%'
+```
 

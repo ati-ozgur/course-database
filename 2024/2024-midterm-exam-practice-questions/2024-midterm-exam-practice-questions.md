@@ -1,9 +1,12 @@
 # 2024 midterm exam practice questions
 
+## Question 1 ( 10 points)
 
-1. Please write 2 open source and 2 commercial enterprise database names below. ( 10 points)
+ Please write 2 open source and 2 commercial enterprise database names below. 
 
-2. Please write if below statements are true (T) or false (F) (1 point each, 10 points)
+## Question 2 T/F (1 point each, 10 points)
+
+Please write if below statements are true (T) or false (F)
 
 | Question | True/False |
 |---|---|
@@ -17,15 +20,16 @@
 | As being a sub language of SQL, DML has select, insert, update, and delete operations |  |
 | Open source databases are useless for Enterprise Companies |  |
 
+## Question 3 Simple ER Diagram (20 points)
 
-
-3. Please draw a simple ER diagram for a university course schedule system. (20 points) 
+Please draw a simple ER diagram for a university course schedule system.  
 In your system, there will be departments, faculty members (i.e. professors), courses, classes, and offered courses.
 Please mark 1-n relations in your ER Diagram.
 Your diagram need to include possible columns for understanding the **relations between tables** but does not need to include every possible column.
 
+## Question 4 Fix SQL Query (10 Points)
 
-4. Your coworker come to you with a following sql query.
+Your coworker come to you with a following sql query.
 He is trying to find customer whose first name starts with A.
 Please fix the query so that it works.
 
@@ -36,12 +40,13 @@ SELECT CustomerId,FirstName
 WHERE FirstName = 'A%'
 ```
 
-5. Please write the sql statements which will produce following result.
+## Question 5 Write SQL (10 points)
+
+Please write the sql statements which will produce following result.
 
 ![prior employee id result set](./images/prior-employee-id.png)
 
-
-6. Null handling (10 points)
+## Question 6 Null handling (10 points)
 
 You are working with following Address table.
 

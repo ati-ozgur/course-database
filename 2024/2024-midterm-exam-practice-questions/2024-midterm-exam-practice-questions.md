@@ -39,3 +39,19 @@ WHERE FirstName = 'A%'
 5. Please write the sql statements which will produce following result.
 
 ![prior employee id result set](./images/prior-employee-id.png)
+
+
+6. Null handling (10 points)
+
+You are working with following Address table.
+
+![Address](./images/address-table.png)
+
+Write an SQL query that fills retrieves all addresses but handle null values in following way.
+
+- If StreetNumber is NULL, display 'No Street Number' instead.
+- If StreetName is NULL, display 'No Street Name is given' instead.
+- If City is NULL, display 'Unknown City' instead.
+- If PostalCode is NULL, display 'N/A' instead.
+
+Your query should return all columns in the table while handling null issues. Order the results by AddressID.

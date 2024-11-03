@@ -8,17 +8,17 @@
 
 Please write if below statements are true (T) or false (F)
 
-| Question | True/False |
-|---|---|
-| SQL is the abbreviation of Structured Query Language |  |
-| SQL contains sub languages such as DDL, DML, DCL, and TCL |  |
-| SQL is based on relational data model and set based operations |  |
-| SQL queries allows quick and efficient retrieval of a large amount of records from a database |  |
-| SQL queries allows quick and efficient retrieval of a large amount of records from a database |  |
-| A table cannot have a relation to itself since it will cause and indefiniteness |  |
-| Comparison with null can be meaningfully done with equals and not equals operator |  |
-| As being a sub language of SQL, DML has select, insert, update, and delete operations |  |
-| Open source databases are useless for Enterprise Companies |  |
+| 1 | SQL is the abbreviation of Structured Query Language |  |
+|---|---|---|
+| 2 | SQL contains sub languages such as DDL, DML, DCL, and TCL |  |
+| 3 | SQL is based on relational data model and set based operations |  |
+| 4 | SQL queries allows quick and efficient retrieval of a large amount of records from a database |  |
+| 5 | sqlite is an commercial database |  |
+| 6 | A table cannot have a relation to itself since it will cause and indefiniteness |  |
+| 7 | Comparison with null can be meaningfully done with equals and not equals operator |  |
+| 8 | As being a sub language of SQL, DML has select, insert, update, and delete operations |  |
+| 9 | Open source databases are useless for Enterprise Companies |  |
+| 10 | GUI tools are only way to access databases |  |
 
 ## Question 3 Simple ER Diagram (20 points)
 

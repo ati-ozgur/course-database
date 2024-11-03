@@ -2,6 +2,45 @@
 
 ## Subquery single value
 
+If a query returns only a single value, we could use this as subquery in sql staments where we would use a scalar value.
+
+**Example 1**
+
+Lets say, we would like to find second largest invoice in our system.
+We could write below two queries to find this information
+
+```sql
+SELECT MAX(Total) FROM Invoice
+```
+This would return value of 25.86.
+That is largest invoice.
+Using this we could write following query to find second largest invoice.
+
+```sql
+SELECT MAX(Total) FROM Invoice
+WHERE Total < 25.86
+```
+
+With this query, we get our second largest invoice total as 23.86.
+
+But we could write this two queries as one query.
+Since we are using < operator, we could first query as subquery in the second query.
+In the second query, we replace invoice total of **25.86**, with parentheses and put first query inside them.
+
+
+```sql
+SELECT MAX(Total) FROM Invoice
+WHERE Total < (SELECT MAX(Total) FROM Invoice)
+```
+This query will bring us same information as before.
+
+
+
+
+
+
+## Subquery list of values
+
 ## Subquery rows
 
 replace a join with a subquery

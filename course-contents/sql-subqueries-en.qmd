@@ -106,9 +106,63 @@ LIMIT 10
 )
 ```
 
-## Subquery rows
+## Subquery for column in select
 
-replace a join with a subquery
+We could also write a subquery in select statement.
+Then our subquery will be run for every row in our result.
+This could be used to replace a join with a subquery.
+
+**Example 1* 
+
+We would like to show Employee information together with how many customer they support.
+Same way, lets start with two queries and then combine them in sub-query way.
+s
+
+```sql
+SELECT E.EmployeeId,e.FirstName,e.LastName,e.Title FROM Employee e 
+```
+
+Second query will be to find customer count.
+
+```sql
+SELECT * FROM Customer c where c.SupportRepId  = 3
+```
+
+This query gives us every column in Customer table but we need only count.
+
+```sql
+SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = 3
+```
+
+Okay, lets put this into first query.
+
+```sql
+SELECT e.EmployeeId,e.FirstName
+,e.LastName,e.Title 
+, (SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = 3) AS SupportedCustomerCount
+FROM Employee e 
+```
+
+
+![supported customer count wrong](images/supported-customer-count-wrong.png)
+
+Supported customer count is 3 for all of the rows.
+This is normal since we are using **c.SupportRepId  = 3** in our where clause.
+Lets replace that one with EmployeeId from outer query.
+That is **c.SupportRepId  = e.EmployeeId**
+
+
+```sql
+SELECT e.EmployeeId,e.FirstName
+,e.LastName,e.Title 
+, (SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = e.EmployeeId) AS SupportedCustomerCount
+FROM Employee e 
+```
+
+![supported customer count correct](images/supported-customer-count-correct.png)
 
 
 ## Subquery FROM

@@ -61,3 +61,27 @@ Write an SQL query that fills retrieves all addresses but handle null values in 
 - If PostalCode is NULL, display 'N/A' instead.
 
 Your query should return all columns in the table while handling null issues. Order the results by AddressID.
+
+## Employee and Salary tables for Question 7-9
+
+We have following employees and salaries table.
+Every employee has only 1 salary row in the salaries table.
+
+![Salaries and Employee](./images/salary-employee.png)
+
+## Question 7 (10 Points)
+
+Write a SQL query to find the names of employees who earn more than the average salary of their department. 
+Use a subquery in your solution.
+
+
+## Question 8 (10 Points)
+
+Solve the question 7 again but use joins in your solution.
+
+## Question 9 (10 Points)
+
+Find the second largest salary owner for every department.
+That is if we have maximum salary of 1000 in department 1, you should show the salary information and employee information in your result set.
+
+

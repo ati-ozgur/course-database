@@ -2,13 +2,64 @@
 
 TODO
 
-- where vs having
+- 
 
 
 9. Group by
 Company, city group by example from Ministry of Labor and Social Security
 
+## where vs having
 
-{{< lipsum 1 >}}
+Difference between **having** and **where** clauses in sql is where they are applied in query execution.
+
+First lets remember select query list.
+Below is simplified version where some clauses like order by is omitted.
+
+- SELECT select_list [ INTO new_table ]
+- [ FROM table_source ] 
+- [ WHERE search_condition ]
+- [ GROUP BY group_by_expression ]
+- [ HAVING search_condition ]
+
+**WHERE Clause**
+
+- Where clause is used to filter rows before any group by or aggregation.
+- where filter rows using FROM information using row level.
+- Where could be used with SELECT, UPDATE, and DELETE statements.
+
+```sql
+SELECT i.CustomerId , COUNT(i.InvoiceId) as invoice_count
+FROM Invoice i
+WHERE i.Total > 4
+GROUP BY i.CustomerId ;
+```
+
+This query first filters invoices greater than 4, then count how many invoice exists for each customer in the remaining rows.
+That is this query answer the question: How many invoices greater than 4 each customer has?.
+
+
+
+**HAVING Clause**
+
+- HAVING clause is used to filter rows after group by.
+- HAVING clause could use aggregate functions
+- HAVING clause used with SELECT statements and GROUP BY.
+
+```sql
+SELECT i.CustomerId , SUM(i.Total) as total_sales
+FROM Invoice i
+GROUP BY i.CustomerId 
+HAVING SUM(i.Total) > 45;
+```
+
+**Key Differences**
+
+1. Order of execution: WHERE is applied before grouping, while HAVING is applied after grouping
+2. Aggregate functions: HAVING can use aggregate functions (like COUNT, SUM, AVG), whereas WHERE cannot
+3. Usage with GROUP BY: HAVING is  used with GROUP BY
+4. Type of operations: WHERE works on rows, while HAVING works on aggregated data
+
+
+In practice, it is common to see both WHERE and HAVING together, with WHERE filtering individual rows and HAVING filtering the grouped results.
 
 

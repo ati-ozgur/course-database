@@ -36,10 +36,25 @@ This query will bring us same information as before.
 
 
 
-
-
-
 ## Subquery list of values
+
+For IN operator which expect list of values , we could use also sub queries.
+These type of queries, sometimes replace joins for more readable versions.
+
+I would like to know top 10 customers who are making the most purchases.
+
+First lets write two query version and change it to sub query.
+
+```sql
+SELECT CustomerId,SUM(Total) as TotalInvoice FROM Invoice
+GROUP BY CustomerId
+ORDER BY TotalInvoice DESC
+```
+This gives me following result.
+
+![top customers with most purchases](images/top-customers-with-most-purchases.png)
+
+
 
 ## Subquery rows
 

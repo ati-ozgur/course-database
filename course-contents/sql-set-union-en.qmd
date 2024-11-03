@@ -1,0 +1,94 @@
+## UNION
+
+- Combines different (DISTINCT) results from multiple SELECT commands.
+- UNION remove duplicate records from the query result, so performance is affected.
+
+See below example:
+
+```sql
+SELECT c.FirstName FROM Customer c
+```
+59 rows
+
+
+We have 59 rows in our Customer table.
+
+```sql
+SELECT e.FirstName FROM Employee e
+```
+
+8 rows
+
+
+We have 8 rows in our Employee table.
+
+
+```sql
+SELECT c.FirstName FROM Customer c
+UNION
+SELECT e.FirstName FROM Employee e
+```
+
+63 rows
+
+But when we combine all of the first names using **UNION** we get 63 rows not 59+8 = 67 rows.
+UNION set operator remove duplicates from the result.
+Here we have 4 duplicate first names.
+
+
+
+
+- UNION ALL works faster because it does not deal with duplicate records.
+- UNION ALL should be used wherever possible for performance reasons.
+
+
+```sql
+SELECT c.FirstName FROM Customer c
+UNION ALL
+SELECT e.FirstName FROM Employee e
+```
+
+67 rows
+
+When we use **UNION ALL**, we get 59+8 = 67 rows. 
+If we order the result set using a subquery we could see duplicates more clearly.
+In the below query, we are using from subquery.
+
+```sql
+SELECT * FROM
+(
+SELECT c.FirstName FROM Customer c
+UNION ALL
+SELECT e.FirstName FROM Employee e
+)
+ORDER BY FirstName
+```
+
+![union all duplicate results](./images/union-all-duplicate-results.png)
+
+
+
+
+- Column aliases should be written in the first query.
+
+- Column numbers must be the same in all queries that are combined.
+If we run below query, we get an error.
+
+```sql
+SELECT c.FirstName,c.LastName FROM Customer c
+UNION ALL
+SELECT e.FirstName FROM Employee e
+```
+
+```
+SQL Error [1]: [SQLITE_ERROR] SQL error or missing database (SELECTs to the left and right of UNION ALL do not have the same number of result columns)
+```
+
+
+
+- Column data structures should be either implicitly translated or explicitly translated (Explicit Conversion).
+- For example SELECT cast( GETDATE() as varchar(12))
+
+This is less a problem in sqlite due to its dynamic data type handling.
+
+But in oracle and sqlserver, your queries may return error if data could not be implicitly converted.

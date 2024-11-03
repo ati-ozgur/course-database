@@ -54,7 +54,57 @@ This gives me following result.
 
 ![top customers with most purchases](images/top-customers-with-most-purchases.png)
 
+I could copy paste, customer id values and put them in a list, like following.
 
+> (6, 26, 57, 45, 46, 24, 28, 37, 7, 25)
+
+Then I could use this list in a second query.
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (6, 26, 57, 45, 46, 24, 28, 37, 7, 25)
+```
+
+But we could also, write this one in sub query.
+First query  will be inputted to second query IN().
+We also modify first query to use limit so that only top 10 customers will be shown.
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (
+SELECT CustomerId, SUM(Total) as TotalInvoice FROM Invoice
+GROUP BY CustomerId
+ORDER BY  TotalInvoice DESC
+LIMIT 10
+)
+```
+
+Well, if we run this query, we get following error.
+
+```sql
+SQL Error [1]: [SQLITE_ERROR] SQL error or missing database (sub-select returns 2 columns - expected 1)
+```
+
+Our first query returns 2 columns but IN expects only one.
+We could change our first query so that it returns only customer id in following way.
+We do not have to also select SUM(Total), we could only use it ORDER BY like following sql.
+
+```sql
+SELECT CustomerId FROM Invoice
+GROUP BY CustomerId
+ORDER BY  SUM(Total) DESC
+LIMIT 10
+```
+
+Then, our complete query will be following.
+
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (
+SELECT CustomerId FROM Invoice
+GROUP BY CustomerId
+ORDER BY  SUM(Total) DESC
+LIMIT 10
+)
+```
 
 ## Subquery rows
 

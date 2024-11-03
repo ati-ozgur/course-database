@@ -1,0 +1,13 @@
+## INTERSECT
+
+Intersection of the both result sets are the output.
+
+
+```sql
+SELECT c.FirstName FROM Customer c
+INTERSECT
+SELECT e.FirstName FROM Employee e
+```
+2 rows
+
+That is only 2 first names are same in Customer and Employee tables.

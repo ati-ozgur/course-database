@@ -20,14 +20,20 @@ See below example:
 ```sql
 SELECT c.FirstName FROM Customer c
 ```
-
 59 rows
+
+
+We have 59 rows in our Customer table.
 
 ```sql
 SELECT e.FirstName FROM Employee e
 ```
 
 8 rows
+
+
+We have 8 rows in our Employee table.
+
 
 ```sql
 SELECT c.FirstName FROM Customer c
@@ -36,6 +42,10 @@ SELECT e.FirstName FROM Employee e
 ```
 
 63 rows
+
+But when we combine all of the first names using **UNION** we get 63 rows not 59+8 = 67 rows.
+UNION set operator remove duplicates from the result.
+Here we have 4 duplicate first names.
 
 
 
@@ -51,6 +61,25 @@ SELECT e.FirstName FROM Employee e
 ```
 
 67 rows
+
+When we use **UNION ALL**, we get 59+8 = 67 rows. 
+If we order the result set using a subquery we could see duplicates more clearly.
+In the below query, we are using from subquery.
+
+```sql
+SELECT * FROM
+(
+SELECT c.FirstName FROM Customer c
+UNION ALL
+SELECT e.FirstName FROM Employee e
+)
+ORDER BY FirstName
+```
+
+![union all duplicate results](./images/union-all-duplicate-results.png)
+
+
+
 
 - Column aliases should be written in the first query.
 - Column numbers must be the same in all queries that are combined.

@@ -1,6 +1,6 @@
-# Open Source vs Enterprise Databases
+# Open Source vs Commercial Databases
 
-The big companies and government still heavily rely on enterprise databases.
+The big companies and government still heavily rely on commercial enterprise databases.
 
 - Oracle
 - SQL Server

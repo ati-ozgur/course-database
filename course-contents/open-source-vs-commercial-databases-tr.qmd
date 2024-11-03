@@ -1,6 +1,6 @@
-# Açık Kaynak vs Kurumsal Veritabanları
+# Açık Kaynak vs Ticari Veritabanları
 
-Büyük şirketler ve devlet hala büyük ölçüde kurumsal veritabanlarına güveniyor.
+Büyük şirketler ve devlet hala büyük ölçüde kurumsal ticari veritabanlarına güveniyor.
 
 - Oracle
 - SQL Server

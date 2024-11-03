@@ -8,4 +8,13 @@ That is unlike the relational databases, you do not upfront have to design datab
 This has advantages and disadvantages.
 
 
+Examples include
+
+- MongoDB
+- Databricks
+- Amazon DynamoDB
+- Microsoft Azure Cosmos DB
+- Couchbase
+- Firebase (google)
+- Oracle NoSQL
 

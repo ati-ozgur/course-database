@@ -1,5 +1,5 @@
 ```{mermaid}
-%%| fig-height: 10
+%%| fig-height: 8
 graph TD
     A[User Query] --> B[RAG System]
     B --> C[Query Embedding]

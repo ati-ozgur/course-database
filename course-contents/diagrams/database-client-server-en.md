@@ -1,4 +1,5 @@
 ```{mermaid}
+%%| fig-width: 7
 flowchart LR
     subgraph Client
         C[Client Application]

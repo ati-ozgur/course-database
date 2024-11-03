@@ -1,0 +1,23 @@
+## EXCEPT
+
+Second result set is removed from first result set.
+EXCEPT key word is SQL standard.
+
+
+```sql
+SELECT c.FirstName FROM Customer c
+EXCEPT
+SELECT e.FirstName FROM Employee e
+```
+
+55 rows
+
+```sql
+SELECT e.FirstName FROM Employee e
+EXCEPT
+SELECT c.FirstName FROM Customer c
+```
+
+6 rows.
+
+

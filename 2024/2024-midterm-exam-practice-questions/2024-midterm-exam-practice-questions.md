@@ -19,8 +19,11 @@
 
 
 
-3. Please draw a simple ER diagram for a university course schedule system. 
+3. Please draw a simple ER diagram for a university course schedule system. (20 points) 
 In your system, there will be departments, faculty members (i.e. professors), courses, classes, and offered courses.
+Please mark 1-n relations in your ER Diagram.
+Your diagram need to include possible columns for understanding the **relations between tables** but does not need to include every possible column.
+
 
 4. Your coworker come to you with a following sql query.
 He is trying to find customer whose first name starts with A.

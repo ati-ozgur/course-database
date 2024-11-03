@@ -43,12 +43,13 @@ WHERE FirstName = 'A%'
 ## Question 5 Write SQL (10 points)
 
 Please write the sql statements which will produce following result.
+Employee table is our Chinook Employee table.
 
 ![prior employee id result set](./images/prior-employee-id.png)
 
 ## Question 6 Null handling (10 points)
 
-You are working with following Address table.
+You are working with following **Address** table.
 
 ![Address](./images/address-table.png)
 

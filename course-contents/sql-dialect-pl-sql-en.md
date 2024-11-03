@@ -1,4 +1,4 @@
-# SQL Dialect PL/SQL
+## SQL Dialect PL/SQL
 
 [PL/SQL by Oracle](https://www.oracle.com/database/technologies/appdev/plsql.html) is procedural extensions to SQL language by Oracle.
 See their definition below:

@@ -1,4 +1,4 @@
-# SQL Lehçesi PL/SQL
+## SQL Lehçesi PL/SQL
 
 [PL/SQL](https://www.oracle.com/database/technologies/appdev/plsql.html), Oracle tarafından SQL diline yapılan prosedürel uzantılardır.
 Aşağıdaki tanımlarına bakın:

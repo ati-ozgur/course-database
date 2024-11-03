@@ -77,7 +77,8 @@ Use a subquery in your solution.
 
 ## Question 8 (10 Points)
 
-Solve the question 7 again but use joins in your solution.
+Write a SQL query to find the names of employees who earn more than the average salary of their department. 
+Use join in your solution.
 
 ## Question 9 (10 Points)
 

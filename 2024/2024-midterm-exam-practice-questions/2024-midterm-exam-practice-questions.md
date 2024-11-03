@@ -20,3 +20,4 @@ WHERE FirstName = 'A%'
 
 4. Please write the sql statements which will produce following result.
 
+![images/prior-employee-id.png]

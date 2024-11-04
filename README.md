@@ -10,3 +10,7 @@
 - [2024-10-18](2024/2024-10-18.md)
 - [2024-10-25](2024/2024-10-25.md)
 - [2024-11-01](2024/2024-11-01.md)
+
+## Practice questions for Midterm
+
+- [2024 midterm exam practice questions](2024/2024-midterm-exam-practice-questions/2024-midterm-exam-practice-questions.md)

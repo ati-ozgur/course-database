@@ -164,6 +164,7 @@ FROM Employee e
 
 ![supported customer count correct](images/supported-customer-count-correct.png)
 
+- [Sub-query for column in select lesson video](https://www.youtube.com/watch?v=5yhLcSI09wE)
 
 ## Sub-query FROM
 

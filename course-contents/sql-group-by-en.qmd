@@ -1,6 +1,8 @@
 # SQL Group by
 
 
+- [lesson video](https://www.youtube.com/watch?v=TgDjev7ZUzU)
+
 ## Group by intro
 
 GROUP BY clause in SQL is used to group rows that have the same values in specified columns. 

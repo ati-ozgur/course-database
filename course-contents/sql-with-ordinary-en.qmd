@@ -36,6 +36,124 @@ SELECT * FROM EmployeeManager WHERE ManagerLastName LIKE 'A%'
 
 ```
 
-What is good about CTEs is that we can iteratively build our SQL from previous CTEs.
-For example, lets say we would like to find invoices larger than usual average of given customer.
-That is we have a customer, and on the average his invoices 
+The above query is functionally equal to following from sub-query.
+
+
+```sql
+SELECT * FROM  
+(
+SELECT E.EmployeeID
+      ,E.LastName AS EmployerLastName
+      ,E.FirstName AS EmployerFirstName
+      ,E.ReportsTo
+      , M.EmployeeID as ManagerID
+      , M.LastName AS ManagerLastName
+      ,M.FirstName AS ManagerFirstName
+  FROM Employee E 
+  INNER JOIN Employee M
+  ON E.ReportsTo = M.EmployeeID 
+)
+WHERE ManagerLastName LIKE 'A%'
+
+```
+
+First advantage of the CTEs that we could give meaningful names to our temporary result set like EmployeeManager.
+
+
+Second advantage of the CTEs is that since result set definition is at the start of the query, where, group by and other statements follow naturally.
+
+Third advantage of the CTEs is  that we can iteratively build our SQL from previous result sets in the With statement.
+
+
+For example, lets say we would like to find which of our sales person is responsible for highest amount of sales.
+
+
+```sql
+WITH SALES_EMP_CUS as
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+)
+SELECT * FROM SALES_EMP_CUS
+```
+
+We start with finding only sales employee that those employee which support customers.
+We also add CustomerId to our result set.
+Here **c.SupportRepId IS NOT NULL** is gives these values to us.
+
+Then we combine customer Id information with invoice table to bring us total sales according to customer.
+
+
+```sql
+WITH SALES_EMP_CUS AS
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+), 
+CUSTOMER_SALES_TOTALS AS
+(
+	SELECT CustomerId, SUM(Total) as total_sales
+	FROM Invoice
+	GROUP BY CustomerId
+)
+SELECT * FROM CUSTOMER_SALES_TOTALS
+```
+Then we add third query to previous results to find our latest result.
+
+```sql
+WITH SALES_EMP_CUS AS
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+), 
+CUSTOMER_SALES_TOTALS AS
+(
+	SELECT CustomerId, SUM(Total) as total_sales
+	FROM Invoice
+	GROUP BY CustomerId
+)
+--SELECT * FROM CUSTOMER_SALES_TOTALS
+SELECT SEC.EmployeeId, SUM(CST.total_sales) AS TotalSalesForEmployee 
+FROM SALES_EMP_CUS AS SEC 
+INNER JOIN CUSTOMER_SALES_TOTALS AS CST ON CST.CustomerId = SEC.CustomerId
+GROUP BY SEC.EmployeeId;
+
+```
+
+If we need to work on the third result set further, we could also put it in the with statements like below and so on.
+
+
+```sql
+WITH SALES_EMP_CUS AS
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+), 
+CUSTOMER_SALES_TOTALS AS
+(
+	SELECT CustomerId, SUM(Total) as total_sales
+	FROM Invoice
+	GROUP BY CustomerId
+),
+EMP_SALES AS
+(
+SELECT SEC.EmployeeId, SUM(CST.total_sales) AS TotalSalesForEmployee 
+FROM SALES_EMP_CUS AS SEC 
+INNER JOIN CUSTOMER_SALES_TOTALS AS CST ON CST.CustomerId = SEC.CustomerId
+GROUP BY SEC.EmployeeId
+
+)
+SELECT * FROM EMP_SALES
+```

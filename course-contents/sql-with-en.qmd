@@ -6,41 +6,8 @@ They are two types of CTEs.
 1. Ordinary
 2. Recursive
 
-Ordinary CTEs behaves like views or from subqueries but they are more easy to understand compared to them.
+{{< include ../course-contents/sql-with-ordinary-en.qmd >}}
 
-They are easy to construct.
-A simple example is given below.
-We start with WITH and give name of the temporary result set. 
-Between the parentheses, we write our query.
-Then after the parentheses, we could select from this Name as if it is view or table.
 
-```sql
-WITH Name
-(
-)
-select * from Name
-```
 
-See an example below, which make use of self join example of Employee table and query that temp table.
 
-```sql
-WITH EmployeeManager as
-(
-SELECT E.EmployeeID
-      ,E.LastName AS EmployerLastName
-      ,E.FirstName AS EmployerFirstName
-      ,E.ReportsTo
-      , M.EmployeeID as ManagerID
-      , M.LastName AS ManagerLastName
-      ,M.FirstName AS ManagerFirstName
-  FROM Employee E 
-  INNER JOIN Employee M
-  ON E.ReportsTo = M.EmployeeID 
-)
-SELECT * FROM EmployeeManager WHERE ManagerLastName LIKE 'A%'
-
-```
-
-What is good about CTEs is that we can iteratively build our SQL from previous CTEs.
-For example, lets say we would like to find invoices larger than usual average of given customer.
-That is we have a customer, and on the average his invoices 

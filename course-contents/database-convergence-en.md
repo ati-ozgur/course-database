@@ -73,10 +73,10 @@ Best one. databases will own others, json, vector, text ....
 - [A Short Summary of the Last Decades of Data Management Hannes Mühleisen  GOTO 2024](https://www.youtube.com/watch?v=-wCzn9gKoUk)
 
 
-Below two links for Postgres but idea is still the same.
+Below are links for Postgres but idea is still the same.
 
 
-- https://mccue.dev/pages/8-16-24-just-use-postgres
-- https://hamy.xyz/labs/2024-09_postgres-over-everything
-- https://dzone.com/articles/postgresql-everywhere-and-for-everything
+- [Just use Postgres](https://mccue.dev/pages/8-16-24-just-use-postgres)
+- [Postgres Over Everything - Why You Should Probably Just use Postgres for your next Web App](https://hamy.xyz/labs/2024-09_postgres-over-everything)
+- [PostgreSQL Everywhere and for Everything](https://dzone.com/articles/postgresql-everywhere-and-for-everything)
 

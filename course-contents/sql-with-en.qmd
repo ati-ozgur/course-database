@@ -9,5 +9,8 @@ They are two types of CTEs.
 {{< include ../course-contents/sql-with-ordinary-en.qmd >}}
 
 
+## With Recursive
+
+With Recursive is not included in the exam.
 
 

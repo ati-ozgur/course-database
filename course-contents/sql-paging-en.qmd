@@ -1,6 +1,26 @@
 # SQL Paging
 
+Paging means that bringing partial results from a table or result set.
+Since bringing all of the rows to the customer application is expensive, customer applications, for example web pages, show the rows in pages.
+A web page could show 100 rows per page, while a mobile application could show 10 rows per page.
+You can see google paging of search results in the below image.
+
+
+![Google paging](images/google-paging.png)
+
+
+
+
+## SQL Standard Offset Fetch Commands
+
 Paging Results - Can be done by using the OFFSET-FETCH command with ORDER BY.
+
+
+```sql
+SELECT * FROM Production.Product;
+```
+
+
 
 
 - Depends on the use of ORDER BY.

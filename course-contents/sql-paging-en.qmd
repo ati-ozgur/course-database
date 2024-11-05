@@ -15,18 +15,61 @@ You can see google paging of search results in the below image.
 
 Paging Results - Can be done by using the OFFSET-FETCH command with ORDER BY.
 
+In the below example, in oracle database, we select 3rd page with 10 rows.
+This query will not work on sql server since sql server mandates usage of order by while using offset and fetch.
 
 ```sql
-SELECT * FROM Production.Product;
+SELECT * FROM "Customer" 
+OFFSET 20 ROWS
+FETCH FIRST 10 ROWS ONLY;
 ```
 
 
+- 0-10 1st page
+- 10-20 2nd page
+- 20-30 3rd page
 
 
-- Depends on the use of ORDER BY.
-- It is used to specify how many rows to skip and how many rows to fetch.
-- The database has to count all rows until it gets to the desired page.
+- OFFSET is used to specify how many rows to skip 
+- FETCH is used to specify how many rows to fetch.
 
-- There are performance problems. See following pages: [fetch-next-page](http://use-the-index-luke.com/sql/partial-results/fetch-next-page) and [no offset](https://use-the-index-luke.com/no-offset).
+
+- Better to use ORDER BY.
+
+Since this result is dependent on how Customer is stored, it is better to give order by always, like below example.
+Below query works both oracle and sql server databases.
+It should also work on DB2 and postgres with small or no modifications.  
+
+
+```sql
+SELECT * FROM "Customer" 
+ORDER BY "FirstName" 
+OFFSET 20 ROWS
+FETCH FIRST 10 ROWS ONLY;
+
+```
+
+Since database has to fetch all rows until it gets to desired result, this usage has performance problems.
+See following pages: [fetch-next-page](http://use-the-index-luke.com/sql/partial-results/fetch-next-page) and [no offset](https://use-the-index-luke.com/no-offset).
+
+But for a quick and dirty paging, it is better than client side paging.
+That is getting all rows in the client application and filtering there.
+
+We do not have to select from single table only.
+We could have complex queries and better yet we could use sub-queries or with expression with this syntax.
+
+```sql
+WITH P AS
+(
+	SELECT C."CustomerId",C."FirstName",C."LastName" FROM "Customer" C
+	WHERE C."SupportRepId" IS NOT NULL
+)
+SELECT * FROM P
+ORDER BY "FirstName"
+OFFSET 20 ROWS
+FETCH FIRST 10 ROWS ONLY;
+```
+
+
 
 

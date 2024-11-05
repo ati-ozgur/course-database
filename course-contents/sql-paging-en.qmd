@@ -70,6 +70,19 @@ OFFSET 20 ROWS
 FETCH FIRST 10 ROWS ONLY;
 ```
 
+## SQLITE
 
+sqlite supports offset keyword with limit.
+
+```sql
+WITH P AS
+(
+	SELECT C.CustomerId,C.FirstName,C.LastName FROM Customer C
+	WHERE C.SupportRepId IS NOT NULL
+)
+SELECT * FROM P
+ORDER BY FirstName
+LIMIT 10 OFFSET 20;
+```
 
 

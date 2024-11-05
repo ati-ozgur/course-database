@@ -6,4 +6,7 @@ Paging Results - Can be done by using the OFFSET-FETCH command with ORDER BY.
 - Depends on the use of ORDER BY.
 - It is used to specify how many rows to skip and how many rows to fetch.
 - The database has to count all rows until it gets to the desired page.
-- There are performance problems. [See following link.](http://use-the-index-luke.com/sql/partial-results/fetch-next-page).
+
+- There are performance problems. See following pages: [fetch-next-page](http://use-the-index-luke.com/sql/partial-results/fetch-next-page) and [no offset](https://use-the-index-luke.com/no-offset).
+
+

@@ -82,3 +82,36 @@ ORDER BY AddressID
 
 7. 
 
+SELECT 
+FirstName
+,LastName
+FROM Employees E
+WHERE 
+(SELECT Salary FROM Salaries S2
+where S2.Employee = E.EmployeeId)
+>
+(SELECT AVG(Salary) FROM Salaries S1
+where S1.department_id = E.Department_Id
+)
+
+
+
+8. 
+
+WITH SALARY_AVG AS
+(
+SELECT 
+AVG(salary) AS avg_salary
+department_id
+FROM Salaries 
+GROUP BY department_id
+)
+SELECT * 
+FROM Employees E
+INNER JOIN salaries S
+E.employee_id = S.employee_id
+INNER JOIN SALARY_AVG SA
+ON SA.department_id = s.department_id
+WHERE 
+S.Salary > SA.avg_salary
+

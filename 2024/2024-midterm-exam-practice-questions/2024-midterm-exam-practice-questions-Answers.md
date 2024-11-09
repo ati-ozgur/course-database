@@ -113,7 +113,7 @@ WITH SALARY_AVG AS
 (
 SELECT 
 AVG(salary) AS avg_salary
-department_id
+,department_id
 FROM Salaries 
 GROUP BY department_id
 )
@@ -126,3 +126,23 @@ ON SA.department_id = s.department_id
 WHERE 
 S.Salary > SA.avg_salary
 
+
+9. 
+
+WITH SALARY_MAX AS
+(
+SELECT 
+MAX(salary) AS max_salary
+,department_id
+FROM Salaries 
+GROUP BY department_id
+), SECOND_LARGEST
+(
+SELECT 
+MAX(salary) AS avg_salary
+,department_id
+FROM Salaries S INNER JOIN
+SALARY_MAX SM 
+ON SM.department_id = S.department_id
+and salary < SM.max_salary
+Group by s.department_id

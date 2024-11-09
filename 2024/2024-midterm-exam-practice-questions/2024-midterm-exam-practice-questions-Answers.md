@@ -1,0 +1,84 @@
+1. Open source, sqlite, mysql
+Commercial: oracle, sql server
+
+2. 
+
+|    |                                                                                               |   |
+|----|-----------------------------------------------------------------------------------------------|---|
+| 1  | SQL is the abbreviation of Structured Query Language                                          | T |
+| 2  | SQL contains sub languages such as DDL, DML, DCL, and TCL                                     | T |
+| 3  | SQL is based on relational data model and set based operations                                | T |
+| 4  | SQL queries allows quick and efficient retrieval of a large amount of records from a database | T |
+| 5  | sqlite is an commercial database                                                              | F |
+| 6  | A table cannot have a relation to itself since it will cause and indefiniteness               | F |
+| 7  | Comparison with null can be meaningfully done with equals and not equals operator             | F |
+| 8  | As being a sub language of SQL, DML has select, insert, update, and delete operations         | F |
+| 9  | Open source databases are useless for Enterprise Companies                                    | F |
+| 10 | GUI tools are only way to access databases                                                    | F |
+
+
+2. 
+
+```{mermaid}
+%%| echo: true
+
+erDiagram
+
+    Offered_Courses ||--o{ Classes : taught_in
+    Departments ||--o{ Courses : has
+    Departments ||--o{ Faculty_Members : has
+    Departments ||--o{ Students : has
+    Courses ||--o{ Offered_Courses: taught_in
+    Faculty_Members ||--o{ Offered_Courses: teaches
+
+    Classes {
+        int classes_id 
+    }
+    Courses {
+        int courses_id 
+        int Departments_id
+    }
+    Offered_Courses {
+        int Offered_Courses_id 
+        int classes_id
+        int semester_id
+        int Faculty_Members_id
+    }
+
+    Departments {
+        int Departments_id 
+    }
+    Faculty_Members {
+        int Faculty_Members_id 
+        int Departments_id
+    }
+    Students {
+        int Student_id 
+        int Departments_id
+    }
+
+```
+
+4. 
+SELECT CustomerId,FirstName
+FROM Customers
+WHERE FirstName LIKE 'A%'
+
+5.
+SELECT E.EmployeeId,
+(select max(P.EmployeeId) FROM EMPLOYEE P 
+WHERE E.EmployeeId > P.EmployeeId) AS PriorEmployeeID
+E.FirstName,E.LastName FROM EMPLOYEE E
+
+6.
+SELECT 
+AddressID
+,COALESCE(StreetNumber, 'No Street Number') AS StreetNumber
+,COALESCE(StreetName, 'No Street Name is given') AS StreetName
+,COALESCE(City,'Unknown City') AS City
+,COALESCE(PostalCode,'N/A') AS PostalCode
+FROM Address
+ORDER BY AddressID
+
+7. 
+

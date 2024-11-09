@@ -14,3 +14,5 @@
 ## Practice questions for Midterm
 
 - [2024 midterm exam practice questions](2024/2024-midterm-exam-practice-questions/2024-midterm-exam-practice-questions.md)
+
+- [2024 midterm exam practice solutions](2024/2024-midterm-exam-practice-questions/2024-midterm-exam-practice-questions-Answers.md)

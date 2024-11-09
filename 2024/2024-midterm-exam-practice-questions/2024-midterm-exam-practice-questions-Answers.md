@@ -1,3 +1,14 @@
+
+# 2024 midterm exam practice solutions
+
+- [midterm exam practice solutions: 1-6](https://www.youtube.com/watch?v=wLpJbjslF4o)
+
+- [midterm exam practice solutions 7](https://www.youtube.com/watch?v=tJnT0EnfhoY)
+
+- [midterm exam practice solutions 8](https://www.youtube.com/watch?v=BRbX91_OXfE)
+
+
+
 1. Open source, sqlite, mysql
 Commercial: oracle, sql server
 

@@ -31,8 +31,9 @@ Commercial: oracle, sql server
 2. 
 
 ```{mermaid}
-erDiagram
+%%| echo: true
 
+erDiagram
     Offered_Courses ||--o{ Classes : taught_in
     Departments ||--o{ Courses : has
     Departments ||--o{ Faculty_Members : has

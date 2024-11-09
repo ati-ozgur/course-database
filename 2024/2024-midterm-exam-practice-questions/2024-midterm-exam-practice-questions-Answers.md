@@ -30,8 +30,7 @@ Commercial: oracle, sql server
 
 2. 
 
-```{mermaid}
-%%| echo: true
+```mermaid
 
 erDiagram
     Offered_Courses ||--o{ Classes : taught_in

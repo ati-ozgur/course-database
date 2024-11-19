@@ -14,3 +14,8 @@ They are two types of CTEs.
 With Recursive is not included in the exam.
 
 
+
+## Links
+
+- https://modern-sql.com/use-case/literate-sql
+

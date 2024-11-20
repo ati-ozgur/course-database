@@ -15,7 +15,7 @@ Please write names of 3 databases, we are working on our course.
 2. SQL Server
 3. Sqlite
 
-- [ABU Midterm exam solutions: Question 01](https://www.youtube.com/watch?v=9Ad6yPanL58)
+- [Video ABU Midterm exam solutions: Question 01](https://www.youtube.com/watch?v=9Ad6yPanL58)
 
 
 ## Question 2 T/F (1 point each, 10 points) 
@@ -36,7 +36,7 @@ Please write if below statements are true (T) or false (F)
 | 10 | Most of our examples in the class was done using SQL Management Studio                         |  F  |
 
 
-- [ABU Midterm exam solutions: Question 02](https://www.youtube.com/watch?v=JsCmaqObca8)
+- [Video ABU Midterm exam solutions: Question 02](https://www.youtube.com/watch?v=JsCmaqObca8)
 
 
 ## Question 3 Simple ER Diagram (20 points)
@@ -66,7 +66,7 @@ Loans{
     }
 
 ```
-- [ABU Midterm exam solutions: Question 03](https://www.youtube.com/watch?v=Drf2cu06NwY)
+- [Video ABU Midterm exam solutions: Question 03](https://www.youtube.com/watch?v=Drf2cu06NwY)
 
 
 ## Question 4 Fix SQL Query (10 Points)
@@ -94,7 +94,7 @@ group by CustomerId
 
 ```
 
-- [ABU Midterm exam solutions: Question 04](https://www.youtube.com/watch?v=5zPm0pecKvs)
+- [Video ABU Midterm exam solutions: Question 04](https://www.youtube.com/watch?v=5zPm0pecKvs)
 
 
 ## Order,Customer and Employee tables for Question 5-7
@@ -134,7 +134,7 @@ order by TotalOrders desc;
 
 ```
 
-- [ABU Midterm exam solutions: Question 05](https://www.youtube.com/watch?v=dfaGzQT_zGA)
+- [Video ABU Midterm exam solutions: Question 05](https://www.youtube.com/watch?v=dfaGzQT_zGA)
 
 
 
@@ -162,7 +162,7 @@ ON c.FirstName  = e.FirstName
 ```
 
 
-- [ABU Midterm exam solutions: Question 06](https://www.youtube.com/watch?v=gfEFSMJlAg8)
+- [Video ABU Midterm exam solutions: Question 06](https://www.youtube.com/watch?v=gfEFSMJlAg8)
 
 
 ## Question 7 Highest 10 orders
@@ -191,7 +191,7 @@ LIMIT 10
 
 
 
-- [ABU Midterm exam solutions: Question 07](https://www.youtube.com/watch?v=lz_O3hSYBjw)
+- [Video ABU Midterm exam solutions: Question 07](https://www.youtube.com/watch?v=lz_O3hSYBjw)
 
 
 
@@ -226,11 +226,11 @@ You query should show salary, department,  employee name and id information.
 
 ## Answer 8
 
-Question is same as practice questions 7 and 8.
-Either answer is acceptable here.
+Question is same as practice questions 7 and 8, except it does not enforce usage of join or subquery; therefore, either answer is acceptable here.
 
--[midterm exam practice solutions 7](https://www.youtube.com/watch?v=tJnT0EnfhoY)
--[midterm exam practice solutions 8](https://www.youtube.com/watch?v=BRbX91_OXfE)
+- [Video: midterm exam practice solutions 7](https://www.youtube.com/watch?v=tJnT0EnfhoY)
+
+- [Video: midterm exam practice solutions 8](https://www.youtube.com/watch?v=BRbX91_OXfE)
 
 
 ## Question 9 (10 Points) (10 Points)

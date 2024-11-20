@@ -18,7 +18,7 @@ Please write names of 3 databases, we are working on our course.
 - [ABU Midterm exam solutions: Question 01](https://www.youtube.com/watch?v=9Ad6yPanL58)
 
 
-## Question 2 T/F (1 point each, 10 points)
+## Question 2 T/F (1 point each, 10 points) 
 
 Please write if below statements are true (T) or false (F)
 
@@ -46,6 +46,7 @@ This system also allows its members to search for books according to authors and
 Please mark relations in your ER Diagram.
 Your diagram need to include possible columns for understanding the **relations between tables** but does not need to include every possible column.
 
+## Answer 3
 
 ```mermaid
 erDiagram
@@ -81,6 +82,20 @@ sum(total) as TotalInvoice
 group by CustomerId
 from Invoice 
 ```
+## Answer 4
+
+
+```sql
+select CustomerId,
+sum(total) as TotalInvoice 
+from Invoice
+order by TotalInvoice desc;
+group by CustomerId
+
+```
+
+- [ABU Midterm exam solutions: Question 04](https://www.youtube.com/watch?v=5zPm0pecKvs)
+
 
 ## Order,Customer and Employee tables for Question 5-7
 
@@ -107,14 +122,78 @@ erDiagram
 
 Consider the Order table. Write a query that will return the total amount spent by each customer?
 
+## Answer 5
+
+
+```sql
+select customer_id,
+sum(amount) as TotalOrders
+from Order
+group by customer_Id
+order by TotalOrders desc;
+
+```
+
+- [ABU Midterm exam solutions: Question 05](https://www.youtube.com/watch?v=dfaGzQT_zGA)
+
+
 
 ## Question 6 which names are common (10 Points)
 
 Write a query that will find which names are common in Employee and Customer tables.
 
+## Answer 6 A
+
+
+```sql
+SELECT c.FirstName from Customer c
+INTERSECT
+SELECT e.FirstName from Employee e 
+```
+
+## Answer 6 B
+
+
+```sql
+SELECT c.FirstName,e.FirstName
+FROM Customer c
+INNER JOIN Employee e
+ON c.FirstName  = e.FirstName 
+```
+
+
+- [ABU Midterm exam solutions: Question 06](https://www.youtube.com/watch?v=gfEFSMJlAg8)
+
+
 ## Question 7 Highest 10 orders
 
 Please write a query that will find highest 10 orders and which customers has given that orders.
+
+## Answer 7 A
+
+
+```sql
+SELECT o.amount,o.customer_id,c.customer_name FROM ORDER o
+INNER JOIN Customer c
+ON c.customer_id = o.customer_id
+ORDER BY amount desc
+LIMIT 10
+```
+
+## Answer 7 B
+
+
+```sql
+SELECT o.amount,o.customer_id FROM ORDER o
+ORDER BY amount desc
+LIMIT 10
+```
+
+
+
+- [ABU Midterm exam solutions: Question 07](https://www.youtube.com/watch?v=lz_O3hSYBjw)
+
+
 
 
 ## Employee and Salary tables for Question 8-9
@@ -144,6 +223,14 @@ erDiagram
 
 Write a SQL query to find the names of employees who earn more than the average salary of their department. 
 You query should show salary, department,  employee name and id information.
+
+## Answer 8
+
+Question is same as practice questions 7 and 8.
+Either answer is acceptable here.
+
+-[midterm exam practice solutions 7](https://www.youtube.com/watch?v=tJnT0EnfhoY)
+-[midterm exam practice solutions 8](https://www.youtube.com/watch?v=BRbX91_OXfE)
 
 
 ## Question 9 (10 Points) (10 Points)

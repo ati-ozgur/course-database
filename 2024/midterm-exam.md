@@ -1,10 +1,4 @@
----
-title: "ABU CENG 351 Midterm Exam 2024-11-13"
-format:
-  html:
-    mermaid:
-      theme: neutral
----
+# ABU CENG 351 Midterm Exam 2024-11-13"
 
 - Student Number: 
 - First Name:

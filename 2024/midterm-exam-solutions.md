@@ -238,10 +238,38 @@ Question is same as practice questions 7 and 8, except it does not enforce usage
 Find the second highest salary owner for every department.
 That is if we have highest two salaries of 1000 and 990 in HR department, you should show the salary 990, HR department and employee name and id information in your result set.
 
-## Answer
+## Test script for Question
 
 You can use following [sql file](Midterm-Practice-Exam-question7-8-9TestScript.sql)  for testing the solutions
 
+## Answer 9 A
+
+```sql
+WITH MAX_SALARIES AS
+(
+SELECT department,MAX(salary_amount) as max_salary FROM Salary s 
+GROUP BY department 
+),
+ EMP_SALARIES AS
+(
+SELECT e.employee_id,e.employee_name,e.department,s.salary_amount 
+from Employee e
+INNER JOIN Salary s 
+ON e.employee_id  = s.employee_id 
+),
+SECOND_LARGEST AS
+(
+SELECT MAX(E.salary_amount) AS Second,M.department  FROM EMP_SALARIES E 
+INNER JOIN MAX_SALARIES M
+ON E.department = M.department
+WHERE E.salary_amount < M.max_salary
+GROUP BY M.department 
+)
+SELECT * FROM EMP_SALARIES E2
+INNER JOIN SECOND_LARGEST S2
+ON S2.second = E2.salary_amount AND S2.department = E2.department
+;
+```
 
 ## Answer 9 B
 

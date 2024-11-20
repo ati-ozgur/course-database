@@ -47,6 +47,25 @@ Please mark relations in your ER Diagram.
 Your diagram need to include possible columns for understanding the **relations between tables** but does not need to include every possible column.
 
 
+```mermaid
+erDiagram
+    Members ||..|{ Books: borrows 
+    Members ||..|{ Loans: has 
+    Books }|..|{ Loans: in
+    Authors }|..|{ Books: ""   
+    Genres ||..|{ Books: has
+
+Authors {
+        string name
+    }
+
+Loans{
+        int book_id
+        int member_id
+    }
+
+```
+- [ABU Midterm exam solutions: Question 03](https://www.youtube.com/watch?v=Drf2cu06NwY)
 
 
 ## Question 4 Fix SQL Query (10 Points)

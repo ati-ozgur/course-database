@@ -18,7 +18,12 @@
 
 {{< include ../course-contents/sql-set-intersect-en.qmd >}}
 
-## Oracle
+{{< include ../course-contents/sql-set-intersect-questions-en.qmd >}}
+
+
+
+
+## Oracle MINUS 
 
 Except is SQL standard but oracle also accept MINUS keyword.
 It is functionality is the same.

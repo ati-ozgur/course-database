@@ -17,3 +17,11 @@
 - [2024 midterm exam practice questions](2024/2024-midterm-exam-practice-questions/2024-midterm-exam-practice-questions.md)
 
 - [2024 midterm exam practice solutions](2024/2024-midterm-exam-practice-questions/2024-midterm-exam-practice-questions-Answers.md)
+
+
+## Midterm questions and solutions
+
+- [2024 midterm exam questions](2024/midterm-exam.md)
+- [2024 midterm exam solutions](2024/midterm-exam-solutions.md)
+
+

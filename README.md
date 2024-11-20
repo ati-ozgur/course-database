@@ -11,6 +11,9 @@
 - [2024-10-25](2024/2024-10-25.md)
 - [2024-11-01](2024/2024-11-01.md)
 - [2024-11-09-Question before midterm](2024/2024-11-09.md)
+- 2024-11-13: Midterm
+
+
 
 ## Practice questions for Midterm
 

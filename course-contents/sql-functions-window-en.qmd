@@ -1,4 +1,4 @@
-# sql-window-functions-en.qmd
+# SQL window functions
 
 
 https://www.sqlite.org/windowfunctions.html

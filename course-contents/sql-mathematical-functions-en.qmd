@@ -58,6 +58,9 @@ select log(2,32);
 
 > 5.0         
 
+- LOG2
+
+	logarithmic function for base 2
 
 - LOG10
 
@@ -69,12 +72,18 @@ select log10(100);
 
 > 2.0         
 
+- MOD
 
-PI
+the remainder after dividing X by Y. This is similar to the '%' operator
 
 
+
+- PI
+
+constant PI value
 
 - POWER
+
 	compute $x^y$ power, like $2^3$ 
 
 
@@ -83,14 +92,24 @@ select power(2,3);
 ```
 
 - RADIANS
+
 	Convert to radians from degrees
 
 
 
+- SIGN
 
-RAND
-ROUND
-SIGN
+sign of n. That is
+
+```math
+if n<0 then -1
+
+if n=0 then 0 
+
+if n>0 then 1 
+```
+
+
 
 - SIN
 sinus function

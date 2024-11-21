@@ -1,12 +1,13 @@
 # SQL mathematical functions
 
-TODO, check that only common functions below.
-For example, abs does not seem to be in sqlite
+Some common math functions are given below.
 
 - ABS
 
+	absolute value
 
 - CEILING
+
 	find nearest integer, larger than the input.
 	Ceil goes up, floor goes down.
 
@@ -50,9 +51,24 @@ select floor(0.99),floor(0.1),floor(0.5);
 - LOG
 
 	logarithmic function for given base
+
+```sql
+select log(2,32);  
+```
+
+> 5.0         
+
+
 - LOG10
 
 	logarithmic function for base 10
+
+```sql
+select log10(100);                                                                           
+```
+
+> 2.0         
+
 
 PI
 
@@ -102,5 +118,9 @@ TAN
 
 tangent function
 
+
+## Math functions documentation
+
 - [sqlite Built-In Mathematical SQL Functions](https://www.sqlite.org/lang_mathfunc.html)
 - [sql server math function](https://learn.microsoft.com/en-us/sql/t-sql/functions/mathematical-functions-transact-sql?view=sql-server-ver16)
+- [oracle numeric functions](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Single-Row-Functions.html#GUID-AC0E8A99-5097-4147-8295-C88EAC5AA362)

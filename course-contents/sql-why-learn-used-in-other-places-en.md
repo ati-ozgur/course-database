@@ -20,3 +20,8 @@ Also, querying csv and excel files using SQL is possible.
 
 - [Query excel files using SQL](https://stackoverflow.com/questions/18798522/how-to-run-a-sql-query-on-an-excel-table)
 
+
+- [osquery: Query system data using SQL ](https://osquery.readthedocs.io/en/stable/)
+
+> osquery exposes an operating system as a high-performance relational database. This allows you to write SQL queries to explore operating system data. With osquery, SQL tables represent abstract concepts such as running processes, loaded kernel modules, open network connections, browser plugins, hardware events or file hashes.
+

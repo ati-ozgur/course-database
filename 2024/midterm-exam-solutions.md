@@ -273,6 +273,34 @@ ON S2.second = E2.salary_amount AND S2.department = E2.department
 
 ## Answer 9 B
 
+```sql
+WITH MAX_SALARIES AS (
+SELECT s.department, max(salary_amount) as max_salary FROM Salary s 
+GROUP BY S.department 
+), 
+EMP_SALARY AS (
+SELECT e.employee_name, s.employee_id, s.department,salary_amount  FROM Salary s 
+INNER JOIN Employee e 
+ON e.employee_id  = s.employee_id 
+Order by s.department, s.salary_amount DESC
+), FILTER_LARGEST AS (
+SELECT es.employee_name,es.employee_id,es.department, es.salary_amount FROM EMP_SALARY ES
+WHERE ES.salary_amount < ( SELECT max_salary from MAX_SALARIES MS where MS.department = ES.department)
+), SECOND_LARGEST AS (
+
+SELECT FS.department, max(FS.salary_amount) as max_salary FROM FILTER_LARGEST FS 
+GROUP BY FS.department  
+)
+SELECT * FROM SECOND_LARGEST SL
+INNER JOIN EMP_SALARY ES
+ON ES.salary_amount = SL.max_salary and ES.department = SL.department
+
+
+```
+
+
+## Answer 9 C
+
 Some of your friends used window functions for solutions like below.
 I also accept these as solution too.
 

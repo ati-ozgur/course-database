@@ -52,8 +52,8 @@ book:
         - course-contents/sql-select-distinct-en.md
         - course-contents/sql-where-en.qmd
         - course-contents/sql-null-en.qmd
-        - course-contents/sql-null-functions-en.qmd
-        - course-contents/sql-aggregate-functions-en.qmd
+        - course-contents/sql-functions-null-en.qmd
+        - course-contents/sql-functions-aggregate-en.qmd
         - course-contents/sql-group-by-en.qmd
         - course-contents/sql-orderby-en.qmd
         - course-contents/sql-limit-top-en.md
@@ -64,11 +64,14 @@ book:
         - course-contents/sql-paging-en.qmd
         - course-contents/sql-views-en.qmd
         - course-contents/sql-virtual-tables-en.qmd
-        - course-contents/sql-deterministic-functions-en.qmd
-        - course-contents/sql-string-functions-en.qmd
-        - course-contents/sql-mathematical-functions-en.qmd
-        - course-contents/sql-scalar-functions-en.qmd
-        - course-contents/sql-json-functions-en.qmd
+
+    - part: "SQL: Functions Stored Procedures Triggers"
+      chapters:
+        - course-contents/sql-functions-deterministic-en.qmd
+        - course-contents/sql-functions-string-en.qmd
+        - course-contents/sql-functions-mathematical-en.qmd
+        - course-contents/sql-functions-scalar-en.qmd
+        - course-contents/sql-functions-json-en.qmd
         - course-contents/sql-functions-other-en.qmd 
         - course-contents/sql-stored-procedures-en.qmd
         - course-contents/sql-triggers-en.qmd

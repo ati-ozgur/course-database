@@ -1,4 +1,18 @@
 # SQL deterministic functions
 
+Deterministic function gives to same output whenever input is the same.
+For example **random**, **date** functions are non deterministic since whenever you call them, you get different output.
 
-https://www.sqlite.org/deterministic.html
+Date functions like sqlite date, sql server GETDATE and oracle sysdate are non deterministic since they return current date, this is same for 24 hours period, but after that it changes.
+
+
+
+deterministic functions also should not have side effects.
+That is they should not change anything when they are called.
+This condition is mostly about the functions, you write.
+
+- [sqlite deterministic](https://www.sqlite.org/deterministic.html)
+- [oracle deterministic](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/DETERMINISTIC-clause.html)
+- [sql server deterministic](https://learn.microsoft.com/en-us/sql/relational-databases/user-defined-functions/deterministic-and-nondeterministic-functions?view=sql-server-ver16)
+
+

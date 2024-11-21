@@ -238,6 +238,12 @@ Question is same as practice questions 7 and 8, except it does not enforce usage
 Find the second highest salary owner for every department.
 That is if we have highest two salaries of 1000 and 990 in HR department, you should show the salary 990, HR department and employee name and id information in your result set.
 
+
+
+- [Video ABU Midterm exam solutions: Question 09](https://www.youtube.com/watch?v=FCbWuZ2TXEs)
+
+
+
 ## Test script for Question
 
 You can use following [sql file](Midterm-Practice-Exam-question7-8-9TestScript.sql)  for testing the solutions

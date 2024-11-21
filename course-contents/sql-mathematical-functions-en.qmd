@@ -1,7 +1,106 @@
 # SQL mathematical functions
 
+TODO, check that only common functions below.
+For example, abs does not seem to be in sqlite
+
+- ABS
 
 
+- CEILING
+	find nearest integer, larger than the input.
+	Ceil goes up, floor goes down.
+
+```sql
+select ceiling(0.5); 
+```
+
+
+```sql
+select ceiling(0.99),ceiling(0.1),ceiling(0.5);
+```
+> 1.0 | 1.0 | 1.0
+
+
+
+- COS
+
+cosine function
+
+- DEGREES
+
+	convert from radian to degrees
+
+- EXP
+
+	compute $e^x$ power
+
+- FLOOR
+
+find nearest integer, lesser than the input.
+Ceil goes up, floor goes down.
+
+
+```sql
+select floor(0.99),floor(0.1),floor(0.5);
+```
+
+> 0.0 | 0.0 | 0.0
+
+
+- LOG
+
+	logarithmic function for given base
+- LOG10
+
+	logarithmic function for base 10
+
+PI
+
+
+
+- POWER
+	compute $x^y$ power, like $2^3$ 
+
+
+```sql
+select power(2,3); 
+```
+
+- RADIANS
+	Convert to radians from degrees
+
+
+
+
+RAND
+ROUND
+SIGN
+
+- SIN
+sinus function
+
+```sql
+select sin(90); 
+```
+
+> 0.893996663600558
+
+
+```sql
+select sin(radians(90)); 
+```
+
+> 1.0
+
+SQRT
+
+square root
+
+
+
+TAN
+
+tangent function
 
 - [sqlite Built-In Mathematical SQL Functions](https://www.sqlite.org/lang_mathfunc.html)
-
+- [sql server math function](https://learn.microsoft.com/en-us/sql/t-sql/functions/mathematical-functions-transact-sql?view=sql-server-ver16)

@@ -91,6 +91,8 @@ book:
         - course-contents/database-desing-patterns-en.qmd
         - course-contents/sql-data-types-en.qmd
         - course-contents/sql-constraints-en.qmd
+    - part: "SQL Tuning"
+      chapters:
         - course-contents/sql-indexes-intro-en.qmd
     - course-contents/suggested-readings-en.md
     - course-contents/suggested-books-en.md

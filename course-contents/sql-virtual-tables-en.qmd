@@ -1,3 +1,22 @@
 # SQL virtual tables
 
 
+Virtual table jargon is used for objects in the database where their data is not stored in database but they behave like tables in your sql statements.
+
+Canonical example for virtual tables are views.
+We create views, using CREATE VIEW statement, 
+
+Normally, view data is not stored in our database but only query definition is data dictionary.
+See views in course notes for more about this topic.
+
+
+WITH statements also behave like virtual tables.
+Subqueries in FROM Statements are also behave like virtual tables.
+
+Some functions may return table like data and they may be considered as virtual table or inline views.
+
+
+See some examples
+
+- [oracle json table](https://docs.oracle.com/en/database/oracle/oracle-database/23/adjsn/sql-json-function-json_table.html)
+

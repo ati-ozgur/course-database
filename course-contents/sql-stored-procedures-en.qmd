@@ -1,3 +1,35 @@
 # SQL Stored Procedures
 
+There are no stored procedures in sqlite but both oracle and sql server have them.
+
+A stored procedure is a group of SQL statements in data dictionary.
+These SQL statements are mostly dialects of given database, PL-SQL and T-SQL.
+You could call these procedures using their name.
+
+
+I personally do not like to use stored procedures much since they are hard to control using standard version control (git) systems.
+Most of the time, writing necessary code in given backend code is a better choice.
+But database vendors provide a lot of ready to use stored procedures.
+Instead of writing custom code, using these ready stored procedures or functions is a always better.
+
+
+
+## Oracle Stored Procedure
+
+```sql
+
+CREATE OR REPLACE PROCEDURE Create_Employee (firstname IN varchar2,lastname IN varchar2 , id OUT number)
+IS
+BEGIN
+  INSERT INTO CHINOOK."Employee" ( "LastName", "FirstName") VALUES(firstname,lastname) returning "EmployeeId" into id;   
+END;
+
+```
+
+show dbeaver Procedures 
+execute Procedure
+
+```sql
+CALL CHINOOK.CREATE_EMPLOYEE('Atilla', 'Ozgur', ?);
+```
 

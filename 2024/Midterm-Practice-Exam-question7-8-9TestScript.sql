@@ -1,10 +1,13 @@
-CREATE TABLE Employee (
+--DROP TABLE Employee;
+--DROP TABLE Salary;
+
+CREATE TABLE IF NOT EXISTS Employee  (
     employee_id INT PRIMARY KEY,
     employee_name TEXT NOT NULL,
     department TEXT NOT NULL
 );
 
-CREATE TABLE Salary (
+CREATE TABLE IF NOT EXISTS Salary   (
     salary_id INT PRIMARY KEY,
     employee_id INT,
     department TEXT NOT NULL,
@@ -57,46 +60,46 @@ INSERT INTO Employee (employee_id, employee_name, department) VALUES
 
 INSERT INTO Salary (salary_id, employee_id, department, salary_amount) 
 VALUES
-(1,1,  'Engineering',78000),
-(2,2,  'Marketing',78000),
-(3,3,  'Sales',78000),
-(4,4,  'Human Resources',78000),
-(5,5,  'Engineering',77000),
-(6,6,  'Marketing',77000),
-(7,7,  'Sales',77000),
-(8,8,  'Human Resources',77000),
-(9,9,  'Engineering',76000),
-(10, 10,  'Marketing',76000),
-(11, 11,  'Sales',76000),
-(12, 12,  'Human Resources',76000),
-(13, 13,  'Engineering',75000),
-(14, 14,  'Marketing',75000),
-(15, 15,  'Sales',75000),
-(16, 16,  'Human Resources',75000),
-(17, 17,  'Engineering',74000),
-(18, 18,  'Marketing',74000),
-(19, 19,  'Sales',74000),
-(20, 20,  'Human Resources',74000),
-(21, 21,  'Engineering',74000),
-(22, 22,  'Marketing',74000),
-(23, 23,  'Sales',74000),
-(24, 24,  'Human Resources',74000),
-(25, 25,  'Engineering',70000),
-(26, 26,  'Marketing',70000),
-(27, 27,  'Sales',70000),
-(28, 28,  'Human Resources',70000),
-(29, 29,  'Engineering',85000),
-(30, 30,  'Marketing',85000),
-(31, 31,  'Sales',85000),
-(32, 32,  'Human Resources',85000),
-(33, 33,  'Engineering',75000),
-(34, 34,  'Marketing',75000),
-(35, 35,  'Sales',75000),
-(36, 36,  'Human Resources',75000),
-(37, 37,  'Engineering',70000),
-(38, 38,  'Marketing',70000),
-(39, 39,  'Sales',70000),
-(40, 40,   'Human Resources',70000);
+(1,1,  'Engineering', abs(random() % 30000) + 60000 ),
+(2,2,  'Marketing', abs(random() % 30000) + 60000 ),
+(3,3,  'Sales', abs(random() % 30000) + 60000 ),
+(4,4,  'Human Resources', abs(random() % 30000) + 60000 ),
+(5,5,  'Engineering', abs(random() % 30000) + 60000 ),
+(6,6,  'Marketing', abs(random() % 30000) + 60000 ),
+(7,7,  'Sales', abs(random() % 30000) + 60000 ),
+(8,8,  'Human Resources', abs(random() % 30000) + 60000 ),
+(9,9,  'Engineering', abs(random() % 30000) + 60000 ),
+(10, 10,  'Marketing', abs(random() % 30000) + 60000 ),
+(11, 11,  'Sales', abs(random() % 30000) + 60000 ),
+(12, 12,  'Human Resources', abs(random() % 30000) + 60000 ),
+(13, 13,  'Engineering', abs(random() % 30000) + 60000 ),
+(14, 14,  'Marketing', abs(random() % 30000) + 60000 ),
+(15, 15,  'Sales', abs(random() % 30000) + 60000 ),
+(16, 16,  'Human Resources', abs(random() % 30000) + 60000 ),
+(17, 17,  'Engineering', abs(random() % 30000) + 60000 ),
+(18, 18,  'Marketing', abs(random() % 30000) + 60000 ),
+(19, 19,  'Sales', abs(random() % 30000) + 60000 ),
+(20, 20,  'Human Resources', abs(random() % 30000) + 60000 ),
+(21, 21,  'Engineering', abs(random() % 30000) + 60000 ),
+(22, 22,  'Marketing', abs(random() % 30000) + 60000 ),
+(23, 23,  'Sales', abs(random() % 30000) + 60000 ),
+(24, 24,  'Human Resources', abs(random() % 30000) + 60000 ),
+(25, 25,  'Engineering', abs(random() % 30000) + 60000 ),
+(26, 26,  'Marketing', abs(random() % 30000) + 60000 ),
+(27, 27,  'Sales', abs(random() % 30000) + 60000 ),
+(28, 28,  'Human Resources', abs(random() % 30000) + 60000 ),
+(29, 29,  'Engineering', abs(random() % 30000) + 60000 ),
+(30, 30,  'Marketing', abs(random() % 30000) + 60000 ),
+(31, 31,  'Sales', abs(random() % 30000) + 60000 ),
+(32, 32,  'Human Resources', abs(random() % 30000) + 60000 ),
+(33, 33,  'Engineering', abs(random() % 30000) + 60000 ),
+(34, 34,  'Marketing', abs(random() % 30000) + 60000 ),
+(35, 35,  'Sales', abs(random() % 30000) + 60000 ),
+(36, 36,  'Human Resources', abs(random() % 30000) + 60000 ),
+(37, 37,  'Engineering', abs(random() % 30000) + 60000 ),
+(38, 38,  'Marketing', abs(random() % 30000) + 60000 ),
+(39, 39,  'Sales', abs(random() % 30000) + 60000 ),
+(40, 40,   'Human Resources', abs(random() % 30000) + 60000 );
 
 
 

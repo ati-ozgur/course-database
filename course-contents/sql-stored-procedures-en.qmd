@@ -18,10 +18,16 @@ Instead of writing custom code, using these ready stored procedures or functions
 
 ```sql
 
-CREATE OR REPLACE PROCEDURE Create_Employee (firstname IN varchar2,lastname IN varchar2 , id OUT number)
+CREATE OR REPLACE PROCEDURE Create_Employee 
+(firstname IN varchar2,
+lastname IN varchar2 , 
+id OUT number)
 IS
 BEGIN
-  INSERT INTO CHINOOK."Employee" ( "LastName", "FirstName") VALUES(firstname,lastname) returning "EmployeeId" into id;   
+  INSERT INTO CHINOOK."Employee" 
+  ( "LastName", "FirstName") 
+  VALUES(firstname,lastname) 
+  returning "EmployeeId" into id;   
 END;
 
 ```

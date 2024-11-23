@@ -14,43 +14,4 @@ Instead of writing custom code, using these ready stored procedures or functions
 
 
 
-## Oracle Stored Procedure
-
-```sql
-
-CREATE OR REPLACE PROCEDURE Create_Employee 
-(firstname IN varchar2,
-lastname IN varchar2 , 
-id OUT number)
-IS
-BEGIN
-  INSERT INTO CHINOOK."Employee" 
-  ( "LastName", "FirstName") 
-  VALUES(firstname,lastname) 
-  returning "EmployeeId" into id;   
-END;
-
-```
-
-1. Open Procedures folder in oracle dbeaver chinook connection
-2. refresh this folder to see the create stored procedure
-3. Use mouse right click and select **execute procedure**, see image below.
-
-![dbeaver-oracle-execute-procedure](images/dbeaver-oracle-execute-procedure.png){width=100mm}
-
-
-4. In the opened window, you will see following sql.
-
-```sql
-CALL CHINOOK.CREATE_EMPLOYEE(:FIRSTNAME, :LASTNAME, ?);
-```
-
-5. Change the variables, with your first name and last name like below.
-
-```sql
-CALL CHINOOK.CREATE_EMPLOYEE('Atilla', 'Özgür', ?);
-```
-
-6. execute the script. In the results window, you should see the newly inserted employee id.
-
-
+{{< include ../course-contents/sql-stored-procedures-oracle-en.qmd >}}

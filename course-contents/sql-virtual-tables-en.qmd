@@ -20,6 +20,11 @@ generate_series function in sqlite is a good example.
 SELECT value FROM generate_series(5,100,5);
 ```
 
+::: {.callout-warning}
+Note that above sql will not work in dbeaver due to limitation of sqlite jdbc driver, see following [github xerial/sqlite-jdbc issue 1173](https://github.com/xerial/sqlite-jdbc/issues/1173).
+As of November 2024
+:::
+
 
 See some other examples
 

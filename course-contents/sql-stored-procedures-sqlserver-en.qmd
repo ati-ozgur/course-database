@@ -1,0 +1,55 @@
+## SQL Server Stored Procedure Example
+
+1. Open the chinook sql server connection
+
+2. copy paste the following script to a new script window
+
+
+```sql
+
+CREATE PROCEDURE Create_Employee
+(
+    @FirstName nvarchar(50) = NULL,
+    @LastName nvarchar(50) = NULL
+)
+AS
+BEGIN
+DECLARE @ID int
+
+INSERT INTO Employee
+( LastName, FirstName) 
+VALUES(@FirstName,@LastName) 
+
+  SELECT @ID = scope_identity();
+  RETURN @ID
+END
+
+```
+
+3. Run the script to create the stored procedure
+
+4. Unfortunately, current version of dbeaver does not support sql server stored procedure in GUI.
+
+4. Open a new script window and copy paste the following script
+
+```sql
+DECLARE @RC int
+EXECUTE @RC = Create_Employee 'Atilla','Özgür'
+SELECT @RC
+```
+
+5. execute the script. 
+6. If we check it in table, we see that new employee inserted but dbeaver community edition does not show id information.
+
+If we execute same query in microsoft tools, we see the new inserted id.
+For example vscode sql server extension shows the id value.
+See below image:
+
+In the results window, you should see the newly inserted employee id.
+
+
+
+![sqlserver-stored-procedure-execution-vscode](images/sqlserver-stored-procedure-execution-vscode.png){width=100mm}
+
+
+

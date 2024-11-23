@@ -49,7 +49,7 @@ In the results window, you should see the newly inserted employee id.
 
 
 
-![sqlserver-stored-procedure-execution-vscode](images/sqlserver-stored-procedure-execution-vscode.png){width=100mm}
+![sqlserver-stored-procedure-execution-vscode](images/sqlserver-stored-procedure-execution-vscode.png){width=200mm}
 
 
 

@@ -15,3 +15,4 @@ Instead of writing custom code, using these ready stored procedures or functions
 
 
 {{< include ../course-contents/sql-stored-procedures-oracle-en.qmd >}}
+{{< include ../course-contents/sql-stored-procedures-sqlserver-en.qmd >}}

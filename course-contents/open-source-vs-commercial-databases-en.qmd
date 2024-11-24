@@ -11,3 +11,21 @@ But small to mid sized companies started to work with mostly open source databas
 Even in large companies and government, you can find open source databases like postgre and mysql since small applications use them.
 
 
+## Who uses open source databases
+
+sqlite is the most used open source database. There are over [1 trillion (1e12) SQLite databases in active use](https://www.sqlite.org/mostdeployed.html).
+sqlite is found on
+
+- Every Android device
+- Every iPhone and iOS device
+- Every Mac
+- Every Windows10 machine
+- Every Firefox, Chrome, and Safari web browser 
+...
+
+
+
+Wordpress uses mysql and and [472 million websites](https://colorlib.com/wp/wordpress-statistics/) runs on wordpress, which is 43.3% of all the websites on the internet.
+
+
+- [Who uses postgres](https://dzone.com/articles/why-everyone-uses-postgres)

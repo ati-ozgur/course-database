@@ -10,6 +10,12 @@ But small to mid sized companies started to work with mostly open source databas
 10 years ago, it was almost impossible to use open source databases in the large companies but mindset is shifted.
 Even in large companies and government, you can find open source databases like postgre and mysql since small applications use them.
 
+## Who use commercial databases
+
+- Banks
+- Government offices
+- Large companies who need ERP suites
+
 
 ## Who uses open source databases
 

@@ -86,3 +86,6 @@ LIMIT 10 OFFSET 20;
 ```
 
 
+## Others
+
+- [Video API Pagination: Making Billions of Products Scrolling Possible ](https://www.youtube.com/watch?v=14K_a2kKTxU)

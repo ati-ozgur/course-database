@@ -67,14 +67,12 @@ book:
 
     - part: "SQL: Functions Stored Procedures Triggers"
       chapters:
-        - course-contents/sql-functions-deterministic-en.qmd
+        - course-contents/sql-functions-scalar-en.qmd
         - course-contents/sql-functions-string-en.qmd
         - course-contents/sql-functions-mathematical-en.qmd
-        - course-contents/sql-functions-scalar-en.qmd
         - course-contents/sql-functions-date-and-time-en.qmd
         - course-contents/sql-functions-window-en.qmd
         - course-contents/sql-functions-json-en.qmd
-        - course-contents/sql-functions-other-en.qmd
         - course-contents/sql-stored-procedures-en.qmd
         - course-contents/sql-triggers-en.qmd
 

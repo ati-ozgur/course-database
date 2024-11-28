@@ -1,4 +1,4 @@
-# SQL deterministic functions
+## SQL deterministic functions
 
 Deterministic function gives to same output whenever input is the same.
 For example **random**, **date** functions are non deterministic since whenever you call them, you get different output.
@@ -7,7 +7,7 @@ Date functions like sqlite date, sql server GETDATE and oracle sysdate are non d
 
 
 
-deterministic functions also should not have side effects.
+Deterministic functions also should not have any side effects.
 That is they should not change anything when they are called.
 This condition is mostly about the functions, you write.
 
@@ -16,3 +16,4 @@ This condition is mostly about the functions, you write.
 - [sql server deterministic](https://learn.microsoft.com/en-us/sql/relational-databases/user-defined-functions/deterministic-and-nondeterministic-functions?view=sql-server-ver16)
 
 
+If database engine knows that a function is deterministic, function will have some speed optimizations and also could be used in indexes.

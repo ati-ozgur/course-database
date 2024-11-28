@@ -1,3 +1,43 @@
 # SQL scalar functions
 
-https://www.sqlite.org/lang_corefunc.html
+
+
+SQL scalar functions enables you to perform different operations operations.
+Scalar functions returns single value even when they have more than one input.
+Below example of min function has 4 inputs but output is single value of 3.
+
+
+```sql
+select min(3,5,6,11);  
+```
+
+
+Every database provides some core functions in string, mathematical, date and time.
+
+- See [sqlite core function list](https://www.sqlite.org/lang_corefunc.html).
+- See [Sql Server function list](https://learn.microsoft.com/en-us/sql/t-sql/functions/functions?view=sql-server-ver16)
+- See [Oracle function list](https://docs.oracle.com/en/database/oracle///oracle-database/23/sqlrf/Functions.html)
+
+Previously in our course, we have covered following types of functions:
+
+- null handling functions
+- aggregate functions
+
+For our course, we will see following type of functions:
+
+- string functions
+- mathematical functions
+- date and time functions
+- JSON functions
+
+{{< include ../course-contents/sql-functions-deterministic-en.qmd >}}
+
+## SQL Custom or User-defined functions 
+
+Most databases also allows you to write custom functions SQL dialects.
+These type of functions are also called user-defined functions.
+Sqlite does not have **create function** keyword to create functions but it allows c-language extension functions to be used in sql.
+We will not cover this topic any future.
+
+Both oracle and sql server **Create function** keywords.
+

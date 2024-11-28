@@ -1,3 +1,25 @@
 # SQL JSON functions
 
-https://www.sqlite.org/json1.html
+According to SQLite documentation:
+
+> By default, SQLite supports thirty functions and two operators for dealing with JSON values. There are also two table-valued functions that can be used to decompose a JSON string.
+
+See [full list here](https://www.sqlite.org/json1.html).
+
+We will not cover json function but know that a lot of the uses cases of nosql databases (i.e. mongodb) could be supported using json functions.
+
+
+```sql
+CREATE TABLE JSON_EXAMPLE_TABLE (COLUMN_JSON text);
+INSERT INTO JSON_EXAMPLE_TABLE VALUES(JSON_OBJECT('name', 'atilla'));
+INSERT INTO JSON_EXAMPLE_TABLE VALUES(JSON_OBJECT('name', 'aydın'));
+INSERT INTO JSON_EXAMPLE_TABLE VALUES(JSON_OBJECT('name', 'ankara'));
+
+CREATE INDEX JSON_EXAMPLE_TABLE_idx ON JSON_EXAMPLE_TABLE(JSON_EXTRACT(COLUMN_JSON, '$.name'));
+
+
+EXPLAIN QUERY PLAN SELECT * FROM JSON_EXAMPLE_TABLE WHERE JSON_EXTRACT(COLUMN_JSON, '$.name')='atilla';
+
+
+```
+

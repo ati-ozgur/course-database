@@ -23,7 +23,47 @@ DateTime value = DateTime.UtcNow;
 long unixTime = ((DateTimeOffset)value).ToUnixTimeSeconds();
 ```
 
+SQLite has following 7 scalar date and time functions:
 
+
+**date** 
+
+return the date as ISO-8601 format, YYYY-MM-DD.
+
+```sql
+select date();
+```
+
+last day of the current month.
+```sql
+SELECT date('now','start of month','+1 month','-1 day');
+```
+
+**time**
+
+returns the time as text in formatted as HH:MM:SS 
+
+**datetime**
+
+returns the date and time formatted as YYYY-MM-DD HH:MM:SS 
+
+
+**julianday**
+
+returns the Julian day - the fractional number of days since noon in Greenwich on November 24, 4714 B.C.
+
+**unixepoch**
+
+the number of seconds since 1970-01-01 00:00:00 UTC.
+
+**strftime**
+
+format the date according to the format string specified as the first argument.
+Format string supports  strftime() function from the standard C library.
+
+**timediff**
+
+The timediff(A,B) function returns a string that describes the amount of time that must be added to B in order to reach time A. 
 
 
 

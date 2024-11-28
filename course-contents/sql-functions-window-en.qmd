@@ -1,5 +1,32 @@
 # SQL window functions
 
+From [sqlite window functions documentation](https://www.sqlite.org/windowfunctions.html):
 
-https://www.sqlite.org/windowfunctions.html
+> A window function is an SQL function where the input values are taken from a "window" of one or more rows in the results set of a SELECT statement.
+
+> Window functions are distinguished from scalar functions and aggregate functions by the presence of an OVER clause. If a function has an OVER clause, then it is a window function. If it lacks an OVER clause, then it is an ordinary aggregate or scalar function. Window functions might also have a FILTER clause in between the function and the OVER clause.
+
+SQLite supports 11 built-in window functions in addition to aggregate window functions.
+
+1. row_number
+2. rank
+3. dense_rank
+4. percent_rank
+5. cume_dist
+6. ntile
+7. lag
+8. lead
+9. first_value
+10. last_value
+11. nth_value
+
+Window functions are especially useful for use cases which ask for ranking, ordering between groups. 
+- Like please find second largest earner among the department employees.
+- Rank the employees  according to their salary grouped by department
+
+
+
+
+
+
 

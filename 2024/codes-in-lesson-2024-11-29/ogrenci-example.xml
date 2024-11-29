@@ -1,0 +1,13 @@
+   <Row>
+    <ID>1</ID>
+    <StudentNumber>434334342</StudentNumber>
+    <Email>s434334342@ankarabilim.edu.tr></Email>
+    <Name>Ahmet Soyad</Name>
+   </Row>
+
+   {
+"ID":1,
+"StudentNumber":434334342,
+"Email":"s434334342@ankarabilim.edu.tr",
+"Name":"Ahmet Soyad"
+   }

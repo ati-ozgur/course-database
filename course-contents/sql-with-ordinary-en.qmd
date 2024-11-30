@@ -1,7 +1,10 @@
 ## With ordinary
 
 
-Ordinary CTEs behaves like views or from subqueries but they are more easy to understand compared to them.
+Ordinary CTEs behaves like views or derived tables (from sub-queries) but they are more easy to understand compared to them.
+
+
+
 
 They are easy to construct.
 A simple example is given below.

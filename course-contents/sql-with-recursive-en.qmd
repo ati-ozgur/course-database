@@ -40,3 +40,7 @@ LIMIT 100
 SELECT x FROM num;
 
 ```
+
+The first thing to notice,we added RECURSIVE keyword to with.
+The RECURSIVE is above not required for recursive CTEs in sqlite, Oracle and SQL Server but it is a good idea to include it to make it obvious for further maintainers of your system.
+

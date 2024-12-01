@@ -1,0 +1,42 @@
+## With Recursive
+
+With Recursive is not included in the exam.
+
+
+Oracle  CONNECT BY in 1980
+But Recursive CTEs are better and standardized in SQL99 standard.
+See database support in modern sql site.
+
+a recursive CTE is a CTE that refers to itself in its select part
+
+```sql
+WITH RECURSIVE cte_name AS (
+initial-select
+UNION [ALL]
+recursive-select
+)
+cte_query
+```
+
+
+```sql
+WITH RECURSIVE num(x) AS (
+SELECT 1
+UNION ALL
+SELECT x+1 FROM num
+LIMIT 100
+)
+SELECT x FROM num;
+
+```
+
+```sql
+WITH RECURSIVE num AS (
+SELECT 1 as x
+UNION ALL
+SELECT x+1 FROM num
+LIMIT 100
+)
+SELECT x FROM num;
+
+```

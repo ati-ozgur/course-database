@@ -55,6 +55,11 @@ Rails offer a plugin for redis replacement in the database.
 https://github.com/rails/solid_cable
 
 
+See below video for an example of an application migration to sqlite (a relation database) from redis, key-value database.
+Wafris, a web application firewall, achieved performance improvements with this migration.
+[Moving from Redis to SQLite with Mike Buckbee](https://www.youtube.com/watch?v=EwDuYId5v8k)
+
+
 ### Kafka
 
 It is append only log.

@@ -1,13 +1,12 @@
 ## With Recursive
 
-With Recursive is not included in the exam.
+Oracle introduced CONNECT BY operator in 1980s for recursive queries.
+But Recursive CTEs are better and are also standardized in SQL99.
+See [recursive query database support in modern sql site](https://modern-sql.com/caniuse/with_recursive_(top_level)).
 
-
-Oracle  CONNECT BY in 1980
-But Recursive CTEs are better and standardized in SQL99 standard.
-See database support in modern sql site.
-
-a recursive CTE is a CTE that refers to itself in its select part
+A recursive CTE is a CTE that refers to itself in its select part.
+We could write it as two part sql as below. 
+In the below query we have **initial-select** and **recursive-select** parts and these are combined using UNION or UNION ALL operators.
 
 ```sql
 WITH RECURSIVE cte_name AS (
@@ -17,6 +16,25 @@ recursive-select
 )
 cte_query
 ```
+
+Better example will be below.
+
+```sql
+WITH RECURSIVE cte_name AS (
+   SELECT ... FROM TABLE -- initial-select
+UNION ALL
+   SELECT ... FROM cte_name -- recursive-select, note the self reference to cte_name
+) 
+SELECT ... FROM cte_name
+
+```
+We write our first **initial-select** normally.
+Then, our  **recursive-select** and cte_query part both refer to our cte_name.
+
+
+** Example 1 a** 
+Modified [from sqlite documentation](https://www.sqlite.org/lang_with.html), below query counts to 100. 
+Note that in this query, cte_name is **num** and referenced by three times.
 
 
 ```sql
@@ -30,6 +48,13 @@ SELECT x FROM num;
 
 ```
 
+The first thing to notice,we added RECURSIVE keyword to with.
+The RECURSIVE is above not required for recursive CTEs in sqlite, Oracle and SQL Server but it is a good idea to include it to make it obvious for further maintainers of your system.
+
+
+** Example 1 b** 
+same example but columns names are not given in cte_name(c1,c2) but given as alias in initial select.
+
 ```sql
 WITH RECURSIVE num AS (
 SELECT 1 as x
@@ -41,6 +66,19 @@ SELECT x FROM num;
 
 ```
 
-The first thing to notice,we added RECURSIVE keyword to with.
-The RECURSIVE is above not required for recursive CTEs in sqlite, Oracle and SQL Server but it is a good idea to include it to make it obvious for further maintainers of your system.
 
+
+Lets create another example for adding numbers.
+
+WITH RECURSIVE TotalSum AS (
+  SELECT
+    0 AS Count,
+    0 AS Total
+  UNION ALL
+  SELECT
+    Count + 1,
+    Total + Count
+  FROM TotalSum
+  WHERE Count <= 100
+)
+SELECT * FROM TotalSum;

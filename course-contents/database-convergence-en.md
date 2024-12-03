@@ -4,7 +4,7 @@ Relational databases are boring and boring is good, especially when money is con
 DocumentDBs like MongoDB is popular for their straightforward start but the problems comes later when you need to keep your data consistent.
 
 Also, old boring technologies will have a lot of utilities for different needs.
-For example, schema comparison is widely supported in different databases but please look at for same use case in document databases.
+For example, schema comparison is widely supported in old boring databases but please look at for same use case in document databases.
 
 
 

@@ -32,7 +32,7 @@ We write our first **initial-select** normally.
 Then, our  **recursive-select** and cte_query part both refer to our cte_name.
 
 
-** Example 1 a** 
+** Example 1a: counting numbers** 
 Modified [from sqlite documentation](https://www.sqlite.org/lang_with.html), below query counts to 100. 
 Note that in this query, cte_name is **num** and referenced by three times.
 
@@ -52,8 +52,9 @@ The first thing to notice,we added RECURSIVE keyword to with.
 The RECURSIVE is above not required for recursive CTEs in sqlite, Oracle and SQL Server but it is a good idea to include it to make it obvious for further maintainers of your system.
 
 
-** Example 1 b** 
-same example but columns names are not given in cte_name(c1,c2) but given as alias in initial select.
+** Example 1b:  counting numbers again** 
+
+Same example but columns names are not given in cte_name(c1,c2) but given as alias in initial select.
 
 ```sql
 WITH RECURSIVE num AS (
@@ -66,19 +67,19 @@ SELECT x FROM num;
 
 ```
 
-
+** Example 2 adding numbers** 
 
 Lets create another example for adding numbers.
 
 WITH RECURSIVE TotalSum AS (
-  SELECT
-    0 AS Count,
-    0 AS Total
-  UNION ALL
-  SELECT
-    Count + 1,
-    Total + Count
-  FROM TotalSum
-  WHERE Count <= 100
+  SELECT
+    0 AS Count,
+    0 AS Total
+  UNION ALL
+  SELECT
+    Count + 1,
+    Total + Count
+  FROM TotalSum
+  WHERE Count <= 100
 )
 SELECT * FROM TotalSum;

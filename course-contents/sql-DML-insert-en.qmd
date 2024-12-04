@@ -102,7 +102,7 @@ VALUES
 ```
 
 
-### Insert into select
+## Insert into select
 
 Last form of Insert could use select statement instead of values clause.
 Our select statement should return all values required by the table.

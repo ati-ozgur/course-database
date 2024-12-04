@@ -1,5 +1,21 @@
 # DML (data manipulation language)
 
+Data manipulation language statements are the statements that change the values in the tables.
+Most common three are following statements.
+
+1. Insert
+2. Update
+3. Delete
+
+
+These statements are C,U,D of CRUD (Create Read Update Delete) statements.
+But following statements are also considered data manipulation language statements
+
+- Upsert
+- Create Table As
+- SELECT INTO
+
+
 {{< include ../course-contents/sql-DML-insert-en.qmd >}}
 
 

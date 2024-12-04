@@ -52,6 +52,11 @@ INSERT INTO Playlist (Name)
 VALUES('Name playlist');
 ```
 
+If even one required column is missing from the statement, we will get an error, for example:
+
+> A NOT NULL constraint failed
+
+
 We can not omit every column value and use empty values but we can use default values statement as below, when every column has a default value be it null, given default or autonumber.
 
 
@@ -99,8 +104,16 @@ VALUES
 
 ### Insert into select
 
+Last form of Insert could use select statement instead of values clause.
+Our select statement should return all values required by the table.
+Since Customer table requires 3 columns we could use following statement to insert every employee as customer.
 
-
+```sql
+INSERT INTO Customer
+(FirstName, LastName,  Email)
+SELECT LastName, FirstName, Email
+FROM Employee;
+```
 
 
 

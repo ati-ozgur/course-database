@@ -4,7 +4,7 @@ Data manipulation language statements are the statements that change the values 
 Most common three are following statements.
 
 1. [Insert](sql-DML-insert-en.qmd)
-2. Update
+2. [Update](sql-DML-update-en.qmd)
 3. Delete
 
 
@@ -14,13 +14,6 @@ But following statements are also considered data manipulation language statemen
 - Upsert
 - Create Table As
 - SELECT INTO
-
-
-
-
-
-{{< include ../course-contents/sql-DML-update-en.qmd >}}
-
 
 
 

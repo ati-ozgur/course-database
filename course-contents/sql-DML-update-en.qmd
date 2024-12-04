@@ -1,4 +1,4 @@
-## Update
+# SQL DML Update
 
 Update statements is used to update rows in the tables.
 Update should always be used with where clause.

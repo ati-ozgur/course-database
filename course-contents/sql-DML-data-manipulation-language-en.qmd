@@ -1,16 +1,8 @@
 # DML (data manipulation language)
 
-
-## Insert into
-
-https://www.sqlite.org/lang_insert.html
+{{< include ../course-contents/sql-DML-insert-en.qmd >}}
 
 
-### Insert into select
-
-
-
-### Insert multiple rows
 
 
 

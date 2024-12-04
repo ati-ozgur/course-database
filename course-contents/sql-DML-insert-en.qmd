@@ -1,0 +1,16 @@
+# DML (data manipulation language)
+
+
+## Insert into
+
+https://www.sqlite.org/lang_insert.html
+
+
+### Insert into select
+
+
+
+### Insert multiple rows
+
+
+

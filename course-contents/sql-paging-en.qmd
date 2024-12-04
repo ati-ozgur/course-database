@@ -15,6 +15,11 @@ You can see google paging of search results in the below image.
 
 Paging Results - Can be done by using the OFFSET-FETCH command with ORDER BY.
 
+Note that this usage is easy to use but problematic.
+Offset usage has large performance problems.
+Read about it [here](https://use-the-index-luke.com/sql/partial-results/fetch-next-page).
+
+
 In the below example, in oracle database, we select 3rd page with 10 rows.
 This query will not work on sql server since sql server mandates usage of order by while using offset and fetch.
 

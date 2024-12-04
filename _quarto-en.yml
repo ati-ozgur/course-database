@@ -79,6 +79,7 @@ book:
     - part: "SQL DML-DCL-TCL"
       chapters:
         - course-contents/sql-DML-data-manipulation-language-en.qmd
+        - course-contents/sql-DML-insert-en.qmd
         - course-contents/sql-truncate-table-en.md
         - course-contents/sql-DDL-data-definition-language-en.qmd
         - course-contents/sql-DCL-data-control-language-en.qmd

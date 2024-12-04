@@ -1,4 +1,4 @@
-## Insert
+# SQL DML Insert
 
 
 Insert statement is used to add rows to our tables.

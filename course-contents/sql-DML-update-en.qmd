@@ -44,4 +44,18 @@ WHERE EmployeeId=5;
 Before updating multiple values with update statements, we should first run the select count(*) statement to see how many rows we are updating and this row count is consistent with our expectations.
 
 
+Following sql return 3, 
+
+```sql
+SELECT COUNT(*) FROM Customer 
+WHERE FirstName LIKE 'A%'
+```
+
+then corresponding update statement will update 3 rows.
+
+```sql
+UPDATE Customer
+SET City='DENEME'
+WHERE FirstName LIKE 'A%'; 
+```
 

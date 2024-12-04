@@ -5,7 +5,7 @@ Most common three are following statements.
 
 1. [Insert](sql-DML-insert-en.qmd)
 2. [Update](sql-DML-update-en.qmd)
-3. Delete
+3. [Delete](sql-DML-delete-en.qmd)
 
 
 These statements are C,U,D of CRUD (Create Read Update Delete) statements.
@@ -23,17 +23,6 @@ INSERT OR REPLACE
 https://www.sqlite.org/lang_replace.html
 https://www.sqlite.org/lang_conflict.html
 https://www.sqlite.org/lang_upsert.html
-
-## Delete
-
-### Single row
-
-using PK
-
-### Multiple rows
-
-delete from
-please control with select before running, especially in production.
 
 
 

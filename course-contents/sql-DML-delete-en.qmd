@@ -1,0 +1,59 @@
+# SQL DML Delete
+
+Delete statements is used to delete rows in the tables.
+Delete statements should always be used together with where clause.
+If where clause is forgotten, then **every row** in the table is deleted.
+
+
+Following sql will work on command line normally.
+
+
+```sql
+Delete from Employee
+```
+
+But dbeaver gives a warning for dangerous sql.
+But be aware that not every tool gives this warning.
+Especially, programmatic connections run every sql normally.
+
+
+![dbeaver-dangerous-sql-delete-without-where](images/dbeaver-dangerous-sql-delete-without-where.png)
+
+
+
+See following database specific documentation
+
+- [sqlite delete](https://www.sqlite.org/lang_delete.html)
+
+
+## Single row
+
+
+For single row delete, we should use where PK_Column = value filter in our delete statements.
+Following delete statement will only delete the row with employee id 5 value.
+
+
+```sql
+DELETE FROM Employee
+WHERE EmployeeId=5; 
+```
+
+
+## Multiple rows
+
+Before deleting multiple values with update statements, we should first run the select count(*) statement to see how many rows we are deleting and this row count is consistent with our expectations.
+
+
+Following sql return 3, 
+
+```sql
+SELECT COUNT(*) FROM Customer 
+WHERE FirstName LIKE 'A%'
+```
+
+then corresponding delete statement will delete 3 rows.
+
+```sql
+DELETE FROM Customer
+WHERE FirstName LIKE 'A%'; 
+```

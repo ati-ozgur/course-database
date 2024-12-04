@@ -1,0 +1,47 @@
+## Update
+
+Update statements is used to update rows in the tables.
+Update should always be used with where clause.
+If where clause is forgotten, then **every row** in the table is updated.
+
+
+Following sql will work on command line normally.
+
+
+```sql
+UPDATE Employee
+SET City='DENEME'
+```
+
+But dbeaver gives a warning for dangerous sql.
+But be aware that not every tool gives this warning.
+Especially, programmatic connections run every sql normally.
+
+
+![dbeaver-dangerous-sql-update-without-where](images/dbeaver-dangerous-sql-update-without-where.png)
+
+
+
+See following database specific documentation
+
+- [sqlite update](https://www.sqlite.org/lang_update.html)
+
+## Single row
+
+For single row update, we should use where PK_Column = value filter in our update statements.
+Following update statement will only update the row with employee id 5 value.
+
+
+```sql
+UPDATE Employee
+SET City='DENEME'
+WHERE EmployeeId=5; 
+```
+
+
+## Multiple rows
+
+Before updating multiple values with update statements, we should first run the select count(*) statement to see how many rows we are updating and this row count is consistent with our expectations.
+
+
+

@@ -3,22 +3,18 @@
 {{< include ../course-contents/sql-DML-insert-en.qmd >}}
 
 
+{{< include ../course-contents/sql-DML-update-en.qmd >}}
 
 
 
-## Update
-
-https://www.sqlite.org/lang_update.html
-
-
-### Single row
-### Multiple rows
 
 ## UPSERT
+
 INSERT OR REPLACE
 https://www.sqlite.org/lang_replace.html
 https://www.sqlite.org/lang_conflict.html
 https://www.sqlite.org/lang_upsert.html
+
 ## Delete
 
 ### Single row

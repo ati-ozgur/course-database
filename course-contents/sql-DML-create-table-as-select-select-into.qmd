@@ -58,8 +58,30 @@ CREATE TABLE TempCustomer(
 ```
 
 
-### Creating table using select
 
-### CREATE TABLE ... AS SELECT (Oracle)
-### SELECT INTO (SQL Server)
+## SELECT INTO (SQL Server)
+
+
+SQL Server its own command of [Select into](https://learn.microsoft.com/en-us/sql/t-sql/queries/select-into-clause-transact-sql?view=sql-server-ver16
+) for creating a table using select command.
+Its way is following
+
+```sql
+select into 
+table-name
+from
+```
+
+an example of creation of TempCustomer table is given below
+
+```sql
+SELECT * INTO 
+TempCustomer 
+FROM Customer
+```
+
+
+
+
+Similar to create table as Indexes, constraints, and triggers will not be carried to new table.
 

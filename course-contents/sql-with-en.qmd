@@ -19,7 +19,7 @@ They are two types of CTEs.
 
 
 
-## Links
+## Suggested readings
 
-- https://modern-sql.com/use-case/literate-sql
+- [literate-sql](https://modern-sql.com/use-case/literate-sql)
 

@@ -1,0 +1,65 @@
+# SQL DML Create table as select or Select into
+
+## Create table  table-name  as select statement
+
+This commands creates a database table using the results of the select statement.
+Column names and data types or columns are determined using the select statement columns and resulting rows.
+
+A table created this way has no constraints or primary key.
+Every column is also nullable.
+
+This statement is mostly used for temporary copies for tables or making a backup before trying destructive changes in the other tables.
+
+Select statement could be arbitrarily complex
+
+Following sql will create TempCustomer table and will show difference between two tables using .schema command.
+
+```sql
+CREATE TABLE TempCustomer AS SELECT * FROM Customer;
+.schema Customer
+.schema TempCustomer
+```
+```
+CREATE TABLE Customer
+(
+    CustomerId INTEGER  NOT NULL,
+    FirstName NVARCHAR(40)  NOT NULL,
+    LastName NVARCHAR(20)  NOT NULL,
+    Company NVARCHAR(80),
+    Address NVARCHAR(70),
+    City NVARCHAR(40),
+    State NVARCHAR(40),
+    Country NVARCHAR(40),
+    PostalCode NVARCHAR(10),
+    Phone NVARCHAR(24),
+    Fax NVARCHAR(24),
+    Email NVARCHAR(60)  NOT NULL,
+    SupportRepId INTEGER,
+    CONSTRAINT PK_Customer PRIMARY KEY  (CustomerId),
+    FOREIGN KEY (SupportRepId) REFERENCES Employee (EmployeeId) 
+		ON DELETE NO ACTION ON UPDATE NO ACTION
+);
+CREATE INDEX IFK_CustomerSupportRepId ON Customer (SupportRepId);
+CREATE TABLE TempCustomer(
+  CustomerId INT,
+  FirstName TEXT,
+  LastName TEXT,
+  Company TEXT,
+  Address TEXT,
+  City TEXT,
+  State TEXT,
+  Country TEXT,
+  PostalCode TEXT,
+  Phone TEXT,
+  Fax TEXT,
+  Email TEXT,
+  SupportRepId INT
+);
+```
+
+
+### Creating table using select
+
+### CREATE TABLE ... AS SELECT (Oracle)
+### SELECT INTO (SQL Server)
+

@@ -12,8 +12,8 @@ These statements are C,U,D of CRUD (Create Read Update Delete) statements.
 But following statements are also considered data manipulation language statements
 
 - Upsert
-- Create Table As
-- SELECT INTO
+- [Truncate Table](sql-truncate-table-en.qmd)
+- [Create Table AS Select or SELECT INTO](sql-DML-create-table-as-select-select-into.qmd)
 
 
 
@@ -27,10 +27,7 @@ https://www.sqlite.org/lang_upsert.html
 
 
 
-### Creating table using select
 
-### CREATE TABLE ... AS SELECT (Oracle)
-### SELECT INTO (SQL Server)
 
 
 ## Data Import/Export

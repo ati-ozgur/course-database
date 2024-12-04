@@ -45,14 +45,62 @@ VALUES(0, '');
 - We can omit any column which allows null values from this list.
 - We can omit any column with default values from this list.
 
+Thus following will also work since PlaylistId is autonumber.
 
+```sql
+INSERT INTO Playlist (Name)
+VALUES('Name playlist');
+```
+
+We can not omit every column value and use empty values but we can use default values statement as below, when every column has a default value be it null, given default or autonumber.
+
+
+## Insert into Default values
+
+
+In Playlist table, Column PlaylistId is autonumber and column Name allows nulls; therefore, we can use 3rd form default values, with the following statement
+
+
+```sql
+insert into Playlist DEFAULT VALUES;
+```
+
+Above statement insert null value to name column and PlaylistId gets next available int value.
+
+## Insert multiple rows
+
+
+Values part allows us to insert multiple rows using multiple row values divided by comma values.
+Below insert 3 rows to Playlist table.
+
+
+
+```sql
+INSERT INTO Playlist (Name) VALUES
+    ('Name 1'),
+    ('Name 2'),
+    ('Name 3');
+```
+
+following sql insert 4 rows to Customer table.
+CustomerId is auto number and other columns allows null values.
+
+```sql
+INSERT INTO Customer
+(FirstName, LastName,  Email)
+VALUES
+('Atilla', 'Özgür', 'example1@ex.com'),
+('Funda', 'Özgür', 'example1@ex2.com'),
+('Deneme1', 'Deneme2', 'ex21@ex.com'),
+('FirstName1', 'Lastname1', 'email1@ex.com')
+;
+```
 
 
 ### Insert into select
 
 
 
-### Insert multiple rows
 
 
 

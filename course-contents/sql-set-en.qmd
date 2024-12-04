@@ -31,3 +31,7 @@ Oracle also accepts ALL to EXCEPT ALL and MINUS ALL so that duplicated will not 
 See following [Oracle tutorial Set operations](https://oracle-base.com/articles/21c/sql-set-operator-enhancements-21c)
 
 
+## Other tutorials
+
+- [The EXCEPT and INTERSECT Operators in SQL Server](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/the-except-and-intersect-operators-in-sql-server/)
+

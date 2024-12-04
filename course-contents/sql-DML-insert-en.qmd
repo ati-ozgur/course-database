@@ -1,9 +1,51 @@
-# DML (data manipulation language)
+## Insert
 
 
-## Insert into
+Insert statement is used to add rows to our tables.
+We have 3 different version of insert.
 
-https://www.sqlite.org/lang_insert.html
+1. insert into table values
+2. insert into table select
+3. insert into table DEFAULT VALUES;
+
+
+See following database specific documentation
+
+- [sqlite insert](https://www.sqlite.org/lang_insert.html)
+
+## Insert into table values
+
+First version is the most basic one.
+
+```sql
+INSERT INTO tablename (column name1, column name2...) VALUES (value1,value2...)
+```
+
+
+For the following Playlist table with two columns. 
+
+```{mermaid}
+erDiagram
+    Playlist {
+        int PlaylistId PK
+        text Name
+    }
+```
+
+We use following insert into statement. 
+
+
+
+```sql
+INSERT INTO Playlist (PlaylistId, Name)
+VALUES(0, '');
+```
+
+- We can omit autonumber (identity) columns since they get their values automatically
+- We can omit any column which allows null values from this list.
+- We can omit any column with default values from this list.
+
+
 
 
 ### Insert into select

@@ -40,12 +40,27 @@ But these two databases and sqlite also allows using other languages for writing
 - Oracle allows [java](https://docs.oracle.com/en/database/oracle/oracle-database/19/jjdev/invoking-Java-methods.html), [.NET](https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/10g/r2/prod/install/odpinst/odpinst_otn.htm), [javascript](https://docs.oracle.com/en/database/oracle/oracle-database/23/mlejs/introduction-to-mle.html#GUID-EDC075CA-B50E-45D8-8A72-D060C6DB47DB), and programming languages for stored procedures.
 
 
+For sqlite
+
+- [Create Table](https://www.sqlite.org/lang_createtable.html)
+- [Create Trigger](https://www.sqlite.org/lang_createtrigger.html)
+- [Create Index](https://www.sqlite.org/lang_createindex.html)
+- [Create View](https://www.sqlite.org/lang_createview.html)
+
+You do not have to memorize their exact definition since most modern GUI tools help you to create these statements.
+
+1. DBeaver Demo Create Table
+2. DBeaver Demo Alter Table
+3. DBeaver Demo Drop Table
+
+1. DBeaver Demo Create View
+2. DBeaver Demo Alter View
+3. DBeaver Demo Drop View
 
 
-CREATE TABLE
-https://www.sqlite.org/lang_createtable.html
+Being an open source and free tool, DBeaver is not very powerful.
+But SQL Developer Oracle and Sql Server Management Studio allows creation, alteration and dropping of every object mentioned above using GUI tools.
 
-CREATE TABLE ... AS SELECT Statements
 
 virtual columns
 https://www.sqlite.org/gencol.html

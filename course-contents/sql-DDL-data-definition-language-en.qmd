@@ -1,5 +1,47 @@
 # DDL (data definition language)
 
+Data definition language (DDL) statements are Create, drop, alter statements.
+Database objects are created using **create object** statements, then stored in data dictionary of database.
+We can drop these objects using **drop object** statements.
+We can also alter these objects using **alter object** statements.
+Alter statements typically do not allow every change.
+According to database engine, we may have to drop the object and create it from the scratch.
+But most if database engine allows it alter statements are always more preferable and more performant.
+
+The objects we could create again change according to database engine.
+Sqlite allows following common database objects:
+
+- Tables
+- Views
+- Index
+- Trigger
+
+Sqlite also allows [virtual tables](sql-virtual-tables-en.qmd) but this virtual table is a bit different from the sql server and oracle versions.
+
+
+In addition to above common objects, Sql Server and Oracle allows following common objects:
+
+
+- Functions
+- Procedures
+- User
+
+The sqlite does not need user object being a file-based database but oracle and sql server both require a user for database connection.
+Therefore, they have variety of commands to handle security, roles, and privileges for users.
+
+These databases also allows creation of custom function and procedures.
+Normally, stored procedures and functions are written using the sql dialects. 
+For Oracle PL/SQL and for Sql Server T-SQL.
+
+But these two databases and sqlite also allows using other languages for writing functions or stored procedures.
+
+- Sqlite allows writing C language functions.
+- SQL Server allows .NET languages (for example: C#) for stored procedures
+- Oracle allows [java](https://docs.oracle.com/en/database/oracle/oracle-database/19/jjdev/invoking-Java-methods.html), [.NET](https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/10g/r2/prod/install/odpinst/odpinst_otn.htm), [javascript](https://docs.oracle.com/en/database/oracle/oracle-database/23/mlejs/introduction-to-mle.html#GUID-EDC075CA-B50E-45D8-8A72-D060C6DB47DB), and programming languages for stored procedures.
+
+
+
+
 CREATE TABLE
 https://www.sqlite.org/lang_createtable.html
 

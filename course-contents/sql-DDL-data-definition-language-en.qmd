@@ -61,6 +61,8 @@ You do not have to memorize their exact definition since most modern GUI tools h
 Being an open source and free tool, DBeaver is not very powerful.
 But SQL Developer Oracle and Sql Server Management Studio allows creation, alteration and dropping of every object mentioned above using GUI tools.
 
+## Generated/Virtual Columns
 
-virtual columns
-https://www.sqlite.org/gencol.html
+[Generated Columns in sqlite](https://www.sqlite.org/gencol.html)
+
+

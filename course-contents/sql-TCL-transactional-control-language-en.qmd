@@ -1,15 +1,39 @@
 # TCL (Transactional control language)
 
-https://www.sqlite.org/isolation.html
+[sqlite Transaction](https://www.sqlite.org/lang_transaction.html)
 
-https://www.sqlite.org/lang_transaction.html
+## Transaction Demo 1
+
+show rollback
+
+```sql
+BEGIN TRANSACTION;
+INSERT INTO Playlist (PlaylistId, Name) VALUES(0, '');
+select * from Playlist;
+ROLLBACK TRANSACTION;
+```
+
+show commit;
+
+```sql
+BEGIN TRANSACTION;
+INSERT INTO Playlist (PlaylistId, Name) VALUES(0, '');
+select * from Playlist;
+ROLLBACK TRANSACTION;
+```
+
+## Transaction Demo 2
+
+Demo: 2 command line, show 
+
+- Show if another session could insert to same table;
+- Show if another session could insert to another table;
 
 
-https://www.sqlite.org/wal.html
 
-3. The Rollback Journal
-4. The Write-Ahead Log
-https://www.sqlite.org/fileformat2.html
-https://www.sqlite.org/wal.html
 
-https://www.sqlite.org/conflict.html
+
+
+
+
+

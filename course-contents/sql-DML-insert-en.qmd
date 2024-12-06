@@ -111,7 +111,7 @@ Since Customer table requires 3 columns we could use following statement to inse
 ```sql
 INSERT INTO Customer
 (FirstName, LastName,  Email)
-SELECT LastName, FirstName, Email
+SELECT  FirstName,LastName, Email
 FROM Employee;
 ```
 

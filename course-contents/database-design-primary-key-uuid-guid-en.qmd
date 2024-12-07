@@ -8,8 +8,11 @@
 
 ## Sqlite3 usage
 
-### randomblob usage
+### Quick and dirty solutions with randomblob 
 
+Below solutions will generate random number resembling UUID but they are not real UUID numbers.
+
+*randomblob number column* 
 
 If we use number as column data type, we could use randomblob function
 
@@ -18,6 +21,8 @@ If we use number as column data type, we could use randomblob function
 select lower(hex(randomblob(16)));
 ```
 
+
+*randomblob text column* 
 
 If we use text as column data type, we could use a set of randomblob function calls and string concatenation.
 

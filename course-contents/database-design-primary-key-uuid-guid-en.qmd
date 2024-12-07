@@ -38,9 +38,14 @@ select
 This one could be used for default values also.
 It is a quick and dirty solution.
 
+- [Tutorial using-uuid-in-sqlite](https://github.com/manufaktor/articles/blob/main/using-uuid-in-sqlite.md)
+
+
 ### Extension uuid.c
 
 Sqlite3 uuid functionality is an [extension](https://www.sqlite.org/loadext.html).
+This uuid.c extension module implements RFC-4122 UUIDs, [added on 2020-01-22](https://sqlite.org/releaselog/3_31_0.html) to sqlite. 
+
 We need to download the extension file, compile it and load it in the sqlite.
 See [How to compile and load extension documentation](https://www.sqlite.org/loadext.html).
 

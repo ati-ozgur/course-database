@@ -48,7 +48,7 @@ See [How to compile and load extension documentation](https://www.sqlite.org/loa
 
 4. load the extension
 
-	.load ./uuid.so
+	.load ./uuid
 
 5. use uuid function
 
@@ -57,6 +57,20 @@ select uuid();
 ```
 > 427acb05-68a3-41eb-9794-6e7c8fe639e1 
 
+
+In gui tools, load_extension function should be used.
+
+```sql
+select load_extension('/absolute/folder/extension_filename');
+```
+
+for example in my ubuntu computer, using dbeaver and uuid extension.
+
+
+```sql
+select load_extension('/home/atilla/Projects/my-courses/course-database/databases/sqlite-extensions/uuid');
+select uuid();
+```
 
 
 

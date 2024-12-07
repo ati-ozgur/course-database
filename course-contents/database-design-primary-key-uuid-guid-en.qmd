@@ -8,6 +8,26 @@
 
 ## Sqlite3 usage
 
+### randomblob usage
+
+Following sql could be used to generate uuid in sqlite, taken from following [stackoverflow answer](https://stackoverflow.com/a/66625212/41782).
+
+```sql
+select 
+  lower(
+    hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || 
+    substr(hex( randomblob(2)), 2) || '-' || 
+    substr('AB89', 1 + (abs(random()) % 4) , 1)  ||
+    substr(hex(randomblob(2)), 2) || '-' || 
+    hex(randomblob(6))
+  ) GUID;
+```
+
+This one could be used for default values also.
+It is a quick and dirty solution.
+
+### Extension uuid.c
+
 Sqlite3 uuid functionality is an [extension](https://www.sqlite.org/loadext.html).
 We need to download the extension file, compile it and load it in the sqlite.
 See [How to compile and load extension documentation](https://www.sqlite.org/loadext.html).

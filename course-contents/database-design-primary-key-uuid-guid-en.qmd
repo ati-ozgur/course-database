@@ -1,0 +1,10 @@
+database-design-primary-key-uuid-guid-en.qmd
+
+
+- [RFC 4122: A Universally Unique IDentifier (UUID) URN Namespace ](https://www.rfc-editor.org/rfc/rfc4122)
+
+[RFC 9562: Universally Unique IDentifiers (UUIDs)](https://www.rfc-editor.org/rfc/rfc9562.html)
+
+## other tutorials 
+
+- ["Why UUIDs are Secretly Incredibly Fascinating" - Tom Eastman (Pycon AU 2024)](https://www.youtube.com/watch?v=n9Cxs0sTqEY)

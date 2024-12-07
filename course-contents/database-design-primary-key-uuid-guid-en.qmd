@@ -10,6 +10,18 @@
 
 ### randomblob usage
 
+
+If we use number as column data type, we could use randomblob function
+
+
+```sql
+select lower(hex(randomblob(16)));
+```
+
+
+If we use text as column data type, we could use a set of randomblob function calls and string concatenation.
+
+
 Following sql could be used to generate uuid in sqlite, taken from following [stackoverflow answer](https://stackoverflow.com/a/66625212/41782).
 
 ```sql

@@ -1,9 +1,44 @@
-database-design-primary-key-uuid-guid-en.qmd
+## Primary keys UUID or GUID
 
 
 - [RFC 4122: A Universally Unique IDentifier (UUID) URN Namespace ](https://www.rfc-editor.org/rfc/rfc4122)
 
 [RFC 9562: Universally Unique IDentifiers (UUIDs)](https://www.rfc-editor.org/rfc/rfc9562.html)
+
+
+## Sqlite3 usage
+
+Sqlite3 uuid functionality is an [extension](https://www.sqlite.org/loadext.html).
+We need to download the extension file, compile it and load it in the sqlite.
+See [How to compile and load extension documentation](https://www.sqlite.org/loadext.html).
+
+
+1. Download last version of [uuid.c](https://sqlite.org/src/file?name=ext/misc/uuid.c&ci=trunk) file from sqlite3 web site.
+
+
+
+
+2. compile the extension.
+
+	gcc -g -fPIC -shared uuid.c -o uuid.so
+
+3. open sqlite3 a
+
+	sqlite3
+
+4. load the extension
+
+	.load ./uuid.so
+
+5. use uuid function
+
+```sql
+select uuid();
+```
+> 427acb05-68a3-41eb-9794-6e7c8fe639e1 
+
+
+
 
 ## other tutorials 
 

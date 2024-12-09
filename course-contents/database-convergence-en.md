@@ -56,8 +56,12 @@ https://github.com/rails/solid_cable
 
 
 See below video for an example of an application migration to sqlite (a relation database) from redis, key-value database.
-Wafris, a web application firewall, achieved performance improvements with this migration.
-[Moving from Redis to SQLite with Mike Buckbee](https://www.youtube.com/watch?v=EwDuYId5v8k)
+
+Wafris, a web application firewall, achieved 3x performance improvements with this migration.
+See following [blog post:  Rearchitecting: Redis to SQLite ](https://wafris.org/blog/rearchitecting-for-sqlite) and [video: Moving from Redis to SQLite with Mike Buckbee](https://www.youtube.com/watch?v=EwDuYId5v8k).
+Please note that they have a very specific use case where reading from database was way more important than writing to database.
+
+
 
 
 ### Kafka

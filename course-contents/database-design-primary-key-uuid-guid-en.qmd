@@ -104,3 +104,5 @@ select uuid();
 ## other tutorials 
 
 - ["Why UUIDs are Secretly Incredibly Fascinating" - Tom Eastman (Pycon AU 2024)](https://www.youtube.com/watch?v=n9Cxs0sTqEY)
+
+- [UUID vs INT: What’s Better For Your Primary Key?](https://www.youtube.com/watch?v=DHtf_46OxY8)

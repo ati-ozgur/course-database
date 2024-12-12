@@ -1,0 +1,64 @@
+# Database Concepts ACID
+
+ACID is an acronym for **A**tomicity, **C**onsistency, **I**solation, **D**urability.
+ACID is fundamental concept for relational database systems for reliable transactions.
+Conformance ACID concepts is what makes a relational database a must requirement for some software systems like banking.
+
+
+**Atomicity**
+
+Atomicity guarantees that a transaction is a single unit.
+All commands within this transaction are either all succesful or they are all rolled backed.
+Rolling back a transaction is like it is never executed at all.
+For example, consider money transfer in a bank.
+Executing following code.
+
+```sql
+BEGIN TRANSACTION    
+	UPDATE Account
+	SET Money = Money -100
+	WHERE Owner = A;
+	UPDATE Account
+	SET Money = Money +100
+	WHERE Owner = B;
+
+COMMIT TRANSACTION    
+
+```
+
+Atomicity guarantees that both of these updates are successful or both of them rolled back.
+This roll back could occur due to failure of one of the commands.
+For example, we could have a constraint or trigger which prevents negative values for money in Account table.
+
+Atomicity prevents inconsistencies like not decreasing money from Account A but increasing money of Account B.
+
+
+**Consistency**
+
+Consistency guarantees that a transaction preserves valid states.
+That is after the transaction database is in a valid state.
+Consistency enforces database constraints like primary keys, foreign keys and other constraints.
+For example, we are adding a invoice and invoice lines.
+Invoice lines are dependent upon (have foreign keys) invoice table.
+If adding a invoice is not successful, we could not add invoice lines also.
+
+
+
+**Isolation**
+
+Isolation guarantees that multiple transactions occur concurrently without seeing each other.
+For example, one transaction update a row in Customer table, second transaction will not see this update row.
+
+[Isolation prevents Read Phenomenas](https://en.wikipedia.org/wiki/Isolation_%28database_systems%29) of dirty reads,non-repeatable reads and phantom reads.
+For example, isolation ensures that two users could not change same row at the same time.
+
+**Durability**
+
+Durability guarantees that committed transaction will stay in disk even in the system crashes, power failures or other problems.
+For example, durability ensures that when a bank transfer is successful, all account changes are permanently preserved in the database system.
+
+The ACID properties collectively ensures that database transactions works reliably.
+Implementing ACID properties introduce performance penalties.
+That is why most NoSQL databases are faster since they implement ACID properties more weakly compared to traditional relational database systems.
+If your system needs ACID guarantees, relational databases are always safer choice.
+

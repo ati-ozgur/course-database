@@ -52,11 +52,6 @@ For example, one transaction update a row in Customer table, second transaction 
 Isolation prevents Read Phenomenas of dirty reads,non-repeatable reads and phantom reads.
 For example, isolation ensures that two users could not change same row at the same time.
 
-- [Isolation in wikipedia](https://en.wikipedia.org/wiki/Isolation_%28database_systems%29)
-- [Isolation in sqlite](https://sqlite.org/isolation.html)
-- [Isolation in SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/transaction-isolation-levels?view=sql-server-ver16)
-- [SET TRANSACTION ISOLATION LEVEL (Transact-SQL)](https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?view=sql-server-ver16)
-- [Isolation in Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/data-concurrency-and-consistency.html#GUID-4BD4DFD6-DAEA-41B2-BB56-7135568F0548)
 
 
 **Durability**

@@ -11,9 +11,33 @@ For example, isolation ensures that two users could not change same row at the s
 {{< include ../course-contents/tables/table-isolation-levels-vs-read-phenomena.md >}}
 
 
+Most relational databases support serializable isolation by default since it prevents read phenomenas.
+
+- Sqlite transactions are serializable
+- Changes made in one database connection is not visible to all other database connections
+- A query sees the state of the database prior to start of the query. That is all transactions completed before the query runs.
+
+In addition to serializable isolation, some databases support [Snapshot isolation](https://en.wikipedia.org/wiki/Snapshot_isolation).
+Snapshot isolation guarantees that reads in a transaction will see a consistent snapshot of the database.
+Different from serializable, transactions in the snapshot isolation will only commit if there is no conflicting update done after that snapshot.
+Actually, this means that if same rows are changed by two different transactions, second transaction will be rolled back.
+Snapshot isolation has better performance than serializable isolation.
+Snapshot isolation is supported by Oracle, MySQL, PostgreSQL, Microsoft SQL Server.
+
+
+:::{.callout-caution}
+Snapshot isolation is called serializable by Oracle and PostgreSQL (prior to 9.1)
+:::
+
+
+
+
+
+
 
 - [Isolation in wikipedia](https://en.wikipedia.org/wiki/Isolation_%28database_systems%29)
 - [Isolation in sqlite](https://sqlite.org/isolation.html)
 - [Isolation in SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/transaction-isolation-levels?view=sql-server-ver16)
 - [SET TRANSACTION ISOLATION LEVEL (Transact-SQL)](https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?view=sql-server-ver16)
 - [Isolation in Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/data-concurrency-and-consistency.html#GUID-4BD4DFD6-DAEA-41B2-BB56-7135568F0548)
+- [snapshot isolation in wikipedia](https://en.wikipedia.org/wiki/Snapshot_isolation)

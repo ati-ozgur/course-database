@@ -10,94 +10,9 @@ Universally unique identifier (UUID) or Globally Unique Identifier (GUID)
 
 [RFC 9562: Universally Unique IDentifiers (UUIDs)](https://www.rfc-editor.org/rfc/rfc9562.html)
 
-
-## Sqlite3 usage
-
-### Quick and dirty solutions with randomblob 
-
-Below solutions will generate random number resembling UUID but they are not real UUID numbers.
-
-*randomblob number column* 
-
-If we use number as column data type, we could use randomblob function
+{{< include ../course-contents/database-design-primary-key-uuid-guid-sqlite-en.qmd >}}
 
 
-```sql
-select lower(hex(randomblob(16)));
-```
-
-
-*randomblob text column* 
-
-If we use text as column data type, we could use a set of randomblob function calls and string concatenation.
-
-
-Following sql could be used to generate uuid in sqlite, taken from following [stackoverflow answer](https://stackoverflow.com/a/66625212/41782).
-
-```sql
-select 
-  lower(
-    hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || 
-    substr(hex( randomblob(2)), 2) || '-' || 
-    substr('AB89', 1 + (abs(random()) % 4) , 1)  ||
-    substr(hex(randomblob(2)), 2) || '-' || 
-    hex(randomblob(6))
-  ) GUID;
-```
-
-This one could be used for default values also.
-It is a quick and dirty solution.
-
-- [Tutorial using-uuid-in-sqlite](https://github.com/manufaktor/articles/blob/main/using-uuid-in-sqlite.md)
-
-
-### Extension uuid.c
-
-Sqlite3 uuid functionality is an [extension](https://www.sqlite.org/loadext.html).
-This uuid.c extension module implements RFC-4122 UUIDs, [added on 2020-01-22](https://sqlite.org/releaselog/3_31_0.html) to sqlite. 
-
-We need to download the extension file, compile it and load it in the sqlite.
-See [How to compile and load extension documentation](https://www.sqlite.org/loadext.html).
-
-
-1. Download last version of [uuid.c](https://sqlite.org/src/file?name=ext/misc/uuid.c&ci=trunk) file from sqlite3 web site.
-
-
-
-
-2. compile the extension.
-
-	gcc -g -fPIC -shared uuid.c -o uuid.so
-
-3. open sqlite3 a
-
-	sqlite3
-
-4. load the extension
-
-	.load ./uuid
-
-5. use uuid function
-
-```sql
-select uuid();
-```
-> 427acb05-68a3-41eb-9794-6e7c8fe639e1 
-
-
-In gui tools, load_extension function should be used.
-
-```sql
-select load_extension('/absolute/folder/extension_filename');
-```
-
-for example in my ubuntu computer, using dbeaver and uuid extension.
-
-
-```sql
-select load_extension('/home/atilla/Projects/my-courses/course-database/databases/sqlite-extensions/uuid');
-select uuid();
-```
 
 
 

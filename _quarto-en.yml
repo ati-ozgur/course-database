@@ -91,6 +91,8 @@ book:
         - course-contents/database-concepts-ACID-en.qmd
         - course-contents/database-concepts-isolation-en.qmd
         - course-contents/database-concepts-sqlite-journal-modes-en.qmd
+        - course-contents/database-concepts-import-export-en.qmd
+        - course-contents/database-concepts-backup-restore-en.qmd
     - part: "Database Design Advanced"
       chapters:
         - course-contents/database-design-en.qmd

@@ -1,4 +1,4 @@
-# Database concepts isolation
+# isolation
 
 Isolation is the I of ACID acronym.
 

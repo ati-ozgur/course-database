@@ -1,4 +1,4 @@
-# Database Concepts sqlite journal modes
+# Sqlite journal modes
 
 Journal modes controls how sqlite guarantees ACID principles of isolation and durability.
 Note that independent of journal modes, sqlite is always guarantees serializable isolation and durability.

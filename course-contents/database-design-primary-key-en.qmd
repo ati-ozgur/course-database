@@ -1,0 +1,30 @@
+# Primary Key
+
+In relational databases, primary keys identify the records in a table as unique. 
+The benefit of finding a record as unique is that querying and updating this record is much faster with this key. 
+Similarly, relationships between tables are maintained by foreign keys that are linked to primary keys. 
+
+For example, suppose we have PERSON and PERSON_TRAINING tables. 
+Which trainings a person has received is tracked using the Person primary key in the PERSON_TRAINING table. 
+Therefore, primary key selection is very important in database design.
+
+There are 2 different ideas in primary key selection: Natural Key and Synthetic Key.
+
+Before explaining the differences, pros and cons between the two, let me state that I am in favor of synthetic keys.
+
+
+{{< include ../course-contents/database-design-primary-key-natural-key-tr.qmd >}}
+{{< include ../course-contents/database-design-primary-key-synthetic-key-tr.qmd >}}
+
+
+{{< include ../course-contents/database-design-primary-key-auto-number-identity-tr.qmd >}}
+
+
+{{< include ../course-contents/database-design-primary-key-sequences-tr.qmd >}}
+ 
+
+
+
+
+
+

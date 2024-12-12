@@ -1,0 +1,49 @@
+# Database Concepts sqlite journal modes
+
+Journal modes controls how sqlite guarantees ACID principles of isolation and durability.
+Note that independent of journal modes, sqlite is always guarantees serializable isolation and durability.
+Journal modes is about how fast they work, backward compatibility and working environment.
+
+
+Sqlite has two journal modes
+
+- The older "rollback mode" 
+- WAL (Write Ahead Logging) mode
+
+
+We can check which journal_mode our database is working with following pragma command.
+
+```sql
+PRAGMA journal_mode;
+```
+
+if the command returns delete, we are running with old rollback mode.
+
+
+[rollback mode sqlite documentation](https://www.sqlite.org/atomiccommit.html)
+
+**Demo**
+- show rollback mode with a transaction.
+
+
+
+We can change to wal mode using following command.
+
+```sql
+PRAGMA journal_mode=WAL;
+```
+
+Wal mode has advantages and disadvantages.
+But in my opinion, advantages exceed disadvantages.
+Especially following two advantages are very important.
+
+- Wal mode is significantly faster
+- Wal mode provides more concurrency. That is readers does not block writers and writers does not block readers.
+
+
+
+[Wal in sqlite documentation](https://www.sqlite.org/wal.html)
+
+
+
+

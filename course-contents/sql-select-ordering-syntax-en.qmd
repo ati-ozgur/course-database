@@ -11,3 +11,8 @@ Following order is taken from [from sql server documentation](https://learn.micr
 - [ ORDER BY order_expression [ ASC | DESC ]]
 
 
+Syntax ordering is how we should write the select statements.
+Below table gives the meaning of keywords.
+
+
+{{< include ../course-contents/tables/table-select-basic-en.md >}}

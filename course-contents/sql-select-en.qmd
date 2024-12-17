@@ -26,12 +26,14 @@ We will do give two ordering for simple cases and we will build upon them.
 
 
 {{< include ../course-contents/sql-select-ordering-syntax-en.qmd >}}
+
+
+
 {{< include ../course-contents/sql-select-ordering-semantic-en.qmd >}}
 
 
 
 
 
-{{< include ../course-contents/tables/table-select-basic-en.md >}}
 
 {{< include ../course-contents/sql-select-examples-en.md >}}

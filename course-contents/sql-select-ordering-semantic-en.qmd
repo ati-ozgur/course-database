@@ -1,0 +1,11 @@
+## SQL Select Semantic Ordering 1
+
+
+- [ FROM table_source ] 
+- [ WHERE search_condition ]
+- [ GROUP BY group_by_expression ]
+- [ HAVING search_condition ]
+- [ ORDER BY order_expression [ ASC | DESC ]]
+- SELECT select_list 
+
+Semantic ordering is the how the select statement is processed by database engine.

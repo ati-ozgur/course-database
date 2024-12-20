@@ -13,7 +13,8 @@ There are 2 different ideas in primary key selection: Natural Key and Synthetic 
 Before explaining the differences, pros and cons between the two, let me state that I am in favor of synthetic keys.
 
 
-{{< include ../course-contents/database-design-primary-key-natural-key-tr.qmd >}}
+{{< include ../course-contents/database-design-primary-key-natural-key-en.qmd >}}
+
 {{< include ../course-contents/database-design-primary-key-synthetic-key-tr.qmd >}}
 
 

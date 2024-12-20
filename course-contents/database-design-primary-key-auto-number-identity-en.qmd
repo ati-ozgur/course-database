@@ -1,0 +1,14 @@
+## Auto number (identity)
+
+The synthetic key can be generated on the database side or on the application side that accesses the database. 
+The most preferred form of synthetic key on the database side is automatic number generation.
+This Auto Number strategy is supported by many databases:
+
+- Sqlite
+- SQL Server
+- Oracle 12c+
+- MySQL
+- IBM DB2
+
+Auto Number columns are bound to the database table and each time an Insert clause is executed, the next automatically generate the value.
+

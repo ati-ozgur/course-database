@@ -21,8 +21,8 @@ Bu tabloda TcKimlikNo üzerine bir unique index eklenerek, TcKimlikNo'nun birden
 
 |    KISI    |    |
 |:----------:|:--:|
-| KisiKey    |    |
-| TcKimlikNo | PK |
+| KisiKey    | PK |
+| TcKimlikNo |    |
 |     Adi    |    |
 |   Soyadi   |    |
 

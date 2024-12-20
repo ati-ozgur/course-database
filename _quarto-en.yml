@@ -82,7 +82,7 @@ book:
         - course-contents/sql-DML-insert-en.qmd
         - course-contents/sql-DML-update-en.qmd
         - course-contents/sql-DML-delete-en.qmd
-        - course-contents/sql-truncate-table-en.md
+        - course-contents/sql-truncate-table-en.qmd
         - course-contents/sql-DDL-data-definition-language-en.qmd
         - course-contents/sql-DCL-data-control-language-en.qmd
         - course-contents/sql-TCL-transactional-control-language-en.qmd

@@ -1,0 +1,18 @@
+## SQL Select syntax ordering 1
+
+
+Following order is taken from [from sql server documentation](https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16) and simplified.
+
+- SELECT select_list 
+- FROM table_source
+- [ WHERE search_condition ]
+- [ GROUP BY group_by_expression ]
+- [ HAVING search_condition ]
+- [ ORDER BY order_expression [ ASC | DESC ]]
+
+
+Syntax ordering is how we should write the select statements.
+Below table gives the meaning of keywords.
+
+
+{{< include ../course-contents/tables/table-select-basic-en.md >}}

@@ -15,7 +15,7 @@ Before explaining the differences, pros and cons between the two, let me state t
 
 {{< include ../course-contents/database-design-primary-key-natural-key-en.qmd >}}
 
-{{< include ../course-contents/database-design-primary-key-synthetic-key-tr.qmd >}}
+{{< include ../course-contents/database-design-primary-key-synthetic-key-en.qmd >}}
 
 
 {{< include ../course-contents/database-design-primary-key-auto-number-identity-tr.qmd >}}

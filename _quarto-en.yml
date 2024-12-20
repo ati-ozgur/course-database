@@ -98,6 +98,7 @@ book:
       chapters:
         - course-contents/database-design-en.qmd
         - course-contents/database-design-primary-key-en.qmd
+        - course-contents/database-design-primary-key-uuid-guid-en.qmd
         - course-contents/database-desing-patterns-en.qmd
         - course-contents/sql-data-types-en.qmd
         - course-contents/sql-constraints-en.qmd

@@ -58,7 +58,14 @@ See [How to compile and load extension documentation](https://www.sqlite.org/loa
 
 2. compile the extension.
 
+linux/Mac
+
 	gcc -g -fPIC -shared uuid.c -o uuid.so
+
+Windows
+
+  gcc -g -fPIC -shared uuid.c -o uuid.dll
+
 
 3. open sqlite3 a
 

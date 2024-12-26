@@ -1,6 +1,6 @@
 # Database design questions
 
-1. 
+## Student Classes
 
 {{< include ../course-contents/tables/table-student-classes-en.md >}}
 

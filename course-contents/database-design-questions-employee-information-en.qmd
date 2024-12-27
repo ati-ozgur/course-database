@@ -1,0 +1,3 @@
+## Employee information
+
+{{< include ../course-contents/tables/table-employee-information-en.md >}}

@@ -12,6 +12,8 @@
 
 
 
+{{< include ../course-contents/database-design-questions-employee-information-en.qmd >}}
+
 
 
 

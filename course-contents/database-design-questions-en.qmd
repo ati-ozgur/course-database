@@ -1,41 +1,21 @@
 # Database design questions
 
-## Office Equipment
+{{< include ../course-contents/database-design-questions-student-advisors-en.qmd >}}
 
-A company is tracking its office equipment like
-
-- furniture
-- computers
-- printers
-- and other office equipment
-
-Some sample values are given below.
-
-{{< include ../course-contents/tables/table-office-equipment-en.md >}}
+{{< include ../course-contents/database-design-questions-office-equipment-en.qmd >}}
 
 
-Company would like to answer following questions in their reports
-
-- How many laptops are assigned to employees?
-- Do we have more than one printer in the office rooms?
-- Do we have at least one printer in every floor?
+{{< include ../course-contents/database-design-questions-student-classes-en.qmd >}}
 
 
-Please design a new database for their use cases at least in 3rd normal form.
+{{< include ../course-contents/database-design-questions-developers-projects-en.qmd >}}
 
 
-## Student Classes
-
-{{< include ../course-contents/tables/table-student-classes-en.md >}}
-
-## Developers and Projects
-
-{{< include ../course-contents/tables/table-developers-project-en.md >}}
 
 
-## Student Advisors
 
-{{< include ../course-contents/tables/table-student-advisors-en.md >}}
+
+
 
 
 

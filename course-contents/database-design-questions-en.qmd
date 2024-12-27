@@ -1,5 +1,28 @@
 # Database design questions
 
+## Office Equipment
+
+A company is tracking its office equipment like
+
+- furniture
+- computers
+- printers
+- and other office equipment
+
+Some sample values are given below.
+
+{{< include ../course-contents/tables/table-office-equipment-en.md >}}
+
+
+Company would like to answer following questions in their reports
+
+- How many laptops are assigned to employees?
+- Do we have more than one printer in the office rooms?
+- Do we have at least one printer in every floor?
+
+
+Please design a new database for their use cases at least in 3rd normal form.
+
 
 ## Student Classes
 
@@ -13,5 +36,6 @@
 ## Student Advisors
 
 {{< include ../course-contents/tables/table-student-advisors-en.md >}}
+
 
 

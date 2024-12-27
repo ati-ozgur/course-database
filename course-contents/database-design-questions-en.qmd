@@ -1,8 +1,13 @@
 # Database design questions
 
+
 ## Student Classes
 
 {{< include ../course-contents/tables/table-student-classes-en.md >}}
+
+## Developers and Projects
+
+{{< include ../course-contents/tables/table-developers-project-en.md >}}
 
 
 ## Student Advisors

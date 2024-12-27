@@ -1,5 +1,17 @@
 # Database design questions
 
+## Calendar App
+
+
+team shares plans, schedules events and communicate statuses.
+
+
+
+## Retail Screen
+
+https://graphicdesign.stackexchange.com/a/65185
+
+
 {{< include ../course-contents/database-design-questions-student-advisors-en.qmd >}}
 
 {{< include ../course-contents/database-design-questions-office-equipment-en.qmd >}}

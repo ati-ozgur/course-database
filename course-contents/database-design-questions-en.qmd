@@ -14,9 +14,7 @@
 
 {{< include ../course-contents/database-design-questions-employee-information-en.qmd >}}
 
-
-
-
+{{< include ../course-contents/database-design-questions-consultant-en.qmd >}}
 
 
 

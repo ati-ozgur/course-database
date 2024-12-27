@@ -102,6 +102,8 @@ book:
         - course-contents/database-desing-patterns-en.qmd
         - course-contents/sql-data-types-en.qmd
         - course-contents/sql-constraints-en.qmd
+        - course-contents/database-design-from-user-interfaces-en.qmd
+        - course-contents/database-design-from-spreadsheets-en.qmd
         - course-contents/database-design-questions-en.qmd
         - course-contents/database-design-questions-answers-en.qmd
         - course-contents/database-design-normal-forms.qmd

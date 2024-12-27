@@ -1,0 +1,9 @@
+## Database Design from Spreadsheets
+
+https://www.tomshardware.com/software/formula-1-management-shocked-team-used-excel-for-20000-part-inventory-now-replacing-impossible-to-navigate-sheet
+
+
+![Note](images/xkcd-algorithms.png)
+
+
+

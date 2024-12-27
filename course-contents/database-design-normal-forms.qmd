@@ -1,4 +1,37 @@
 # Database Design 5 normal forms
 
 An excellent article about this topic is A simple guide to five normal forms in relational database theory @Kent1983simple.
+Below examples about the normalization are taken from the same article.
+
+The normalization process improves data quality by reducing duplication and inconsistencies.
+However, this may slightly slow down data access since full data needs to be accessed using joining tables.
+
+## 1st Normal Form
+
+In the first normal form, all records must contain same number of fields.
+The first normal form forbids repeating fields and groups.
+This is actually a design guideline since relational database theory does not deals with variable number of fields.
+
+```{mermaid}
+erDiagram
+    Students {
+        int StudentNumber
+        text Name
+        text Courses
+    }
+```
+
+
+
+## 2nd Normal Form
+
+
+## 3rd Normal Form
+
+
+## 3rd Normal Form
+
+
+## 4th and 5th Normal Forms
+
 

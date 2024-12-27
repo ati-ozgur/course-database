@@ -1,0 +1,4 @@
+# Database Design 5 normal forms
+
+An excellent article about this topic is A simple guide to five normal forms in relational database theory @Kent1983simple.
+

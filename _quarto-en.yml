@@ -103,6 +103,7 @@ book:
         - course-contents/sql-data-types-en.qmd
         - course-contents/sql-constraints-en.qmd
         - course-contents/database-design-questions-en.qmd
+        - course-contents/database-design-normal-forms.qmd
     - part: "SQL Tuning"
       chapters:
         - course-contents/sql-indexes-intro-en.qmd

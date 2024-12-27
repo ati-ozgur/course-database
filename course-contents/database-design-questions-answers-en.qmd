@@ -9,4 +9,8 @@
 
 {{< include ../course-contents/diagrams/retail-erdiagram.md >}}
 
+### Student Advisors
+
+
+{{< include ../course-contents/diagrams/student-advisor.md >}}
 

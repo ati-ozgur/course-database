@@ -6,9 +6,35 @@
 
 ## Unique
 
+UserId PK
+Email --
+
+
+Person
+PersonKey int
+TcIdentityNo string unique
+
+
 ## Not null
 
 ## Default value
 
+created_at default datetime('now')
+
+
+
 ## Check (Custom constraints)
 
+Appointments
+StartDateTime
+EndDateTime
+check(EndDateTime > StartDateTime),
+check(StartDateTime > datetime('now')),
+
+TcIdentityNo, custom function to checksum number
+Name, custom function to check no punctuation and numbers
+
+
+Invoice
+  Total
+  check(total > 0)

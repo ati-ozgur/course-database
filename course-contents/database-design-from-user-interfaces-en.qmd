@@ -1,6 +1,6 @@
 ## Database Design from User Interfaces
 
-
+TODO: Write why ability to design database tables from user interfaces are necessary.
 
 1. Old software examples
   [Indiana bakery still uses Commodore 64s](https://www.tomshardware.com/desktops/indiana-bakery-still-using-commodore-64s-originally-released-in-1982-as-point-of-sale-terminals) in 2024.

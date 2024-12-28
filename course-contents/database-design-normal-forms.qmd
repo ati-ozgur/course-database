@@ -16,9 +16,10 @@ The basic ideas of normalization (@Codd1990relational) are follows :
 - every cell contains only atomic (single) values. 
 
 There are 11 different types of normalization @Wikipedia2018Database.
-But first three are most important.
+But first three normal forms are most important and prevents insert,update and delete anomalies.
 In fact, when you tables are in 3rd normal form, they are considered normalized.
 
+We will cover only these three normal forms since this is an introductory course.
 
 
 

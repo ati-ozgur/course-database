@@ -11,6 +11,10 @@ SELECT * FROM Production.Product;
 ```
 
 ![Note](images/image-name.png)
+![Note](images/image-name.png){width=300}
+![Note](images/image-name.png){width=80%}
+![Note](images/image-name.png){width=4in}
+
 
 {{< include ../course-contents/tables/table-databases-history-tr.md >}}
 

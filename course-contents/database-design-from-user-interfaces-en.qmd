@@ -1,9 +1,25 @@
 # Database Design from User Interfaces
 
-Why ability to design relational databases from user interfaces are important skill to have?
+Ability to design relational databases from user interfaces are important skill to have due to following reasons.
 
 
-Modernization of old software is very much necessary in our industry.
+1. Mock User Interface design in requirement phase is easier.
+
+When designing your systems, your expert domain users will have no database design knowledge most of the time.
+But mock user interfaces will simplify your design process.
+
+User interfaces, being visual, will make your non technical users to give feedback easier.
+This will lead to better database designs.
+For example: This information should not be text box but a drop down list taken from previously entered states.
+
+Mock User interfaces help visualize data flow of the application.
+
+In my experience, discussing mock up screens with domain users clarify a lot of design issues.
+Also, having mock user interfaces plus relational tables are always result in faster software development.
+
+2. Modernization of old software is very much necessary in our industry.
+
+
 See a recent example, December 2024, of old software usage.
 [Indiana bakery still uses Commodore 64s](https://www.tomshardware.com/desktops/indiana-bakery-still-using-commodore-64s-originally-released-in-1982-as-point-of-sale-terminals) in 2024.
 This bakery will certainly need to rewrite this software in the future.
@@ -15,17 +31,10 @@ Another example is main frame usage.
 
 [Taken from IBM forums](https://www.ibmmainframeforum.com/ims/topic5391.html)
 
+These types of old software will need to be rewritten but old database model will not be always available.
+Additionally, sometimes customers wants to implement similar software to their competitors or their old working software.
 
-Most of the time, new software developers
-
-TODO: Write why ability to design database tables from user interfaces are necessary.
-
-1. Old software examples
-
-
-
-2. Mainframes
-
+Therefore, old screens features will have to be implemented.
 
 
 ## Example screens

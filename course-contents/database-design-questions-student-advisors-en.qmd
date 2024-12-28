@@ -1,5 +1,5 @@
 
 ### Student Advisors
 
-{{< include ../course-contents/tables/table-student-advisors-en.md >}}
+{{< include ../course-contents/tables/table-database-design-example-student-advisors-en.md >}}
 

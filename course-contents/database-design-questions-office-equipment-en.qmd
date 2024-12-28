@@ -9,7 +9,7 @@ A company is tracking its office equipment like
 
 Some sample values are given below.
 
-{{< include ../course-contents/tables/table-office-equipment-en.md >}}
+{{< include ../course-contents/tables/table-database-design-example-office-equipment-en.md >}}
 
 
 Company would like to answer following questions in their reports

@@ -1,5 +1,5 @@
 
 ### Developers and Projects
 
-{{< include ../course-contents/tables/table-developers-project-en.md >}}
+{{< include ../course-contents/tables/table-database-design-example-developers-project-en.md >}}
 

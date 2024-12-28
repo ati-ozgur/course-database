@@ -7,7 +7,7 @@
 | 1005 | Michael | Brown | Master's | Manager | George (son) | Sales | Sales & Marketing | Daniel Miller | Sales Manager | 1980-05-25 | 2012-09-10 | Sales, Negotiation | 100000 | English, Mandarin |
 
 
-
+: Employee Information {.striped .hover .responsive}
 
 
 

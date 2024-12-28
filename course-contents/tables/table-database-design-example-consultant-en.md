@@ -6,4 +6,5 @@
 | C004 | Data Solutions | Tokyo | 2022-09-08 | C45678 | 45000 | Data Analysis | AI | Cloud | Cybersecurity | 113 | Lisa Wong | Shanghai | 114 | Mark Davis | Singapore | 115 | Nancy Chen | Beijing | 116 | Peter Jones | Hong Kong |
 | C005 | Green Energy | Sydney | 2024-05-15 | C56789 | 60000 | Sustainability | Renewable Energy | Energy Storage | Grid Modernization | 117 | Robert Smith | New Delhi | 118 | Susan Lee | Rio de Janeiro | 119 | Thomas Brown | Cape Town | 120 | Victoria Jones | Mexico City |
 
+: Consultants {.striped .hover .responsive}
 

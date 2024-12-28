@@ -5,3 +5,5 @@
 | 3       |  HP DeskJet 895Cse  | 205         | BLDG2         | Annex         | Jane Doe         |
 | 4       | Whiteboard | 205         | BLDG2         | Annex         | Jane Doe         |
 | 5       | HP Pavilion Laptop     | 102         | BLDG1         | Main Building | John Smith       |
+
+: Office Equipment {.striped .hover .responsive}

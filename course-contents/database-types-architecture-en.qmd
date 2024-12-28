@@ -15,7 +15,7 @@ In file based architecture, a local file is used as database.
 There is no server, everything is done in the client computer.
 Sqlite and Microsoft Access are well known file based databases.
 
-### In memory
+## In memory
 
 Everything is stored in the memory.
 Thus when the client process ends, database contents are also lost.

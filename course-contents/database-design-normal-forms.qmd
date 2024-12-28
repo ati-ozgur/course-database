@@ -1,4 +1,4 @@
-# Database Design 5 normal forms
+# Normalization
 
 Normalization aims to make insert,updates and deletes more understandable and clear.
 Normalization is about how the data is stored not how the data is retrieved.
@@ -29,9 +29,14 @@ In fact, when you tables are in 3rd normal form, they are considered normalized.
 
 {{< include ../course-contents/database-design-normal-forms-3rd-normal-en.qmd >}}
 
-{{< include ../course-contents/database-design-normal-forms-4th-normal-en.qmd >}}
 
+<!-- 
+{{< include ../course-contents/database-design-normal-forms-4th-normal-en.qmd >}}
+--> 
+
+<!-- 
 {{< include ../course-contents/database-design-normal-forms-5th-normal-en.qmd >}}
+--> 
 
 
 

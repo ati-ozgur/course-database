@@ -10,3 +10,6 @@
 | 35791  | Olivia    | Wilson   | Developer | P002  | Senior Developer | 40      |
 | 57913  | James     | Moore    | Tester    | P001,P002,P003 | QA Lead,QA,QA Lead        | 35,10,20      |
 | 79135  | Chloe     | Taylor   | Architect | P003  | Enterprise Architect      | 50      |
+
+
+: Developers and Projects {.striped .hover .responsive}

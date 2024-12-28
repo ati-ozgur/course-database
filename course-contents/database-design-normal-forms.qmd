@@ -9,6 +9,16 @@ To repeat, the normalization process improves data quality by reducing duplicati
 
 An excellent article about this topic is A simple guide to five normal forms in relational database theory @Kent1983simple.
 
+The basic ideas of normalization (@Codd1990relational) are follows : 
+
+- Every table has a primary key
+- Every cell (value in given row and column) in table is identified by the primary key.
+- every cell contains only atomic (single) values. 
+
+There are 11 different types of normalization @Wikipedia2018Database.
+But first three are most important.
+In fact, when you tables are in 3rd normal form, they are considered normalized.
+
 
 
 

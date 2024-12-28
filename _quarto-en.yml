@@ -104,7 +104,6 @@ book:
         - course-contents/sql-constraints-en.qmd
         - course-contents/database-design-from-user-interfaces-en.qmd
         - course-contents/database-design-from-spreadsheets-en.qmd
-        - course-contents/database-design-questions-en.qmd
         - course-contents/database-design-questions-answers-en.qmd
         - course-contents/database-design-normal-forms.qmd
     - part: "SQL Tuning"

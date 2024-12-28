@@ -1,5 +1,7 @@
 # Database design
 
+We will first work with practical examples. 
+Then lastly we will cover theory of database normalization.
 
 
 

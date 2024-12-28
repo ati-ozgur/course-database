@@ -10,18 +10,16 @@ However, this may slightly slow down data access since full data needs to be acc
 
 {{< include ../course-contents/database-design-normal-forms-1st-normal-en.qmd >}}
 
+{{< include ../course-contents/database-design-normal-forms-2nd-normal-en.qmd >}}
+
+
+{{< include ../course-contents/database-design-normal-forms-3rd-normal-en.qmd >}}
+
+{{< include ../course-contents/database-design-normal-forms-4th-normal-en.qmd >}}
+
+{{< include ../course-contents/database-design-normal-forms-5th-normal-en.qmd >}}
 
 
 
-## 2nd Normal Form
-
-
-## 3rd Normal Form
-
-
-## 3rd Normal Form
-
-
-## 4th and 5th Normal Forms
 
 

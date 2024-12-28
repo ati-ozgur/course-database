@@ -3,22 +3,5 @@
 
 
 
-{{< include ../course-contents/database-design-questions-student-advisors-en.qmd >}}
-
-{{< include ../course-contents/database-design-questions-office-equipment-en.qmd >}}
-
-
-{{< include ../course-contents/database-design-questions-student-classes-en.qmd >}}
-
-
-{{< include ../course-contents/database-design-questions-developers-projects-en.qmd >}}
-
-
-
-{{< include ../course-contents/database-design-questions-employee-information-en.qmd >}}
-
-{{< include ../course-contents/database-design-questions-consultant-en.qmd >}}
-
-
 
 

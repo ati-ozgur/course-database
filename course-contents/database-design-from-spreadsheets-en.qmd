@@ -1,4 +1,4 @@
-## Database Design from Spreadsheets
+# Database Design from Spreadsheets
 
 Spreadsheet usage in extensive in the businesses due to their versatility, accessibility, and ease of use.
 Many businesses collect and store data in spreadsheets initially.
@@ -44,6 +44,27 @@ Transforming spreadsheets to relational database offers following benefits:
 6. Applications for mobile, web and desktop are more easier
 7. Dynamic relationships are more easier to handle. It is harder to connect multiple spreadsheets but it is more easier to connect multiple tables even multiple databases.
 8. Having one single source of truth is possible with databases while it is very hard to do so in spreadsheets. It is very common to have multiple versions of spreadsheets.
+
+## Examples
+
+
+{{< include ../course-contents/database-design-questions-student-advisors-en.qmd >}}
+
+{{< include ../course-contents/database-design-questions-office-equipment-en.qmd >}}
+
+
+{{< include ../course-contents/database-design-questions-student-classes-en.qmd >}}
+
+
+{{< include ../course-contents/database-design-questions-developers-projects-en.qmd >}}
+
+
+
+{{< include ../course-contents/database-design-questions-employee-information-en.qmd >}}
+
+{{< include ../course-contents/database-design-questions-consultant-en.qmd >}}
+
+
 
 
 

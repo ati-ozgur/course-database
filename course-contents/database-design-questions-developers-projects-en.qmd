@@ -1,5 +1,5 @@
 
-## Developers and Projects
+### Developers and Projects
 
 {{< include ../course-contents/tables/table-developers-project-en.md >}}
 

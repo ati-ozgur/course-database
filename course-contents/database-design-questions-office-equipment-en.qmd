@@ -1,4 +1,4 @@
-## Office Equipment
+### Office Equipment
 
 A company is tracking its office equipment like
 

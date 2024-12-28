@@ -23,19 +23,30 @@ TODO: Write why ability to design database tables from user interfaces are neces
 
 ## Subscription Screen
 
+![Subscription](images/database-design-from-user-interface-subscription.png)
+
+
 [taken from UX stack exchange](https://ux.stackexchange.com/a/46113)
 
 
-## Calendar App
 
+## Manufacturing execution system orders
+
+
+![Subscription](images/database-design-from-user-interface-orders.png)
+
+
+[taken from MRP Easy](https://www.mrpeasy.com/manufacturing-erp-software)
+
+
+
+## Redmine Calendar 
 
 team shares plans, schedules events and communicate statuses.
 
+![Issue management calendar](images/database-design-from-user-interface-redmine-calendar.png)
 
 
+[taken from redmine](https://www.redmine.org/projects/redmine/wiki/RedmineMyPage)
 
 
-https://www.redmine.org/projects/redmine/wiki/RedmineMyPage
-
-
-https://www.odoo.com/tr_TR/app/crm

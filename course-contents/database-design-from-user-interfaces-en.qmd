@@ -46,6 +46,9 @@ Therefore, old screens features will have to be implemented.
 [taken from graphic design stack exchange](https://graphicdesign.stackexchange.com/a/65185)
 
 
+[See solution](../course-contents/database-design-questions-answers-en.qmd#retail-screen-answer)
+
+
 ### Subscription Screen
 
 ![Subscription](images/database-design-from-user-interface-subscription.png)

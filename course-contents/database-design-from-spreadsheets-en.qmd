@@ -1,9 +1,51 @@
 ## Database Design from Spreadsheets
 
-https://www.tomshardware.com/software/formula-1-management-shocked-team-used-excel-for-20000-part-inventory-now-replacing-impossible-to-navigate-sheet
+Spreadsheet usage in extensive in the businesses due to their versatility, accessibility, and ease of use.
+Many businesses collect and store data in spreadsheets initially.
+
+
+
+
+See recent example of [formula 1 excel usage](https://www.tomshardware.com/software/formula-1-management-shocked-team-used-excel-for-20000-part-inventory-now-replacing-impossible-to-navigate-sheet).
+The formula 1 team used excel for their 20000 part inventory, like below image shows their system become very complex.
 
 
 ![Note](images/xkcd-algorithms.png)
+
+See [following youtube clip](https://youtube.com/clip/Ugkx-JlHinAqKfvv-Shki6HnkCvkLfBsl0b0).
+
+> show me all excel files you are using since plants (factories) fill the gaps with the excel since their system cannot produce these reports.
+> these reports show the gaps.
+
+
+From my experience working with implementing ERP systems, reproducing spreadsheets in the database is very important.
+I also always ask if they use any excel files.
+
+
+
+
+But problems with the spreadsheets are following:
+
+1. Starting with spreadsheets are easy but they may become very complex. 
+2. Collaboration is easy with online versions of spreadsheets but role based security is not possible
+3. 
+
+
+Many businesses later decide to to migrate and manage this spreadsheet data in a relational database.
+Thus, transforming spreadsheets to databases is valuable across various roles, including requirement engineer, data analysis, database administration, and software development.
+
+Transforming spreadsheets to relational database offers following benefits:
+
+1. Spreadsheets are often unstructured. Transforming them to normalized tables impose logical structure, making data analysis more easier.
+2. Database tables enforce integrity with their data types and constraints. This reduces error in data entry and calculations 
+3. Data retrieval performance and scalability for multi users are always better. Especially for large data, relational databases are always better.
+4. Data Security and access control is better with databases
+5. SQL language offer very complex queries for reporting purposes
+6. Applications for mobile, web and desktop are more easier
+7. Dynamic relationships are more easier to handle. It is harder to connect multiple spreadsheets but it is more easier to connect multiple tables even multiple databases.
+8. Having one single source of truth is possible with databases while it is very hard to do so in spreadsheets. It is very common to have multiple versions of spreadsheets.
+
+
 
 
 

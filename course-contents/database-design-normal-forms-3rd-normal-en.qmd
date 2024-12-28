@@ -22,12 +22,13 @@ This design has following problems:
 - The building column is repeated for every department
 - If the building changes for a department, lets say company decided to move marketing to a new building, every marketing employee row has to be changed.
 - due to redundant information, data update, insert anomalies may occur. For the same department, different rows may show different building information.
-- if a department has no employees, a newly established one, how to store its building?
+- if a department has no employees (i.e. a newly established one), how to store  building information of this department?
 
-To make this in 3rd normal form:
+To convert this table to the 3rd normal form:
 
 1. First and second normal forms has to be satisfied
-2. divide this extra information to its own table. See following tables
+2. divide this extra information to its own table. 
+See following tables
 
 | Employee      | Department  |
 |---------------|-------------|

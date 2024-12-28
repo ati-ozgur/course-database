@@ -2,22 +2,23 @@
 
 Normalization aims to make insert,updates and deletes more understandable and clear.
 Normalization is about how the data is stored not how the data is retrieved.
-In fact, normalization process divides tables to more tables.
-Then to be able retrieve data in the same format these divided tables have to be joined @Codd1990relational.
-Thus, this joining tables may slightly slow down data access.
+In fact, normalization process divides a given table to more tables.
+Then to be able retrieve data in the same format, these divided tables have to be joined @Codd1990relational.
+This joining of tables may slightly slow down data access.
 To repeat, the normalization process improves data quality by reducing duplication and inconsistencies.
 
-An excellent article about this topic is A simple guide to five normal forms in relational database theory @Kent1983simple.
+An excellent oldie but goodie article about this topic is "A simple guide to five normal forms in relational database theory" by @Kent1983simple.
 
-The basic ideas of normalization (@Codd1990relational) are follows : 
+The basic ideas of normalization (@Codd1990relational) are follows: 
 
-- Every table has a primary key
+- Every table should have a primary key
 - Every cell (value in given row and column) in table is identified by the primary key.
 - every cell contains only atomic (single) values. 
 
-There are 11 different types of normalization @Wikipedia2018Database.
-But first three normal forms are most important and prevents insert,update and delete anomalies.
-In fact, when your tables are in 3rd normal form, they are considered normalized.
+There are 11 different types of normalization according to wikipedia page of database normalization (@Wikipedia2018Database).
+But first three normal forms are most important.
+These 3 normal forms prevent insert,update and delete anomalies.
+In fact, when your tables are in 3rd normal form, they are considered in normalized form.
 
 We will cover only these three normal forms since this is an introductory course.
 

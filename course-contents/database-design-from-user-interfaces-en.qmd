@@ -1,4 +1,4 @@
-## Database Design from User Interfaces
+# Database Design from User Interfaces
 
 TODO: Write why ability to design database tables from user interfaces are necessary.
 
@@ -14,14 +14,16 @@ TODO: Write why ability to design database tables from user interfaces are neces
 [Taken from IBM forums](https://www.ibmmainframeforum.com/ims/topic5391.html)
 
 
-## Retail Screen
+## Example screens
+
+### Retail Screen
 
 ![Retail Data Entrance](images/retail-user-interface.png)
 
 [taken from graphic design stack exchange](https://graphicdesign.stackexchange.com/a/65185)
 
 
-## Subscription Screen
+### Subscription Screen
 
 ![Subscription](images/database-design-from-user-interface-subscription.png)
 
@@ -30,7 +32,7 @@ TODO: Write why ability to design database tables from user interfaces are neces
 
 
 
-## Manufacturing execution system orders
+### Manufacturing execution system orders
 
 
 ![Subscription](images/database-design-from-user-interface-orders.png)
@@ -40,7 +42,7 @@ TODO: Write why ability to design database tables from user interfaces are neces
 
 
 
-## Redmine Calendar 
+### Redmine Calendar 
 
 team shares plans, schedules events and communicate statuses.
 

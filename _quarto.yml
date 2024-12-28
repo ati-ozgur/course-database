@@ -24,6 +24,10 @@ profile:
 
 format:
   html:
+    smooth-scroll: true
+    link-external-icon: true
+    toc-location: left
+    toc-expand: false
     theme: cosmo
     mermaid:
       theme: forest

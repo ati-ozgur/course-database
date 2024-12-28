@@ -1,6 +1,7 @@
 ## Database Design from User Interfaces
 
 
+
 1. Old software examples
   [Indiana bakery still uses Commodore 64s](https://www.tomshardware.com/desktops/indiana-bakery-still-using-commodore-64s-originally-released-in-1982-as-point-of-sale-terminals) in 2024.
 
@@ -11,6 +12,23 @@
 
 
 [Taken from IBM forums](https://www.ibmmainframeforum.com/ims/topic5391.html)
+
+
+## Retail Screen
+
+![Retail Data Enterance](images/retail-user-interface.png)
+
+[taken from graphic design stack exchange](https://graphicdesign.stackexchange.com/a/65185)
+
+
+
+
+## Calendar App
+
+
+team shares plans, schedules events and communicate statuses.
+
+
 
 
 

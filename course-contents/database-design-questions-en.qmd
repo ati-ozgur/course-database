@@ -1,17 +1,5 @@
 # Database design questions
 
-## Calendar App
-
-
-team shares plans, schedules events and communicate statuses.
-
-
-
-## Retail Screen
-
-![Retail Data Enterance](images/retail-user-interface.png)
-
-[taken from graphic design stack exchange](https://graphicdesign.stackexchange.com/a/65185)
 
 
 

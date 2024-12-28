@@ -48,7 +48,7 @@ In 1st normal form
 :::
 
 
-Does address values are atomic in this table?
+Does address and name values are atomic in this table?
 It could be argued that:
 
 1. Name should be divided to first name and last name columns.

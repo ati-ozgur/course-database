@@ -1,2 +1,48 @@
 ## Second Normal Form
 
+
+Second normal form is only relevant when the key is composite key.
+That is when your key consists of at least two columns.
+This is about natural keys, even if you add synthetic key to your table, if your natural keys are composite, this situation persists.
+
+Consider following example by @Kent1983simple, example table is slightly changed and example data is added for better understanding.
+
+
+| Equipment | Warehouse        | Quantity | Warehouse-Address        |
+|-----------|------------------|----------|--------------------------|
+| Laptop    | Main Warehouse   | 50       | 123 Main St, Cityville   |
+| Printer   | Main Warehouse   | 20       | 123 Main St, Cityville   |
+| Monitor   | Branch Warehouse | 15       | 456 Branch Ave, Suburbia |
+| Laptop    | Branch Warehouse | 10       | 456 Branch Ave, Suburbia |
+
+
+Here, composite natural key is equipment and warehouse.
+But, warehouse address is a fact about warehouse not about this whole key.
+The problems of this design as follows:
+
+1. Warehouse address repeated
+2. If a warehouse address changed, every row in this table for this warehouse has to be changed.
+3. Since data is redundant, address information may be updated wrongly. (Update anomaly)
+4. If at a point of time, there is no equipment in a given address, we loose the address information
+
+To change this to 2nd normal form.
+
+1. First normal form should be satisfied.
+2. We need to divide this table to two tables as follows.
+
+
+| Equipment | Warehouse        | Quantity |
+|-----------|------------------|----------|
+| Laptop    | Main Warehouse   | 50       |
+| Printer   | Main Warehouse   | 20       |
+| Monitor   | Branch Warehouse | 15       |
+| Laptop    | Branch Warehouse | 10       |
+
+
+| Warehouse        | Warehouse-Address        |
+|------------------|--------------------------|
+| Main Warehouse   | 123 Main St, Cityville   |
+| Main Warehouse   | 123 Main St, Cityville   |
+| Branch Warehouse | 456 Branch Ave, Suburbia |
+| Branch Warehouse | 456 Branch Ave, Suburbia |
+

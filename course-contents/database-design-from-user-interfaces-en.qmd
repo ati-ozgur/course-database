@@ -16,11 +16,14 @@ TODO: Write why ability to design database tables from user interfaces are neces
 
 ## Retail Screen
 
-![Retail Data Enterance](images/retail-user-interface.png)
+![Retail Data Entrance](images/retail-user-interface.png)
 
 [taken from graphic design stack exchange](https://graphicdesign.stackexchange.com/a/65185)
 
 
+## Subscription Screen
+
+[taken from UX stack exchange](https://ux.stackexchange.com/a/46113)
 
 
 ## Calendar App

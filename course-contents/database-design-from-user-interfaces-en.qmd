@@ -1,17 +1,31 @@
 # Database Design from User Interfaces
 
+Why ability to design relational databases from user interfaces are important skill to have?
+
+
+Modernization of old software is very much necessary in our industry.
+See a recent example, December 2024, of old software usage.
+[Indiana bakery still uses Commodore 64s](https://www.tomshardware.com/desktops/indiana-bakery-still-using-commodore-64s-originally-released-in-1982-as-point-of-sale-terminals) in 2024.
+This bakery will certainly need to rewrite this software in the future.
+
+
+Another example is main frame usage.
+
+![Main frame invoice screen](images/main-frame-display-invoice-screen.png){width=500}
+
+[Taken from IBM forums](https://www.ibmmainframeforum.com/ims/topic5391.html)
+
+
+Most of the time, new software developers
+
 TODO: Write why ability to design database tables from user interfaces are necessary.
 
 1. Old software examples
-  [Indiana bakery still uses Commodore 64s](https://www.tomshardware.com/desktops/indiana-bakery-still-using-commodore-64s-originally-released-in-1982-as-point-of-sale-terminals) in 2024.
+
 
 
 2. Mainframes
 
-![Main frame invoice screen](images/main-frame-display-invoice-screen.png)
-
-
-[Taken from IBM forums](https://www.ibmmainframeforum.com/ims/topic5391.html)
 
 
 ## Example screens

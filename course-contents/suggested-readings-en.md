@@ -15,7 +15,8 @@ See following readings about this topic:
 
 - [I don't need your query language](https://antonz.org/fancy-ql/)
 
-
+- [A simple guide to five normal forms in relational database theory
+](../reference-documents/1983_A simple guide to five normal forms in relational database theory_Annotated.pdf)
 
 Hopefully, at the end of this course, you will know about everything in the following article:
 

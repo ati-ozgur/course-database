@@ -45,7 +45,7 @@ Consider following table:
 | 2  | Duru Özgür  | Example Str, No 20, MG Germany        |
 
 :::{.callout-tip}
-In 1st normal form
+Is this table in 1st normal form?
 :::
 
 
@@ -62,6 +62,7 @@ In the same way:
 - A date value could be divided to year, month and day values.
 
 My opinion is that: think about your application queries.
+
 If your application needs to deal with first and last name separately, for example sort/filter according to last names, then this name column should be divided.
 In the same way, if your application needs to filter/order data according to city and country, then, these two information, city and country, should be in different columns.
 For date values, specific date SQL functions will be helpful; therefore, you may not need to divide date columns.

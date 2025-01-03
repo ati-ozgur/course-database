@@ -10,6 +10,19 @@
 
 {{< include ../course-contents/diagrams/retail-erdiagram.md >}}
 
+### Subscription Answer
+
+![subscription](images/database-design-from-user-interface-subscription-marked.png ){width=80%}
+
+The ER Model for the answer is below.
+
+
+![internet_domain-er-model](images/internet_domain-er-model.png ){width=80%}
+
+
+You could also [download sqlite database](answer-databases/internet_domain.sqlite)
+
+
 ### Student Advisors
 
 {{< include ../course-contents/diagrams/student-advisor.md >}}

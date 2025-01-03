@@ -1,10 +1,8 @@
 # final exam draft plan for questions
 
+1. Database design question from UI
 
-
-1. Database design from UI
-
-2. Database design from excel or normalization from excel like table
+2. Database design question from excel or normalization from excel like table
 
 3. Transactions
 

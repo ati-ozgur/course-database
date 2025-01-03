@@ -13,6 +13,7 @@
 ## Course Materials
 
 - Videos
-- Presentation Files
+- Course Notes
+- Some Presentation Files
 - Lab Files
 - Short Quizzes

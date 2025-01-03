@@ -1,6 +1,6 @@
 ## Memorization vs understanding
 
-In the area of ChatGPT and AI, memorization is becoming less and less useful.
+In the area of search engines and GenAI (ChatGPT and derivatives), memorization is becoming less and less useful.
 I am against the memorization of facts that could be easily found using search engine or AI query.
 
 Thus, I aim impart understanding in the course.

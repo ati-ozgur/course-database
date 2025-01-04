@@ -1,0 +1,43 @@
+# Kullanıcı Arayüzlerinden Veritabanı Tasarımı
+
+Kullanıcı arayüzlerinden ilişkisel veritabanları tasarlama becerisi, aşağıdaki nedenlerden dolayı önemli bir beceridir.
+
+1. Gereksinim aşamasında Sahte Kullanıcı Arayüzü tasarımı daha kolaydır.
+
+Sistemlerinizi tasarlarken, uzman alan kullanıcılarınız çoğu zaman veritabanı tasarım bilgisine sahip olmayacaktır.
+Ancak sahte kullanıcı arayüzleri tasarım sürecinizi basitleştirecektir.
+
+Görsel olan kullanıcı arayüzleri, teknik olmayan kullanıcılarınızın geri bildirim vermesini kolaylaştıracaktır.
+Bu, daha iyi veritabanı tasarımlarına yol açacaktır.
+Örneğin: Bu bilgi, metin kutusu değil, daha önce girilen durumlardan alınan bir açılır liste olmalıdır.
+
+Sahte Kullanıcı arayüzleri, uygulamanın veri akışını görselleştirmeye yardımcı olur.
+
+Deneyimime göre, alan kullanıcılarıyla sahte ekranları tartışmak birçok tasarım sorununu açıklığa kavuşturur.
+Ayrıca, sahte kullanıcı arayüzlerine ve ilişkisel tablolara sahip olmak her zaman daha hızlı yazılım geliştirmeyle sonuçlanır.
+
+2. Eski yazılımların modernizasyonu yazılım sektöründe çok yapılmaktadır.
+
+Eski yazılım kullanımına ilişkin yakın tarihli bir örneğe, Aralık 2024'e bakın. [Indiana fırını hala Commodore 64'leri kullanıyor](https://www.tomshardware.com/desktops/indiana-bakery-still-using-commodore-64s-originally-released-in-1982-as-point-of-sale-terminals).
+Bu fırının gelecekte bu yazılımı yeniden yazması kesinlikle gerekecek.
+
+Başka bir örnek de IBM Mainframe yazılımlarının modernizasyonudur.
+
+![Ana çerçeve fatura ekranı](images/main-frame-display-invoice-screen.png){width=500}
+
+[IBM forumlarından alınmıştır](https://www.ibmmainframeforum.com/ims/topic5391.html)
+
+Bu tür eski yazılımların yeniden yazılması gereklidir.
+Ama bu eski yazılımların veritabanı modelleri her zaman mevcut olmayacaktır.
+Ek olarak, bazen müşteriler rakiplerine veya eski çalışan yazılımlarına benzer yazılımlar isteyebilirler.
+Dolayısıyla eski ekranların yeniden yazılması gerekecektir.
+
+## Örnek Ekranlar
+
+### Perakende Ekranı
+
+![Retail Data Entrance](images/retail-user-interface.png)
+
+[grafik tasarım stack exchange web sitesinden alınmıştır](https://graphicdesign.stackexchange.com/a/65185)
+
+[Çözüm](../course-contents/database-design-questions-answers-en.qmd#retail-screen-answer)

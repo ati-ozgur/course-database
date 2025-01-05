@@ -19,7 +19,7 @@ In table @tbl-table-primary-key-natural-key-example-city-table, license plateCod
 The advantage of Natural Keys is that they are already known as I mentioned before. 
 As a disadvantage, since these keys have meaning in the domain, our database schema has become domain dependent.
 Keys need to be changed in requirement changes. 
-For example, let's assume that TcIdentityNo is selected as the primary key in Table @tbl-table-primary-key-natural-key-example-person-table. 
+For example, let's assume that TcIdentityNo is selected as the primary key in Table @tbl-table-primary-key-natural-key-example-person. 
 If this key is entered incorrectly in the first entry, it will be necessary to change this information entered as Foreign Key in all tables connected to this key, for example (PERSON_TRAINING, PERSON_EXPERIENCE).
 
 
@@ -30,7 +30,7 @@ If this key is entered incorrectly in the first entry, it will be necessary to c
 | FirstName    |    |
 | LastName     |    |
 
-: Natural Key Example 2 - Person Table {#tbl-table-primary-key-natural-key-example-person-table.}
+: Natural Key Example 2 - Person Table {#tbl-table-primary-key-natural-key-example-person}
 
 In table @tbl-table-primary-key-natural-key-example-address-table, a somewhat extreme example is the Address table. 
 It is difficult to find a suitable natural key in the address table, so all the information entered had to be made as a composite key.

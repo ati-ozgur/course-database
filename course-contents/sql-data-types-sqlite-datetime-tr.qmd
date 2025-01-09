@@ -1,0 +1,15 @@
+## Sqlite Tarih (Date) ve Zaman (Time) veri tipleri
+
+
+- Konu vidyosu [sqlite veri tabanında tarih date ve zaman time veri tipi yoktur](https://www.youtube.com/watch?v=ybd0HE1ZnhA)
+
+```sql
+SELECT EmployeeId, LastName, FirstName,
+BirthDate, typeof(BirthDate),
+HireDate, typeof(HireDate)
+FROM Employee;
+```
+
+- [sqlite data types](https://sqlite.org/datatype3.html)
+- [sqlite Date And Time Functions](https://www.sqlite.org/lang_datefunc.html)
+

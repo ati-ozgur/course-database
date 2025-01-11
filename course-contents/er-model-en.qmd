@@ -29,13 +29,12 @@ The diagramming syntax is evolved by then but the basics stayed same.
 
 
 ER-modelling work two ways, as below figure shows.
-We could create first diagram then from diagram database tables.
-Or we could reverse engineer our diagrams from our database.
+First way, we could create diagrams then database tables.
+Second way, we could reverse engineer our diagrams from our database tables.
 
 {{< include ../course-contents/diagrams/er-model-working-en.md >}}
 
 {{< include ../course-contents/er-model-diagramming-tools-en.qmd >}}
-
 
 {{< include ../course-contents/er-model-reverse-engineering-tools-en.qmd >}}
 

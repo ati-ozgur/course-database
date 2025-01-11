@@ -2,9 +2,7 @@
 
 ## Entity Relationship modeling Basics
 
-Entity Relationship (ER) modeling is introduce by Peter Chen @Chen1976entity in 1976.
-The diagramming syntax is evolved by then but the basics stayed same.
-Original syntax is called Chen notation.
+Entity Relationship (ER) modeling or diagramming is introduce by Peter Chen @Chen1976entity in 1976.
 ER-Models consists of three parts
 
 - Entity
@@ -16,7 +14,14 @@ Relations shows the connections between entities.
 For example, a Customer has invoices.
 Attributes shows the values an entity have: For example, Customer entity will have name and phone.
 
-TODO figures from original article.
+Original syntax is called Chen notation.
+Below is an figure from the original article @Chen1976entity.
+
+
+![Simple Er Diagram](images/Chen-1976-Figure-10-simple-er-diagram.png){width=80%}
+
+The diagramming syntax is evolved by then but the basics stayed same.
+
 
 
 ## How it works

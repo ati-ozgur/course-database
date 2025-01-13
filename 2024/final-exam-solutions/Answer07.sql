@@ -1,4 +1,6 @@
-SELECT COUNT(EmployeeId) AS EmployeeCount,Department
+SELECT COUNT(*) AS EmployeeCount
+,Department
 FROM Employees
 GROUP BY Department
-ORDER BY EmployeeCount
+--ORDER BY 1 DESC
+ORDER BY EmployeeCount DESC

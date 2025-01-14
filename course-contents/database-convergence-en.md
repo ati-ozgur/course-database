@@ -89,3 +89,4 @@ Below are links for Postgres but idea is still the same.
 - [Postgres Over Everything - Why You Should Probably Just use Postgres for your next Web App](https://hamy.xyz/labs/2024-09_postgres-over-everything)
 - [PostgreSQL Everywhere and for Everything](https://dzone.com/articles/postgresql-everywhere-and-for-everything)
 
+- [postgres for everything](https://www.amazingcto.com/postgres-for-everything/)

@@ -123,6 +123,15 @@ For instance, Google's search functions as a full-text search engine to locate a
 
 Full text searches are faster than LIKE operators when used with a lot of documents.
 
+## Integrated programming languages
+
+Using stored procedures and other languages, databases offer powerful features to work with data and code together in database.
+I am not very fond of most of these features but they are widely used by some software companies.
+See @sec-sql-stored-procedures stored procedures chapter for more about them.
+
+
+
+
 
 ## Other perspectives for same idea:
 

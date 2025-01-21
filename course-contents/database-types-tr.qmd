@@ -1,6 +1,6 @@
-## Veritabanı türleri
+# Veritabanı türleri
 
-### Sakladıkları veri yapısına göre Veritabanı Türleri
+## Sakladıkları veri yapısına göre Veritabanı Türleri
 
 - İlişkisel VTYS
 - Anahtar-değer depoları
@@ -20,13 +20,13 @@
 - Navigasyonel VTYS
 - Sütunlu (Columnar)
 
-### İlişkisel veritabanları
+## İlişkisel veritabanları
 
 Çok sayıda veritabanı türü olmasına rağmen, ilişkisel veritabanları bu dersin odak noktası olacaktır.
 Nosql olarak adlandırılan ve diğer veritabanı türleri ele alınmayacaktır.
 
 
-### Mimariye göre veritabanı türleri
+## Mimariye göre veritabanı türleri
 
 - Sunucu-istemci
 - dosya tabanlı

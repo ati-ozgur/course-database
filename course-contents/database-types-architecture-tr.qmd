@@ -1,0 +1,30 @@
+
+## Mimariye göre veritabanı türleri
+
+- Sunucu-istemci
+- dosya tabanlı
+- hafızada çalışan
+
+## Sunucu-istemci
+
+{{< include ../course-contents/diagrams/database-client-server-en.md >}}
+
+## Dosya tabanlı
+
+Dosya tabanlı mimaride, veritabanı olarak yerel bir dosya kullanılır.
+Sunucu yoktur, her şey istemci bilgisayarda yapılır.
+Sqlite ve Microsoft Access iyi bilinen dosya tabanlı veritabanlarıdır.
+
+## hafızada çalışan
+
+Her şey bellekte saklanır.
+Bu nedenle, istemci bağlantısı sona erdiğinde, veritabanı içeriği de kaybolur.
+Bellek içi veritabanları test ve önbellekleme için kullanılır.
+Sqlite [hafıza veritabanı](https://www.sqlite.org/inmemorydb.html) olarak çalışabilir.
+
+
+
+
+
+
+

@@ -121,7 +121,7 @@ For instance, Google's search functions as a full-text search engine to locate a
 - [Sql Server Full-Text Search](https://learn.microsoft.com/en-us/sql/relational-databases/search/full-text-search?view=sql-server-ver16)
 - [Sqlite Full-Text Search](https://www.sqlite.org/fts5.html)
 
-
+Full text searches are faster than LIKE operators when used with a lot of documents.
 
 
 ## Other perspectives for same idea:

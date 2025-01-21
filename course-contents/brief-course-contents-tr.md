@@ -3,9 +3,9 @@
 	- İlişkisel model
 	- SQL sorgu dili
 	- İşlem (transaction) yönetimi 
-	- İlişkisel cebir: seçme, yansıtma, birleştirme, bölme
-	- Veritabanı tasarımı, ER diyagramları, 1NF, 2NF, 3NF, BCNF, +NF
+	- Veritabanı tasarımı, ER diyagramları
+	- Normalleştirmeler: 1NF, 2NF, 3NF
 	- Bütünlük kısıtlamaları, Birincil anahtarlar, Yabancı anahtarlar
 	- Dosyalar 
 	- indeksleme
-	- Serileştirilebilirlik (Serializability), Kilitlenme
+	- Serileştirilebilirlik (Serializability), Kilitlenme (locking)

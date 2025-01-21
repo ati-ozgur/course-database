@@ -7,22 +7,7 @@ Also, old boring technologies will have a lot of utilities for different needs.
 For example, schema comparison is widely supported in old boring databases but please look at for same use case in document databases.
 
 
-
-
-
-
-
-## Databases add new technologies to their stacks
-
-1. Objects
-2. XML Data
-3. JSON Data
-4. Graphs
-5. Vectors
-
-Add links from Oracle and others to this one.
-
-## Use cases for relational database is a good choice
+## Use cases for relational database is a very good first choice
 
 You should always start with relational database when starting your application.
 Premature optimization is root of all evil.
@@ -39,7 +24,29 @@ This could be done with a lot of use case like below:
 	* Search in documents
 - Key/Value cache like redis
 
-This way, instead of starting with a lot of  technologies like kafka, redis, elastic search; you could start with relational database and later add this technologies if needed.
+This way, instead of starting with a lot of  technologies like kafka, redis, elastic search; you could start with relational database and later add this technologies if/when needed.
+
+
+
+
+## Databases add new technologies to their stacks
+
+1. Objects
+2. XML Data
+3. JSON Data
+4. Graphs
+5. Vectors
+
+
+## Object Database
+
+Oracle supports [Oracle Object-Relational](https://docs.oracle.com/en/database/oracle/oracle-database/23/adobj/index.html) paradigm.
+Object databases was popular for a time and oracle incorporated these features.
+I have never seen these features used in the production oracle databases.
+
+SQL Server and Sqlite does not support Object-Relational paradigm.
+Among open source database systems, [postgres support it](https://learn.postgreshelp.com/courses/postgresql-tutorial-dba/lesson/object-relational-database-management-system)
+
 
 
 ## XML Data

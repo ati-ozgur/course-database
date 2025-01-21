@@ -48,6 +48,15 @@ This way, instead of starting with a lot of  technologies like kafka, redis, ela
 
 ### AI/Vector data
 
+Oracle database supports AI vector capabilities in its new version.
+New Oracle 23 version is even named as 23ai to emphasize this capabilities.
+- See [oracle vector database](https://www.oracle.com/database/vector-database).
+- See [how oracle 23 ai support generative AI applications](https://www.oracle.com/news/announcement/ocw-integrated-vector-database-augments-generative-ai-2023-09-19)
+
+
+
+
+
 ### Redis
 
 Rails offer a plugin for redis replacement in the database.

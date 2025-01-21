@@ -46,6 +46,19 @@ This way, instead of starting with a lot of  technologies like kafka, redis, ela
 
 ### JSON data
 
+After the success of the so-called nosql movement in database world, all of the vendors started to support JSON data.
+Oracle even supports mongodb (a leading json document database) connections natively and (support SQL with mongodb applications)[https://blogs.oracle.com/database/post/proper-sql-comes-to-mongodb-applications-with-oracle].
+
+JSON is supported in all of the three databases, we will cover in our course.
+
+- [Oracle JSON](https://blogs.oracle.com/database/post/json-relational-duality-app-dev)
+- [SQL Server JSON](https://learn.microsoft.com/en-us/sql/relational-databases/json/json-data-sql-server?view=sql-server-ver16)
+- [Sqlite JSON](https://www.sqlite.org/json1.html)
+
+
+
+
+
 ### AI/Vector data
 
 Oracle database supports AI vector capabilities in its new version.

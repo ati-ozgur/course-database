@@ -21,10 +21,12 @@ book:
       chapters:        
         - course-contents/databases-intro-en.qmd
         - course-contents/database-models-en.qmd
-        - course-contents/database-convergence-en.md
-        - course-contents/database-types-en.qmd
+
         - course-contents/database-ranking-market-share-en.qmd
         - course-contents/open-source-vs-commercial-databases-en.qmd
+        
+        - course-contents/database-convergence-en.md
+        - course-contents/database-types-en.qmd
         - course-contents/which-databases-will-be-covered-en.md 
         - course-contents/database-playground-en.md
         - course-contents/server-installation-en.qmd

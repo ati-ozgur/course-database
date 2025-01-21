@@ -5,13 +5,14 @@
 | Hafta 03 | SQL BÖLÜM 1
 | Hafta 04 | SQL BÖLÜM 2
 | Hafta 05 | SQL BÖLÜM 3
-| 06. Hafta | İşlem yönetimi: commit, abort, recover |
-| 07. Hafta | Ara sınav
-| 08. Hafta | Şema tanımı, Bütünlük kısıtlamaları, Birincil anahtarlar, Yabancı anahtarlar, Genel kısıtlamalar |
-| 09. Hafta | Veritabanı tasarımı, 1NF, 2NF, 3NF, BCNF, 4NF |
-| 10. Hafta | Veritabanı tasarımı, 1NF, 2NF, 3NF, BCNF, 4NF |
-| 11. Hafta | İlişkisel cebir: seç, yansıt, birleştir, böl |
-| 12. Hafta | Veritabanı Dosyaları
-| 13. Hafta | İndeksleme, SQL Ayarlama
-| 14. Hafta | Serileştirilebilirlik, Çıkmaz
-| 15. Hafta | Final Sınavı
+| Hafta 06 | Sınav Öncesi Tekrar
+| Hafta 07 | Ara sınav
+| Hafta 08 | SQL BÖLÜM 4
+| Hafta 09 | SQL BÖLÜM 5
+| Hafta 10 | SQL BÖLÜM 6
+| Hafta 11 | İşlem yönetimi: commit, abort, serileştirme |
+| Hafta 12 | Şema tanımı, Bütünlük kısıtlamaları, Birincil anahtarlar, Yabancı anahtarlar, Genel kısıtlamalar, Veri Yapıları |
+| Hafta 13 | Veritabanı Tasarımı, 1NF, 2NF, 3NF|
+| Hafta 14 | İndeksleme, SQL Ayarlama |
+| Hafta 14 | Sınav Öncesi Tekrar |
+| Hafta 15 | Final Sınavı

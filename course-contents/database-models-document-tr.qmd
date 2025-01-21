@@ -1,0 +1,18 @@
+## Dokuman (Belge) veritabanları
+
+En bilinen örnek mongodb'dir. 
+Belge veritabanları çoğunlukla json belgelerini depolar. 
+Bunlar şema içermeyen veri düzenlemeleridir. İlişkisel veritabanlarından farklı olarak, önceden veritabanı şemasını tasarlamak zorunda değilsinizdir.
+
+Bunun avantajları ve dezavantajları vardır.
+
+Örnekler:
+
+- MongoDB
+- Databricks
+- Amazon DynamoDB
+- Microsoft Azure Cosmos DB
+- Couchbase
+- Firebase (google)
+- Oracle NoSQL
+

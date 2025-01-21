@@ -1,0 +1,27 @@
+# Veri Tabanları Modelleri
+
+![Wikipedia2016DatabaseModelsFigure](./images/database-models.png)
+
+@Wikipedia2016DatabaseModelsFigure
+
+## Sıra düzenli (hierarchical) veri tabanları
+
+- Aile Agaçı
+- Dosya sistemi
+- UNS (Unified Namespace)
+
+
+{{< include ../course-contents/database-models-document-tr.qmd >}}
+
+
+
+{{< include ../course-contents/database-models-graph-tr.qmd >}}
+
+{{< include ../course-contents/database-models-vector-tr.qmd >}}
+
+
+
+
+
+
+

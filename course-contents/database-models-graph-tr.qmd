@@ -1,0 +1,4 @@
+## Çizge (graph) veri tabanları 
+
+![Wikipedia2016DatabaseModelsFigure](./images/database-models-graph-example-opensource-com.png)
+

@@ -20,6 +20,8 @@ book:
     - part: "Veritabanlarına Giriş"
       chapters:
         - course-contents/databases-intro-tr.qmd
+        - course-contents/database-models-tr.qmd
+
         - course-contents/database-types-tr.qmd
         - course-contents/database-ranking-market-share-tr.qmd
 

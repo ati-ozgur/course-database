@@ -1,0 +1,3 @@
+## Vektor veri tabanları 
+
+{{< include ../course-contents/diagrams/how-vector-databases-works-tr.md >}}

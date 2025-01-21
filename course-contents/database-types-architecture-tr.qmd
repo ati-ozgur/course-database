@@ -7,7 +7,7 @@
 
 ## Sunucu-istemci
 
-{{< include ../course-contents/diagrams/database-client-server-en.md >}}
+{{< include ../course-contents/diagrams/database-client-server-tr.md >}}
 
 ## Dosya tabanlı
 

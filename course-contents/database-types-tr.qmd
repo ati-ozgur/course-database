@@ -32,4 +32,4 @@ Nosql olarak adlandırılan ve diğer veritabanı türleri ele alınmayacaktır.
 - dosya tabanlı
 - hafızada
 
-{{< include ../course-contents/database-types-architecture-en.qmd >}}
+{{< include ../course-contents/database-types-architecture-tr.qmd >}}

@@ -23,6 +23,7 @@ This could be done with a lot of use case like below:
 - Documents
 	* Search in documents
 - Key/Value cache like redis
+- Full text search
 
 This way, instead of starting with a lot of  technologies like kafka, redis, elastic search; you could start with relational database and later add this technologies if/when needed.
 
@@ -110,6 +111,15 @@ You can use database tables for this purpose.
 Of course, it does not scale like kafka to terabytes of data but ask yourself if your application needs that much scale.
 
 Also, for the enterprises, with their powerful database servers like exadata from oracle, it is possible to scale for that much data.
+
+## Full text search
+
+Simply, full-text search engines enable users to effectively search through a vast array of documents to find those that include one or more occurrences of a specified search term.
+For instance, Google's search functions as a full-text search engine to locate all web documents that contain a particular term, such as "sqlite".
+
+- [Oracle Full-Text Search](https://docs.oracle.com/en/database/oracle/oracle-database/21/adjsn/full-text-search-queries.html)
+- [Sql Server Full-Text Search](https://learn.microsoft.com/en-us/sql/relational-databases/search/full-text-search?view=sql-server-ver16)
+- [Sqlite Full-Text Search](https://www.sqlite.org/fts5.html)
 
 
 

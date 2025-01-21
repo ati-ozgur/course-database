@@ -42,9 +42,12 @@ This could be done with a lot of use case like below:
 This way, instead of starting with a lot of  technologies like kafka, redis, elastic search; you could start with relational database and later add this technologies if needed.
 
 
+## XML Data
 
+- Oracle has native xml storage and query capabilities, see [Oracle XML DB](https://www.oracle.com/tr/database/technologies/appdev/xmldb.html).
+- SQL server also has native xml storage and query capabilities, see [Sql Server XML Data](https://learn.microsoft.com/en-us/sql/relational-databases/xml/xml-data-sql-server?view=sql-server-ver16)
 
-### JSON data
+## JSON data
 
 After the success of the so-called nosql movement in database world, all of the vendors started to support JSON data.
 Oracle even supports mongodb (a leading json document database) connections natively and (support SQL with mongodb applications)[https://blogs.oracle.com/database/post/proper-sql-comes-to-mongodb-applications-with-oracle].
@@ -56,10 +59,17 @@ JSON is supported in all of the three databases, we will cover in our course.
 - [Sqlite JSON](https://www.sqlite.org/json1.html)
 
 
+## Graph Data
+
+- Oracle works as [integrated graph database](https://www.oracle.com/database/integrated-graph-database)
+- Sql server support [Graph processing](https://learn.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-overview?view=sql-server-ver16).
 
 
 
-### AI/Vector data
+
+
+
+## AI/Vector data
 
 Oracle database supports AI vector capabilities in its new version.
 New Oracle 23 version is even named as 23ai to emphasize this capabilities.
@@ -70,7 +80,7 @@ New Oracle 23 version is even named as 23ai to emphasize this capabilities.
 
 
 
-### Redis
+## Redis
 
 Rails offer a plugin for redis replacement in the database.
 
@@ -86,7 +96,7 @@ Please note that they have a very specific use case where reading from database 
 
 
 
-### Kafka
+## Kafka
 
 It is append only log.
 You can use database tables for this purpose.

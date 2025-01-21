@@ -5,7 +5,7 @@ flowchart LR
         C[İstemci Uygulaması]
     end
 
-    subgraph Sunucu
+    subgraph "Veri tabanı Sunucusu"
         S[Sunucu]
         DB[(Veritabanı)]
     end

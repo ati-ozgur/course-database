@@ -10,3 +10,47 @@ Ancak küçük ve orta ölçekli şirketler son on yılda çoğunlukla açık ka
 10 yıl önce büyük şirketlerde açık kaynak veritabanlarını kullanmak neredeyse imkansızdı ancak zihniyet değişti.
 Büyük şirketlerde ve devlet kurumlarında bile postgre ve mysql gibi açık kaynak veritabanları bulabilirsiniz çünkü küçük uygulamalar bunları kullanıyor.
 
+## Ticari veritabanlarını kimler kullanıyor
+
+- Bankalar
+- Devlet daireleri
+- ERP paketlerine ihtiyaç duyan büyük şirketler
+
+## Açık kaynaklı veritabanlarını kimler kullanıyor
+
+### sqlite
+
+sqlite en çok kullanılan açık kaynaklı veritabanıdır. [1 trilyondan (1e12) fazla SQLite veritabanı aktif olarak kullanılmaktadır](https://www.sqlite.org/mostdeployed.html).
+sqlite şu cihazlarda bulunur:
+
+- Her Android cihaz
+- Her iPhone ve iOS cihaz
+- Her Mac
+- Her Windows10 makine
+- Her Firefox, Chrome ve Safari web tarayıcısı
+...
+
+### Mysql veya MariaDB
+
+- Wordpress
+
+Wordpress MySQL veya MariaDB kullanır. 
+472 milyon web sitesi Wordpress üzerinde çalışmaktadır.
+Bu da internetteki tüm web sitelerinin %43,3'üne denk gelir.
+
+MariaDB, MySQL veri tabanı Oracle tarafından satın alındıktan sonra aynı kod yapısı üzerine kurulmuş bir veri tabanıdır.
+Bir çok uygulama MariaDB veya MySQL üzerinde çalışabilir.
+2 veri tabanı birbirine çok uyumludur.
+
+- [Mysql Müşterileri](https://www.mysql.com/customers)
+- [MariaDB Müşterileri](https://mariadb.com/resources/customer-stories/)
+### Postgres
+
+- Instagram
+- reddit
+- Spotify
+- Twitch
+- ve diğerleri
+
+- [Kimler postgres kulllanıyor](https://dzone.com/articles/why-everyone-uses-postgres)
+

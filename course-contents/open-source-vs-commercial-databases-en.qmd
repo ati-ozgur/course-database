@@ -19,6 +19,8 @@ Even in large companies and government, you can find open source databases like 
 
 ## Who uses open source databases
 
+### sqlite
+
 sqlite is the most used open source database. There are over [1 trillion (1e12) SQLite databases in active use](https://www.sqlite.org/mostdeployed.html).
 sqlite is found on
 
@@ -30,8 +32,9 @@ sqlite is found on
 ...
 
 
+### Mysql 
 
 Wordpress uses mysql and and [472 million websites](https://colorlib.com/wp/wordpress-statistics/) runs on wordpress, which is 43.3% of all the websites on the internet.
 
-
+### Postgres
 - [Who uses postgres](https://dzone.com/articles/why-everyone-uses-postgres)

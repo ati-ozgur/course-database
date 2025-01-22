@@ -125,8 +125,11 @@ Full text searches are faster than LIKE operators when used with a lot of docume
 
 ## Integrated programming languages
 
-Using stored procedures and other languages, databases offer powerful features to work with data and code together in database.
+Using stored procedures and functions, databases offer powerful features to work with data and code together in database.
+These procedures and functions could be written with their procedural extensions (T-SQL, PL/SQL) or other general purpose programming languages like C#,Java and [R](https://docs.oracle.com/cd/E57012_01/doc.141/e56973/intro.htm).
+
 I am not very fond of most of these features but they are widely used by some software companies.
+
 See @sec-sql-stored-procedures (stored procedures) for more about them.
 
 

@@ -140,7 +140,7 @@ Best one. databases will own others, json, vector, text ....
 - [A Short Summary of the Last Decades of Data Management Hannes Mühleisen  GOTO 2024](https://www.youtube.com/watch?v=-wCzn9gKoUk)
 
 
-Below are links for Postgres but idea is still the same.
+Below are links for Postgres but the idea is still the same.
 
 
 - [Just use Postgres](https://mccue.dev/pages/8-16-24-just-use-postgres)

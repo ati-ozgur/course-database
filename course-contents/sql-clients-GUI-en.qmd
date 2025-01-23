@@ -8,6 +8,11 @@ Dbeaver also supports other databases like oracle and sql server.
 
 - [Dbeaver](https://dbeaver.io)
 
+Different connections to databases could be seen in the right side of the screenshot of the DBeaver screen below.
+
+![Note](images/DBeaver-screen.png){width=90%}
+
+
 
 ### Sqlite other tools  {.unnumbered .unlisted}
 

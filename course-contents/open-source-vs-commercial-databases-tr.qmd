@@ -44,6 +44,7 @@ Bir çok uygulama MariaDB veya MySQL üzerinde çalışabilir.
 
 - [Mysql Müşterileri](https://www.mysql.com/customers)
 - [MariaDB Müşterileri](https://mariadb.com/resources/customer-stories/)
+
 ### Postgres
 
 - Instagram

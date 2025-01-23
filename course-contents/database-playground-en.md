@@ -5,6 +5,13 @@ But I suggest that you try to install to your computer necessary server and clie
 
 Well known database playgrounds are following:
 
+## Sqlite Online  {.unnumbered .unlisted}
+
+- [sqlite online](https://sqliteonline.com/)
+
+
+## sqlfiddle  {.unnumbered .unlisted}
+
 - [sqlfiddle](https://sqlfiddle.com/) supports
 
     * SQL Server
@@ -15,14 +22,10 @@ Well known database playgrounds are following:
     * Oracle
 
 
-## Oracle
+## Live SQL Oracle  {.unnumbered .unlisted}
 
 [livesql oracle](https://livesql.oracle.com/apex/f?p=590:1000)
 
 
-## Sqlite
-
-
-- [sqlite online](https://sqliteonline.com/)
 
 

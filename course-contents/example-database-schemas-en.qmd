@@ -2,9 +2,9 @@
 
 ## Example Schema Chinook
 
-[Chinook](https://github.com/lerocha/chinook-database/) will be used in a lot of examples.
-The sample database has necessary scripts for a lot different databases.
-Necessary files will also be provided in the repository.
+Chinook will be used in most examples.
+[The Chinook sample database github repository]((https://github.com/lerocha/chinook-database/)) has necessary scripts for a lot different databases.
+Necessary files for sqlite, oracle and SQL server will be provided in the course github repository.
 
 ![Chinook schema by tool schemaspy](./images/schema-diagram-chinook-schemaspy.png)
 

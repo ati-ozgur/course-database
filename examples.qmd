@@ -23,6 +23,8 @@ SELECT * FROM Production.Product;
 
 {{< include ../course-contents/dosyaadi.qmd >}}
 
+ {.unnumbered .unlisted}
+ for no number in sections
 
 ```java
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)

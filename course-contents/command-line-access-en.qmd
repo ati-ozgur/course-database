@@ -1,13 +1,25 @@
 # Command line access
 
+
+Command line usage skill is a necessary skill for the database developers and administrators.
+
+- Production databases may not have necessary GUI tools installed.
+- Remote servers, especially for linux servers, GUI tools may not work without additional work, (ssh tunneling etc)
+- Some Oracle problems (like startup failures) could only be solved using command line.
+
+
+
 ## sqlite
 
 - [sqlite3](https://www.sqlite.org/cli.html)
 
 ## Oracle
 
-- [sqlplus](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqpug/SQL-Plus-quick-start.html)
+- [sqlplus](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqpug/SQL-Plus-quick-start.html)
 
+Oracle also provides java based more modern command line interface.
+
+- [SQLcl](https://www.oracle.com/database/sqldeveloper/technologies/sqlcl/)
 
 ## SQL Server
 

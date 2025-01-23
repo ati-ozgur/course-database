@@ -1,5 +1,7 @@
 ## examples to use while writing book
 
+export QUARTO_CHROMIUM_HEADLESS_MODE=none
+
 A4 paper size
 A4 size     210 x 297 mm    8.3 x 11.7 in
 

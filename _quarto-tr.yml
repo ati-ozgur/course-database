@@ -26,14 +26,14 @@ book:
         - course-contents/open-source-vs-commercial-databases-tr.qmd
         - course-contents/database-types-tr.qmd
         
-        - course-contents/which-databases-will-be-covered-tr.md 
-        
+        - course-contents/database-convergence-en.md
+        - course-contents/which-databases-will-be-covered-en.md 
+        - course-contents/database-playground-en.md
         - course-contents/server-installation-tr.qmd
-        - course-contents/database-playground-tr.md
-        - course-contents/database-connections-tr.qmd
         - course-contents/example-database-schemas-tr.qmd
         - course-contents/command-line-access-tr.qmd
         - course-contents/sql-clients-GUI-tr.qmd
+        - course-contents/database-connections-tr.qmd
 
     - part: "SQL Giriş"
       chapters:

@@ -1,4 +1,4 @@
-# Veri Tabanları Modelleri
+# Veri Tabanı Modelleri
 
 ![Wikipedia2016DatabaseModelsFigure](./images/database-models.png)
 

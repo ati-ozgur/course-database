@@ -1,11 +1,10 @@
 ## Use LLMs to generate ER diagrams
 
-We can use LLMs like ChatGPT and Perplexity to create our draft diagrams since mermaid is normal markdown code.
+We can use LLMs like ChatGPT, Gemini or Perplexity to create our draft diagrams since mermaid is normal markdown code.
 
 
 Below AI prompt creates a draft mermaid diagram to start from.
 
 > Please create me a simple mermaid entity relationship diagram which shows students, courses, lessons and teachers. All of the entities should have common columns in it.
 
-
-[See an example here using perplexity](https://www.perplexity.ai/search/please-create-me-a-simple-merm-cB.z9NOZRuiC1.0AszoIeA) 
+Try it in AI tools to see the result.

@@ -49,7 +49,6 @@ book:
         - course-contents/sql-command-types-en.qmd
     - part: "SQL DQL"
       chapters:
-        - course-contents/sql-DQL-data-query-language-en.md
         - course-contents/sql-select-en.qmd
         - course-contents/sql-comments-en.qmd
         - course-contents/sql-select-distinct-en.md

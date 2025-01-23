@@ -1,4 +1,4 @@
-# SQL Select
+# DQL (data query language) SQL Select
 
 ## SQL most basic select example
 

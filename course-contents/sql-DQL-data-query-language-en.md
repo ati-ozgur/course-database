@@ -1,2 +1,0 @@
-# DQL (data query language)
-

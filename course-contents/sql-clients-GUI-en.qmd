@@ -1,11 +1,17 @@
 # SQL Clients GUI
 
 
-## General
+## Sqlite
+
+We will use dbeaver for sqlite part of our course.
+Dbeaver also supports other databases like oracle and sql server.
 
 - [Dbeaver](https://dbeaver.io)
 
-## Sqlite
+
+### Sqlite other tools  {.unnumbered .unlisted}
+
+There are a lot of other GUI tools for sqlite see some examples below:
 
 - [DB Browser for SQLite](https://sqlitebrowser.org)
 	

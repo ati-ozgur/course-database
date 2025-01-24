@@ -1,4 +1,12 @@
-## Örnek Veritaban Şemaları
+# Örnek Veritabanı Şemaları
+
+## Örnek Şema Chinook
+
+Çoğu örnekte Chinook kullanılacaktır.
+[Chinook örnek veritabanı github deposu](https://github.com/lerocha/chinook-database) birçok farklı veritabanı için gerekli betiklere sahiptir.
+Sqlite, oracle ve SQL server için gerekli dosyalar kurs github deposunda sağlanmıştır.
+
+![Chinook şeması schemaspy aracı ile oluşturulmuştur](./images/schema-diagram-chinook-schemaspy.png)
 
 
 ### Örnek Şema Ögrenci Bilgi Sistemi
@@ -6,6 +14,40 @@
 ![Example Schema Student Information System](images/diagramOgrenciBilgiSistemi1.png)
 
 
+{{< include ../course-contents/example-database-schemas-stack-overflow-en.md >}}
 
+
+## Veritabanı satıcılarından örnek şema
+
+Oracle ve Microsoft gibi veritabanı satıcıları tarafından sağlanan bazı iyi bilinen örnek veritabanı şemaları vardır.
+Bu örneklerin bazıları, içerdikleri kötü uygulamalar nedeniyle kullanımdan kaldırılmıştır.
+Yine de, bu örnek şemalarda herhangi bir sorgu çalıştırmasak bile bunlar hakkında bilgi edineceğiz.
+Pek çok örnekte kullanıldıkları için bunlar hakkında bilgi sahibi olmak gereklidir.
+
+
+###  Oracle
+
+[Oracle örnek şema belgeleri](https://docs.oracle.com/en/database/oracle/oracle-database/21/comsc/installing-sample-schemas.html).
+
+- Oracle HR
+
+![Oracle HR Şeması](./images/schema-diagram-oracle-HR-ER.png)
+
+
+- Oracle Scott
+
+## Microsoft
+
+En iyi bilineni Northwind şemasıdır.
+Chinook ona çok benzediği için Chinook'u kullanacağız.
+Ancak tablolarının inceleyeceğiz.
+
+- SQL Server 2000
+	* Northwind
+	* Pubs
+- SQL Server 2005
+	* AdventureWorks
+- SQL Server 2016
+	* Wide World Importers
 
 

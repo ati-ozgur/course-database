@@ -1,13 +1,58 @@
-# Server installations
+# Sunucu Kurulumları
+
+## Sqlite
+
+Sqlite'ın sunucu tarafı yoktur.
+Sqlite bir gömülü dosya tabanlı veritabanıdır.
+Bu nedenle, yalnızca istemci araçlarına ihtiyacı vardır.
+Çoğu, dbeaver gibi GUI araçları, sqlite'ı çalıştırmak için gerekli dosyaları da içerir.
+Ayrıca bilindik programlama dilleri (java, c#, python vb.) gerekli sqlite'a bağlanmak için gerekli kütüphaneleri barındırır.
+
+
+Eğer sqlite'ı sadece programlama dilinden veya GUI aracından kullanıyorsanız, sqlite'ı indirmeniz gerekmeyebilir.
+Ancak öğrenme amacıyla indirmenizi ve komut satırını kullanmanızı öneririm.
+
+[sqlite indirmeler](https://www.sqlite.org/download.html)
+
+### Demo  {.unnumbered .unlisted}
+
+1. sqlite indir
+2. komut satırını açın
+3. [chinook db](https://github.com/ati-ozgur/course-database/raw/refs/heads/main/databases/Chinook-auto-increment.db) dosyasını indirin.
+4. Komut satırında içeriği gösterin.
+
+
+
+## Docker
+
+- [docker indirmeler](https://www.docker.com/products/docker-desktop/)
+
+Kullanım kolaylığı nedeniyle sunucu kurulumlarımız için docker kullanacağız.
+Normalde, en azından benim görüşüme göre, veritabanı üretim sunucuları docker üzerinden çalıştırılmamalıdır.
+
+
+
+
+## Oracle
+
+Oracle için Dockerfile ve komut dosyaları kurs github deposunda bulunmaktadır.
+
+- [Oracle docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-oracle)
+
+
+Oracle ayrıca virtual box geliştirici görüntüleri de sağlamaktadır.
+
+
+- [Oracle virtual box görüntüleri](https://www.oracle.com/downloads/developer-vm/community-downloads.html)
 
 ## SQL Server
 
-## SQL Server
+Sql Server için Dockerfile ve komut dosyaları kurs github deposunda bulunmaktadır.
 
-- SQL Server Farklı Versiyonları
-- SQL Server Express Kurulum
 
-* Sunucu Konfigurasyonu
-- Konfigure Durdur - Başlat (Start - Stop)
-- Mixed Authentication
-- Dokumentasyon
+- [Sqlserver docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-sqlserver)
+
+{{< include ../course-contents/server-installation-sqlserver-tr.qmd >}}
+
+
+

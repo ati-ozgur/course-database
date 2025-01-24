@@ -1,0 +1,11 @@
+## SQL Server Normal Kurulum
+
+[SQL Server İndirmeleri](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
+- SQL Server Farklı Versiyonları
+- SQL Server Express Kurulum
+
+* Sunucu Konfigurasyonu
+- Konfigure Durdur - Başlat (Start - Stop)
+- Mixed Authentication
+- Dokumentasyon

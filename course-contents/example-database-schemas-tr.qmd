@@ -14,7 +14,7 @@ Sqlite, oracle ve SQL server için gerekli dosyalar kurs github deposunda sağla
 ![Example Schema Student Information System](images/diagramOgrenciBilgiSistemi1.png)
 
 
-{{< include ../course-contents/example-database-schemas-stack-overflow-en.md >}}
+{{< include ../course-contents/example-database-schemas-stack-overflow-tr.md >}}
 
 
 ## Veritabanı satıcılarından örnek şema

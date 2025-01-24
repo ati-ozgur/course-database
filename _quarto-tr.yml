@@ -42,7 +42,7 @@ book:
 
     - part: "SQL Giriş"
       chapters:
-        - course-contents/sql-why-learn-en.qmd
+        - course-contents/sql-why-learn-tr.qmd
         - course-contents/sql-history-en.qmd
         - course-contents/sql-introduction-tr.qmd
         - course-contents/sql-standard-tr.qmd

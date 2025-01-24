@@ -1,0 +1,20 @@
+# Neden SQL Öğrenmeli?
+
+{{< include ../course-contents/sql-why-learn-tiobe-tr.md >}}
+
+
+{{< include ../course-contents/sql-in-career-sites-tr.md >}}
+
+{{< include ../course-contents/sql-why-learn-used-in-other-places-tr.md >}}
+
+
+
+## Neden 4: SQL, daha yeni sorgu dillerine kıyasla daha iyidir {.unnumbered} 
+
+Bakınız:
+
+- [Sorgu dilinize ihtiyacım yok](https://antonz.org/fancy-ql/)
+
+
+
+

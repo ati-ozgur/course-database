@@ -1,0 +1,17 @@
+## Varlık (Entity)
+
+Varlıklar diyagramlardaki en temel kısımdır.
+Normalde veritabanı tablolarına karşılık gelirler.
+Ayrıca diyagramda niteliklerini veya sütunlarını da verebiliriz.
+Aşağıdaki örneğe bakınız.
+
+
+```{mermaid}
+%%| echo: true
+
+erDiagram
+	Ogrenci {
+	    int ogrenci_id PK
+	    string adi
+	}
+```

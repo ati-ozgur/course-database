@@ -1,0 +1,24 @@
+# Mermaid ER Diyagramları
+
+
+ER modelleme için [mermaid Entity Relationship Diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) kullanacağız.
+Çünkü mermaid'in markdown sözdizimi daha kolay anlaşılmaktadır.
+Ayrıca markdown düz metin olarak git gibi kaynak kontrol araçlarıyla sürüm kontrolü yapılabilir.
+Ek olarak mermaid diyagramları github, gitlab ve azure devops gibi kaynak kontrol araçlarının web sürümleri tarafından otomatik olarak gösterilir.
+
+
+
+
+{{< include ../course-contents/er-model-mermaid-entity-tr.qmd >}}
+
+{{< include ../course-contents/er-model-mermaid-entity-relationships-tr.qmd >}}
+
+{{< include ../course-contents/er-model-mermaid-full-example-tr.qmd >}}
+
+
+{{< include ../course-contents/er-model-use-llm-tr.qmd >}}
+
+
+
+
+

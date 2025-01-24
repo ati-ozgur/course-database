@@ -1,0 +1,10 @@
+## ER diyagramları oluşturmak için LLM'leri kullanın
+
+Mermaid normal bir markdown kodu olduğundan taslak diyagramlarımızı oluşturmak için ChatGPT, Gemini veya Perplexity gibi LLM'leri kullanabiliriz.
+
+Aşağıdaki AI istemi, başlamak için taslak bir denizkızı diyagramı oluşturur.
+
+
+> Lütfen bana öğrencileri, kursları, dersleri ve öğretmenleri gösteren basit bir mermaid entity relationship diyagramı oluşturun. Tüm varlıkların ortak sütunları olmalıdır.
+
+Sonucu görmek için AI araçlarında deneyin.

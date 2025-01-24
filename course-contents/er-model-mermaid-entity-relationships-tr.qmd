@@ -1,0 +1,42 @@
+## Varlık İlişkileri
+
+Varlıkların ilişkileri olmalıdır.
+Diğer varlıklarla etkileşimleri bu şekildedir.
+Bunun sözdizimi aşağıdadır:
+
+
+```
+<birinci-varlık> [<ilişki> <ikinci-varlık> : <ilişki-etiketi>]
+```
+
+İlişki etiketi, gereksinimlerde veya sahada nasıl çalıştığını göstermelidir.
+Lütfen buna göre seçmeye çalışın.
+
+Bir öğrencinin birçok derse kaydolduğu bir örnek.
+Bunu aşağıdaki gibi yazabiliriz.
+
+
+
+```{mermaid}
+%%| echo: true
+erDiagram
+    Ogrenci ||--o{ Ders : kayıt_olur
+```
+
+Bu sözdiziminde, aşağıdaki tablo varlıkların kardinalitesini nasıl modelleyebileceğimizi göstermektedir.
+Bu, varlıklar arasında 0,1 veya çok olduğu bilgisidir.
+
+
+
+
+{{< include ../course-contents/tables/table-er-mermaid-cardinality-tr.md >}}
+
+
+Bu bilgiyi şu şekilde okuyabiliriz:
+
+- Öğrencinin sıfırdan bire kadar danışmanı var
+- Öğrencinin tam olarak bir danışmanı var
+- Öğrenci 0'dan çoka kadar derse kaydoluyor
+- Öğrenci 1'den çoka kadar derse kaydoluyor
+
+ 

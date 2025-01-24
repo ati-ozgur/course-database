@@ -1,0 +1,52 @@
+## Tam Örnek 1
+
+```{mermaid}
+%%| echo: true
+
+erDiagram
+    Ogrenci ||--o{ Kurs : kayıt_olur
+    Kurs ||--|{ Ders : içerir
+    Ogretmen ||--o{ Kurs : Öğretir
+    Ogretmen ||--o{ Ders : verir
+    Ogrenci ||--o{ Ders : katılır
+
+
+    Ogrenci {
+        int id PK
+        string adi
+        date olusturulduğu_tarih
+        date guncellendigi_tarih
+    }
+    Kurs {
+        int id PK
+        string baslık
+        string tanım
+        date olusturulduğu_tarih
+        date guncellendigi_tarih
+    }
+    Ders {
+        int id PK
+        int Kurs_id FK
+        string baslık
+        date scheduled_date
+        date olusturulduğu_tarih
+        date guncellendigi_tarih
+    }
+    Ogretmen {
+        int id PK
+        string adi
+        string eposta
+        date olusturulduğu_tarih
+        date guncellendigi_tarih
+    }
+```
+
+
+
+
+
+
+https://mermaid.live/
+
+
+

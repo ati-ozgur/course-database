@@ -37,10 +37,13 @@ book:
 
     - part: "SQL Giriş"
       chapters:
+        - course-contents/sql-why-learn-en.qmd
+        - course-contents/sql-history-en.qmd
         - course-contents/sql-introduction-tr.qmd
         - course-contents/sql-standard-tr.qmd
         - course-contents/sql-dialects-tr.qmd
         - course-contents/sql-command-types-tr.qmd
+
     - part: "SQL DQL"
       chapters:
         - course-contents/sql-select-tr.qmd
@@ -55,6 +58,17 @@ book:
         - course-contents/sql-paging-tr.qmd
         - course-contents/sql-set-tr.qmd
         - course-contents/sql-join-tr.qmd
+    - part: "SQL: Functions Stored Procedures Triggers"
+      chapters:
+        - course-contents/sql-functions-scalar-en.qmd
+        - course-contents/sql-functions-string-en.qmd
+        - course-contents/sql-functions-mathematical-en.qmd
+        - course-contents/sql-functions-date-and-time-en.qmd
+        - course-contents/sql-functions-window-en.qmd
+        - course-contents/sql-functions-json-en.qmd
+        - course-contents/sql-stored-procedures-en.qmd
+        - course-contents/sql-triggers-en.qmd
+                
     - part: "SQL DML-DCL-TCL"
       chapters:
         - course-contents/sql-DML-data-manipulation-language-tr.qmd

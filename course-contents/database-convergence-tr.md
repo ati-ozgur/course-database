@@ -133,9 +133,7 @@ Bu prosedürler ve işlevler prosedürel uzantılarıyla (T-SQL, PL/SQL) veya C#
 
 Bu özelliklerin çoğundan pek hoşlanmıyorum ama bazı yazılım şirketleri tarafından yaygın olarak kullanılıyorlar.
 
-Bunlar hakkında daha fazla bilgi için @sec-sql-stored-procedures (saklı prosedürler) sayfasına bakın.
-
-
+Bunlar hakkında daha fazla bilgi için saklı prosedürler @sec-sql-stored-procedures bölümüne bakınız.
 
 
 

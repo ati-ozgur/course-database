@@ -37,7 +37,7 @@ book:
 
     - part: "Veritabanı Tasarım Giriş"
       chapters:
-        - course-contents/er-model-en.qmd
+        - course-contents/er-model-tr.qmd
         - course-contents/er-model-mermaid-diagrams-en.qmd
 
     - part: "SQL Giriş"

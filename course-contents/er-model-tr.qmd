@@ -1,0 +1,46 @@
+# Entity Relationship (ER) Modellemesi 
+
+## Entity Relationship Model Temelleri
+
+Varlık İlişkisi (ER) modellemesi veya diyagramı, Peter Chen @Chen1976entity tarafından 1976 yılında önerilmiştir.
+ER-Modelleri üç bölümden oluşur:
+
+
+- Entity (Varlık)
+- Relations (İlişkiler)
+- Attributes (Nitelikler)
+
+Varlıklar (Entity) temel olarak veritabanlarındaki tablolardır, Öğrenci, Çalışan, Müşteri ve Faturalar gibi.
+İlişkiler varlıklar arasındaki bağlantıları gösterir.
+Örneğin, bir Müşterinin faturaları vardır.
+Nitelikler bir varlığın sahip olduğu değerleri gösterir.
+Örneğin, Müşteri varlığının adı ve telefonu olacaktır.
+
+Orijinal diagramlar Chen gösterimi olarak adlandırılır.
+Aşağıda orijinal makaleden bir şekil bulunmaktadır @Chen1976entity.
+
+
+![Simple Er Diagram](images/Chen-1976-Figure-10-simple-er-diagram.png){width=80%}
+
+Diyagram sözdizimi o zamandan beri gelişmiştir ama temeller aynı kalmıştır.
+
+
+
+## Nasıl çalışır?
+
+
+ER modellemesi aşağıdaki şekilde gösterildiği gibi iki şekilde çalışır.
+
+Birinci yol, diyagramlar ve ardından veritabanı tabloları oluşturulmasıdır.
+
+İkinci yol, diyagramlarımızı veritabanı tablolarımızdan tersine mühendislikle elde edebiliriz.
+
+
+{{< include ../course-contents/diagrams/er-model-working-en.md >}}
+
+{{< include ../course-contents/er-model-diagramming-tools-en.qmd >}}
+
+{{< include ../course-contents/er-model-reverse-engineering-tools-en.qmd >}}
+
+
+

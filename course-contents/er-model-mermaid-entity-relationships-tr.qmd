@@ -20,7 +20,7 @@ Bunu aşağıdaki gibi yazabiliriz.
 ```{mermaid}
 %%| echo: true
 erDiagram
-    Ogrenci ||--o{ Ders : kayıt_olur
+    Ogrenci ||--o{ Ders : "kayıt_olur"
 ```
 
 Bu sözdiziminde, aşağıdaki tablo varlıkların kardinalitesini nasıl modelleyebileceğimizi göstermektedir.

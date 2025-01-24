@@ -1,0 +1,233 @@
+# SQL Alt sorgular (Subqueries)
+
+## Alt sorgu tek değer
+
+Bir sorgu yalnızca tek bir değer döndürüyorsa, bunu sql cümlelerinde skaler bir değer kullanacağımız alt sorgu olarak kullanabiliriz.
+
+**Örnek 1**
+
+Diyelim ki, sistemimizdeki en yüksek ikinci değer sahip faturayı bulmak istiyoruz.
+Bu bilgiyi bulmak için aşağıdaki iki sorguyu yazabiliriz
+
+
+```sql
+SELECT MAX(Total) FROM Invoice
+```
+
+Bu, 25,86 değerini döndürür.
+Bu en değerli faturadır.
+Bunu kullanarak ikinci en büyük faturayı bulmak için aşağıdaki sorguyu yazabiliriz.
+
+```sql
+SELECT MAX(Total) FROM Invoice
+WHERE Total < 25.86
+```
+
+Bu sorgu ile ikinci en büyük fatura toplamımızı 23,86 olarak elde ediyoruz.
+
+Ancak bu iki sorguyu tek bir sorgu olarak birleştirebiliriz.
+< operatörünü kullandığımız için, ilk sorguyu ikinci sorguda alt sorgu olarak kullanabiliriz.
+İkinci sorguda, **25.86** olan fatura toplamını parantezlerle değiştiriyoruz ve ilk sorguyu bu parentezlerin içine koyuyoruz.
+
+
+
+
+```sql
+SELECT MAX(Total) FROM Invoice
+WHERE Total < (SELECT MAX(Total) FROM Invoice)
+```
+
+Bu sorgu bize daha önce olduğu gibi aynı bilgileri getirecektir.
+
+
+## Alt sorgu değer listesi
+
+Değer listesi bekleyen IN operatörü için alt sorguları da kullanabiliriz.
+Bu tür sorgular, bazen daha okunabilir sorgular için join kullanımının yerini alır.
+
+En çok alışveriş yapan ilk 10 müşteriyi bulmak istiyorum.
+
+Önce iki sorgu versiyonu yazalım.
+Daha sonra bu 2 sorguyu alt sorgu olarak değiştirelim.
+
+
+```sql
+SELECT CustomerId,SUM(Total) as TotalInvoice FROM Invoice
+GROUP BY CustomerId
+ORDER BY TotalInvoice DESC
+```
+
+Bu bana aşağıdaki sonucu verir.
+
+
+![en çok alişveri̇ş yapan müşteri̇ler](images/top-customers-with-most-purchases.png)
+
+CustomerId değerlerini kopyalayıp yapıştırabilir ve aşağıdaki gibi bir listeye koyabilirim.
+
+> (6, 26, 57, 45, 46, 24, 28, 37, 7, 25)
+
+Daha sonra bu listeyi ikinci bir sorguda kullanabilirim.
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (6, 26, 57, 45, 46, 24, 28, 37, 7, 25)
+```
+
+Ancak bunu alt sorguda da yazabiliriz.
+İlk sorgu ikinci IN() sorgusuna girilecektir.
+Ayrıca ilk sorguyu limit kullanacak şekilde değiştiriyoruz, böylece sadece ilk 10 müşteri gösterilecektir.
+
+
+
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (
+SELECT CustomerId, SUM(Total) as TotalInvoice FROM Invoice
+GROUP BY CustomerId
+ORDER BY  TotalInvoice DESC
+LIMIT 10
+)
+```
+
+Peki, bu sorguyu çalıştırırsak aşağıdaki hatayı alıyoruz.
+
+```sql
+SQL Error [1]: [SQLITE_ERROR] SQL error or missing database (sub-select returns 2 columns - expected 1)
+SQL Hatası [1]: [SQLITE_ERROR] SQL hatası veya eksik veritabanı (alt seçim 2 sütun döndürüyor - beklenen 1
+```
+
+İlk sorgumuz 2 sütun döndürür ancak IN yalnızca bir sütun bekler.
+İlk sorgumuzu aşağıdaki şekilde sadece müşteri id'sini döndürecek şekilde değiştirebiliriz.
+Ayrıca SUM(Toplam) seçmek zorunda değiliz, sadece aşağıdaki sql gibi ORDER BY kullanabiliriz.
+
+
+
+```sql
+SELECT CustomerId FROM Invoice
+GROUP BY CustomerId
+ORDER BY  SUM(Total) DESC
+LIMIT 10
+```
+
+O zaman sorgumuzun tamamı aşağıdaki gibi olacaktır.
+
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (
+SELECT CustomerId FROM Invoice
+GROUP BY CustomerId
+ORDER BY  SUM(Total) DESC
+LIMIT 10
+)
+```
+
+## Alt sorgu select içindeki sütun için
+
+select cümlesi içinde bir alt sorgu da yazabiliriz.
+O zaman alt sorgumuz sonucumuzdaki her satır için çalıştırılacaktır.
+Bu, bir join'i bir alt sorgu ile değiştirmek için kullanılabilir.
+
+
+
+**Example 1* 
+
+Çalışan bilgilerini kaç müşteriye destek verdikleri ile birlikte göstermek istiyoruz.
+Aynı şekilde iki sorgu ile başlayalım ve daha sonra bunları alt sorgu şeklinde birleştirelim.
+
+
+
+```sql
+SELECT E.EmployeeId,e.FirstName,e.LastName,e.Title FROM Employee e 
+```
+
+İkinci sorgu müşteri sayısını bulmak için kullanılacaktır.
+
+```sql
+SELECT * FROM Customer c where c.SupportRepId  = 3
+```
+
+Bu sorgu bize Customer tablosundaki her sütunu verir ancak bizim sadece COUNT ile kaç tane olduklarına  ihtiyacımız var.
+
+
+```sql
+SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = 3
+```
+
+Tamam, bunu ilk sorguya koyalım.
+
+```sql
+SELECT e.EmployeeId,e.FirstName
+,e.LastName,e.Title 
+, (SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = 3) AS SupportedCustomerCount
+FROM Employee e 
+```
+
+
+![desteklenen müşteri sayısı yanlış](images/supported-customer-count-wrong.png)
+
+Desteklenen müşteri sayısı tüm satırlar için 21'dir.
+Where cümlemizde **c.SupportRepId = 3** kullandığımız için bu normaldir.
+Bunu dış sorgudan EmployeeId ile değiştirelim.
+Yani **c.SupportRepId = e.EmployeeId**
+
+
+
+```sql
+SELECT e.EmployeeId,e.FirstName
+,e.LastName,e.Title 
+, (SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = e.EmployeeId) AS SupportedCustomerCount
+FROM Employee e 
+```
+
+![desteklenen müşteri sayısı doğru](images/supported-customer-count-correct.png)
+
+
+
+## Alt sorgu FROM
+
+Bu, alt sorgunun en güçlü biçimidir.
+Bir FROM TABLO yazacağımız yerde, TABLO yerine alt sorgu kullanabiliriz.
+
+**basit örnek 1**
+
+
+```sql
+SELECT * FROM
+(
+SELECT * FROM Customer c 
+WHERE c.Company IS NULL
+)
+```
+
+Şirketi olmayan Müşterileri seçiyoruz.
+Bu çok basit bir örnek ama kullanımı gösteriyor.
+Parantezler arasına hemen hemen her sorguyu yazabilir ve sorgu sonucuna görünüm veya sanal tablo gibi davranabiliriz.
+
+
+
+**basit örnek 2 **
+
+Aşağıdaki sorguda, Employee (Çalışan) ve manager (yönetici) bilgilerini birlikte bulmak için Employee tablosunda self join kullanıyoruz.
+Daha sonra bu sonuç kümesini, Yöneticisinin Soyadı 'A' ile başlayan çalışanları bulmak için filtreliyoruz.
+
+
+
+```sql
+SELECT * FROM 
+(
+SELECT E.EmployeeID
+      ,E.LastName AS EmployerLastName
+      ,E.FirstName AS EmployerFirstName
+      ,E.ReportsTo
+      , M.EmployeeID as ManagerID
+      , M.LastName AS ManagerLastName
+      ,M.FirstName AS ManagerFirstName
+  FROM Employee E 
+  INNER JOIN Employee M
+  ON E.ReportsTo = M.EmployeeID 
+)
+WHERE ManagerLastName LIKE 'A%'
+```
+

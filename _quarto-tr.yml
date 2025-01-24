@@ -66,8 +66,8 @@ book:
         - course-contents/sql-subqueries-tr.qmd
         - course-contents/sql-with-en.qmd
         - course-contents/sql-paging-tr.qmd
-        - course-contents/sql-views-en.qmd
-        - course-contents/sql-virtual-tables-en.qmd
+        - course-contents/sql-views-tr.qmd
+        - course-contents/sql-virtual-tables-tr.qmd
 
     - part: "SQL: Functions Stored Procedures Triggers"
       chapters:

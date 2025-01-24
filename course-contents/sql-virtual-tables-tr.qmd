@@ -1,0 +1,54 @@
+# SQL virtual tables
+
+
+Virtual table jargon is used for objects in the database where their data is not stored in database but they behave like tables in your sql statements.
+
+Canonical example for virtual tables are views.
+We create views, using CREATE VIEW statement, 
+
+Normally, view data is not stored in our database but only query definition is data dictionary.
+See views in course notes for more about this topic.
+
+
+WITH statements also behave like virtual tables.
+Subqueries in FROM Statements are also behave like virtual tables.
+
+Some functions may return table like data and they may be considered as virtual table or inline views.
+generate_series function in sqlite is a good example.
+
+```sql
+SELECT value FROM generate_series(5,100,5);
+```
+
+::: {.callout-warning}
+
+Above sql works in sql CLI after version 3.34, see [release notes SQLite Release 3.34.0 On 2020-12-01](https://www.sqlite.org/releaselog/3_34_0.html)
+
+
+Above sql will **NOT** work in dbeaver due to limitation of sqlite jdbc driver, see following [github xerial/sqlite-jdbc issue 1173](https://github.com/xerial/sqlite-jdbc/issues/1173).
+As of November 2024
+:::
+
+
+
+
+See some other examples
+
+- [oracle json table](https://docs.oracle.com/en/database/oracle/oracle-database/23/adjsn/sql-json-function-json_table.html)
+
+
+
+## Sqlite virtual tables
+
+From [sqlite documentation](https://www.sqlite.org/vtab.html)
+
+> A virtual table is an object that is registered with an open SQLite database connection. From the perspective of an SQL statement, the virtual table object looks like any other table or view. But behind the scenes, queries and updates on a virtual table invoke callback methods of the virtual table object instead of reading and writing on the database file.
+
+There are very interesting use cases for sqlite virtual tables.
+
+- [csv file](https://www.sqlite.org/csv.html)
+- [zip file](https://www.sqlite.org/zipfile.html)
+
+See [the documentation for other virtual tables for sqlite](https://www.sqlite.org/vtablist.html)
+
+

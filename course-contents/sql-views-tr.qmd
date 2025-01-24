@@ -1,0 +1,76 @@
+# SQL views
+
+Views allows you to store your select queries in databases.
+It is very useful for abstracting especially common and complex queries.
+The following figure shows a view that includes columns from multiple tables:
+
+![view example multiple columns from multiple tables](images/view-example1.png)
+
+Views are common concept in databases and all databases supports it.
+See documentation for our example databases.
+
+- [sqlite views](https://www.sqlite.org/lang_createview.html)
+- [sql server views](https://learn.microsoft.com/en-us/sql/relational-databases/views/views?view=sql-server-ver16)
+- [Oracle views](https://docs.oracle.com/en/database/oracle/oracle-database/23/cncpt/partitions-views-and-other-schema-objects.html#GUID-15E7AEDB-9A3F-4B31-AD2D-66253CC822E5)
+
+
+
+
+**simple lab**
+
+
+1. give Chinook database example, join query
+
+
+```sql
+SELECT A.Name AS ArtistName
+, B.Title AS AlbumTitle
+, T.Name  AS TrackName
+FROM Artist A
+INNER JOIN Album B
+ON A.ArtistId  = B.ArtistId 
+INNER JOIN Track T ON T.AlbumId  = B.AlbumId   
+```
+
+2. create view name as select statement
+
+```sql
+CREATE VIEW ArtistTracks
+AS
+SELECT A.Name AS ArtistName
+, B.Title AS AlbumTitle
+, T.Name  AS TrackName
+FROM Artist A
+INNER JOIN Album B
+ON A.ArtistId  = B.ArtistId 
+INNER JOIN Track T ON T.AlbumId  = B.AlbumId   
+```
+
+3. select from view.
+
+```sql
+select * from ArtistTracks;
+```
+
+**note**
+
+Common example in the books is following:
+In client-server databases, it could also be used to control access.
+Instead of giving access to tables, you could give access to view itself. 
+I have never seen this usage.
+
+
+**note**
+
+Views could be target of insert statements if rows in the views correspond to 1-to-1 to underlying tables, for example aggregate queries will never work. 
+
+Sqlite allows this feature when the view is single table only.
+
+I dislike this feature and never uses it.
+
+
+{{< include ../course-contents/sql-views-materialized-en.qmd >}}
+
+
+{{< include ../course-contents/sql-views-system-en.qmd >}}
+

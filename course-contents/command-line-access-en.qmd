@@ -25,4 +25,7 @@ Oracle also provides java based more modern command line interface.
 
 - [sqlcmd](https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility)
 
+Microsoft provide powershell modules for management of Sql Server.
+
+[SQL Server PowerShell](https://learn.microsoft.com/en-us/powershell/sql-server/sql-server-powershell?view=sqlserver-ps)
 

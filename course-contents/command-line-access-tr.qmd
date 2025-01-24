@@ -1,15 +1,28 @@
 # Komut satırı ulaşım
 
+Komut satırı kullanım becerisi, veritabanı geliştiricileri ve yöneticileri için gerekli bir beceridir.
+
+- Üretim veritabanlarında gerekli GUI araçları yüklü olmayabilir.
+- Uzak sunucular, özellikle linux sunucular için, GUI araçları ek çalışma olmadan çalışmayabilir, (ssh tünel vb.)
+- Bazı Oracle sorunları (başlangıç hataları gibi) yalnızca komut satırı kullanılarak çözülebiliyordu.
+
 ## sqlite
 
-- sqlite3
+- [sqlite3](https://www.sqlite.org/cli.html)
 
 ## Oracle
 
 - [sqlplus](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqpug/SQL-Plus-quick-start.html)
 
 
+Oracle ayrıca java tabanlı daha modern komut satırı arayüzü de sağlamaktadır.
+
+- [SQLcl](https://www.oracle.com/database/sqldeveloper/technologies/sqlcl/)
+
 ## SQL Server
 
 - [sqlcmd](https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility)
 
+Microsoft, Sql Server yönetimi için powershell mödülü sunmaktadır.
+
+[SQL Server PowerShell](https://learn.microsoft.com/en-us/powershell/sql-server/sql-server-powershell?view=sqlserver-ps)

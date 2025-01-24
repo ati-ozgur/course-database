@@ -7,7 +7,7 @@ Also, old boring technologies will have a lot of utilities for different needs.
 For example, schema comparison is widely supported in old boring databases but please look at for same use case in document databases.
 
 
-## Use cases for relational database is a very good first choice
+## relational database is a very good first choice for a lot of use cases
 
 You should always start with relational database when starting your application.
 Premature optimization is root of all evil.
@@ -15,7 +15,7 @@ Then, **if needed** add other technologies to your application.
 
 For a lot of use cases, relational databases are very good first choice.
 You could use facade design pattern when you are implementing your API.
-Then **when needed**, you could switch underlying implementation to different technologies as need.
+Then **when needed**, you could switch underlying implementation to different technologies.
 This could be done with a lot of use case like below:
 
 - Events 
@@ -43,7 +43,7 @@ This way, instead of starting with a lot of  technologies like kafka, redis, ela
 
 Oracle supports [Oracle Object-Relational](https://docs.oracle.com/en/database/oracle/oracle-database/23/adobj/index.html) paradigm.
 Object databases was popular for a time and oracle incorporated these features.
-I have never seen these features used in the production oracle databases.
+I have never seen these object features used in the production oracle databases.
 
 SQL Server and Sqlite does not support Object-Relational paradigm.
 Among open source database systems, [postgres support it](https://learn.postgreshelp.com/courses/postgresql-tutorial-dba/lesson/object-relational-database-management-system)

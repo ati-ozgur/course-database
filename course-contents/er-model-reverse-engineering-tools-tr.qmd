@@ -1,0 +1,22 @@
+## ER model tersine mühendislik araçları
+
+İkinci çalışma şekli, mevcut veritabanının tersine mühendisliği daha yaygındır.
+Mevcut bir veritabanının tersine mühendisliğini yaparız ve onun ER Diyagramını elde ederiz.
+Örneğin, DBeaver'ın ER Diyagramları vardır.
+
+
+![DBeaver ER Diagram](images/dbeaver-er-diagram.png)
+
+1. Bir bağlantı açın
+2. tabloları seçin
+3. açılan pencerede ER Diyagram sekmesini seçin
+
+
+ER diyagramlarını okumak, mevcut veritabanı yapısını daha kolay anlamanızı sağladığı için faydalı bir beceridir.
+
+[Oracle örnek HR ve OE örneğini kendi dokümanlarında görün](https://docs.oracle.com/en/database/oracle/oracle-database/18/comsc/schema-diagrams.html#GUID-01BFEF14-C6BD-42CD-8558-DDD214DB3AE0)
+
+Oracle SQL Developer, Oracle veritabanı için kendi tersine mühendislik araçlarına sahiptir.
+TODO bağlantıları ekleyin.
+
+Bu amaç için bir diğer araç ise Schema Spy'dır.

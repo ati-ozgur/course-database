@@ -1,0 +1,15 @@
+## ER Modelleme araçları
+
+Birinci yol için, diyagramlardan veritabanı betiklerinin oluşturulması için çok sayıda araç vardır.
+
+Örnekler:
+
+
+- [Enterprise Architect](https://sparxsystems.com/products/ea/)
+- [Toad](https://blog.toadworld.com/what-an-er-diagram-is-and-tools-that-help-build-and-alter-them)
+- [LucidChart ER Diyagram](https://www.lucidchart.com/pages/er-diagrams)
+
+Bir aracın nasıl çalıştığını görmek için aşağıdaki videoyu izleyin. 
+
+- [LucidChart Tutorial: How to Create an ERD](https://www.youtube.com/watch?v=RBZtPhZkUZM)
+

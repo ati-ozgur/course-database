@@ -36,11 +36,11 @@ Birinci yol, diyagramlar ve ardından veritabanı tabloları oluşturulmasıdır
 İkinci yol, diyagramlarımızı veritabanı tablolarımızdan tersine mühendislikle elde edebiliriz.
 
 
-{{< include ../course-contents/diagrams/er-model-working-en.md >}}
+{{< include ../course-contents/diagrams/er-model-working-tr.md >}}
 
-{{< include ../course-contents/er-model-diagramming-tools-en.qmd >}}
+{{< include ../course-contents/er-model-diagramming-tools-tr.qmd >}}
 
-{{< include ../course-contents/er-model-reverse-engineering-tools-en.qmd >}}
+{{< include ../course-contents/er-model-reverse-engineering-tools-tr.qmd >}}
 
 
 

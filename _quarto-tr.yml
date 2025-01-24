@@ -35,6 +35,11 @@ book:
         - course-contents/sql-clients-GUI-tr.qmd
         - course-contents/database-connections-tr.qmd
 
+    - part: "Veritabanı Tasarım Giriş"
+      chapters:
+        - course-contents/er-model-en.qmd
+        - course-contents/er-model-mermaid-diagrams-en.qmd
+
     - part: "SQL Giriş"
       chapters:
         - course-contents/sql-why-learn-en.qmd
@@ -44,20 +49,26 @@ book:
         - course-contents/sql-dialects-tr.qmd
         - course-contents/sql-command-types-tr.qmd
 
-    - part: "SQL DQL"
+    - part: "SQL DQL (Select)"
       chapters:
         - course-contents/sql-select-tr.qmd
         - course-contents/sql-comments-tr.qmd
         - course-contents/sql-select-distinct-tr.md
         - course-contents/sql-where-tr.qmd
         - course-contents/sql-null-tr.qmd
+        - course-contents/sql-functions-null-en.qmd
         - course-contents/sql-functions-aggregate-tr.qmd
         - course-contents/sql-group-by-tr.qmd
         - course-contents/sql-orderby-tr.qmd
         - course-contents/sql-limit-top-tr.md
-        - course-contents/sql-paging-tr.qmd
         - course-contents/sql-set-tr.qmd
         - course-contents/sql-join-tr.qmd
+        - course-contents/sql-subqueries-en.qmd
+        - course-contents/sql-with-en.qmd
+        - course-contents/sql-paging-tr.qmd
+        - course-contents/sql-views-en.qmd
+        - course-contents/sql-virtual-tables-en.qmd
+
     - part: "SQL: Functions Stored Procedures Triggers"
       chapters:
         - course-contents/sql-functions-scalar-en.qmd
@@ -72,22 +83,38 @@ book:
     - part: "SQL DML-DCL-TCL"
       chapters:
         - course-contents/sql-DML-data-manipulation-language-tr.qmd
+        - course-contents/sql-DML-insert-en.qmd
+        - course-contents/sql-DML-update-en.qmd
+        - course-contents/sql-DML-delete-en.qmd
         - course-contents/sql-truncate-table-tr.md
         - course-contents/sql-DDL-data-definition-language-tr.qmd
         - course-contents/sql-DCL-data-control-language-tr.qmd
         - course-contents/sql-TCL-transactional-control-language-tr.qmd
-    - part: "Veritabanı Tasarımı"
+    - part: "Veri tabanı Kavramları"
+      chapters:
+        - course-contents/database-concepts-ACID-en.qmd
+        - course-contents/database-concepts-isolation-en.qmd
+        - course-contents/database-concepts-pages.qmd
+        - course-contents/database-concepts-sqlite-journal-modes-en.qmd
+        - course-contents/database-concepts-import-export-en.qmd
+        - course-contents/database-concepts-backup-restore-en.qmd
+
+    - part: "Veritabanı Tasarımı İleri"
       chapters:
         - course-contents/database-design-tr.qmd
-        - course-contents/sql-data-types-tr.qmd
         - course-contents/database-design-primary-key-tr.qmd
         - course-contents/database-design-primary-key-uuid-guid-en.qmd
         - course-contents/database-desing-patterns-en.qmd
+        - course-contents/sql-data-types-tr.qmd
         - course-contents/sql-constraints-en.qmd
         - course-contents/database-design-from-user-interfaces-tr.qmd
         - course-contents/database-design-from-spreadsheets-en.qmd
         - course-contents/database-design-questions-answers-en.qmd
         - course-contents/database-design-normal-forms.qmd
+
+    - part: "SQL Tuning"
+      chapters:
+        - course-contents/sql-indexes-intro-en.qmd
 
     - course-contents/suggested-readings-tr.md
     - course-contents/suggested-books-tr.md

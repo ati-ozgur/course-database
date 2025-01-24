@@ -5,6 +5,13 @@ Ancak öğrenme deneyimi için bilgisayarınıza gerekli sunucu ve istemci araç
 
 İyi bilinen veritabanı oyun alanları şunlardır:
 
+
+## Sqlite Online  {.unnumbered .unlisted}
+
+- [sqlite online](https://sqliteonline.com/)
+
+## sqlfiddle  {.unnumbered .unlisted}
+
 - [sqlfiddle](https://sqlfiddle.com/) aşağıdaki veri tabanlarını desteklemektedir.
 
     * SQL Server
@@ -15,14 +22,8 @@ Ancak öğrenme deneyimi için bilgisayarınıza gerekli sunucu ve istemci araç
     * Oracle
 
 
-## Oracle
+## Live SQL Oracle  {.unnumbered .unlisted}
 
-[livesql oracle](https://livesql.oracle.com/apex/f?p=590:1000)
-
-
-## Sqlite
-
-
-- [sqlite online](https://sqliteonline.com/)
+[livesql oracle](https://livesql.oracle.com/)
 
 

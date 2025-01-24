@@ -24,7 +24,7 @@ Well known database playgrounds are following:
 
 ## Live SQL Oracle  {.unnumbered .unlisted}
 
-[livesql oracle](https://livesql.oracle.com/apex/f?p=590:1000)
+[livesql oracle](https://livesql.oracle.com/)
 
 
 

@@ -56,7 +56,7 @@ book:
         - course-contents/sql-select-distinct-tr.md
         - course-contents/sql-where-tr.qmd
         - course-contents/sql-null-tr.qmd
-        - course-contents/sql-functions-null-en.qmd
+        - course-contents/sql-functions-null-tr.qmd
         - course-contents/sql-functions-aggregate-tr.qmd
         - course-contents/sql-group-by-tr.qmd
         - course-contents/sql-orderby-tr.qmd

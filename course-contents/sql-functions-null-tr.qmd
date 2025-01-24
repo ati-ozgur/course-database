@@ -1,0 +1,12 @@
+# SQL NULL Fonksiyonları
+
+{{< include ../course-contents/sql-functions-null-sql-standard-tr.qmd >}}
+
+{{< include ../course-contents/sql-functions-null-sqlite-tr.qmd >}}
+
+
+{{< include ../course-contents/sql-functions-null-oracle-tr.qmd >}}
+
+
+
+{{< include ../course-contents/sql-functions-null-sql-server-tr.qmd >}}

@@ -1,0 +1,8 @@
+## SQL NULL Fonksiyonları sqlite
+
+SQL Standart fonksiyonlarına bakın.
+SQL Standardı coalesce ve nullif dışında ekstra sqlite null işleme fonksiyonu yoktur.
+
+
+
+

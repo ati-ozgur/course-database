@@ -1,0 +1,48 @@
+## SQL NULL Fonksiyonları Oracle
+
+**COALESCE**
+
+Bakınız, SQL standardı. 
+
+**NULLIF**
+
+Bakınız, SQL standardı. 
+
+
+**NVL(x,y)**
+
+NVL fonksiyonu null değeri varsayılan değerle değiştirmenizi sağlar.
+İlk bağımsız değişken null ise, NVL'nin ikinci bağımsız değişkeni döndürülür.
+Coalesce fonksiyonu nvl'den daha güçlüdür ve coalesce diğer veritabanlarında da çalışır.
+Coalesce kullanın, NVL kullanmayın.
+
+
+
+```sql
+SELECT NVL(NULL,'DEFAUL VALUE') FROM DUAL;
+```
+
+**NVL2(x,y,z)**
+
+NVL2 3 parametre ile çalışır.
+Eğer x null değilse, y döndürür.
+Eğer x null ise, z döndürür.
+
+Bu fonksiyon kolayca coalesce ile de değiştirilebilir.
+NVL2 kullanmayın.
+
+
+```sql
+SELECT NVL2(NULL,'Y','Z') FROM DUAL;
+```
+
+```sql
+SELECT NVL2('NOT NULL','Y','Z') FROM DUAL;
+```
+
+Oracle'daki null ile ilgili daha diğer işlevler için, aşağıdaki makaleye bakınız:
+
+- [null-related-functions](https://oracle-base.com/articles/misc/null-related-functions)
+
+
+

@@ -1,0 +1,98 @@
+## With Özyinelemeli (Recursive)
+
+
+Oracle, 1980'lerde özyinelemeli sorgular için CONNECT BY operatörünü sunmuştur.
+Ancak özyinelemeli CTE'ler daha kullanışlıdır.
+Ve bu kullanım SQL99'da  standartlaştırılmıştır.
+Bkz. [modern sql sitesinde özyinelemeli sorgu veritabanı desteği](https://modern-sql.com/caniuse/with_recursive_(top_level)).
+
+
+Özyinelemeli CTE, seçme kısmında kendisine atıfta bulunan bir CTE'dir.
+Aşağıdaki gibi iki parçalı sql olarak yazabiliriz.
+Aşağıdaki sorguda **başlangıç-select** ve **ozyinelemeli-select** parçaları var ve bunlar UNION veya UNION ALL operatörleri kullanılarak birleştirilir.
+
+
+
+```sql
+WITH RECURSIVE cte_name AS (
+başlangıç-select
+UNION [ALL]
+özyinelemeli-select
+)
+cte_sorgusu
+```
+
+Daha iyi bir örnek aşağıdadır.
+
+```sql
+WITH RECURSIVE cte_isim AS (
+   SELECT ... FROM TABLE -- başlangıç-select
+UNION ALL
+   SELECT ... FROM cte_isim -- özyinelemeli-select, cte_isim'e yapılan kendi referansına dikkat edin
+) 
+SELECT ... FROM cte_isim --cte_sorgusu
+
+```
+
+İlk **başlangıç-select** cümlemizi normal şekilde yazarız.
+
+Daha sonra, **özyinelemeli-select** ve cte_sorgusu kısımlarımızın her ikisi de cte_isim'imize atıfta bulunur.
+
+
+
+
+** Örnek 1a: sayı sayma** 
+
+[sqlite dokümantasyonundan değiştirilmiştir](https://www.sqlite.org/lang_with.html).
+Aşağıdaki sorgu 100'e kadar sayar.
+Bu sorguda cte_isim'in **num** olduğunu ve üç kez başvurulduğunu unutmayın.
+
+
+```sql
+WITH RECURSIVE num(x) AS (
+SELECT 1
+UNION ALL
+SELECT x+1 FROM num
+LIMIT 100
+)
+SELECT x FROM num;
+
+```
+
+Dikkat edilmesi gereken ilk şey, RECURSIVE anahtar kelimesini WITH'e ekledik.
+RECURSIVE, sqlite, Oracle ve SQL Server'daki yinelemeli CTE'ler için gerekli değildir ancak sisteminizi daha sonra inceleyecek diğer kişiler için özyineleme durumunu açık hale getirmek için eklemek iyi bir fikirdir.
+
+
+**Örnek 1b: Sayıları tekrar sayma** 
+
+Aynı örnek, ancak sütun adları cte_name(c1,c2)'de verilmemiştir.
+Ancak ilk seçimde takma ad olarak verilmiştir.
+
+
+```sql
+WITH RECURSIVE num AS (
+SELECT 1 as x
+UNION ALL
+SELECT x+1 FROM num
+LIMIT 100
+)
+SELECT x FROM num;
+
+```
+
+**Örnek 2 sayıların toplanması** 
+
+Sayıları toplamaya yönelik bir örnek daha oluşturalım.
+
+WITH RECURSIVE TotalSum AS (
+  SELECT
+    0 AS Count,
+    0 AS Total
+  UNION ALL
+  SELECT
+    Count + 1,
+    Total + Count
+  FROM TotalSum
+  WHERE Count <= 100
+)
+SELECT * FROM TotalSum;

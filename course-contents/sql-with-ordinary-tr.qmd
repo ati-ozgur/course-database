@@ -1,0 +1,161 @@
+## SQL With Sıradan
+
+Sıradan CTE'ler görünümler (views) veya türetilmiş tablolar (alt sorgulardan) gibi davranırlar ancak onlara kıyasla daha kolay anlaşılırlar.
+
+
+Sıradan CTE'leri oluşturmak kolaydır.
+Aşağıda basit bir örnek verilmiştir.
+WITH ile başlayıp geçici sonuç kümesinin adını veriyoruz.
+Parantezlerin arasına sorgumuzu yazıyoruz.
+Ardından parantezlerden sonra, sanki görünüm veya tabloymuş gibi daha önce verdiğimiz ismi kullanarak seçim yapabiliriz.
+
+
+```sql
+WITH Name
+(
+)
+select * from Name
+```
+Aşağıda, Employee tablosunun self join örneğini kullanan ve bu temp tablosunu sorgulayan bir örnek görebilirsiniz.
+
+
+```sql
+WITH EmployeeManager as
+(
+SELECT E.EmployeeID
+      ,E.LastName AS EmployerLastName
+      ,E.FirstName AS EmployerFirstName
+      ,E.ReportsTo
+      , M.EmployeeID as ManagerID
+      , M.LastName AS ManagerLastName
+      ,M.FirstName AS ManagerFirstName
+  FROM Employee E 
+  INNER JOIN Employee M
+  ON E.ReportsTo = M.EmployeeID 
+)
+SELECT * FROM EmployeeManager WHERE ManagerLastName LIKE 'A%'
+
+```
+
+Yukarıdaki WITH sorgusu işlevsel olarak, aşağıdaki FROM alt sorgusuna (FROM-sub-query) eşdeğerdir.
+
+
+```sql
+SELECT * FROM  
+(
+SELECT E.EmployeeID
+      ,E.LastName AS EmployerLastName
+      ,E.FirstName AS EmployerFirstName
+      ,E.ReportsTo
+      , M.EmployeeID as ManagerID
+      , M.LastName AS ManagerLastName
+      ,M.FirstName AS ManagerFirstName
+  FROM Employee E 
+  INNER JOIN Employee M
+  ON E.ReportsTo = M.EmployeeID 
+)
+WHERE ManagerLastName LIKE 'A%'
+
+```
+
+CTE'lerin ilk avantajı, EmployeeManager gibi geçici sonuç kümemize anlamlı isimler verebilmemizdir.
+
+
+CTE'lerin ikinci avantajı, sonuç kümesi tanımının sorgu başında olması sebebiyle, group by ve diğer ifadelerin doğal olarak bunu takip etmesidir.
+
+CTE'lerin üçüncü avantajı, WITH ifadesindeki önceki sonuç kümelerini kullanarak yeni SQL cümlelerini yinelemeli olarak oluşturabilmemizdir.
+
+Örneğin, satış temsilcilerimizden hangisinin en fazla satıştan sorumlu olduğunu bulmak istiyoruz.
+
+
+```sql
+WITH SALES_EMP_CUS as
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+)
+SELECT * FROM SALES_EMP_CUS
+```
+
+Sadece müşterileri destekleyen satış çalışanlarını bularak başlıyoruz.
+Sonuç kümemize CustomerId'yi de ekliyoruz.
+Burada **c.SupportRepId IS NOT NULL** bize bu değerleri veriyor.
+
+
+Daha sonra müşteri ID bilgisi ile fatura tablosunu birleştirerek müşteriye göre toplam satış rakamlarını elde ediyoruz.
+
+```sql
+WITH SALES_EMP_CUS AS
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+), 
+CUSTOMER_SALES_TOTALS AS
+(
+	SELECT CustomerId, SUM(Total) as total_sales
+	FROM Invoice
+	GROUP BY CustomerId
+)
+SELECT * FROM CUSTOMER_SALES_TOTALS
+```
+
+Daha sonra son sonucumuzu bulmak için önceki sonuçlara üçüncü sorguyu ekleriz.
+
+```sql
+WITH SALES_EMP_CUS AS
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+), 
+CUSTOMER_SALES_TOTALS AS
+(
+	SELECT CustomerId, SUM(Total) as total_sales
+	FROM Invoice
+	GROUP BY CustomerId
+)
+--SELECT * FROM CUSTOMER_SALES_TOTALS
+SELECT SEC.EmployeeId, SUM(CST.total_sales) AS TotalSalesForEmployee 
+FROM SALES_EMP_CUS AS SEC 
+INNER JOIN CUSTOMER_SALES_TOTALS AS CST ON CST.CustomerId = SEC.CustomerId
+GROUP BY SEC.EmployeeId;
+
+```
+
+Eğer üçüncü sonuç kümesi üzerinde daha fazla çalışmamız gerekirse, onu aşağıdaki gibi WITH ifadelerinin içine koyabiliriz.
+
+
+
+```sql
+WITH SALES_EMP_CUS AS
+(
+	SELECT 
+	e.EmployeeId,e.FirstName,e.LastName,e.Title, c.CustomerId
+	FROM Employee e 
+	INNER JOIN Customer c on c.SupportRepId = e.EmployeeId
+	WHERE c.SupportRepId  IS NOT NULL 
+), 
+CUSTOMER_SALES_TOTALS AS
+(
+	SELECT CustomerId, SUM(Total) as total_sales
+	FROM Invoice
+	GROUP BY CustomerId
+),
+EMP_SALES AS
+(
+SELECT SEC.EmployeeId, SUM(CST.total_sales) AS TotalSalesForEmployee 
+FROM SALES_EMP_CUS AS SEC 
+INNER JOIN CUSTOMER_SALES_TOTALS AS CST ON CST.CustomerId = SEC.CustomerId
+GROUP BY SEC.EmployeeId
+
+)
+SELECT * FROM EMP_SALES
+```

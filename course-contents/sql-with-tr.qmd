@@ -15,7 +15,7 @@ Niçin View veya sanal-türetilmiş tablolar (alt sorgulardan) yerine CTE'ler ku
 2. Özyinelemeli
 
 
-{{< include ../course-contents/sql-with-ordinary-en.qmd >}}
+{{< include ../course-contents/sql-with-ordinary-tr.qmd >}}
 
 
 {{< include ../course-contents/sql-with-recursive-en.qmd >}}

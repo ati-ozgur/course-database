@@ -17,7 +17,7 @@ recursive-select
 cte_query
 ```
 
-Better example will be below.
+Better example is below.
 
 ```sql
 WITH RECURSIVE cte_name AS (

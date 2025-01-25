@@ -3,13 +3,13 @@
 With statements are also called Common Table Expressions or CTEs.
 Why should we CTEs instead of views or derived tables (from sub-queries)?
 
-- CTE Temporary, view permanent
+- CTEs are Temporary. Views are permanent
 - readable, literate sql
 - nesting
 - Recursion
 
 
-They are two types of CTEs.
+There are two types of CTEs.
 
 1. Ordinary
 2. Recursive

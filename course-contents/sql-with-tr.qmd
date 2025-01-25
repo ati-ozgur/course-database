@@ -1,0 +1,28 @@
+# SQL With
+
+
+With ifadeleri Ortak Tablo İfadeleri (Common Table Expressions CTE) olarak ta adlandırılır.
+Niçin View veya sanal-türetilmiş tablolar (alt sorgulardan) yerine CTE'ler kullanmalıyız?
+
+- CTE'ler Geçicidir, VIEW'lar kalıcıdır
+- Daha okunabilir ve anlaşılır sql
+- iç içe yerleştirme
+- Özyineleme (Recursion)
+
+İki tür CTE vardır.
+
+1. Sıradan
+2. Özyinelemeli
+
+
+{{< include ../course-contents/sql-with-ordinary-en.qmd >}}
+
+
+{{< include ../course-contents/sql-with-recursive-en.qmd >}}
+
+
+
+## Önerilen okumalar
+
+- [rahat okunur sql](https://modern-sql.com/use-case/literate-sql)
+

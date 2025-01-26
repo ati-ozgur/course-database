@@ -1,20 +1,21 @@
-# SQL virtual tables
+# SQL Sanal Tablolar (virtual tables)
 
+Sanal tablo jargonu, veritabanında verileri saklanmayan ancak sql ifadelerinizde tablo gibi davranan nesneler için kullanılır.
 
-Virtual table jargon is used for objects in the database where their data is not stored in database but they behave like tables in your sql statements.
+Görünümler (views) sanal tablolar için en bilinen örnektir.
+CREATE VIEW ifadesini kullanarak görünümler oluşturuyoruz.
 
-Canonical example for virtual tables are views.
-We create views, using CREATE VIEW statement, 
+Normalde, görünüm verileri veritabanımızda saklanmaz.
+Yalnızca görünüm sorgu tanımı veri sözlüğünde saklanır.
+Bu konu hakkında daha fazla bilgi için ders notlarındaki görünümlere @sec-sql-views bakınız.
 
-Normally, view data is not stored in our database but only query definition is data dictionary.
-See views in course notes for more about this topic.
+WITH ifadeleri de sanal tablolar gibi davranır.
+Ayrıca FROM ifadelerinde tablo yerine alt sorgu kullanıldığında bu alt sorgular da sanal tablolar gibi davranır.
 
+Bazı fonksiyonlar tablo benzeri veri döndürebilir.
+Bu fonksiyon sonuçları sanal tablo veya satır içi görünümler olarak düşünülebilir.
+sqlite'daki generate_series fonksiyonu iyi bir örnektir.
 
-WITH statements also behave like virtual tables.
-Subqueries in FROM Statements are also behave like virtual tables.
-
-Some functions may return table like data and they may be considered as virtual table or inline views.
-generate_series function in sqlite is a good example.
 
 ```sql
 SELECT value FROM generate_series(5,100,5);
@@ -22,33 +23,35 @@ SELECT value FROM generate_series(5,100,5);
 
 ::: {.callout-warning}
 
-Above sql works in sql CLI after version 3.34, see [release notes SQLite Release 3.34.0 On 2020-12-01](https://www.sqlite.org/releaselog/3_34_0.html)
+Yukarıdaki sql, 3.34 sürümünden sonraki sql CLI'da çalışır, bkz. [release notes SQLite Release 3.34.0 On 2020-12-01](https://www.sqlite.org/releaselog/3_34_0.html)
 
 
-Above sql will **NOT** work in dbeaver due to limitation of sqlite jdbc driver, see following [github xerial/sqlite-jdbc issue 1173](https://github.com/xerial/sqlite-jdbc/issues/1173).
-As of November 2024
+Yukarıdaki sql, sqlite jdbc sürücüsünün sınırlamaları nedeniyle dbeaver'da **ÇALIŞMAYACAKTIR**, bakınız: [github xerial/sqlite-jdbc issue 1173](https://github.com/xerial/sqlite-jdbc/issues/1173).
+
+Ocak 2025'te kontrol edilmiştir.
 :::
 
 
 
 
-See some other examples
+Diğer bazı örneklere bakın
 
 - [oracle json table](https://docs.oracle.com/en/database/oracle/oracle-database/23/adjsn/sql-json-function-json_table.html)
 
 
 
-## Sqlite virtual tables
+## Sqlite Sanal Tabloları (virtual tables)
 
-From [sqlite documentation](https://www.sqlite.org/vtab.html)
+- [sqlite dokümantasyonundan](https://www.sqlite.org/vtab.html)
 
-> A virtual table is an object that is registered with an open SQLite database connection. From the perspective of an SQL statement, the virtual table object looks like any other table or view. But behind the scenes, queries and updates on a virtual table invoke callback methods of the virtual table object instead of reading and writing on the database file.
+>Sanal tablo, açık bir SQLite veritabanı bağlantısıyla kayıtlı bir nesnedir. 
+> Bir SQL ifadesinin perspektifinden, sanal tablo nesnesi diğer herhangi bir tablo veya görünüm gibi görünür. 
+> Ancak sahne arkasında, sanal tablodaki sorgular ve güncellemeler, veritabanı dosyasında okuma ve yazma yapmak yerine sanal tablo nesnesinin geri çağırma yöntemlerini çağırır.
 
-There are very interesting use cases for sqlite virtual tables.
+Sqlite sanal tablolarının çok ilginç kullanım örnekleri var.
 
 - [csv file](https://www.sqlite.org/csv.html)
 - [zip file](https://www.sqlite.org/zipfile.html)
 
-See [the documentation for other virtual tables for sqlite](https://www.sqlite.org/vtablist.html)
-
+[sqlite için diğer sanal tabloların belgelerine](https://www.sqlite.org/vtablist.html) bakın
 

@@ -1,4 +1,4 @@
-# SQL views
+# SQL Görünümler (Views) {#sec-sql-views}
 
 Views allows you to store your select queries in databases.
 It is very useful for abstracting especially common and complex queries.

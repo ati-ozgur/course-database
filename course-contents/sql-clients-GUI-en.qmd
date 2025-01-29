@@ -19,7 +19,10 @@ Different connections to databases could be seen in the right side of the screen
 There are a lot of other GUI tools for sqlite see some examples below:
 
 - [DB Browser for SQLite](https://sqlitebrowser.org)
-	
+
+- [SQLite Studio](https://sqlitestudio.pl)
+
+
 ## Oracle
 
 - [SQL Developer Oracle](https://www.oracle.com/database/sqldeveloper/)

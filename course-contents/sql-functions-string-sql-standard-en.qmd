@@ -16,7 +16,7 @@ Useful, for replacing null values.
 - **concat**
 
 Normally, string concatenation is accomplished using || operator but this function could also be used.
-string concatenation
+SQL Server uses + for concatenation.
 
 SQL server has also CONCAT_WS function.
 

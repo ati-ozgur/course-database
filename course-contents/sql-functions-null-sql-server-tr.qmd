@@ -1,9 +1,4 @@
-## SQL NULL functions SQL Server
-
-
-### NULL Functions SQL Server
-
-
+# SQL NULL functions SQL Server
 
 - ISNULL(kolon/degisken,**deger**)
 - Eğer kolon/degişken null ise **degeri** döndürür.

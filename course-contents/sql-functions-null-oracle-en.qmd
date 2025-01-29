@@ -1,4 +1,4 @@
-## SQL NULL functions Oracle
+# SQL NULL functions Oracle
 
 **COALESCE**
 

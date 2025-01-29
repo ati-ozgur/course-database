@@ -1,4 +1,4 @@
-## SQL NULL Fonksiyonları SQL Standard
+# SQL NULL Fonksiyonları SQL Standard
 
 **coalesce(X,Y,...)**
 

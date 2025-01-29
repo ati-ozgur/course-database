@@ -13,6 +13,16 @@ aggregate_function(DISTINCT|ALL ifade)
 
 kullanılabilir.
 
+Aşağıdaki sorgu 3 farklı değer, 59,57,59 döndürecektir çünkü çalışan tablosunda aynı FirstName değerleri vardır.
+Eğer kullanılmazsa ALL varsayılan değerdir.
+
+
+```sql
+SELECT COUNT(c.FirstName), COUNT(DISTINCT c.FirstName), COUNT(ALL c.FirstName)
+FROM Customer c;
+```
+
+
 Ifade genellikle bir kolon ismidir ama SQL'in anladığı tüm ifadeler kullanılabilir.
 Örneğin aşağıda ismi E ile başlayanlar için 0 veya 1 dönüyor.
 Arkasından bu ifade toplanarak kaç tane ismin E ile başladığı görülebiliyor.

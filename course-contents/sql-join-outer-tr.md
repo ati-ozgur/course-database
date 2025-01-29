@@ -9,7 +9,7 @@
 
 ![join-left-example1-en](images/join-left-example1-en.png)
 ![join-right-example1-en](images/join-right-example1-en.png)
-![join-outer-example1-en](images/join-outer-example1-en.png)
+![join-full-outer-example1-en](images/join-full-outer-example1-en.png)
 
 
 ![join-left-example1-en](images/join-left-example1-en.png)
@@ -38,7 +38,7 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 ## Full Outer Join  - Ful Dış Birleşim
 
 
-![join-left-example1-en](images/join-outer-example1-en.png)
+![join-left-example1-en](images/join-full-outer-example1-en.png)
 
 SQL-full-outer-join-syntax-ansi-sql-92
 

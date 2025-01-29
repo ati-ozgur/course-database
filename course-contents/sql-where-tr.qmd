@@ -155,6 +155,11 @@ SELECT * from Customer c WHERE C.FirstName LIKE '%A%';
 ```
 
 Dikkat edilmesi gereken şey, SQLite varsayılan olarak yalnızca ASCII karakterleri için büyük/küçük harfleri anlar.
+Ö harfi ASCII olmadığı için aşağıdaki sorguda 0, false dönülmektedir.
+
+```sql
+SELECT 'a' LIKE 'A','ö' LIKE 'Ö' 
+```
 
 
 Aşağıdaki sorgu Lu ile başlayan arkasından herhangi bir harf olan ve s ile biten adları getirir.

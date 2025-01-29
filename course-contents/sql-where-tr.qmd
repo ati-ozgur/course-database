@@ -45,9 +45,38 @@ select * from Employee where EmployeeId >= 5;
 
 ## IN operatörü
 
+Verilen değerin bir liste içinde olup olmadığını kontrol ederiz.
+Örneğin aşağıdaki komut EmployeeId 2, 5 veya 8 olan çalışanları getirecektir.
+
 ```sql
-select * from Employee where EmployeeId IN (2,5,9);  
+SELECT * FROM Employee WHERE EmployeeId IN (2,5,8);  
 ```
+IN komutu aşağıdaki OR kullanımına eşittir ama daha kısa, okunur ve anlaşılır olduğu için tercih edilir.
+
+```sql
+SELECT * from Employee WHERE 
+EmployeeId = 2 OR
+EmployeeId = 5 OR
+EmployeeId = 8
+;  
+```
+NOT kullanarak bu listede içinde olmayanlar getirilebilir.
+
+```sql
+SELECT * FROM Employee WHERE EmployeeId NOT IN (2,5,8);  
+```
+```sql
+SELECT * FROM Employee WHERE EmployeeId NOT IN (2,5,8);  
+```
+Başka bir örnek
+
+```sql
+SELECT * FROM Track t 
+WHERE t.MediaTypeId  IN (1,2)
+```
+
+Birleştirme (Join) konusunda IN operatörünün bazen 2 tabloyu birleştirmek için inner join yerine kullanılabileceğini göreceğiz.
+
 
 ## Between Arasında  operatörü
 

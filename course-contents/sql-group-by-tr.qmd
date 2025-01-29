@@ -43,7 +43,29 @@ order By total_sales desc;
 
 Fatura verilerine ilişkin daha fazla bilgi edinmek için diğer toplama (aggregate)fonksiyonları kullanılabilir.
 
+Aşağıdaki sorgu her albumdeki parça sayısını göstermektedir.
 
+```sql
+SELECT 
+t.AlbumId,
+COUNT(t.TrackId) AS ParcaSayisi
+FROM Track t 
+GROUP BY t.AlbumId 
+ORDER BY 2
+```
+
+
+Aşağıdaki sorgu parça sayısı 15 ile 20 arasında olab albumleri göstermektedir.
+
+```sql
+SELECT 
+t.AlbumId,
+COUNT(t.TrackId) AS ParcaSayisi
+FROM Track t 
+GROUP BY t.AlbumId 
+HAVING ParcaSayisi BETWEEN 15 and 20
+ORDER BY 2 DESC
+```
 
 **GROUP BY gerçek yaşam örneği**
 

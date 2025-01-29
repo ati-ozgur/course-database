@@ -212,6 +212,35 @@ SELECT * from Customer c WHERE  C.FirstName LIKE '_[a]%'
 --SELECT * from Customer c WHERE C.FirstName LIKE '_[^a]%'
 ```
 
+
+
+## SQLite GLOB operatörü
+
+GLOB operatörü LIKE'a benzer ama joker karakterleri olarak komut satırında da kullanılan yıldız * ve soru işareti ? karakterlerini kullanır.
+Aynı zamanda karakter aralığına izin verir.
+
+
+```sql
+SELECT * FROM Track t 
+WHERE t.Name GLOB 'Man*'
+```
+
+
+```sql
+SELECT * FROM Track t 
+WHERE t.Name GLOB '*Man'
+```
+
+Aşağıdaki örnekte Lo ile başlayan arkasında 3. karakteri s veya v olan kayıtları getiriyoruz.
+Buda bize Lost ve Love gibi kayıtları aynı anda getiriyor.
+
+
+```sql
+SELECT * FROM Track t 
+WHERE t.Name GLOB 'Lo[sv]*'
+```
+
+
 ## Koşulların zincirlenmesi
 
 - 3'ten fazla koşulu zincirlemeniz gerektiğinde parantez kullanın.

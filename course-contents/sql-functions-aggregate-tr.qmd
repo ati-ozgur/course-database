@@ -115,6 +115,15 @@ Verilen kolon değerlerininin minimum olanını bulur.
 SELECT MIN(Total) FROM Invoice i;
 ```
 
+Aşağıdaki sorgu en kısa parçayı saniye olarak bulur.
+
+```sql
+SELECT 
+MIN(t.Milliseconds) / 1_000 AS EnKısaParcaSaniye
+FROM Track t 
+```
+
+
 **MAX**
 
 Verilen kolon değerlerininin maksimum olanını bulur.
@@ -122,6 +131,17 @@ Verilen kolon değerlerininin maksimum olanını bulur.
 ```sql
 SELECT MAX(Total) FROM Invoice i;
 ```
+
+Aşağıdaki sorgu en uzun parçayı bulur.
+
+```sql
+SELECT 
+MAX(t.Milliseconds) / 60_000 AS EnUzunParça
+FROM Track t 
+```
+
+
+
 
 **GROUP_CONCAT**
 

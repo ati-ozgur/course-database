@@ -2,5 +2,119 @@
 
 {{< include ../course-contents/tables/table-where-operators-tr.md >}}
 
+## Örnekler
 
+Chinook
+
+```sql
+select * from Employee where EmployeeId = 5;
+```
+
+```sql
+select * from Employee where EmployeeId != 5;
+```
+
+```sql
+select * from Employee where EmployeeId <> 5;
+```
+
+```sql
+select * from Employee where EmployeeId < 5;
+```
+```sql
+select * from Employee where EmployeeId <= 5;
+```
+```sql
+select * from Employee where EmployeeId > 5;
+```
+
+```sql
+select * from Employee where EmployeeId >= 5;
+```
+## mantıksal operatörler
+
+- AND
+- OR
+- NOT
+
+{{< include ../course-contents/tables/table-truth-table-and.md >}}
+
+
+{{< include ../course-contents/tables/table-truth-table-or.md >}}
+
+
+## IN operatörü
+
+```sql
+select * from Employee where EmployeeId IN (2,5,9);  
+```
+
+## Between Arasında  operatörü
+
+```sql
+select * from Employee 
+where EmployeeId Between 2 and 5;  
+```
+
+Between operatörü aşağıdaki **>= and <=** kullanımına eşittir.
+Ama ingilizce daha anlaşılır bir kullanımı vardır.
+
+
+```sql
+select * from Employee 
+where EmployeeId >= 2 and EmployeeId <= 5;  
+```
+
+
+
+
+## LIKE operatörü
+
+
+Arama yaparken joker karakterleri kullanırız.
+yüzde **%** ve alt çizgi **_** karakterleri neredeyse tüm veritabanları tarafından desteklenirken diğerleri daha az desteklenmektedir.
+
+
+
+- [sql server wild cards](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/wildcard-character-s-to-match-transact-sql?view=sql-server-ver16)
+- [oracle wild cards](https://docs.oracle.com/cd/B13789_01/server.101/b10759/conditions016.htm)
+- [sqlite wild cards](https://sqlite.org/lang_expr.html#like)
+
+
+{{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
+
+
+**Örnekler Chinook**
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'L%';
+```
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'Lu_s'
+```
+
+SQL Server'da çalışır
+
+```sql
+SELECT * from Customer c WHERE C.Address LIKE '%[12]%'
+```
+
+
+```sql
+-- ikinci karakter bir a
+SELECT * from Customer c WHERE  C.FirstName LIKE '_[a]%'
+
+-- ikinci karakter bir a DEĞİL
+--SELECT * from Customer c WHERE C.FirstName LIKE '_[^a]%'
+```
+
+## Koşulların zincirlenmesi
+
+- 3'ten fazla koşulu zincirlemeniz gerektiğinde parantez kullanın.
+- Matematikte olduğu gibi, parantezler işlemlerin sırasını değiştirir.
+
+
+- (2+3)*5
+- 2+3*5
 

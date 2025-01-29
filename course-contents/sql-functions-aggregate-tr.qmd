@@ -1,7 +1,62 @@
 # Toplam (Aggregate) fonksiyonları
 
+Aggregate fonksiyonları genellikle group by ve having ile kullanılırlar.
+Ama tüm tablo üzerinde de çalışırlar.
 
-{{< include ../course-contents/tables/table-agregate-functions-en.md >}}
+{{< include ../course-contents/tables/table-agregate-functions-tr.md >}}
+
+**Count**
+
+Aşağıdaki sorgu Müşteri tablosundaki kayıt sayısını getirir.
+
+```sql
+SELECT COUNT(*) FROM Customer;
+```
+
+**Sum**
+
+Verilen kolon değerlerini toplar.
+
+Aşağıdaki sorgu toplam invoice değerini getirir.
+
+```sql
+SELECT SUM(Total) FROM Invoice i;
+```
+
+SUM kullanarak belirli bir duruma uyan kayıt sayısı bulunabilir.
+
+```sql
+SELECT SUM(c.SupportRepId IS NULL)
+,SUM(c.SupportRepId IS NOT NULL)
+,SUM(c.FirstName LIKE 'A%')
+FROM Customer c;
+```
+
+**AVG**
+
+Verilen kolon değerlerininin averajını bulur.
+
+```sql
+SELECT AVG(Total) FROM Invoice i;
+```
+
+**MIN**
+
+Verilen kolon değerlerininin minimum olanını bulur.
+
+```sql
+SELECT MIN(Total) FROM Invoice i;
+```
+
+**MAX**
+
+Verilen kolon değerlerininin maksimum olanını bulur.
+
+```sql
+SELECT MAX(Total) FROM Invoice i;
+```
+
+
 
 ## Sqlite
 

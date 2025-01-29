@@ -37,8 +37,15 @@ SELECT
 (SELECT COUNT(*) FROM Customer c) * (SELECT COUNT(*) FROM Employee e) AS CustomerCountXEmployeeCount
 ```
 
+Aşağıdaki sorgu Album ve MediaType tablolarını çaprazlayarak getirir.
+Yine bu örnekte herhangi bir ortak kolon yoktur.
 
 
+```sql
+SELECT * FROM Album  
+CROSS JOIN
+MediaType
+```
 
 
 Aşağıdaki sorgu daha sonra öğreneceğimiz WITH ile sanal isim tablolaru oluşturup bunları cross join ile kartezyen çarpım yapıyor.

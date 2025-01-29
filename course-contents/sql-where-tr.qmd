@@ -77,7 +77,7 @@ WHERE t.MediaTypeId  IN (1,2)
 
 IN operatörü birden fazla kolon kullanarakta çalışır.
 Bu kullanım her veri tabanında desteklenmez.
-Aşağıdaki sorgu SQLite'ta çalışırken SQL Server'da çalışmamaktadır.
+Aşağıdaki sorgu SQLite ve Oracle veri tabanlarında çalışırken SQL Server'da çalışmamaktadır.
 
 
 

@@ -123,7 +123,7 @@ ORDER BY InvoiceDate;
 
 
 Arama yaparken joker karakterleri kullanırız.
-yüzde **%** ve alt çizgi **_** karakterleri neredeyse tüm veritabanları tarafından desteklenirken diğerleri daha az desteklenmektedir.
+yüzde **%** ve alt çizgi **_** karakterleri  tüm veritabanları tarafından desteklenirken diğer joker karakterler daha az desteklenmektedir.
 
 
 
@@ -137,12 +137,54 @@ yüzde **%** ve alt çizgi **_** karakterleri neredeyse tüm veritabanları tara
 
 **Örnekler Chinook**
 
+İsmi L ile başlayan müşteriler
+
 ```sql
 SELECT * from Customer c WHERE C.FirstName LIKE 'L%';
 ```
 
+isminde a karakteri olan müşteriler
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE '%a%';
+```
+Aşağıdaki büyük A harfi ile çalıştırılan sorgu aynı sonucu getirir.
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE '%A%';
+```
+
+Dikkat edilmesi gereken şey, SQLite varsayılan olarak yalnızca ASCII karakterleri için büyük/küçük harfleri anlar.
+
+
+Aşağıdaki sorgu Lu ile başlayan arkasından herhangi bir harf olan ve s ile biten adları getirir.
+
 ```sql
 SELECT * from Customer c WHERE C.FirstName LIKE 'Lu_s'
+```
+
+Aşağıdaki 2 sorgunun farkına bakınız.
+
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fr'
+```
+
+
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fr%'
+```
+
+Aşağıdaki 2 sorgunun farkına bakınız.
+
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fran_'
+```
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fran%'
 ```
 
 SQL Server'da çalışır

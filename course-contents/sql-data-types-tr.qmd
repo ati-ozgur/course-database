@@ -1,16 +1,13 @@
-# Transact-SQL Veri Yapıları
+# SQL Veri Tipleri
 
-{{< include ../course-contents/tables/table-data-types-sqlserver-tr.md >}}
+## ANSI SQL Veri Tipler
 
-## Transact-SQL Veri Yapıları Çevirim
 
-- Implicit Conversion - Örtük Çevirim
-	* Uygun veri yapıları otomatikman çevirilir.
-- Explicit Conversion - Açıkça Çevirim
+Microsoft tarafından Access için oluşturulmuş aşağıdaki tabloya bakalım. @Access2024Equivalent
 
-	* Fonksiyon kullanarak çevirim yapılır.
-	* CAST / TRY\_CAST
-	* CONVERT / TRY\_CONVERT
-	* PARSE / TRY\_PARSE
-	* STR
+{{< include ../course-contents/tables/table-ansi-sql-data-types.md >}}
+
+## SQL veri tipleri strings veya varchar
+
+"" ve '' tırnak işaretleri arasındaki fark
 

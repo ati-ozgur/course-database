@@ -110,7 +110,12 @@ book:
         - course-contents/database-design-primary-key-tr.qmd
         - course-contents/database-design-primary-key-uuid-guid-en.qmd
         - course-contents/database-desing-patterns-en.qmd
+        
         - course-contents/sql-data-types-tr.qmd
+        - course-contents/sql-data-types-sqlite-tr.qmd
+        - course-contents/sql-data-types-sqlserver-tr.qmd
+
+
         - course-contents/sql-constraints-en.qmd
         - course-contents/database-design-from-user-interfaces-tr.qmd
         - course-contents/database-design-from-spreadsheets-en.qmd

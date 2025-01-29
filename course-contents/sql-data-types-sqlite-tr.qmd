@@ -1,0 +1,133 @@
+## Sqlite Data Types
+
+### Sqlite dynamic storage
+
+As [Datatypes In SQLite](https://sqlite.org/datatype3.html) page says, sqlite uses dynamic typing.
+Other databases like oracle and sql server used static or strict typing.
+
+
+
+Dynamic typing vs static typing is almost a religious war between their proponents.
+Therefore, we will not discuss it a lot but we will talk about how it differs and what could you expect.
+Sqlite developers defend their position in following article: [The Advantages Of Flexible Typing](https://sqlite.org/flextypegood.html).
+
+
+Also, with after version 3.37.0 (2021-11-27), SQLite provides STRICT tables, see [same page](https://sqlite.org/datatype3.html).
+
+
+Lets see an example:
+
+First create a table with two integer column, first one will primary key.
+
+```sql
+CREATE TABLE DynamicTyping (
+	DynamicTypingId INTEGER PRIMARY KEY AUTOINCREMENT,
+	ColumnInteger INTEGER
+);
+```
+Then insert some values: 
+
+```sql
+INSERT INTO DynamicTyping (ColumnInteger) VALUES(2020);
+INSERT INTO DynamicTyping (ColumnInteger) VALUES(1);
+INSERT INTO DynamicTyping (ColumnInteger) VALUES(2021);
+```
+
+and select that values:
+
+```sql
+SELCT * FROM DynamicTyping;
+```
+
+
+Okay, it works as normal.
+Now, try to insert a name to ColumnInteger:
+
+```sql
+INSERT INTO DynamicTyping (ColumnInteger) VALUES('Atilla');
+```
+
+
+```sql
+SELECT * FROM DynamicTyping;
+```
+
+This also works.
+This is the dynamic typing of sqlite.
+
+Lets try inserting to text values to both columns:
+
+```sql
+INSERT INTO DynamicTyping
+(DynamicTypingId, ColumnInteger)
+VALUES('value', 'value');
+
+```
+
+For these type of insert, we get following error:
+
+```
+SQL Error [20]: [SQLITE_MISMATCH] Data type mismatch (datatype mismatch)
+```
+
+> Any column in an SQLite version 3 database, except an INTEGER PRIMARY KEY column, may be used to store a value of any storage class.
+
+
+
+The value normally belongs to following classes.
+Paraphrased from [Datatypes In SQLite](https://sqlite.org/datatype3.html):
+
+- NULL
+- INTEGER: signed integer, stored in 0, 1, 2, 3, 4, 6, or 8 bytes according on the magnitude of the value.
+- REAL:  floating point value, stored as an 8-byte IEEE floating point number.
+- TEXT: text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE).
+- BLOB. The value is a blob of data, stored exactly as it was input.
+
+
+** Boolean ** 
+
+Sqlite do not have boolean.
+These values stored as 0 and 1 integer values.
+
+** Date and Time **
+
+Sqlite do not have date and time storage classes or data types.
+But sqlite has built-in [date and time functions](https://sqlite.org/lang_datefunc.html).
+
+
+## Sqlite strict tables
+
+
+Lets see same example with strict tables, more information [sqlite documentation of strict tables](https://sqlite.org/stricttables.html).
+
+First check your sqlite version.
+It should be higher than  3.37.0 (2021-11-27).
+
+
+```sql
+select sqlite_version();
+
+```
+
+
+```sql
+CREATE TABLE StrictTyping (
+	DynamicTypingId INTEGER PRIMARY KEY AUTOINCREMENT,
+	ColumnInteger INTEGER) strict;
+```
+
+Then try to insert text value to integer column.
+
+```sql
+INSERT INTO StrictTyping (ColumnInteger) VALUES('Atilla');
+```
+
+you will get following error.
+
+```
+SQL Error [19]: [SQLITE_CONSTRAINT_DATATYPE] An insert or update attempted to store a value inconsistent with the column's declared type in a table defined as STRICT (cannot store TEXT value in INTEGER column StrictTyping.ColumnInteger)
+```
+
+
+
+

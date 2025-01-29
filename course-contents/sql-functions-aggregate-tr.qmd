@@ -75,6 +75,18 @@ SELECT SUM(c.SupportRepId IS NULL)
 FROM Customer c;
 ```
 
+Aşağıdaki sorgu album uzunluğunu  dakika olarak bulur.
+
+
+```sql
+SELECT 
+t.AlbumId,
+SUM(t.Milliseconds) / 60_000 AS UzunlukDakika
+FROM Track t 
+GROUP BY t.AlbumId
+```
+
+
 **AVG**
 
 Verilen kolon değerlerininin averajını bulur.

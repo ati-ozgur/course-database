@@ -70,19 +70,13 @@ return lowercase of given string X
 - [sqlite documentation for lower](https://www.sqlite.org/lang_corefunc.html#lower)
 
 
-- **ltrim(X)**
-- **ltrim(X,Y)**
 
-left trim character values given in Y from the string X.
-If Y is not given, removes spaces
 **instr(X,Y)**
 
 Find the first occurrence of Y in the given string X and return position number of it.
 if it could not find, return 0.
 
-- [oracle documentation for instr](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LTRIM.html)
-- [SQL Server documentation for instr](https://learn.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver16)
-- [sqlite documentation for instr](https://www.sqlite.org/lang_corefunc.html#ltrim)
+
 
 
 
@@ -95,15 +89,6 @@ The replace(X,Y,Z) function returns a string formed by substituting string Z for
 - [sqlite documentation for function]()
 
 
-- **rtrim(X)**
-- **rtrim(X,Y)**
-
-right trim character values given in Y from the string X.
-If Y is not given, removes spaces
-
-- [oracle documentation for rtrim](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/RTRIM.html)
-- [SQL Server documentation for rtrim](https://learn.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver16)
-- [sqlite documentation for rtrim](https://www.sqlite.org/lang_corefunc.html#rtrim)
 
 
 **soundex(X)**
@@ -136,6 +121,54 @@ SQL Server has substring only.
 **trim(X,Y)**
 
     The trim(X,Y) function returns a string formed by removing any and all characters that appear in Y from both ends of X. If the Y argument is omitted, trim(X) removes spaces from both ends of X. 
+- **rtrim(X)**
+- **rtrim(X,Y)**
+
+right trim character values given in Y from the string X.
+If Y is not given, removes spaces
+
+- [oracle documentation for rtrim](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/RTRIM.html)
+- [SQL Server documentation for rtrim](https://learn.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for rtrim](https://www.sqlite.org/lang_corefunc.html#rtrim)
+
+- **ltrim(X)**
+- **ltrim(X,Y)**
+
+left trim character values given in Y from the string X.
+If Y is not given, removes spaces
+
+- [oracle documentation for LTRIM](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LTRIM.html)
+- [SQL Server documentation for LTRIM](https://learn.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for LTRIM](https://www.sqlite.org/lang_corefunc.html#ltrim)
+
+
+```sql
+SELECT
+       '       Hello World        '  as A
+, TRIM('       Hello World        ') as TA
+,LTRIM('       Hello World        ') as LTA
+,RTRIM('       Hello World        ') as RTA
+```
+
+
+```sql
+SELECT
+       '@@@@@@@Hello World@@@@@@@@'  as B
+, TRIM('@@@@@@@Hello World@@@@@@@@') as TB
+,LTRIM('@@@@@@@Hello World@@@@@@@@') as LTB
+,RTRIM('@@@@@@@Hello World@@@@@@@@') as RTB
+```
+We need to use second argument for trim char.
+
+```sql
+SELECT
+       '@@@@@@@Hello World@@@@@@@@'  as C
+--, TRIM('@@@@@@@Hello World@@@@@@@@','@') as TC
+,LTRIM('@@@@@@@Hello World@@@@@@@@','@') as LTC
+,RTRIM('@@@@@@@Hello World@@@@@@@@','@') as RTC
+```
+SQLite normal trim does not accept second trim character but LTRIM and RTRIM accepts it.
+
 
 - [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/TRIM.html)
 - [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/trim-transact-sql?view=sql-server-ver16)

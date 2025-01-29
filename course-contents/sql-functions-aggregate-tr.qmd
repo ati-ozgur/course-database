@@ -5,6 +5,25 @@ Ama tüm tablo üzerinde de çalışırlar.
 
 {{< include ../course-contents/tables/table-agregate-functions-tr.md >}}
 
+
+
+```sql
+aggregate_function(DISTINCT|ALL ifade) 
+```
+
+kullanılabilir.
+
+Ifade genellikle bir kolon ismidir ama SQL'in anladığı tüm ifadeler kullanılabilir.
+Örneğin aşağıda ismi E ile başlayanlar için 0 veya 1 dönüyor.
+Arkasından bu ifade toplanarak kaç tane ismin E ile başladığı görülebiliyor.
+Bu ifade yerinde where içinde gördüğümüz <,= IS NULL gibi operatorler kullanılabilir.
+
+
+```sql
+SELECT SUM(c.FirstName LIKE 'E%')
+FROM Customer c;
+```
+
 **Count**
 
 Aşağıdaki sorgu Müşteri tablosundaki kayıt sayısını getirir.
@@ -56,7 +75,22 @@ Verilen kolon değerlerininin maksimum olanını bulur.
 SELECT MAX(Total) FROM Invoice i;
 ```
 
+**GROUP_CONCAT**
 
+GROUP_CONCAT(deger, ayraç) verilen degerin non null olanları, ayraç kullanarak, string toplaması (concat) yaparak döndürür. 
+Ayraç değeri verilmezse virgul , kabul edilir.
+
+
+```sql
+SELECT GROUP_CONCAT(c.FirstName)
+FROM Customer c;
+```
+
+
+```sql
+SELECT GROUP_CONCAT(c.FirstName,'|')
+FROM Customer c;
+```
 
 ## Sqlite
 

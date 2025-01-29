@@ -42,6 +42,20 @@ Aşağıdaki sorgu Müşteri tablosundaki kayıt sayısını getirir.
 SELECT COUNT(*) FROM Customer;
 ```
 
+Aşağıdaki sorgu her albumdeki parça sayısını göstermektedir.
+
+```sql
+SELECT 
+t.AlbumId,
+COUNT(t.TrackId) AS ParcaSayisi
+FROM Track t 
+GROUP BY t.AlbumId 
+ORDER BY 2
+```
+
+
+
+
 **Sum**
 
 Verilen kolon değerlerini toplar.
@@ -68,6 +82,18 @@ Verilen kolon değerlerininin averajını bulur.
 ```sql
 SELECT AVG(Total) FROM Invoice i;
 ```
+
+Aşağıdaki sorgu parçaların (track) dakika olarak ortalama süresini bulur.
+
+
+```sql
+SELECT 
+t.AlbumId,
+ROUND(AVG(t.Milliseconds) / 60_000) AS AverajDakika
+FROM Track t 
+GROUP BY t.AlbumId
+```
+
 
 **MIN**
 

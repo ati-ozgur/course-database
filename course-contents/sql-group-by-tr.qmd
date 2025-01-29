@@ -1,12 +1,12 @@
 # SQL Group by
 
 
-- [lesson video](https://www.youtube.com/watch?v=TgDjev7ZUzU)
+- [ders vidyosu TODO](TODO)
 
-## Group by intro
+## Group by giriş
 
-GROUP BY clause in SQL is used to group rows that have the same values in specified columns. 
-GROUP by is often used with aggregate functions like
+SQL'deki GROUP BY ifadesi, belirtilen sütunlarda aynı değerlere sahip satırları gruplamak için kullanılır.
+GROUP by genellikle aşağıdaki gibi toplama fonksiyonları ile kullanılır:
 
 - avg
 - sum
@@ -20,18 +20,19 @@ FROM Invoice
 GROUP BY CustomerId;
 ```
 
-The result will be something like below:
+Sonuç aşağıdaki gibi olacaktır:
 
 ![Count Total invoices](images/count-sum-invoices.png)
 
 
-Above query will
+Yukarıdaki sorgu
 
-- Group all invoices by CustomerId
-- count number of invoices for each customer 
-- calculate sum of invoices for each customer
+- Tüm faturaları CustomerId'ye göre gruplandırır
+- Her müşteri için fatura sayısını sayar
+- Her müşteri için fatura toplamını hesaplar
 
-If we use order by in this query, like below, we could see which customers are making the most purchases.
+Bu sorguda aşağıdaki gibi ORDER BY kullanırsak hangi müşterilerin en çok alışveriş yaptığını görebiliriz.
+
 
 ```sql
 SELECT CustomerId , COUNT(*) as invoice_count, SUM(Total) as total_sales
@@ -40,25 +41,25 @@ GROUP BY CustomerId
 order By total_sales desc; 
 ```
 
-Other aggregate functions could be used to infer more insights to invoice data.
+Fatura verilerine ilişkin daha fazla bilgi edinmek için diğer toplama (aggregate)fonksiyonları kullanılabilir.
 
 
 
-
-**Group by real life example**
-
-- From Ministry of Labor and Social Security
-- how many companies each city has?
-- how many people are employed by companies in each different city?
+**GROUP BY gerçek yaşam örneği**
 
 
+- Çalışma ve Sosyal Güvenlik Bakanlığı'ndan
+- her şehirde kaç şirket var?
+- her farklı şehirdeki şirketlerde kaç kişi çalışıyor?
 
-## where vs having
 
-Difference between **having** and **where** clauses in sql is where they are applied in query execution.
 
-First lets remember select query list.
-Below is simplified version where some clauses like order by is omitted.
+## where - having
+
+SQL'de **HAVING** ve **WHERE** ifadeleri arasındaki fark, sorgu çalışırken nerede uygulandıklarıdır.
+
+Öncelikle select query list'i hatırlayalım.
+Aşağıda order by gibi bazı ifadelerin atlandığı basitleştirilmiş bir versiyon bulunmaktadır.
 
 - SELECT select_list [ INTO new_table ]
 - [ FROM table_source ] 
@@ -66,11 +67,13 @@ Below is simplified version where some clauses like order by is omitted.
 - [ GROUP BY group_by_expression ]
 - [ HAVING search_condition ]
 
-**WHERE Clause**
+**WHERE kullanımı**
 
-- Where clause is used to filter rows before any group by or aggregation.
-- where filter rows using FROM information using row level.
-- Where could be used with SELECT, UPDATE, and DELETE statements.
+
+- WHERE ifadesi, herhangi bir GROUP BY veya Toplam (aggregation) fonksiyonundan önce satırları filtrelemek için kullanılır.
+- WHERE, FROM bilgilerini kullanarak satır seviyesindeki değerlere göre filtreler.
+- WHERE, SELECT, UPDATE ve DELETE ifadeleriyle kullanılabilir.
+
 
 ```sql
 SELECT i.CustomerId , COUNT(i.InvoiceId) as invoice_count
@@ -79,16 +82,19 @@ WHERE i.Total > 4
 GROUP BY i.CustomerId ;
 ```
 
-This query first filters invoices greater than 4, then count how many invoice exists for each customer in the remaining rows.
-That is this query answer the question: How many invoices greater than 4 each customer has?.
+
+Bu sorgu önce 4'ten büyük faturaları filtreler, sonra kalan satırlarda her müşteri için kaç fatura olduğunu sayar.
+Bu sorgu şu soruyu yanıtlar: Her müşterinin 4'ten büyük kaç faturası var?.
 
 
 
-**HAVING Clause**
 
-- HAVING clause is used to filter rows after group by.
-- HAVING clause could use aggregate functions
-- HAVING clause used with SELECT statements and GROUP BY.
+**HAVING kullanımı**
+
+- HAVING ifadesi, gruplamadan sonra satırları filtrelemek için kullanılır.
+- HAVING ifadesi toplam (aggregate) fonksiyonlarını kullanabilir.
+- HAVING ifadesi SELECT ifadeleri ve GROUP BY ile kullanılır.
+
 
 ```sql
 SELECT i.CustomerId , SUM(i.Total) as total_sales
@@ -97,14 +103,16 @@ GROUP BY i.CustomerId
 HAVING SUM(i.Total) > 45;
 ```
 
-**Key Differences**
+**Temel Farklar**
 
-1. Order of execution: WHERE is applied before grouping, while HAVING is applied after grouping
-2. Aggregate functions: HAVING can use aggregate functions (like COUNT, SUM, AVG), whereas WHERE cannot
-3. Usage with GROUP BY: HAVING is  used with GROUP BY
-4. Type of operations: WHERE works on rows, while HAVING works on aggregated data
+1. Çalışma sırası: WHERE gruplamadan önce çalışırken HAVING gruplamadan sonra çalışır.
+2. Toplama işlevleri: HAVING toplama işlevlerini kullanabilir (COUNT, SUM, AVG gibi), WHERE ise kullanamaz
+3. GROUP BY ile kullanım: HAVING, GROUP BY ile kullanılır
+4. İşlem türleri: WHERE satırlarda çalışırken HAVING, gruplanıp toplanmış verilerde çalışır
 
 
-In practice, it is common to see both WHERE and HAVING together, with WHERE filtering individual rows and HAVING filtering the grouped results.
+Uygulamada, WHERE ve HAVING'i birlikte görmek yaygındır; WHERE tek tek satırları, HAVING ise gruplanmış sonuçları filtreler.
+
+
 
 

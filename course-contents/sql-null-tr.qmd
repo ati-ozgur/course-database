@@ -1,16 +1,49 @@
 # NULL ile çalışma
 
-
-
 - NULL bilinmeyen veya eksik veri için kullanılır.
+
+```sql
+SELECT * FROM Customer
+WHERE Company is NULL;
+```
+
+
 - İşlem yaparken matematikteki $\infty$ gibi düşünebilirsiniz.
+
+Bir Sonsuz değeri, diğer bir sonsuz değere eşit değildir.
+
 - $\infty$ $!=$ $\infty$
+
+Aynı şekilde, bir NULL değeri, diğer bir NULL değere eşit değildir.
+
 - NULL $!=$ NULL
+
+NULL ile yapılan işlemler NULL döndürür.
+
 - 3 + NULL = NULL
 - 'str degeri' + NULL = NULL
+
+
+
+```sql
+SELECT NULL + 5;
+```
+
+```sql
+SELECT 'str degeri' + NULL;
+```
+
 - karşılaştırmalar null değerleri için her zaman yanlış(false) döndürür
-    * NULL = NULL returns false
+    * NULL = NULL returns NULL
     * NULL IS NULL returns true
+
+```sql
+SELECT NULL = NULL;
+```
+
+```sql
+SELECT NULL IS NULL;
+```
 
 ## NULL ile çalışma 2
 

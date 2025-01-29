@@ -75,7 +75,28 @@ SELECT * FROM Track t
 WHERE t.MediaTypeId  IN (1,2)
 ```
 
-Birleştirme (Join) konusunda IN operatörünün bazen 2 tabloyu birleştirmek için inner join yerine kullanılabileceğini göreceğiz.
+IN operatörü birden fazla kolon kullanarakta çalışır.
+Bu kullanım her veri tabanında desteklenmez.
+Aşağıdaki sorgu SQLite'ta çalışırken SQL Server'da çalışmamaktadır.
+
+
+
+```sql
+SELECT COUNT(*) FROM Track t 
+WHERE 
+(t.MediaTypeId , t.GenreId) 
+IN (
+(1,1),
+(1,2),
+(2,2),
+(2,2)
+)
+```
+
+
+
+Alt sorgu ve IN operatörü kullanarak bazen 2 tabloyu birleştirmek için inner join yerine kullanılabiliriz.
+
 
 
 ## Between Arasında  operatörü

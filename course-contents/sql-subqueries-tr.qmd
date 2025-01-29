@@ -1,5 +1,11 @@
 # SQL Alt sorgular (Subqueries)
 
+Alt sorgu bir başka sorgunun içinde çalışan başka bir sorgudur.
+Alt sorgular her zaman parentezler () içinde olmalıdır.
+Bir alt sorgunun içinde bir başka alt sorgu daha olabilir.
+Alt sorguları (subquery) SELECT, FROM, WHERE, JOIN ve LIMIT (sqlite), TOP (SQL Server) kullanabilirsiniz.
+
+
 ## Alt sorgu tek değer
 
 Bir sorgu yalnızca tek bir değer döndürüyorsa, bunu sql cümlelerinde skaler bir değer kullanacağımız alt sorgu olarak kullanabiliriz.
@@ -38,6 +44,22 @@ WHERE Total < (SELECT MAX(Total) FROM Invoice)
 ```
 
 Bu sorgu bize daha önce olduğu gibi aynı bilgileri getirecektir.
+Bu sorguda parentez içindeki sorgu alt sorgu (subquery) veya iç sorgu (inner query) olarak adlandırılır.
+Alt sorgunun dışındaki sorgu ise dış sorgu (outer query) olarak adlandırılır.
+Eğer sadece içe içe alt sorgu olarak tek seviye varsa, dış sorgu ana sorgu (main query) olarakta adlandırılabilir.
+
+
+
+### Alt sorgu LIMIT SQLite
+
+Aşağıdaki sorgu Çalışan tablosunda 8 kayıt olduğu için 8 tane satır Track tablosunda getirecektir.
+Bu kullanım yine alt sorgu tek değer kullanımıdır.
+
+
+```sql
+SELECT * FROM Track t 
+LIMIT (SELECT COUNT(*) FROM Employee)
+```
 
 
 ## Alt sorgu değer listesi
@@ -119,6 +141,20 @@ ORDER BY  SUM(Total) DESC
 LIMIT 10
 )
 ```
+
+Alt sorgunun değer listesi döndüğü zamanlarda lütfen IN kullanın.
+Aşağıdaki sorgu = veya IN kullanıldığı zaman aynı sonuç setini döndürmektedir.
+Ama IN kullanımı daha anlaşılır ve liste döndüğü daha bellidir.
+
+
+```sql
+SELECT * FROM Track t 
+WHERE t.AlbumId  = 
+(
+SELECT AlbumId FROM Album a WHERE a.Title = 'Ride The Lightning'
+)
+```
+
 
 ## Alt sorgu select içindeki sütun için
 
@@ -230,4 +266,11 @@ SELECT E.EmployeeID
 )
 WHERE ManagerLastName LIKE 'A%'
 ```
+
+## Alt sorgu JOIN
+TODO
+
+
+
+
 

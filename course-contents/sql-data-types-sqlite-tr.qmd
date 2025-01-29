@@ -36,7 +36,7 @@ INSERT INTO DynamicTyping (ColumnInteger) VALUES(2021);
 and select that values:
 
 ```sql
-SELCT * FROM DynamicTyping;
+SELECT * FROM DynamicTyping;
 ```
 
 
@@ -93,6 +93,19 @@ These values stored as 0 and 1 integer values.
 
 Sqlite do not have date and time storage classes or data types.
 But sqlite has built-in [date and time functions](https://sqlite.org/lang_datefunc.html).
+
+**typeof**
+
+```sql
+SELECT 
+typeof(100),
+typeof(10.0),
+typeof("10.0"),
+typeof(NULL)
+```
+
+
+TODO typeof examples for showing the different storage classes in the same column.
 
 
 ## Sqlite strict tables

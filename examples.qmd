@@ -8,6 +8,10 @@ A4 size     210 x 297 mm    8.3 x 11.7 in
 
 # Temeller Açıklamalar (Comments)  {#sec-temeller-aciklamalar}
 
+daha fazla bilgi için [Bölüm -@sec-temeller-aciklamalar] bakınız.
+
+
+
 ```sql
 SELECT * FROM Production.Product;
 ```

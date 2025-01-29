@@ -186,6 +186,11 @@ WHERE C.FirstName LIKE 'Fran_'
 SELECT * from Customer c 
 WHERE C.FirstName LIKE 'Fran%'
 ```
+**%deger%** kullanımı arama sayfalarında çok kullanılır.
+Ama bu kullanım indeks kullanamadığı için daha yavaştır.
+Çok fazla kayıdın olduğu tablolarda, **%deger%** yerine **deger%** tercih edilmelidir.
+
+
 
 SQL Server'da çalışır
 

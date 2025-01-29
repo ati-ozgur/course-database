@@ -65,8 +65,30 @@ select * from Employee
 where EmployeeId >= 2 and EmployeeId <= 5;  
 ```
 
+Between operatörü sayı, tarih ve yazılar ile çalışır.
 
+```sql
+SELECT * FROM Invoice i 
+WHERE i.Total BETWEEN 14.91 and 18.86
+ORDER BY i.Total ASC
+```
 
+NOT operatörü ile bu aralık dışındakileri getirebiliriz.
+
+```sql
+SELECT * FROM Invoice i 
+WHERE i.Total NOT BETWEEN 14.91 and 18.86
+ORDER BY i.Total ASC
+```
+
+2022 yılındakileri getir.
+
+```sql
+SELECT *
+FROM Invoice
+WHERE InvoiceDate BETWEEN '2022-01-01' AND '2022-12-31'
+ORDER BY InvoiceDate;
+```
 
 ## LIKE operatörü
 

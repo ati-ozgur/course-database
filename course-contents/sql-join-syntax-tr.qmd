@@ -1,0 +1,51 @@
+## Inner Join Syntax
+
+
+Correct syntax for joins ANSI-SQL-92 is below syntax.
+
+```sql
+SELECT ...
+FROM   Table1 JOIN Table2
+ON  Table1.KolonA = Table2.KolonA;
+```
+
+**Chinook example**
+
+Join 2 tables, Artist and Album
+
+```sql
+SELECT A.Name AS ArtistName
+, B.Title AS AlbumTitle
+FROM Artist A
+INNER JOIN Album B
+ON A.ArtistId  = B.ArtistId 
+```
+
+Join 3 tables, Artist, Album and Track.
+
+```sql
+SELECT A.Name AS ArtistName
+, B.Title AS AlbumTitle
+, T.Name  AS TrackName
+FROM Artist A
+INNER JOIN Album B
+ON A.ArtistId  = B.ArtistId 
+INNER JOIN Track T ON T.AlbumId  = B.AlbumId   
+```
+
+
+**note ANSI-SQL-89 inner join syntax**
+
+You may see below syntax for inner join but please do not use it.
+Using join condition explicitly would always be better.
+
+
+```sql
+SELECT ...
+FROM   Table1, Table2
+WHERE  Table1.KolonA = Table2.KolonA;
+```
+
+It will still works in all databases but giving join conditions using join keyword is always better.
+Additionally ANSI-SQL-92 syntax for left and right joins are more understandable.
+

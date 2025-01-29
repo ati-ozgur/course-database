@@ -100,12 +100,24 @@ But sqlite has built-in [date and time functions](https://sqlite.org/lang_datefu
 SELECT 
 typeof(100),
 typeof(10.0),
-typeof("10.0"),
+typeof('10.0'),
 typeof(NULL)
 ```
 
 
+BLOB Örnek
+
+```sql
+CREATE TABLE EXAMPLE(ID,IMAGE);
+INSERT INTO EXAMPLE(1,READFILE('../cover.png'));
+select * from EXAMPLE;
+select typeof(image) from EXAMPLE;  
+```
+
+
 TODO typeof examples for showing the different storage classes in the same column.
+
+ 
 
 
 ## Sqlite strict tables

@@ -151,7 +151,8 @@ Ama IN kullanımı daha anlaşılır ve liste döndüğü daha bellidir.
 SELECT * FROM Track t 
 WHERE t.AlbumId  = 
 (
-SELECT AlbumId FROM Album a WHERE a.Title = 'Ride The Lightning'
+SELECT AlbumId FROM Album a 
+WHERE a.Title = 'Ride The Lightning'
 )
 ```
 
@@ -268,9 +269,24 @@ WHERE ManagerLastName LIKE 'A%'
 ```
 
 ## Alt sorgu JOIN
-TODO
 
+Aşağıdaki sorguda parantezler arasındaki alt sorgu join kısmında kullanılmış ve oluşturulan sanal tablo ve customer tablosundaki tüm değerler getirilmiştir.
 
-
+```sql
+SELECT A.*,c.* FROM Customer c 
+INNER JOIN 
+(
+SELECT E.EmployeeID
+      ,E.LastName AS EmployerLastName
+      ,E.FirstName AS EmployerFirstName
+      ,E.ReportsTo
+      , M.EmployeeID as ManagerID
+      , M.LastName AS ManagerLastName
+      ,M.FirstName AS ManagerFirstName
+  FROM Employee E 
+  INNER JOIN Employee M
+  ON E.ReportsTo = M.EmployeeID 
+) A ON A.EmployeeId = c.SupportRepId 
+```
 
 

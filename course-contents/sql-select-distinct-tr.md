@@ -1,5 +1,7 @@
 # SQL SELECT DISTINCT MÜKERRER KAYITLAR
 
+Sonuçlardan yinelenen satırları (mükerrer kayıtları) kaldırmak için kullanılır.
+
 ```sql
 SELECT ADI FROM ORTAK.KISI;
 ```
@@ -30,9 +32,21 @@ Sonuç:
 ## Chinook Örneği
 
 ```sql
-select FirstName from customer;
+SELECT FirstName FROM customer;
 ```
 
 ```sql
-select DISTINCT FirstName from customer;
+SELECT DISTINCT FirstName FROM customer;
+```
+
+Birden fazla kolon adı verilerekte çalıştırılabilir.
+
+Aşağıdaki sorguda sonuç listesi aynı olacaktır çünkü adı ve soyadı aynı olan müşteri Chinook veri tabanında yoktur.
+
+```sql
+SELECT FirstName,LastName FROM Customer;
+```
+
+```sql
+SELECT DISTINCT FirstName,LastName FROM customer;
 ```

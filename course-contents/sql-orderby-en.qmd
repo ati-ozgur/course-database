@@ -1,8 +1,9 @@
 # SQL Select Order by
 
-- Sorting can be done with one or more columns using ORDER BY.
+- Sıralama ORDER BY kullanılarak bir veya daha fazla sütun ile yapılabilir.
 
-If order by is not used in the query, database engine is free to return result set in whichever order it chooses.
+Sorguda order by kullanılmazsa, veritabanı motoru sonuç kümesini istediği sırada döndürmekte serbesttir.
+
 
 ```sql
 SELECT * FROM Customer c 
@@ -14,54 +15,68 @@ SELECT * FROM Customer c
 order by Country , State, City
 ```
 
-- Aliases created during SELECT can be used.
+- SELECT sırasında oluşturulan takma adlar (alias) kullanılabilir.
 
-- Columns not retrieved with SELECT can be used.
-
-```sql
-SELECT CustomerId,FirstName,LastName FROM Customer c 
-order by Country , State, City
-```
-
-- ASC (Ascending) or DESC (Descending) can be specified. 
-- ASC is the default word.
 
 ```sql
-SELECT CustomerId,FirstName,LastName FROM Customer c 
-order by CustomerId DESC
-```
-
-```sql
-SELECT CustomerId,FirstName,LastName FROM Customer c 
-order by Country DESC, State DESC, City DESC
+SELECT CustomerId as Id,FirstName,LastName 
+FROM Customer c 
+ORDER BY Id
 ```
 
 
-- Instead of column name, column number in the result set could be used.
+- SELECT ile alınmayan sütunlar kullanılabilir.
 
 
 ```sql
 SELECT CustomerId,FirstName,LastName FROM Customer c 
-order by 1 DESC
+ORDER BY Country , State, City
 ```
 
-Order by should be used in the grids and other lists since most users expect the result set to be ordered.
-For example, a simple user interface usage of order by of cities.
-In an address selection drop box down list, we would like to see most important cities first.
+- ASC (Ascending,Artan) veya DESC (Descending,Azalan) olarak belirtilebilir. 
+- ASC varsayılan kelimedir.
 
-In the below examples, we see cities ordered by names only.
+
+```sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+ORDER BY CustomerId DESC
+```
+
+```sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+ORDER BY Country DESC, State DESC, City DESC
+```
+
+
+- Sütun adı yerine, sonuç kümesindeki sütun numarası kullanılabilir.
+Bu özellikle karışık fonksiyonlar select içinde kullanıldığında kullanışlıdır.
+
+
+```sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+ORDER BY 1 DESC
+```
+
+Çoğu kullanıcı sonuç kümesinin sıralı olmasını beklediğinden, tablo ve diğer listelerde ORDER BY kullanılmalıdır.
+Örneğin, şehirlere göre sıralamanın basit bir kullanıcı arayüzü kullanımıdır.
+Bir adres seçimi açılır kutu listesinde, en önemli şehirleri ilk olarak görmek isteriz.
+
+Aşağıdaki örneklerde, şehirlerin yalnızca isimlerine göre sıralandığını görüyoruz.
+
 
 ```sql
 SELECT CityId, CityName from Cities
 ORDER BY  CityName
 ```
 
-This usage is not very good since most of the users will come from İstanbul and Ankara.
-Lets change the query so that these two cities will come first in the result set.
-We need to add column OrderPriority to cities table.
-And add values to İstanbul and Ankara for this column.
-Since OrderPriority values in İstanbul and Ankara is higher than other cities, 
-we would see city list as below:
+Kullanıcıların çoğu İstanbul ve Ankara'dan geleceği için bu sıralama çok iyi değildir.
+Sorguyu değiştirelim, böylece bu iki şehir sonuç kümesinde ilk sırada gelecektir.
+Şehirler tablosuna OrderPriority (sıralama önceliği) sütununu eklememiz gerekiyor.
+Ve bu sütun için İstanbul ve Ankara'ya değerler ekleyin.
+Çünkü İstanbul ve Ankara'nın OrderPriority değerleri diğer şehirlere göre daha yüksektir, 
+şehir listesini aşağıdaki gibi görürüz:
+
+
 
 - İstanbul
 - Ankara
@@ -73,12 +88,6 @@ we would see city list as below:
 SELECT CityId, CityName, OrderPriority from Cities
 ORDER BY OrderPriority DESC, CityName ASC
 ```
-
-
-
-
-
-
 
 
 

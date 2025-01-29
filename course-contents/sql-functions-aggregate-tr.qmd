@@ -115,7 +115,7 @@ Verilen kolon değerlerininin minimum olanını bulur.
 SELECT MIN(Total) FROM Invoice i;
 ```
 
-Aşağıdaki sorgu en kısa parçayı saniye olarak bulur.
+Aşağıdaki sorgu en kısa parçayı saniye olarak  bulur.
 
 ```sql
 SELECT 
@@ -158,6 +158,15 @@ FROM Customer c;
 ```sql
 SELECT GROUP_CONCAT(c.FirstName,'|')
 FROM Customer c;
+```
+
+Aşağıdaki sorgu bir albumdeki parçaların isimleri tek bir string değer olarak döndürür.
+
+```sql
+SELECT 
+GROUP_CONCAT(t.Name,'|')
+FROM Track t 
+WHERE t.AlbumId  = 154;
 ```
 
 ## Sqlite

@@ -1,19 +1,35 @@
 # SQL NULL functions SQL Server
 
+**COALESCE**
+
+Bakınız, SQL standardı. 
+- coalesce() işlevi, NULL olmayan ilk bağımsız değişkenini döndürür.
+
+```sql
+    SELECT 
+    COALESCE(ADI + ' ' + IKINCIADI + ' ' + SOYADI
+    ,ADI + ' ' + SOYADI
+     ) AS TAMADI FROM ORTAK.KISI;
+```
+
+
+**NULLIF**
+
+Bakınız, SQL standardı. 
+
+**ISNULL**
+
 - ISNULL(kolon/degisken,**deger**)
 - Eğer kolon/degişken null ise **degeri** döndürür.
 
-- NULLIF(kolon/degisken,**deger**)
-- Eğer kolon/degişken **deger**'e eşitse NULL döndürür.
-- COALESCE(kolon/degisken1,kolon/degisken2,..)
-- kolon/degişken listesi içindeki ilk NULL olmayan değeri döndürür.
+Coalesce ISNULL fonksiyonundan daha güçlü ve kullanışlıdır.
+Ayrıca standard olduğu için ISNULL yerine her zaman coalesce tercih edilmelidir.
 
+TODO:
+Örnek ekle
 
 
 - [isnull](https://learn.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver16)
-
-
-
 
 
 

@@ -52,27 +52,6 @@ SELECT NULL IS NULL;
 {{< include ../course-contents/tables/table-null-not-operation.md >}}
 
 
-### NULL ile ilgili fonksiyonlar SQL Server
-
-
-
-- ISNULL(kolon/degisken,**deger**)
-- Eğer kolon/degişken null ise **degeri** döndürür.
-
-- NULLIF(kolon/degisken,**deger**)
-- Eğer kolon/degişken **deger**'e eşitse NULL döndürür.
-- COALESCE(kolon/degisken1,kolon/degisken2,..)
-- kolon/degişken listesi içindeki ilk NULL olmayan değeri döndürür.
-
-### NULL ile çalışma - COALESCE Örnek
-
-
-```sql
-    SELECT 
-    COALESCE(ADI + ' ' + IKINCIADI + ' ' + SOYADI
-    ,ADI + ' ' + SOYADI
-     ) AS TAMADI FROM ORTAK.KISI;
-```
 
 
 

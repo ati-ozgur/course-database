@@ -117,7 +117,7 @@ SQL Error [1]: [SQLITE_ERROR] SQL error or missing database (sub-select returns 
 SQL Hatası [1]: [SQLITE_ERROR] SQL hatası veya eksik veritabanı (alt seçim 2 sütun döndürüyor - beklenen 1
 ```
 
-İlk sorgumuz 2 sütun döndürür ancak IN yalnızca bir sütun bekler.
+İlk sorgumuz 2 sütun döndürür ancak bu sorguda tek kolon verdiğimiz için IN yalnızca bir sütun bekliyor.
 İlk sorgumuzu aşağıdaki şekilde sadece müşteri id'sini döndürecek şekilde değiştirebiliriz.
 Ayrıca SUM(Toplam) seçmek zorunda değiliz, sadece aşağıdaki sql gibi ORDER BY kullanabiliriz.
 
@@ -220,6 +220,11 @@ FROM Employee e
 
 ![desteklenen müşteri sayısı doğru](images/supported-customer-count-correct.png)
 
+Bu tür alt sorgulara ilişkili (correlated) alt sorgu'da denir çünkü alt sorgu üst sorgudan bağımsız çalışamaz.
+Üst sorgudaki bilgiler alt sorguda kullanılır.
+
+Bir sorgunun ilişkili sorgu olup olmadığını anlamak kolaydır.
+Parentezler arasındaki sorgu tek başına çalışıyorsa ilişkili sorgu değildir.
 
 
 ## Alt sorgu FROM

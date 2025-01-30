@@ -203,7 +203,12 @@ WHERE t.AlbumId  = 154;
 SQL standardına göre, SUM fonksiyonu eğer çalıştığı tüm satırlar null ise null döndürür.
 SQLite tasarım problemi olarak gördüğü bu durum için Total isminde bir fonksiyon eklemiştir.
 
- 
+
+Örnek 1 
+```sql
+SELECT SUM(Null) AS ResultSum
+,TOTAL(Null)  AS ResultTotal
+```
 
 
 ```sql

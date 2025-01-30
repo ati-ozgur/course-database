@@ -1,13 +1,25 @@
 CREATE TABLE Invoice2 AS 
 SELECT * FROM Invoice;
 
-SELECT SUM(Total) AS ResultSum
+SELECT 
+CustomerId
+,SUM(Total) AS ResultSum
 ,TOTAL(Total) AS ResultTotal
-FROM Invoice2;
+FROM Invoice2
+GROUP BY CustomerId
+ORDER BY CustomerId ASC
+;
 
 UPDATE Invoice2 
-SET Total  = NULL;
+SET Total  = NULL
+WHERE CustomerId = 1
+;
 
-SELECT SUM(Total) AS ResultSum
-,TOTAL(Total)  AS ResultTotal
-FROM Invoice2;
+SELECT 
+CustomerId
+,SUM(Total) AS ResultSum
+,TOTAL(Total) AS ResultTotal
+FROM Invoice2
+GROUP BY CustomerId
+ORDER BY CustomerId ASC
+;

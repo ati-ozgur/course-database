@@ -42,6 +42,20 @@ Aşağıdaki sorgu Müşteri tablosundaki kayıt sayısını getirir.
 SELECT COUNT(*) FROM Customer;
 ```
 
+COUNT(*) ile COUNT(KolonAdi) null değerlerde farklı çalışır.
+COUNT(*) tüm değerleri sayarken, COUNT(KolonAdi) sadece null olmayan değerleri sayar.
+
+Aşağıdaki sorgu Müşteri tablosundaki kayıt sayısını doğru getirir çünkü CustomerId kolonu  not null (null'a izin yok) bir kolondur.
+
+```sql
+SELECT COUNT(CustomerId) FROM Customer;
+```
+Ama aşağıdaki sorgu 55 değerini getirecektir çünkü PostalCode null olan satırlar vardır.
+
+```sql
+SELECT COUNT(PostalCode) FROM Customer;
+```
+
 Aşağıdaki sorgu her albumdeki parça sayısını göstermektedir.
 
 ```sql

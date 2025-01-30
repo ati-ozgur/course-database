@@ -24,8 +24,21 @@ coalesce, sqlite, oracle, sql server, postgres, mysql .... gibi birçok farklı 
 
 **nullif(X,Y)**
 
-- iki argüman farklıysa fonksiyon ilk argüman olan X'i döndürürse null.
-- argümanlar aynı ise null döndürür.
+- Eğer X ve Y farklıysa, ilk argüman olan X'i döndürür.
+- Eğer X ve Y aynı ise null döndürür.
+
+Coalesce her durumda bu fonksiyondan daha anlaşılılır ve kullanışlıdır.
+
+
+```sql
+SELECT 
+NULLIF('Merhaba','Dünya'),
+NULLIF('Merhaba',NULL),
+NULLIF('Merhaba','Merhaba'),
+NULLIF(NULL,'Dünya'),
+NULLIF(NULL,NULL)
+;
+```
 
 
 **case**

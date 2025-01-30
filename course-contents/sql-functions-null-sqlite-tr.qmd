@@ -1,8 +1,12 @@
 # SQL NULL Fonksiyonları sqlite
 
 SQL Standart fonksiyonlarına bakın.
-SQL Standardı coalesce ve nullif dışında ekstra sqlite null işleme fonksiyonu yoktur.
+SQL Standardı coalesce, nullif ve case dışında ekstra sqlite null işleme fonksiyonu ifnull vardır.
 
 
+**ifnull(X,Y)**
+
+Coalesce fonksiyonunun 2 arguman ile çalışan versiyonudur.
+Her durumda coalesce tercih ediniz.
 
 

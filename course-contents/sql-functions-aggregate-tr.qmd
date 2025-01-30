@@ -156,11 +156,19 @@ FROM Track t
 
 
 
+## Sqlite
 
-**GROUP_CONCAT**
+
+**GROUP_CONCAT(X,Y)**
+**STRING_AGG(X,Y)**
 
 GROUP_CONCAT(deger, ayraç) verilen degerin non null olanları, ayraç kullanarak, string toplaması (concat) yaparak döndürür. 
 Ayraç değeri verilmezse virgul , kabul edilir.
+
+GROUP_CONCAT ve STRING_AGG aynı fonksiyondur.
+Biri diğerinin takma adıdır.
+STRING_AGG PostgreSQL ve SQL-Server ile uyumlu olmak için, GROUP_CONCAT ise MySQL ile uyumlu olmak için vardır.
+
 
 
 ```sql
@@ -183,7 +191,16 @@ FROM Track t
 WHERE t.AlbumId  = 154;
 ```
 
-## Sqlite
 
-TODO EKLE.
-https://www.sqlite.org/lang_aggfunc.html
+
+
+
+**total(X)**
+**sum(X)**
+
+```sql
+{{< include Labs/Sum-vs-Total.sql >}}
+```
+
+
+- [sqlite toplam fonksiyonları yardım dokumanı](https://www.sqlite.org/lang_aggfunc.html)

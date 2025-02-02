@@ -1,0 +1,11 @@
+## İlişkisel veri tabanı modeli
+
+![ilişkisel model veritabanı](./images/database-models-relational-model.png)
+
+@AssetManagement2001Data
+
+İlişkisel veri tabanı modeli 1970 yılında IBM firmasında çalışan Dr. Codd tarafından önerilmiştir @Codd1970relational.
+İlişkisel veri tabanı modeli daha önce kullanılan 3 veri tabanı modelinde karşılamaktadır. Yani hem düz dosya tabanlı, hem hiyerarşik hem de ağ (network) model yapısı ilişkisel veri tabanı olarak modellenebilir.
+Bu modelin esnek yapısı sayesinde günümüzdeki yapısal (structured) verilerin çoğunluğu ilişkisel veri tabanlarında saklanmaktadır.
+Bu model dersimizin ana konusudur.
+

@@ -8,7 +8,7 @@
 
 {{< include ../course-contents/database-models-network-tr.qmd >}}
 
-
+{{< include ../course-contents/database-models-relational-tr.qmd >}}
 
 
 {{< include ../course-contents/database-models-document-tr.qmd >}}

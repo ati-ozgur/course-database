@@ -2,12 +2,12 @@
 
 {{< include ../course-contents/database-models-flat-file-tr.qmd >}}
 
+{{< include ../course-contents/database-models-hierarchical-tr.qmd >}}
 
-## Sıra düzenli (hierarchical) veri tabanları
 
-- Aile Agaçı
-- Dosya sistemi
-- UNS (Unified Namespace)
+
+
+
 
 
 {{< include ../course-contents/database-models-document-tr.qmd >}}

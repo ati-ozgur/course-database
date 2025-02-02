@@ -1,0 +1,8 @@
+## Sıra düzenli (hierarchical) veri tabanları
+
+![Sıra düzenli (hierarchical) veritabanı](./images/database-models-hierarchical-model.png)
+@AssetManagement2001Data
+
+- Aile Agaçı
+- Dosya sistemi
+- UNS (Unified Namespace)

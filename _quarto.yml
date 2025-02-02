@@ -16,7 +16,7 @@ book:
 bibliography: references.bib 
 
 profile:
-  default: en
+  default: tr
   group: 
     - [def,en,tr]
 

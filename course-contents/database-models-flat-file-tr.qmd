@@ -1,0 +1,19 @@
+
+## Dosya tabanlı veri tabanları
+
+Verilerin düz dosyalarda tutulduğu veri tabanlarıdır.
+Hala verilerin çok karışık olmadığı durumlarda yaygın olarak kullanılır.
+Örneğin tüm yapılandırma (configuration) verileri bu anlamda düşünelebilir.
+CSV (Comma Separated Values, virgul ile ayrılmış değerl) dosyaları yine bu veri tabanları arasında sayılır.
+Özellikle veri tabanları arasında veri paylaşımı için yaygın olarak kullanılırlar.
+
+Unix türevi sistemlerde ki kullanıcı bilgilerin saklayan aşağıdaki dosyalar yine bu veri tabanlarına çok bilinen bir örnektir.
+
+- /etc/passwd
+- /etc/group 
+
+
+![Dosya tabanlı veritabanı](./images/database-models-flat-file-model.png)
+@AssetManagement2001Data
+
+Yapısı yüzünden ile tek bir tablo tutulması daha kolaydır.

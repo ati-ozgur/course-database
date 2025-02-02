@@ -3,6 +3,24 @@
 ![Sıra düzenli (hierarchical) veritabanı](./images/database-models-hierarchical-model.png)
 @AssetManagement2001Data
 
+Bu veri tabanı yapısı ağaç mantığında verilerin aşağıya doğru birbirleribilgilerin
+
+Hiyerarşik veri tabanı modeli, her kaydın tek bir ebeveyni ve birden fazla çocuğu olacak şekilde verileri ağaç benzeri bir yapıda, bakını yukarıdaki şekil, düzenler. 
+Aşağıdaki kavramlar bu tip verilerin tutulması için en çok tercih edilenlerdir.
+
 - Aile Agaçı
 - Dosya sistemi
+- Organizasyon şemaları
+
+Verilerin bu şekilde tutulduğu modern bir örnek için digitalization unified namespace sayılabilir.
+
 - UNS (Unified Namespace)
+
+Unified namespace sistemlerde veriler ISA95 standardında tutulur.
+
+- Metal Fabrika (area)
+	+ Ankara şube (site)
+   		* Kaynak Bölgesi (cell)
+    		- Robot kolu 1
+
+

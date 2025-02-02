@@ -1,0 +1,10 @@
+## Ağ (Network) model veri tabanları
+
+![network model veritabanı](./images/database-models-network-model.png)
+
+@AssetManagement2001Data
+
+Ağ veritabanı modeli, kayıtlar arasında çoktan çoğa ilişkilere izin veren esnek bir veri düzenleme yoludur. 
+Hiyerarşik modelin sorunlarını aşmak için önerilmiştir.
+Her kaydın yalnızca bir üst öğesi olduğu hiyerarşik modelin aksine, ağ modeli kayıtların birden fazla üst öğeye sahip olmasına izin vererek birbirine bağlı verilerden oluşan karmaşık bir ağ oluşturur. 
+Ağ veritabanı modeli, sosyal ağlar veya tedarik zincirleri gibi gerçek dünya senaryolarını temsil etmek için özellikle yararlıdır. 

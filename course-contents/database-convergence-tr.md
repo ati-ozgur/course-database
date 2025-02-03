@@ -91,9 +91,8 @@ Yeni Oracle 23 sürümü bu yetenekleri vurgulamak için 23ai olarak adlandırı
 
 ## Redis
 
-Rails, veritabanında redis değişimi için bir eklenti sunuyor.
+Rails, veritabanında [redis değişimi için bir eklenti](https://github.com/rails/solid_cable) sunuyor.
 
-https://github.com/rails/solid_cable
 
 Redis'ten (anahtar-değer veritabanı) SQLite'a bir uygulama geçişinin örneği için aşağıdaki videoyu izleyin.
 

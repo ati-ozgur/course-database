@@ -15,7 +15,7 @@ Dosya tabanlı mimaride, veritabanı olarak yerel bir dosya kullanılır.
 Sunucu yoktur, her şey istemci bilgisayarda yapılır.
 Sqlite ve Microsoft Access iyi bilinen dosya tabanlı veritabanlarıdır.
 
-## hafızada çalışan
+## Hafızada çalışan
 
 Her şey bellekte saklanır.
 Bu nedenle, istemci bağlantısı sona erdiğinde, veritabanı içeriği de kaybolur.
@@ -24,7 +24,9 @@ Sqlite [hafıza veritabanı](https://www.sqlite.org/inmemorydb.html) olarak çal
 
 
 
+## Gömülü 
 
+TODO
 
 
 

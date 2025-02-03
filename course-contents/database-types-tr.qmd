@@ -29,7 +29,8 @@ Nosql olarak adlandırılan ve diğer veritabanı türleri ele alınmayacaktır.
 ## Mimariye göre veritabanı türleri
 
 - Sunucu-istemci
-- dosya tabanlı
-- hafızada
+- Dosya tabanlı
+- Hafızada
+- Gömülü
 
 {{< include ../course-contents/database-types-architecture-tr.qmd >}}

@@ -2,3 +2,17 @@
 
 ![Wikipedia2016DatabaseModelsFigure](./images/database-models-graph-example-opensource-com.png)
 
+Çizge modelleri ağ modellerinin daha genelleştirilmiş ve esnek bir biçimi olarak sunulmuştur. 
+Ağ modellerinde nodlar arasında tek bir ilişki olabilirken, çizge modellerinde bu kısıtlama kaldırılmıştır.
+Verilerde gezinmek ve sorgulamak için yeni yöntemler önermişlerdir.
+Çizge model veri tabanları, sosyal ağlar, öneri (recommendation) motorları ve bilgi grafikleri (knowledge graphs) gibi karmaşık ve gelişen ilişkilerle ilgilenen uygulamalar için oldukça uygun hale getirir.
+
+[Graph Query Language](https://www.gqlstandards.org/) (çizge sorgu dili) bir standard olarak Nisan 2024'te sunulmuştur.
+
+SQL:2023 standardı [“Property Graph Queries (SQL/PGQ)”](https://peter.eisentraut.org/blog/2023/04/04/sql-2023-is-finished-here-is-whats-new) eklemiştir.
+Bu sayede veriler çizge (graph) gibi sorgulanabilecektir.
+
+- [neo4j](https://neo4j.com/docs/getting-started/graph-database/)
+- [oracle graph database](https://www.oracle.com/autonomous-database/what-is-graph-database/)
+
+

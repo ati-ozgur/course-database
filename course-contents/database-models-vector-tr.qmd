@@ -28,3 +28,5 @@ Vector veri tabanı kullanmak yerine, vector gömülü verilerinin (embeddings) 
 
 [vector veritabanları yanlış soyutlamadır](https://www.timescale.com/blog/vector-databases-are-the-wrong-abstraction)
 
+https://devblogs.microsoft.com/azure-sql/eap-for-vector-support-refresh-introducing-vector-type/
+

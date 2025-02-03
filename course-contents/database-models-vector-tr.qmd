@@ -28,5 +28,8 @@ Vector veri tabanı kullanmak yerine, vector gömülü verilerinin (embeddings) 
 
 [vector veritabanları yanlış soyutlamadır](https://www.timescale.com/blog/vector-databases-are-the-wrong-abstraction)
 
-https://devblogs.microsoft.com/azure-sql/eap-for-vector-support-refresh-introducing-vector-type/
+[SQL-Server vektor veri tipi](https://devblogs.microsoft.com/azure-sql/eap-for-vector-support-refresh-introducing-vector-type/)
 
+[Oracle vektor veri tipi](https://docs.oracle.com/en/database/oracle/oracle-database/23/vecse/create-tables-using-vector-data-type.html)
+
+[Sqlite vektor arama genişlemesi](https://github.com/asg017/sqlite-vec)

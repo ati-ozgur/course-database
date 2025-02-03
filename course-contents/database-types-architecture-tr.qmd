@@ -5,9 +5,22 @@
 - dosya tabanlı
 - hafızada çalışan
 
-## Sunucu-istemci
+## İstemci Sunucu veri tabanları
 
-{{< include ../course-contents/diagrams/database-client-server-tr.md >}}
+![İstemci Sunucu çalışması](images/veritabani-istemci-sunucu.png){width=90%}
+
+Bir çok veri tabanı sistemi istemci sunucu mimarisinda çalışır.
+Çalışma mantıkları aşağıdaki gibidir.
+
+
+1. İstemci uygulaması çalıştırmak istediği sorguyu istek (request) olarak gönderir.
+2. Bu sql sorgu isteği bir bağlantı kütüphanesi tarafından sunucu'ya iletilir.
+3. Sunucu tarafında gönderilen sorgu isteğini bunun için ayrılmış bir işlem (process) karşılar.
+4. Bu işlem ihtiyaç duyduğu veri tabanı dosyalarını okuyarak değiştirerek cevap hazırlar. Bu sırada arka planda bir çok başka işlem çalışıyor olabilir.
+5. SQL sorgusunun cevabı (response) geri döndürülür. Bu cevap kaç satırın etkilendiği, bir sonuç seti veya bir hata mesajı olabilir.
+6. İstemci yine bağlantı kütüphanesini kullanarak cevabı yorumlar.
+
+
 
 ## Dosya tabanlı
 

@@ -54,7 +54,20 @@ Gömülü bir veritabanı, istemci sunucu mimarisinin tersine uygulamaya entegre
 - Hafiflik: Gömülü veritabanları az kaynak kullanımı düşünelerek tasarlanmıştır.
 - yerel depolama: veri tabanı dosyaları çalıştığı ortamda tutulur. Örneğin çalıştığı telefon.
 
+Gömülü veri tabanlarına SQLite, H2, Derby ve Microsoft Access verilebilir.
 
+Gömülü veri tabanları özellikle aşağıdaki durumlarda kullanılırlar.
+
+- Mobil uygulamalar
+- Gömülü sistemler mesela drone, IoT cihazları.
+- Masaüstü uygulamaları
+- Uygulama Testi
+
+Kısıtlamalar
+
+Gömülü veri tabanları, dosya tabanlı oldukları için eşzamanlı erişim (Concurrency) problemleri vardır.
+Bundan dolayı ölçeklenme ile ilgili sorunları olabilir.
+Genel olarak normal istemci sunucu mimarisinde veri tabanlarından daha az özelliğe sahiptirler.
 
 
 

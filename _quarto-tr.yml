@@ -40,7 +40,7 @@ book:
         - course-contents/er-model-tr.qmd
         - course-contents/er-model-mermaid-diagrams-tr.qmd
 
-    - part: "DDL Data Definition Language (Veri Tanım Dili)"
+    - part: "DDL (Veri Tanım Dili) Giriş"
       chapters:
         - course-contents/sql-DDL-data-definition-language-tr.qmd
         - course-contents/sql-data-dictionary-tr.qmd
@@ -80,7 +80,7 @@ book:
         - course-contents/sql-views-tr.qmd
         - course-contents/sql-virtual-tables-tr.qmd
 
-    - part: "SQL: Functions Stored Procedures Triggers"
+    - part: "SQL: Functions, Stored Procedures, Triggers, Extensions"
       chapters:
         - course-contents/sql-functions-scalar-en.qmd
         - course-contents/sql-functions-string-en.qmd
@@ -90,6 +90,7 @@ book:
         - course-contents/sql-functions-json-en.qmd
         - course-contents/sql-stored-procedures-en.qmd
         - course-contents/sql-triggers-en.qmd
+        - course-contents/sql-sqlite-extensions-tr.qmd
                 
     - part: "SQL DML-DCL-TCL"
       chapters:
@@ -126,6 +127,11 @@ book:
         - course-contents/database-design-from-spreadsheets-en.qmd
         - course-contents/database-design-questions-answers-en.qmd
         - course-contents/database-design-normal-forms.qmd
+
+    - part: "DDL (Veri Tanım Dili) İleri"
+      chapters:
+        - course-contents/sql-DML-alter-table-tr.qmd
+
 
     - part: "SQL Tuning"
       chapters:

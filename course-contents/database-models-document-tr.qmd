@@ -1,10 +1,25 @@
 ## Dokuman (Belge) veritabanları
 
-En bilinen örnek mongodb'dir. 
+
 Belge veritabanları çoğunlukla json belgelerini depolar. 
 Bunlar şema içermeyen veri düzenlemeleridir. İlişkisel veritabanlarından farklı olarak, önceden veritabanı şemasını tasarlamak zorunda değilsinizdir.
-
 Bunun avantajları ve dezavantajları vardır.
+En bilinen örnek mongodb'dir. 
+
+```{mermaid}
+flowchart TB
+    subgraph database
+        subgraph collection
+            subgraph document
+                d1["{id:1,name:'Atilla'}"]
+                d2["{id:2,name:'Duru'}"]
+            end    
+        end    
+    end
+```
+
+
+
 
 Örnekler:
 

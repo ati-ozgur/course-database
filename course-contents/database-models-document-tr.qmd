@@ -6,6 +6,17 @@ Bunlar şema içermeyen veri düzenlemeleridir. İlişkisel veritabanlarından f
 Bunun avantajları ve dezavantajları vardır.
 En bilinen örnek mongodb'dir. 
 
+Veri tabanı (database) en üst seviyedeki veri tutma nesnesidir.
+Veri tabanı bir çok kolleksiyon içerebilir.
+Kolleksiyon (collection) ilişkisel veri tabanlarındaki tabloya denktir.
+Dokuman (document) ise bu kolleksiyon içindeki bir satır olarak json nesnesidir.
+Örnek olarak:
+
+- veri tabanı = kütüphane
+- Kolleksiyon = Kitap rafı
+- Dokuman = kitap
+
+
 ```{mermaid}
 flowchart TB
     subgraph database
@@ -19,9 +30,7 @@ flowchart TB
 ```
 
 
-
-
-Örnekler:
+Örnek Dokuman veri tabanları:
 
 - MongoDB
 - Databricks
@@ -30,4 +39,13 @@ flowchart TB
 - Couchbase
 - Firebase (google)
 - Oracle NoSQL
+
+SQL standardına eklenen json fonksiyonları sayesinde bütün modern ilişkisel veri tabanları dokuman veri tabanı olarak çalışabilmektedir.
+
+- oracle
+- SQL-Server
+- SQLite
+- Postgres
+- MySQL/MariaDB
+
 

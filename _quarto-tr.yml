@@ -86,12 +86,13 @@ book:
         - course-contents/sql-functions-string-en.qmd
         - course-contents/sql-functions-mathematical-en.qmd
         - course-contents/sql-functions-date-and-time-en.qmd
-        - course-contents/sql-functions-window-en.qmd
         - course-contents/sql-functions-json-en.qmd
         - course-contents/sql-stored-procedures-en.qmd
         - course-contents/sql-triggers-en.qmd
         - course-contents/sql-sqlite-extensions-tr.qmd
-                
+    - part: "SQL: İleri Seviye"
+      chapters:
+        - course-contents/sql-functions-window-en.qmd
     - part: "SQL DML-DCL-TCL"
       chapters:
         - course-contents/sql-DML-data-manipulation-language-tr.qmd

@@ -23,7 +23,8 @@ Ama ayrıca sadece vektor veri tabanı olarak çalışan ürünlerde vardır.
 - Qdrant
 - Chroma
 
-Aşağıdaki yazı vector veritabanlarını yanlış soyutlama olduğunu iddia ediyor.
+Aşağıdaki yazı vector veritabanlarının yanlış soyutlama olduğunu iddia ediyor.
+Vector veri tabanı kullanmak yerine, vector gömülü verilerinin (embeddings) indeks mantığında veri tabanı tarafından yönetilmesinin daha mantıklı olduğunu söylüyor.
 
 [vector veritabanları yanlış soyutlamadır](https://www.timescale.com/blog/vector-databases-are-the-wrong-abstraction)
 

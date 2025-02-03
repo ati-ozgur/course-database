@@ -27,6 +27,10 @@ Bir çok veri tabanı sistemi istemci sunucu mimarisinda çalışır.
 Dosya tabanlı mimaride, veritabanı olarak yerel bir dosya kullanılır.
 Sunucu yoktur, her şey istemci bilgisayarda yapılır.
 Sqlite ve Microsoft Access iyi bilinen dosya tabanlı veritabanlarıdır.
+Düz dosya tabanlı veri tabanları CSV gibi yine bu tür veri tabanı sayılırlar.
+Gömülü veri tabanları dosya veri tabanlarının daha gelişmiş halidir.
+
+
 
 ## Hafızada çalışan
 
@@ -39,7 +43,18 @@ Sqlite [hafıza veritabanı](https://www.sqlite.org/inmemorydb.html) olarak çal
 
 ## Gömülü 
 
-TODO
+
+Gömülü veri tabanları bazen dosya tabanlı veri tabanları olarakta adlandırılırlar.
+
+
+Gömülü bir veritabanı, istemci sunucu mimarisinin tersine uygulamaya entegre edilmiş bir veritabanı yönetim sistemidir 
+
+- Ayrı bir sunucu yoktur. Bu durum ağ iletişimini ortadan kaldırdığı için uygulamayı hızlandırır ve dağıtımı (deployment) basitleştirir. Bu durum ayrıca yönetimide kolaylaştırır.
+
+- Hafiflik: Gömülü veritabanları az kaynak kullanımı düşünelerek tasarlanmıştır.
+- yerel depolama: veri tabanı dosyaları çalıştığı ortamda tutulur. Örneğin çalıştığı telefon.
+
+
 
 
 

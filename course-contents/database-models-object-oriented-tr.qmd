@@ -1,0 +1,19 @@
+## Nesneye yönelik (object oriented) veri tabanı modeli
+
+![Nesneye yönelik model veritabanı](./images/database-models-object-oriented-model.png)
+
+@AssetManagement2001Data
+
+
+Nesneye yönelik veri tabanı modelleri nesneye yönelik programlamanın başarısı üzerine önerilmiş veri tabanlarıdır.
+Bir süre popular olmuş olmalarına rağmen günümüzde az kullanılırlar.
+Oracle ve postgres veri tabanları bu paradigmayı direk desteklemektedir.
+
+
+- [Oracle Nesne-İlişkisel](https://docs.oracle.com/en/database/oracle/oracle-database/23/adobj/index.html)
+- [postgres bunu destekler](https://learn.postgreshelp.com/courses/postgresql-tutorial-dba/lesson/object-relational-database-management-system)
+
+Bu modellemede veriler nesne (object), kalıtım (inheritance) ve diğer nesneye yönelik programlar özellikleri kullanılarak modellenir.
+
+Ben, bu nesne özelliklerinin üretim Oracle veritabanlarında kullanıldığını hiç görmedim.
+

@@ -8,6 +8,11 @@ Ayrıca, eski sıkıcı teknolojiler farklı ihtiyaçlar için birçok yardımc�
 Örneğin, şema karşılaştırması eski sıkıcı veritabanlarında yaygın olarak desteklenir ancak lütfen aynı kullanım durumu için belge veritabanlarına bakın.
 
 
+KISS:"Basit ve Aptalca tut" prensipi üzerine uygulamanıza mümkün olduğunca basit başlamalı ve zamanı gelince karışık teknolojileri eklemelisiniz.
+Bakınız ekteki vidyonun en önemli yansısı: 
+[Yazılım Mi̇marlığı kararları erteleme sanatıdır.](https://www.youtube.com/watch?v=nuHMlA3iLjY)
+
+
 
 ## İlişkisel veritabanı birçok kullanım durumu için çok iyi bir ilk tercihtir
 

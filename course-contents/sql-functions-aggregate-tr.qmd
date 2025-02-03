@@ -168,7 +168,7 @@ GROUP_CONCAT(deger, ayraç) verilen degerin non null olanları, ayraç kullanara
 Ayraç değeri verilmezse virgul , kabul edilir.
 
 GROUP_CONCAT ve STRING_AGG aynı fonksiyondur.
-Biri diğerinin takma adıdır.
+Biri diğerinin takma adı (alias) olarak sunulmuştur.
 STRING_AGG PostgreSQL ve SQL-Server ile uyumlu olmak için, GROUP_CONCAT ise MySQL ile uyumlu olmak için vardır.
 
 
@@ -214,6 +214,19 @@ SELECT SUM(Null) AS ResultSum
 ```sql
 {{< include Labs/Sum-vs-Total.sql >}}
 ```
+
+- **DECIMAL_SUM(X)**
+
+Kayan noktalı (floating points) sayılar yaklaşık sayılardır.
+Bu sayıların toplamında yaklaşım hataları yapılabilir.
+Eğer uygulamanız bu hataları kabul edemez ise, örneğin para hesapları yapılıyorsa, bu durumda bu fonksiyonu kullanmalısınız.
+Bu fonksiyon normalde SQLite ile gelmez.
+Ayrıca yüklenebilen genişleme (loadable extension) olarak eklenmesi gerekir.
+SQLite extension bölümüne bakınız.
+TODO link ekle.
+
+
+
 
 
 - [sqlite toplam fonksiyonları yardım dokumanı](https://www.sqlite.org/lang_aggfunc.html)

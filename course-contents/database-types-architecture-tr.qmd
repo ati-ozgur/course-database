@@ -1,11 +1,11 @@
-
 ## Mimariye göre veritabanı türleri
 
 - Sunucu-istemci
-- dosya tabanlı
-- hafızada çalışan
+- Dosya tabanlı
+- Hafızada
+- Gömülü
 
-## İstemci Sunucu veri tabanları
+# İstemci Sunucu veri tabanları
 
 ![İstemci Sunucu çalışması](images/veritabani-istemci-sunucu.png){width=90%}
 

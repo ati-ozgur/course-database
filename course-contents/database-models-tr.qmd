@@ -12,6 +12,7 @@
 
 {{< include ../course-contents/database-models-object-oriented-tr.qmd >}}
 
+{{< include ../course-contents/database-models-xml-tr.qmd >}}
 
 {{< include ../course-contents/database-models-document-tr.qmd >}}
 

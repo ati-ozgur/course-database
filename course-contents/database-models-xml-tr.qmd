@@ -1,0 +1,12 @@
+## XML veritabanları
+
+XML'in 2000'li yıllarda populer olması ile XML veri tabanları ortaya çıkmıştır.
+Diğer veri tipleri gibi XML verilerin kayıt edilmesi, sorgulanması bilinen veri tabanlarının bir kısmı tarafından yapılmıştır.
+
+- Oracle'ın yerel xml depolama ve sorgu yetenekleri vardır, bkz. [Oracle XML DB](https://www.oracle.com/tr/database/technologies/appdev/xmldb.html).
+- SQL Server'ın da yerel xml depolama ve sorgu yetenekleri vardır, bkz. [Sql Server XML Data](https://learn.microsoft.com/en-us/sql/relational-databases/xml/xml-data-sql-server?view=sql-server-ver16)
+
+
+XML kullanımı artık çok azalmıştır.
+Bunun nedeni JSON veri tipinin çok daha populer olmasıdır.
+JSON'un bu populerliği, bir sonraki belge veri tabanı modelinin sunulmasına neden olacaktır.

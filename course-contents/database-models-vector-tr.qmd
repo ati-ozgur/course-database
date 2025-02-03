@@ -1,3 +1,27 @@
 ## Vektor veri tabanları 
 
+Üretken yapay zekanın (Generative AI) populer olması ile RAG (retrieval augmented generation) uygulamaları için vektpr veri tabanlarının populerliği artmıştır.
+Aşağıda bir RAG uygulaması için nasıl çalıştıklarına dair bir örnek görülebilir.
+
 {{< include ../course-contents/diagrams/how-vector-databases-works-tr.md >}}
+
+Bu veri tabanlarında veriler bir vektor olarak tutulmakta ve vektor operasyonları daha hızlı olarak yapılmaktadır.
+Bilinen veri tabanları  bu özellikleri sunmaya başlamıştır.
+
+- postgres
+- oracle
+- MariaDb
+- MongoDb
+- Couchbase
+- Neo4J
+- Redis
+
+Ama ayrıca sadece vektor veri tabanı olarak çalışan ürünlerde vardır.
+
+- Pinecone
+- Milvus
+- Qdrant
+- Chroma
+
+
+

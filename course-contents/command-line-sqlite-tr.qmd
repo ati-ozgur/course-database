@@ -163,3 +163,13 @@ Aşağıdaki komutu deneyin
 echo .dump | sqlite3 chinook.sqlite
 ```
 
+**.load**
+
+genişleme(extension) yüklemenize izin verir.
+Genişlemeler SQLite ana çekirdekte olmayan özelliklerin yüklenmesine izin verir.
+Bu sayede bu özellikler kullanılabilir.
+Genişlemeleri ayrı bir bölümde inceleyeceğiz.
+
+
+
+ FILE ?ENTRY?       Load an extension library

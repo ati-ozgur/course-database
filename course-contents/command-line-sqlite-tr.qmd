@@ -4,6 +4,20 @@
 
 - [sqlite3](https://www.sqlite.org/cli.html)
 
+
+## SQLite Komut satırı Demo
+
+1. Chinook veri tabanı aç
+2. .tables ile tabloları göster
+3. Tablolardan SELECT ile bilgi almayı göster
+4. .mode ile SELECT çıktısını farklılaştırmayı göster
+5. .output ile dosya ortamına SELECT ile aktarım yap
+6. .schema ile tablo oluşturma betiklerin göster
+7. .dump ile veri tabanı tam kopyalamayı göster
+
+
+
+
 ## SQLite Komut satırı komutları
 
 
@@ -12,6 +26,29 @@
 - **.q**
 
 Komut satırından çıkış.
+
+- **.version**
+
+Versiyon bilgisi, özellikle bazı komutlar çalışmadığı zaman ilk kontrol edilmesi gereken bilgi.
+
+- **.databases**
+sqlite komut satırını kullanarak birden fazla veri tabanı dosyasına bağlanabilir.
+Aşağıdaki komut ekstra bir veri tabanı dosyasına bağlanmamıza izin verir.
+
+```sql
+ATTACH DATABASE filename AS database_name;
+```
+
+
+Bu bağlantı sonrasında, SQL Standardı ŞEMA_ADI.NESNE_ADI isimlendirmesini kullanmamıza izin verir.
+
+.databases komutu hangi veri tabanı dosyalarına bağlı olduğumuzu gösterir.
+İlk bağlanılan dosya her zaman main şeması olarak görülür.
+
+
+
+
+
 
 
 

@@ -15,12 +15,12 @@ brew install sqlite
 ```
 
 - Windows'ta scoop kullanılarak kurulması tavsiye edilir. 
-Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
 ```bash
 scoop install sqlite
 ```
 
+Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 [sqlite3](https://www.sqlite.org/cli.html)
 
 
@@ -158,6 +158,16 @@ Aşağıdaki komutu deneyin.
 SELECT EmployeeId,FirstName FROM Employee;
 ```
 
+- **.print**
+
+Normal yazı yazılmasını sağlar.
+bir select komutu ile yazı yazmak yerine bu kullanılabilir.
+Aşağıdaki komutu deneyin.
+
+```sql
+.print Merhaba Dünya
+```
+
 ### Dosyalardan komut çalıştırma
 
 - **.read**
@@ -284,6 +294,7 @@ Aşağıdaki komutu deneyin.
 - **.import**
 
 Örneğin bir csv dosyasını veritabanında bir tabloya yüklemenizi sağlar.
+Aşağıdaki komutu deneyin.
 
 ```sql
 .headers on
@@ -302,3 +313,31 @@ genişleme(extension) yüklemenize izin verir.
 Genişlemeler SQLite ana çekirdekte olmayan özelliklerin yüklenmesine izin verir.
 Bu sayede bu özellikler kullanılabilir.
 Genişlemeleri ayrı bir bölümde inceleyeceğiz.
+
+### SQL Ayarlama
+
+- **.eqp**
+
+Sorgu planlama açıklamalarını (EXPLAIN QUERY PLAN) yönetir.
+
+- **.explain**
+
+Explain (Açıklama) çıktısını yönetir.
+
+- **.expert**
+
+Otomatik indeks tavsiyesi verir.
+Deneysel olduğunu unutmayın.
+
+
+Aşağıdaki komutu deneyin.
+
+```sql
+SELECT * FROM Customer where FirstName LIKE 'A%';
+.eqp on
+.explain on
+SELECT * FROM Customer where FirstName LIKE 'A%';
+.expert
+SELECT * FROM Customer where FirstName LIKE 'A%';
+
+```

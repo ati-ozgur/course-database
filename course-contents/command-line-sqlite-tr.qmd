@@ -24,11 +24,12 @@ Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 1. Chinook veri tabanı aç
 2. .tables ile tabloları göster
 3. Tablolardan SELECT ile bilgi almayı göster
-4. .mode ile SELECT çıktısını farklılaştırmayı göster
-5. .output ile dosya ortamına SELECT ile aktarım yap
-6. .schema ile tablo oluşturma betiklerin göster
-7. .dump ile veri tabanı tam kopyalamayı göster
-8. .read ile SQL komutu çalıştırmayı göster.
+4. .headers on ile kolon isimlerin göster veya gösterme
+5. .mode ile SELECT çıktısını farklılaştırmayı göster
+6. .output ile dosya ortamına SELECT ile aktarım yap
+7. .schema ile tablo oluşturma betiklerin göster
+8. .dump ile veri tabanı tam kopyalamayı göster
+9. .read ile SQL komutu çalıştırmayı göster.
 
 
 
@@ -88,6 +89,13 @@ Veritabanı yedeği alınmasını sağlar.
 dosya ismi verilirken
 
 
+```console
+.save yedek.sqlite
+```
+
+.once	
+
+
 - **.shell**
 - **.system**
 çalıştırıldığu komut satırında komut çalıştırmanıza izin verir.
@@ -109,4 +117,13 @@ Aşağıdaki komutu deneyin
 .shell pwd
 ```
 
+- **.read**
+SQL veya sqlite komutlarını bir dosyadan okumanızı sağlar.
+Aynı zamanda komutları boru(pipe) | ile gönderebilirsiniz.
+
+Aşağıdaki komutu deneyin
+
+```console
+echo .dump | sqlite3 chinook.sqlite
+```
 

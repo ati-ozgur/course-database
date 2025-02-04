@@ -2,7 +2,21 @@
 
 ## SQLite
 
-- [sqlite3](https://www.sqlite.org/cli.html)
+- Ubuntu gibi bir çok linux kurulumunda yüklü olarak gelir.
+
+- Macintosh'ta eski bir sürümü vardır.
+Güncellenmesi tavsiye edilir.
+brew kullanılarak yüklenmesi tavsiye edilir.
+Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
+
+> brew install sqlite
+
+- Windows'ta scoop kullanılarak yüklenmesi tavsiye edilir. 
+Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
+
+> scoop install sqlite 
+
+[sqlite3](https://www.sqlite.org/cli.html)
 
 
 ## SQLite Komut satırı Demo
@@ -14,7 +28,7 @@
 5. .output ile dosya ortamına SELECT ile aktarım yap
 6. .schema ile tablo oluşturma betiklerin göster
 7. .dump ile veri tabanı tam kopyalamayı göster
-
+8. .read ile SQL komutu çalıştırmayı göster.
 
 
 

@@ -45,6 +45,26 @@ Komut satırından çıkış.
 
 Versiyon bilgisi, özellikle bazı komutlar çalışmadığı zaman ilk kontrol edilmesi gereken bilgi.
 
+- **.show**
+Çok kullanılan bazı özelliklerin değerlerini gösterir.
+En önemli bağlı bulunduğunu veritabanı dosyasınıda gösterir.
+
+
+
+**.output**
+Komut çıktılarının ekrana (stdout) veya bir dosyaya olmasını yönetir.
+
+
+- **.tables**
+tablo listesi gösterir.
+
+- **.schema**
+veritabanı SQL DDL (veri tanım dili) komut listesini verir.
+
+- **.dump** 
+.schema sonucu artı INSERT betiklerini gösterir.
+
+
 - **.databases**
 sqlite komut satırını kullanarak birden fazla veri tabanı dosyasına bağlanabilir.
 Aşağıdaki komut ekstra bir veri tabanı dosyasına bağlanmamıza izin verir.
@@ -61,8 +81,32 @@ Bu bağlantı sonrasında, SQL Standardı ŞEMA_ADI.NESNE_ADI isimlendirmesini k
 
 
 
+- **.save**
+- **.backup**
+Veritabanı yedeği alınmasını sağlar.
+.save komutu .backup'un takma adıdır.
+dosya ismi verilirken
+
+
+- **.shell**
+- **.system**
+çalıştırıldığu komut satırında komut çalıştırmanıza izin verir.
+Örneği
 
 
 
+```console
+.shell pwd
+```
+-- **CD dizinadi**
+
+Bulunduğunuz dizini değiştirir.
+Aşağıdaki komutu deneyin
+
+```console
+.shell pwd
+.cd ..
+.shell pwd
+```
 
 

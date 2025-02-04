@@ -30,10 +30,14 @@ Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 7. .schema ile tablo oluşturma betiklerin göster
 8. .dump ile veri tabanı tam kopyalamayı göster
 9. .read ile SQL komutu çalıştırmayı göster.
-
+10. .exit ile komut satırında çıkma
 
 
 ## SQLite Komut satırı komutları
+
+:::{.callout-important}
+Aşağıdaki komutlarının tümünü derse başlarken öğrenmenize gerek yoktur.
+:::
 
 
 - **.exit**

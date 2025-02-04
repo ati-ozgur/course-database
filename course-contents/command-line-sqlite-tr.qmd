@@ -21,16 +21,17 @@ Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
 ## SQLite Komut satırı Demo
 
-1. Chinook veri tabanı aç
-2. .tables ile tabloları göster
-3. Tablolardan SELECT ile bilgi almayı göster
-4. .headers on ile kolon isimlerin göster veya gösterme
-5. .mode ile SELECT çıktısını farklılaştırmayı göster
-6. .output ile dosya ortamına SELECT ile aktarım yap
-7. .schema ile tablo oluşturma betiklerin göster
-8. .dump ile veri tabanı tam kopyalamayı göster
-9. .read ile SQL komutu çalıştırmayı göster.
-10. .exit ile komut satırında çıkma
+01. Chinook veri tabanı aç
+02. .help ile komut listesini göster
+03. .tables ile tabloları göster
+04. Tablolardan SELECT ile bilgi almayı göster
+05. .headers on ile kolon isimlerin göster veya gösterme
+06. .mode ile SELECT çıktısını farklılaştırmayı göster
+07. .output ile dosya ortamına SELECT ile aktarım yap
+08. .schema ile tablo oluşturma betiklerin göster
+09. .dump ile veri tabanı tam kopyalamayı göster
+10. .read ile SQL komutu çalıştırmayı göster.
+11. .exit ile komut satırında çıkma
 
 
 ## SQLite Komut satırı komutları
@@ -38,6 +39,10 @@ Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 :::{.callout-important}
 Aşağıdaki komutlarının tümünü derse başlarken öğrenmenize gerek yoktur.
 :::
+
+- **.help**
+Yardım alınabilecek komut listesini verir.
+.help komut adı ile komut hakkında ayrıntılı bilgi verir.
 
 
 - **.exit**
@@ -103,6 +108,18 @@ SELECT EmployeeId,FirstName FROM Employee;
 .headers on
 SELECT EmployeeId,FirstName FROM Employee;
 ```
+
+- **.excel**
+
+Bir sonraki komut sonucunu excel'de açmanızı sağlar.
+Aşağıdaki komutu deneyin.
+
+```sql
+.excel
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
 
 - **.tables**
 tablo listesi gösterir.

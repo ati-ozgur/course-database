@@ -47,10 +47,25 @@ Komut satırından çıkış.
 Versiyon bilgisi, özellikle bazı komutlar çalışmadığı zaman ilk kontrol edilmesi gereken bilgi.
 
 - **.show**
+
 Çok kullanılan bazı özelliklerin değerlerini gösterir.
 En önemli bağlı bulunduğunu veritabanı dosyasınıda gösterir.
 
+- **.headers**
 
+select komutunda başlıkların çıktısını kontrol eder.
+
+```sql
+SELECT * FROM Employee;
+.headers on
+SELECT * FROM Employee;
+```
+
+```bash
+SELECT * FROM Employee;
+.headers on
+SELECT * FROM Employee;
+```
 
 **.output**
 Komut çıktılarının ekrana (stdout) veya bir dosyaya olmasını yönetir.
@@ -96,7 +111,7 @@ Veritabanı yedeği alınmasını sağlar.
 dosya ismi verilirken
 
 
-```console
+```bash
 .save yedek.sqlite
 ```
 
@@ -108,7 +123,7 @@ sqlite komut satırı parametre kavramına sahip olmadığı için .once ile ça
 Arkasında .read ile bu komutu çalıştırıyoruz.
 
 
-```console
+```bash
 .once yedekkomutu;
 SELECT '.save ' || replace(file,'.sqlite',REPLACE(REPLACE(datetime('now'), ':', '-'),' ','-') || '.sqlite') FROM pragma_database_list WHERE seq = 0; 
 .read yedekkomutu;
@@ -125,7 +140,7 @@ SELECT '.save ' || replace(file,'.sqlite',REPLACE(REPLACE(datetime('now'), ':', 
 
 
 
-```console
+```bash
 .shell pwd
 ```
 -- **CD dizinadi**
@@ -133,7 +148,7 @@ SELECT '.save ' || replace(file,'.sqlite',REPLACE(REPLACE(datetime('now'), ':', 
 Bulunduğunuz dizini değiştirir.
 Aşağıdaki komutu deneyin
 
-```console
+```bash
 .shell pwd
 .cd ..
 .shell pwd
@@ -145,7 +160,7 @@ Aynı zamanda komutları boru(pipe) | ile gönderebilirsiniz.
 
 Aşağıdaki komutu deneyin
 
-```console
+```bash
 echo .dump | sqlite3 chinook.sqlite
 ```
 

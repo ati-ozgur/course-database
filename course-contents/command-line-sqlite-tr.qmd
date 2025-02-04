@@ -72,6 +72,23 @@ veri tabanı yapılandırmasını gösterir.
 
 ### Çıktı kontrolü
 
+- **.changes**
+
+SQL tarafında etkilenen satır sayısını göster/gösterme
+
+Aşağıdaki komutu deneyin.
+
+
+```sql
+.changes on
+SELECT FirstName FROM Employee;
+```
+
+- **.echo**
+
+Çalıştırılan SQL komutunu göster/gösterme
+Varsayılan off, göstermez.
+
 - **.headers**
 
 select komutunda başlıkların çıktısını kontrol eder.

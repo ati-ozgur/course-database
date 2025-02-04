@@ -58,6 +58,8 @@ En önemli bağlı bulunduğunu veritabanı dosyasınıda gösterir.
 - **.headers**
 
 select komutunda başlıkların çıktısını kontrol eder.
+Aşağıdaki komutu deneyin.
+
 
 ```sql
 SELECT * FROM Employee;
@@ -66,9 +68,41 @@ SELECT * FROM Employee;
 ```
 
 
-**.output**
+- **.output**
 Komut çıktılarının ekrana (stdout) veya bir dosyaya olmasını yönetir.
 
+- **.mode**
+
+Çıktının nasıl olacağını kontrol eder.
+Aşağıdaki çıktı modları özellikle yararlıdır.
+
++ cvs
++ box
++ table
++ json
++ insert
++ markdown
+
+Aşağıdaki komutları deneyin.
+
+
+```sql
+.mode box
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+```sql
+.mode json
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+```sql
+.mode insert
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
 
 - **.tables**
 tablo listesi gösterir.
@@ -108,6 +142,7 @@ Bu bağlantı sonrasında, SQL Standardı ŞEMA_ADI.NESNE_ADI isimlendirmesini k
 Veritabanı yedeği alınmasını sağlar.
 .save komutu .backup'un takma adıdır.
 dosya ismi verilirken
+Aşağıdaki komutu deneyin.
 
 
 ```bash
@@ -120,6 +155,7 @@ Sadece bir sonraki komut çıktısını dosyaya aktarır.
 Aşağıdaki komut ile veritabanının tarih ve saat ile yedeğini alıyoruz.
 sqlite komut satırı parametre kavramına sahip olmadığı için .once ile çalıştırmak istediğimiz komutu bir dosyaya yazıyor.
 Arkasında .read ile bu komutu çalıştırıyoruz.
+Aşağıdaki komutu deneyin.
 
 
 ```sql
@@ -149,7 +185,7 @@ FROM pragma_database_list WHERE seq = 0;
 -- **CD dizinadi**
 
 Bulunduğunuz dizini değiştirir.
-Aşağıdaki komutu deneyin
+Aşağıdaki komutu deneyin.
 
 ```bash
 .shell pwd

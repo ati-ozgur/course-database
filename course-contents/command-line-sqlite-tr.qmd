@@ -61,11 +61,6 @@ SELECT * FROM Employee;
 SELECT * FROM Employee;
 ```
 
-```bash
-SELECT * FROM Employee;
-.headers on
-SELECT * FROM Employee;
-```
 
 **.output**
 Komut çıktılarının ekrana (stdout) veya bir dosyaya olmasını yönetir.
@@ -123,9 +118,13 @@ sqlite komut satırı parametre kavramına sahip olmadığı için .once ile ça
 Arkasında .read ile bu komutu çalıştırıyoruz.
 
 
-```bash
+```sql
 .once yedekkomutu;
-SELECT '.save ' || replace(file,'.sqlite',REPLACE(REPLACE(datetime('now'), ':', '-'),' ','-') || '.sqlite') FROM pragma_database_list WHERE seq = 0; 
+SELECT '.save ' || 
+replace(file,'.sqlite',
+REPLACE(REPLACE(datetime('now'), ':', '-'),' ','-') 
+|| '.sqlite') 
+FROM pragma_database_list WHERE seq = 0; 
 .read yedekkomutu;
 ```
 

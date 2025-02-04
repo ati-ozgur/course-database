@@ -9,12 +9,17 @@ Güncellenmesi tavsiye edilir.
 brew kullanılarak kurulması tavsiye edilir.
 Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
-> brew install sqlite
+
+```bash
+brew install sqlite
+```
 
 - Windows'ta scoop kullanılarak kurulması tavsiye edilir. 
 Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
-> scoop install sqlite 
+```bash
+scoop install sqlite
+```
 
 [sqlite3](https://www.sqlite.org/cli.html)
 

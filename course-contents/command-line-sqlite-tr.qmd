@@ -6,12 +6,12 @@
 
 - Macintosh'ta eski bir sürümü vardır.
 Güncellenmesi tavsiye edilir.
-brew kullanılarak yüklenmesi tavsiye edilir.
+brew kullanılarak kurulması tavsiye edilir.
 Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
 > brew install sqlite
 
-- Windows'ta scoop kullanılarak yüklenmesi tavsiye edilir. 
+- Windows'ta scoop kullanılarak kurulması tavsiye edilir. 
 Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
 > scoop install sqlite 

@@ -65,6 +65,13 @@ veritabanı SQL DDL (veri tanım dili) komut listesini verir.
 - **.dump** 
 .schema sonucu artı INSERT betiklerini gösterir.
 
+- **.dbconfig**
+
+veri tabanı yapılandırmasını gösterir.
+
+Örneğin buradaki dqs_ddl "" çift tırnak (double quotes) karakterlerinin DDL ve DML komutlarında izin verilip verilmediğini kontrol eder.
+[Bakınız SQLite derleme](https://www.sqlite.org/compile.html)
+
 
 - **.databases**
 sqlite komut satırını kullanarak birden fazla veri tabanı dosyasına bağlanabilir.
@@ -93,7 +100,22 @@ dosya ismi verilirken
 .save yedek.sqlite
 ```
 
-.once	
+**.once**
+Sadece bir sonraki komut çıktısını dosyaya aktarır.
+
+Aşağıdaki komut ile veritabanının tarih ve saat ile yedeğini alıyoruz.
+sqlite komut satırı parametre kavramına sahip olmadığı için .once ile çalıştırmak istediğimiz komutu bir dosyaya yazıyor.
+Arkasında .read ile bu komutu çalıştırıyoruz.
+
+
+```console
+.once yedekkomutu;
+SELECT '.save ' || replace(file,'.sqlite',REPLACE(REPLACE(datetime('now'), ':', '-'),' ','-') || '.sqlite') FROM pragma_database_list WHERE seq = 0; 
+.read yedekkomutu;
+```
+
+
+
 
 
 - **.shell**

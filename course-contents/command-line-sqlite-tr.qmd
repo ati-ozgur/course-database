@@ -1,0 +1,17 @@
+# Komut satırı SQLite
+
+## SQLite
+
+- [sqlite3](https://www.sqlite.org/cli.html)
+
+## SQLite Komut satırı komutları
+
+
+- **.exit**
+- **.quit**
+- **.q**
+
+Komut satırından çıkış.
+
+
+

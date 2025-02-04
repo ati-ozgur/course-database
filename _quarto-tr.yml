@@ -28,6 +28,7 @@ book:
         
         - course-contents/database-convergence-tr.md
         - course-contents/which-databases-will-be-covered-tr.md 
+        - course-contents/why-start-with-sqlite-tr.qmd 
         - course-contents/database-playground-tr.md
         - course-contents/server-installation-tr.qmd
         - course-contents/example-database-schemas-tr.qmd

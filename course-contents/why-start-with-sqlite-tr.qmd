@@ -1,0 +1,28 @@
+# Neden veritabanı öğrenmeye SQLite ile başlamalı
+
+SQLite başlangıç için aşağıdaki sebeblerden dolayı iyi bir veritabanıdır.
+
+1. **Basitlik:** SQLite kullanımı ve kurulumu basit olması için tasarlanmıştır. 
+Başlangıç çok hızlıdır. 
+Dosya tabanlı gömülü bir veritabanı olduğu için grafik veya komut satırı araçları ile komutlar çalıştırılabilir.
+
+2. **Kaynak Tüketimi:** SQLite küçük ve hızlı bir veritabanıdır. 
+Çok fazla kaynak tüketmez, bu da onu kişisel-dizüstü bilgisayarlarda, tablet ve telefonlarda kullanımına izin verir.
+
+3. **SQL uyumluluğu:** SQLite, standart SQL dilinin çoğunu destekler. Bu SQL bilginizi daha sonra diğer veritabanı sistemlerine uygulayabilirsiniz.
+
+4. **Açık Kaynak ve Ücretsiz:** SQLite açık kaynaklı bir yazılımdır, yani kullanımı ve dağıtımı ücretsizdir. 
+
+Bunun haricinde daha önceki notlarımız tekrar edersek, SQLite dünyanın en çok kullanılan veritabanıdır.
+Dikkat en çok para kazandıranıdır demiyoruz.	
+
+[SQLite web sitesine](https://www.sqlite.org/index.html) göre, SQLite Nedir?
+
+> ... SQLite dünyada en çok kullanılan veritabanı motorudur. 
+> SQLite, tüm cep telefonlarında ve çoğu bilgisayarda yerleşik olarak bulunur ve insanların her gün kullandığı sayısız başka uygulamanın içinde paketlenmiş olarak gelir. 
+
+> ... Aktif kullanımda 1 trilyondan fazla (1e12) SQLite veritabanı vardır [5].
+
+
+Modern bilgisayarlar ile SQLite ile web sitesi çalıştırma çok daha kolaylaşmıştır.
+Kursun daha sonraki bölümlerinde, SQLite ile üretim web sitesi çalıştırma ile ilgili tavsiyeler verilecektir.

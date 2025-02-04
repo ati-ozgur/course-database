@@ -156,10 +156,15 @@ Bu bağlantı sonrasında, SQL Standardı ŞEMA_ADI.NESNE_ADI isimlendirmesini k
 
 - **.save**
 - **.backup**
+
 Veritabanı yedeği alınmasını sağlar.
 .save komutu .backup'un takma adıdır.
 dosya ismi verilirken
 Aşağıdaki komutu deneyin.
+
+- **.clone**
+Bu komutta veritabanı yedeği alınmasını sağlar ama bunu yaparken SQL komutlarını kullanır.
+.backup daha güvenlidir, onu tercih ediniz.
 
 
 ```bash
@@ -228,5 +233,20 @@ Bu sayede bu özellikler kullanılabilir.
 Genişlemeleri ayrı bir bölümde inceleyeceğiz.
 
 
+- **.import**
 
- FILE ?ENTRY?       Load an extension library
+Örneğin bir csv dosyasını veritabanında bir tabloya yüklemenizi sağlar.
+
+```sql
+.headers on
+
+.mode csv
+
+.once emp.csv
+
+SELECT EmployeeId,FirstName FROM Employee;
+
+.import emp.csv Emp --csv -v
+
+```
+

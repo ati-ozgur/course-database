@@ -105,6 +105,18 @@ SELECT * FROM Employee;
 .headers on
 SELECT * FROM Employee;
 ```
+- **.separator**
+
+Satır ve kolon ayraçlarını yönetir.
+
+Aşağıdaki komutu deneyin.
+
+
+```sql
+SELECT EmployeeId,FirstName FROM Employee;
+.separator , 
+SELECT EmployeeId,FirstName FROM Employee;
+```
 
 
 - **.output**

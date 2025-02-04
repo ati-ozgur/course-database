@@ -262,6 +262,15 @@ FROM pragma_database_list WHERE seq = 0;
 .read yedekkomutu;
 ```
 
+- **.restore**
+
+Verilen dosyadan main veya diğer veritabanına geri yükleme yapar.
+Buradaki problem, SQLite dosya tabanlı olduğu için bu dosyaya direk bağlanıp kullanmada bir çözümdür.
+
+- **.recover**
+
+Eğer veritabanı dosyası bozulmuş ise bu komut ile mümkün olduğunca onarma yapılır.
+
 
 
 ### Komut satırı özellikleri 

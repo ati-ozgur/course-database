@@ -1,10 +1,21 @@
-# SQL Clients GUI
+# SQL İstemciler Grafik (GUI)
 
 ## DBeaver
 
+![sql-clients-dbeaver](images/sql-clients-dbeaver.png){width=90%}
+
+
+
 ## Sqlite DB Browser
 
+![sql-clients-dbeaver](images/sql-clients-db-browser.png){width=90%}
+
+
+
 ## SQL Developer Oracle
+
+![sql-clients-oracle-sql-developer](images/sql-clients-oracle-sql-developer.png){width=90%}
+
 
 ## SQL Server Management Studio
 
@@ -15,4 +26,5 @@
 - Yeni Tablo Oluşturma
 
 ## Azure Data Studio
+![sql-clients-azure-data-studio](images/sql-clients-azure-data-studio.png){width=90%}
 

@@ -1,9 +1,33 @@
-## SQL Server Normal Kurulum
+# Sunucu kurulumları SQL-Server
+
+## Docker
+
+- [docker indirmeler](https://www.docker.com/products/docker-desktop/)
+
+Kullanım kolaylığı nedeniyle sunucu kurulumlarımız için docker kullanacağız.
+Normalde, en azından benim görüşüme göre, veritabanı üretim sunucuları docker üzerinden çalıştırılmamalıdır.
+
+## SQL Server Docker kurulum
+
+Sql Server için Dockerfile ve komut dosyaları kurs github deposunda bulunmaktadır.
+
+
+- [Sqlserver docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-sqlserver)
+
+
+## SQL Server Normal Kurulum 
 
 [SQL Server İndirmeleri](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 - SQL Server Farklı Versiyonları
 - SQL Server Express Kurulum
+
+
+## SQL Server Normal Kurulum Express
+TODO
+
+## SQL Server Normal Kurulum Standard/Developer Edition
+
 
 * Sunucu Konfigurasyonu
 - Konfigure Durdur - Başlat (Start - Stop)

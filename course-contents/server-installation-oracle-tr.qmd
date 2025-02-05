@@ -1,4 +1,4 @@
-# Sunucu Kurulumları
+# Sunucu Kurulumları Oracle
 
 
 ## Docker
@@ -11,26 +11,27 @@ Normalde, en azından benim görüşüme göre, veritabanı üretim sunucuları 
 
 
 
-## Oracle
+## Oracle Docker kurulum
 
 Oracle için Dockerfile ve komut dosyaları kurs github deposunda bulunmaktadır.
 
 - [Oracle docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-oracle)
 
 
+## Oracle Virtualbox kurulum
+
 Oracle ayrıca virtual box geliştirici görüntüleri de sağlamaktadır.
 
 
 - [Oracle virtual box görüntüleri](https://www.oracle.com/downloads/developer-vm/community-downloads.html)
 
-## SQL Server
 
-Sql Server için Dockerfile ve komut dosyaları kurs github deposunda bulunmaktadır.
+## Oracle XE kurulum
 
+TODO
 
-- [Sqlserver docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-sqlserver)
+## Oracle Standard Edition kurulum
 
-{{< include ../course-contents/server-installation-sqlserver-tr.qmd >}}
-
+TODO
 
 

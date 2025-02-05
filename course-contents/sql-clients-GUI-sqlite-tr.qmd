@@ -1,0 +1,12 @@
+# SQL İstemciler Grafik (GUI) SQLite
+
+
+
+## Sqlite DB Browser
+
+![sql-clients-dbeaver](images/sql-clients-db-browser.png){width=90%}
+
+## SQLiteStudio
+
+![sql-clients-sqlitestudio](images/sql-clients-sqlitestudio.png){width=90%}
+

@@ -1,0 +1,11 @@
+# SQL İstemciler Grafik (GUI) Oracle
+
+
+## SQL Developer Oracle
+
+![sql-clients-oracle-sql-developer](images/sql-clients-oracle-sql-developer.png){width=90%}
+
+
+## Toad Oracle
+
+TODO

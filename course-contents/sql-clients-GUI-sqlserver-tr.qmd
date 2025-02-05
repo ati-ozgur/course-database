@@ -1,0 +1,16 @@
+# SQL Server GUI
+
+
+
+## SQL Server Management Studio
+
+- Management Studio Turu
+- Yeni veri tabanı oluşturulması - Silinmesi
+- Veri tabanı yedek alma - yedekten geri dönüş
+- SQL Veri Tiplerini Tanıma
+- Yeni Tablo Oluşturma
+
+## Azure Data Studio
+
+![sql-clients-azure-data-studio](images/sql-clients-azure-data-studio.png){width=90%}
+

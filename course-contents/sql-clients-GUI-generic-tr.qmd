@@ -1,0 +1,8 @@
+# SQL İstemciler Grafik (GUI) Generic
+
+## DBeaver
+
+![sql-clients-dbeaver](images/sql-clients-dbeaver.png){width=90%}
+
+
+

@@ -37,7 +37,10 @@ book:
         - course-contents/command-line-access-tr.qmd
         - course-contents/command-line-sqlite-intro-tr.qmd
         - course-contents/command-line-sqlite-reference-tr.qmd
-        - course-contents/sql-clients-GUI-tr.qmd
+        - course-contents/sql-clients-GUI-generic-tr.qmd
+        - course-contents/sql-clients-GUI-sqlite-tr.qmd
+        - course-contents/sql-clients-GUI-oracle-tr.qmd
+        - course-contents/sql-clients-GUI-sqlserver-tr.qmd
         - course-contents/database-connections-tr.qmd
 
     - part: "Veritabanı Tasarım Giriş"

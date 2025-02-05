@@ -11,6 +11,10 @@ bölümüne bakınız.
 Aşağıdaki komutlarının tümünü derse başlarken öğrenmenize gerek yoktur.
 :::
 
+[SQLite CLI](https://sqlite.org/cli.html) dokumantosyonunda daha farklı örnekler vardır.
+Bu dokumanın üstünden de geçmek isteyebilirsiniz.
+
+
 SQLite komut satırı programı ile zip dosyalarıda sanki bir veritabanı imiş gibi sorgulanabilirler ama biz bu komutları hiç incelemeyeceğiz.
 Sadece veritabanı komutları aşağıda verilmiştir.
 
@@ -293,6 +297,25 @@ Buradaki problem, SQLite dosya tabanlı olduğu için bu dosyaya direk bağlanı
 
 Eğer veritabanı dosyası bozulmuş ise bu komut ile mümkün olduğunca onarma yapılır.
 
+- **.sha3sum**
+
+Tüm veritabanının özetlem (hash) değerini gösterir.
+Sabit diskteki verilerden çok, içeriğin özetlemi çıkarıldığı için vacuum komutundan etkilenmez.
+Bu komut büyük veri tabanlarında sadece değişen verinin yedeğini almak için kullanılabilir.
+
+- **.selftest**
+
+Veritabanının bozulup bozulmadığını kontrol eder.
+
+Aşağıdaki komut selftest tablosunu oluşturur.
+Bu tabloya veritabanı içindeki tabloların sha hash değerleri yazılır.
+Daha sonraki selftest komutları bu tabloya göre veri tabanının değişip değişmediğini kontrol eder.
+Eğer değişmesini istemediğiniz tablolar var ise, bu komutu çalıştırıp, bu tablo içindeki diğer değişecek tablolar için olan satırları silin.
+
+```sql
+.selftest --init
+```
+
 
 
 ### Komut satırı özellikleri 
@@ -372,3 +395,21 @@ SELECT * FROM Customer where FirstName LIKE 'A%';
 SELECT * FROM Customer where FirstName LIKE 'A%';
 
 ```
+
+### normal komut satırında kullanma
+
+sqlite3 bash, cmd veya powershell üstünde çağırarak kullanabilirsiniz.
+Bu tür kullanımda sonuçlar stdout'a yazılacaktır.
+Daha sonra bu sonuçlar başka shell komutları tarafından daha fazla işlenebilir.
+
+```bash
+sqlite3 chinook.sqlite 'SELECT EmployeeId,FirstName FROM Employee;' 
+```
+
+Aşağıdaki komut awk kullanarak gelen sonucu html tabloya çevirir.
+SQLite zaten html döndürebildiği için anlamsız bir örnekte olsa kullanımı göstermektedir.
+
+```bash
+sqlite3 chinook.sqlite 'SELECT EmployeeId,FirstName FROM Employee;' | awk -F "|" '{printf "<tr><td>%s</td><td>%s</td></tr>\n",$1,$2 }'
+```
+

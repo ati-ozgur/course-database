@@ -30,7 +30,9 @@ book:
         - course-contents/which-databases-will-be-covered-tr.md 
         - course-contents/why-start-with-sqlite-tr.qmd 
         - course-contents/database-playground-tr.md
-        - course-contents/server-installation-tr.qmd
+        - course-contents/server-installation-sqlite-tr.qmd
+        - course-contents/server-installation-oracle-tr.qmd
+        - course-contents/server-installation-sqlserver-tr.qmd
         - course-contents/example-database-schemas-tr.qmd
         - course-contents/command-line-access-tr.qmd
         - course-contents/command-line-sqlite-intro-tr.qmd

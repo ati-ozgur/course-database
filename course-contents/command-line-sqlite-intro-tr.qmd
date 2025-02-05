@@ -1,0 +1,40 @@
+# Komut satırı SQLite
+
+## SQLite
+
+- Ubuntu gibi bir çok linux kurulumunda yüklü olarak gelir.
+
+- Macintosh'ta eski bir sürümü vardır.
+Güncellenmesi tavsiye edilir.
+brew kullanılarak kurulması tavsiye edilir.
+Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
+
+
+```bash
+brew install sqlite
+```
+
+- Windows'ta scoop kullanılarak kurulması tavsiye edilir. 
+
+```bash
+scoop install sqlite
+```
+
+Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
+[sqlite3](https://www.sqlite.org/cli.html)
+
+
+## SQLite Komut satırı Demo
+
+01. Chinook veri tabanı aç
+02. .help ile komut listesini göster
+03. .tables ile tabloları göster
+04. Tablolardan SELECT ile bilgi almayı göster
+05. .headers on ile kolon isimlerin göster veya gösterme
+06. .mode ile SELECT çıktısını farklılaştırmayı göster
+07. .output ile dosya ortamına SELECT ile aktarım yap
+08. .schema ile tablo oluşturma betiklerin göster
+09. .dump ile veri tabanı tam kopyalamayı göster
+10. .read ile SQL komutu çalıştırmayı göster.
+11. .exit ile komut satırında çıkma
+

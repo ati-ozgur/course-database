@@ -116,7 +116,7 @@ Sadece bir sonraki komut çıktısını dosyaya aktarır.
 - **.mode**
 
 Çıktının nasıl olacağını kontrol eder.
-
+.mode eğer bir argumanı yoksa o anda seçili çıktı modunu gösterir.
 
 |            |          |
 |------------|----------|
@@ -151,6 +151,23 @@ SELECT EmployeeId,FirstName FROM Employee;
 .headers on
 SELECT EmployeeId,FirstName FROM Employee;
 ```
+
+column, box, table ve markdown modunda çıktının kolon uzunlunkları otomatik ayarlanır.
+Ama .width vererek bunu değiştirebilirsiniz.
+verilen değer kaç karakter atandığı gösterir.
+Negatif değerler, sağa yaslamayı sağlar.
+Aşağıdaki komutta 1. kolon 4 karakter 2.kolon 20 karakter sağ yaslama yapılmıştır.
+
+```sql
+.mode column
+SELECT EmployeeId,FirstName FROM Employee;
+.width 4 -20
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+
+.width 0 veya .width arguman olmadan çalıştırıldığında genişlik değerleri sıfırlanır ve yine otomatik hesaplanmaya başlar
+
 
 - **.excel**
 

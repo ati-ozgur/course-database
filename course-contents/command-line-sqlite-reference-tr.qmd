@@ -413,3 +413,19 @@ SQLite zaten html döndürebildiği için anlamsız bir örnekte olsa kullanım�
 sqlite3 chinook.sqlite 'SELECT EmployeeId,FirstName FROM Employee;' | awk -F "|" '{printf "<tr><td>%s</td><td>%s</td></tr>\n",$1,$2 }'
 ```
 
+sqlite3 --help komutu kullanılarak komut satırında yapılabilecekler görülebilir.
+Örneğin sqlite3 --csv çıktının csv olmasını sağlar.
+Özellikle çıktı ile ilgili kontrollerin (.mode, .separator.. ) bu şekilde kontrolü vardır.
+
+
+Örneğin yukarıdaki, html çıktısı için olan komutlar çok daha kolay olarak aşağıdaki gibi çalıştırılabilir.
+
+```bash
+sqlite3 --html chinook.sqlite 'SELECT EmployeeId,FirstName FROM Employee;' 
+```
+
+**--safe**
+
+SQLite veritabanını bu arguman ile açarsanız, tek bir veri tabanı dosyası haricindeki SQLite çalışma özelliklerini kapatırsınız.
+Örneğin bu şekilde açılmış olan bir veri tabanı .shell ile shell üzerinde komut çalıştıramaz.
+Buradaki ana fikir güvenilir olmayan kaynaklardan alınan betiklerin (scripts) derece kontröllü test edilebilmesidir.

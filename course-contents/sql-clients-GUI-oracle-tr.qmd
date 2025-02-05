@@ -1,4 +1,4 @@
-# SQL İstemciler Grafik (GUI) Oracle
+# GUI Oracle
 
 
 ## SQL Developer Oracle

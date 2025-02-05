@@ -1,4 +1,4 @@
-# SQL İstemciler Grafik (GUI) SQLite
+# GUI SQLite
 
 
 

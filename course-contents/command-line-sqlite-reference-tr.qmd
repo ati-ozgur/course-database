@@ -11,6 +11,27 @@ bölümüne bakınız.
 Aşağıdaki komutlarının tümünü derse başlarken öğrenmenize gerek yoktur.
 :::
 
+SQLite komut satırı programı ile zip dosyalarıda sanki bir veritabanı imiş gibi sorgulanabilirler ama biz bu komutları hiç incelemeyeceğiz.
+Sadece veritabanı komutları aşağıda verilmiştir.
+
+SQLite komutları normalde ; noktalı virgül kullanılarak bitirilmelidir.
+
+
+### Komut girdisi
+
+SQLite CLI 3 çeşit komut kabul eder.
+
+- SQL cümleleri
+- . nokta komutları
+- CLI yorumları (comments)
+
+SQL cümleleri bildiğimiz SELECT, INSERT.. SQL cümleleridir.
+Normalde ; noktalı virgül ile bitirilmeliri beklenir.
+Ama Oracle ve SQL-Server uyumluluğu için "/" ve tek başına **go** kelimeside kabul edilir.
+Noktalı virgül tercih ediniz.
+
+
+
 ### Yardım ve Yapılandırma
 
 - **.help**
@@ -95,14 +116,20 @@ Sadece bir sonraki komut çıktısını dosyaya aktarır.
 - **.mode**
 
 Çıktının nasıl olacağını kontrol eder.
-Aşağıdaki çıktı modları özellikle yararlıdır.
 
-+ cvs
-+ box
-+ table
-+ json
-+ insert
-+ markdown
+
+|            |          |
+|------------|----------|
+| ascii      | line     |
+| **box**    | list     |
+| **csv**    | **markdown** |
+| column     | quote    |
+| html       | table    |
+| **insert** | tabs     |
+| **json**   | tcl      |
+
+Yukarıdaki tabloda kalın ile işaretli çıktı modları özellikle yararlıdır.
+
 
 Aşağıdaki komutları deneyin.
 

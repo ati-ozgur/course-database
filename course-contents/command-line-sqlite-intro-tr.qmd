@@ -1,4 +1,5 @@
-# Komut satırı SQLite
+# Komut satırı SQLite Giriş {#sec-command-line-sqlite-intro}
+
 
 ## SQLite
 
@@ -26,15 +27,17 @@ Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
 ## SQLite Komut satırı Demo
 
-01. Chinook veri tabanı aç
-02. .help ile komut listesini göster
-03. .tables ile tabloları göster
-04. Tablolardan SELECT ile bilgi almayı göster
-05. .headers on ile kolon isimlerin göster veya gösterme
-06. .mode ile SELECT çıktısını farklılaştırmayı göster
-07. .output ile dosya ortamına SELECT ile aktarım yap
-08. .schema ile tablo oluşturma betiklerin göster
-09. .dump ile veri tabanı tam kopyalamayı göster
-10. .read ile SQL komutu çalıştırmayı göster.
-11. .exit ile komut satırında çıkma
-
+| Sıra | Komut                                                |
+|------|------------------------------------------------------|
+| 01   | Chinook veritabanı github'tan indir                  |
+| 02   | Chinook veri tabanı aç: sqlite3 chinook.sqlite       |
+| 03   | .help ile komut listesini göster                     |
+| 04   | .tables ile tabloları göster                         |
+| 05   | Tablolardan SELECT ile bilgi almayı göster           |
+| 06   | .headers on ile kolon isimlerin göster veya gösterme |
+| 07   | .mode ile SELECT çıktısını farklılaştırmayı göster   |
+| 08   | .output ile dosya ortamına SELECT ile aktarım yap    |
+| 09   | .schema ile tablo oluşturma betiklerin göster        |
+| 10   | .dump ile veri tabanı tam kopyalamayı göster         |
+| 11   | .read ile SQL komutu çalıştırmayı göster.            |
+| 12   | .exit ile komut satırında çıkma                      |

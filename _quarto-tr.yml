@@ -33,7 +33,8 @@ book:
         - course-contents/server-installation-tr.qmd
         - course-contents/example-database-schemas-tr.qmd
         - course-contents/command-line-access-tr.qmd
-        - course-contents/command-line-sqlite-tr.qmd
+        - course-contents/command-line-sqlite-intro-tr.qmd
+        - course-contents/command-line-sqlite-reference-tr.qmd
         - course-contents/sql-clients-GUI-tr.qmd
         - course-contents/database-connections-tr.qmd
 

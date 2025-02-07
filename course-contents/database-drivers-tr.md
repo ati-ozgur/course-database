@@ -61,6 +61,8 @@ Eğer daha ileri sürücüler özellikle doğal sürücü varsa tercih edilmemel
 - [Unix ODBC](https://www.unixodbc.org/) 
 - [Microsoft ODBC](https://learn.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator?view=sql-server-ver16)
 
+![Windows ODBC](./images/windows-odbc.png)
+
 
 ### OLEDB sürücüleri
 
@@ -69,4 +71,5 @@ Microsoft'un ODBC'den sonra çıkardığı bağlantı teknolojisidir.
 Ama yine doğal sürücüler tercih edilmelidir.
 
 
+![Windows OLEDB](./images/windows-oledb.png)
 

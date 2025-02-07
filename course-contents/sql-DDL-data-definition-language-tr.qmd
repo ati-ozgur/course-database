@@ -1,1 +1,62 @@
-# DDL (data definition language)
+# Veri Tanım Dili (DDL) (data definition language)
+
+Veri tanımlama dili ingilizce Data definition language (DDL) ifadeleri CREATE, DROP, ALTER ifadeleridir.
+Veritabanı nesneleri **CREATE OBJECT** ifadeleri kullanılarak oluşturulur ve ardından veritabanının veri sözlüğünde saklanır.
+Bu nesneleri **DROP OBJECT** ifadelerini kullanarak veri tabanında kaldırabiliriz.
+Bu nesneleri **ALTER OBJECT** ifadelerini kullanarak da değiştirebiliriz.
+ALTER ifadeleri genellikle her değişikliğe izin vermez.
+Veritabanı motoruna göre, nesneyi bırakıp sıfırdan oluşturmamız gerekebilir.
+Ancak veritabanı motoru izin veriyorsa çoğu ALTER ifadesi her zaman daha tercih edilir ve daha hızlıdır.
+
+
+Tekrar oluşturabileceğimiz nesneler veritabanı motoruna göre değişir.
+Sqlite aşağıdaki ortak veritabanı nesnelerine izin verir:
+
+- Tablolar (Tables)
+- Görünümler (Views)
+- İndeksler (Indexes)
+- Tetikleyici (Triggers)
+
+Sqlite ayrıca [sanal tablolara](sql-virtual-tables-en.qmd) izin verir ancak bu sanal tablo sql server ve oracle versiyonlarından biraz farklıdır.
+
+
+Yukarıdaki ortak nesnelere ek olarak, Sql Server ve Oracle aşağıdaki ortak nesnelere izin verir:
+
+- Fonksiyonlar (Functions)
+- Yordamlar (Procedures)
+- Kullanıcı (User)
+ 
+
+Sqlite'ın kullanıcı nesnesinin dosya tabanlı bir veritabanı olmasına ihtiyacı yoktur ancak Oracle ve SQL Server'ın her ikisi de veritabanı bağlantısı için bir kullanıcı gerektirir.
+Bu nedenle, kullanıcılar için güvenlik, roller ve ayrıcalıkları ele almak için çeşitli komutlara sahiptirler.
+
+
+Bu veritabanları aynı zamanda özel fonksiyon ve prosedürlerin oluşturulmasına da olanak sağlar.
+
+
+SQLite için:
+
+- [Create Table](https://www.sqlite.org/lang_createtable.html)
+- [Create Trigger](https://www.sqlite.org/lang_createtrigger.html)
+- [Create Index](https://www.sqlite.org/lang_createindex.html)
+- [Create View](https://www.sqlite.org/lang_createview.html)
+
+Çoğu modern GUI aracı bu ifadeleri oluşturmanıza yardımcı olduğundan, bunların tam tanımlarını ezberlemenize gerek yoktur.
+
+1. DBeaver Demo Create Table
+2. DBeaver Demo Alter Table
+3. DBeaver Demo Drop Table
+
+1. DBeaver Demo Create View
+2. DBeaver Demo Alter View
+3. DBeaver Demo Drop View
+
+
+Açık kaynaklı ve ücretsiz bir araç olan DBeaver çok güçlü değildir.
+Ancak Oracle SQL Developer ve SQL-Server Management Studio, GUI araçlarını kullanarak yukarıda belirtilen her nesnenin oluşturulmasına, değiştirilmesine ve drop edilmesine izin verir.
+
+
+
+## Oluşturulan/Sanal Kolonlar
+
+[Oluşturulan Kolonlar sqlite](https://www.sqlite.org/gencol.html)

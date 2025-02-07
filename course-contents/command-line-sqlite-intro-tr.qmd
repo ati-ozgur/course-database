@@ -29,7 +29,7 @@ Ama eğer istenirse, aşağıdaki siteden yüklenebilir.
 
 | Sıra | Komut                                                |
 |------|------------------------------------------------------|
-| 01   | Chinook veritabanı github'tan indir                  |
+| 01   | [Chinook veritabanı github'tan indir](https://github.com/ati-ozgur/course-database/raw/refs/heads/main/databases/chinook.sqlite)                  |
 | 02   | Chinook veri tabanı aç: sqlite3 chinook.sqlite       |
 | 03   | .help ile komut listesini göster                     |
 | 04   | .tables ile tabloları göster                         |

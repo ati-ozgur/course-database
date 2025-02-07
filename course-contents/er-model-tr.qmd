@@ -1,4 +1,4 @@
-# Varlık İlişki (ER) Modellemesi 
+# Varlık İlişki (ER) Modellemesi Giriş
 
 
 

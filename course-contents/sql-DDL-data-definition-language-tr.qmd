@@ -63,6 +63,15 @@ Bundan dolayı, bu nesnelerin oluşturulması/değiştirilmesi ve düşürülmes
 Giriş seviyesinde bir kurs olduğu için bu diğer nesnelerin detaylı bir şekilde incelemeyeceğiz.
 
 
+::: {#fig-oracle-objects layout-ncol=2}
+
+![Dbeaver oracle objects](images/dbeaver-oracle-objects-all.png)
+
+![SQL Developer oracle objects](images/sqldeveloper-oracle-objects-all.png)
+
+Oracle Objects
+:::
+
 
 
 ## Oluşturulan/Sanal Kolonlar

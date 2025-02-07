@@ -1,0 +1,21 @@
+## SQL Select sözdizimi sıralaması
+
+
+Aşağıdaki sıralama [sql server dokümanlarından](https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16) alınmıştır ve basitleştirilmiştir.
+
+
+
+- SELECT seçilen kolonlar
+- SELECT select_list 
+- [ FROM tablo kaynağı ] 
+- [ WHERE arama kriterleri ]
+- [ GROUP BY gruplama ifadeleri ]
+- [ HAVING arama kriterleri ]
+- [ ORDER BY sıralama ifadeleri [ ASC | DESC ]]
+
+
+Sözdizimi sıralaması, select ifadelerini nasıl yazmamız gerektiğidir.
+Aşağıdaki tablo anahtar kelimelerin anlamlarını verir.
+
+
+{{< include ../course-contents/tables/table-select-basic-tr.md >}}

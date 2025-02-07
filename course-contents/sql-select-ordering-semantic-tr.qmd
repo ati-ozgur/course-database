@@ -1,0 +1,11 @@
+## SQL Select  Anlamsal sıralama
+
+
+- [ FROM tablo kaynağı ] 
+- [ WHERE arama kriterleri ]
+- [ GROUP BY gruplama ifadeleri ]
+- [ HAVING arama kriterleri ]
+- [ ORDER BY sıralama ifadeleri [ ASC | DESC ]]
+- SELECT seçilen kolonlar
+
+Anlamsal sıralama, SELECT ifadesinin veritabanı motoru tarafından nasıl işlendiğini gösterir.

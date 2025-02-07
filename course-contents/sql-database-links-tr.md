@@ -1,4 +1,4 @@
-### Veritabanı bağlantıları
+## Veritabanı bağlantıları (Database Links)
 
 Yukarıdaki bilgiler, veritabanları birbirleriyle bağlantılı olduğundan faydalıdır. 
 Bir Oracle veritabanı MySQL, PostgreSQL, SQL Server veya DB2'ye bağlanabilir. 

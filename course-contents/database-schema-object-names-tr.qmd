@@ -16,6 +16,10 @@
 
 ![Şema İsimleri](images/SchemaOrnek1.png)
 
+![Dbeaver Oracle chinook Şema](images/dbeaver-oracle-chinook-schema1.png)
+
+![Dbeaver SQL-Server chinook Şema](images/dbeaver-sqlserver-chinook-schema1.png)
+
 
 {{< include ../course-contents/sql-database-links-tr.md >}}
 

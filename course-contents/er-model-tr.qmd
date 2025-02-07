@@ -1,8 +1,10 @@
-# Entity Relationship (ER) Modellemesi 
+# Varlık İlişki (ER) Modellemesi 
+
+
 
 ## Entity Relationship Model Temelleri
 
-Varlık İlişkisi (ER) modellemesi veya diyagramı, Peter Chen @Chen1976entity tarafından 1976 yılında önerilmiştir.
+Varlık İlişki ingilizce Entity Relationship (ER) modellemesi veya diyagramı, Peter Chen @Chen1976entity tarafından 1976 yılında önerilmiştir.
 ER-Modelleri üç bölümden oluşur:
 
 

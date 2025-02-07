@@ -16,7 +16,7 @@ ER diyagramlarını okumak, mevcut veritabanı yapısını daha kolay anlamanız
 
 [Oracle örnek HR ve OE örneğini kendi dokümanlarında görün](https://docs.oracle.com/en/database/oracle/oracle-database/18/comsc/schema-diagrams.html#GUID-01BFEF14-C6BD-42CD-8558-DDD214DB3AE0)
 
-Oracle SQL Developer, Oracle veritabanı için kendi tersine mühendislik araçlarına sahiptir.
-TODO bağlantıları ekleyin.
+Oracle SQL Developer genişlemesi [Oracle Data Modeler](https://www.oracle.com/database/sqldeveloper/technologies/sql-data-modeler/), Oracle veritabanı için kendi tersine mühendislik araçlarına sahiptir.
 
-Bu amaç için bir diğer araç ise Schema Spy'dır.
+
+Bu amaç için bir diğer araç ise [Schema Spy](https://schemaspy.org/)'dır.

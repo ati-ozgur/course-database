@@ -1,0 +1,15 @@
+## SQL System Tabloları
+
+
+{{< include ../course-contents/sql-views-system-information-schema-tr.qmd >}}
+
+
+### Performance views
+
+There are also system views for system performance usage in databases, to see which operations are very CPU intensive, very long, etc.
+
+- [SQL Server DMVs](https://learn.microsoft.com/en-us/sql/relational-databases/performance/use-dmvs-determine-usage-performance-views?view=sql-server-ver16)
+
+- [Oracle Dynamic Performance Views](https://docs.oracle.com/en/database/oracle/oracle-database/21/tgdba/instance-tuning-using-performance-views.html)
+
+

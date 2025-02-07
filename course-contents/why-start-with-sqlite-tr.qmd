@@ -1,5 +1,19 @@
 # Neden veritabanı öğrenmeye SQLite ile başlamalı
 
+SQLite nedir? Aşağıdaki paragraflar [sqlite web sitesinden](https://www.sqlite.org/) çevrilmiştir.
+
+
+>SQLite, küçük, hızlı, kendi kendine yeten, yüksek güvenilirlikli, tam özellikli bir SQL veritabanı motoru uygulayan bir C dili kütüphanesidir. 
+>SQLite, dünyada **en çok kullanılan veritabanı motorudur.** 
+>SQLite, tüm mobil telefonlara ve çoğu bilgisayara entegre edilmiştir ve insanların her gün kullandığı sayısız başka uygulamanın içinde paketlenmiş olarak gelir.
+
+> SQLite dosya biçimi kararlıdır, platformlar arası ve geriye dönük uyumludur ve geliştiriciler 2050 yılına kadar bu şekilde kalmasını taahhüt etmektedir. 
+> SQLite veritabanı dosyaları genellikle sistemler arasında zengin içerikleri aktarmak için kapsayıcı olarak kullanılır ve **veriler için uzun vadeli bir arşiv** biçimi olarak kullanılır.
+>  Aktif olarak kullanılan **1 trilyondan (1e12) fazla SQLite veritabanı** vardır [5].
+
+
+> SQLite kaynak kodu kamuya açıktır ve herkesin her türlü amaç için kullanmasına açıktır.
+
 SQLite başlangıç için aşağıdaki sebeblerden dolayı iyi bir veritabanıdır.
 
 1. **Basitlik:** SQLite kullanımı ve kurulumu basit olması için tasarlanmıştır. 
@@ -9,19 +23,17 @@ Dosya tabanlı gömülü bir veritabanı olduğu için grafik veya komut satır�
 2. **Kaynak Tüketimi:** SQLite küçük ve hızlı bir veritabanıdır. 
 Çok fazla kaynak tüketmez, bu da onu kişisel-dizüstü bilgisayarlarda, tablet ve telefonlarda kullanımına izin verir.
 
-3. **SQL uyumluluğu:** SQLite, standart SQL dilinin çoğunu destekler. Bu SQL bilginizi daha sonra diğer veritabanı sistemlerine uygulayabilirsiniz.
+3. **SQL uyumluluğu ve tam özellikli:** SQLite, standart SQL dilinin çok büyük bir kısmını destekler.
+Bundan dolayı kendini tam özellikli olarak adlandırmaktadır.
+Bu SQL bilginizi daha sonra diğer veritabanı sistemlerine uygulayabilirsiniz.
 
-4. **Açık Kaynak ve Ücretsiz:** SQLite açık kaynaklı bir yazılımdır, yani kullanımı ve dağıtımı ücretsizdir. 
+4. **Açık Kaynak ve Ücretsiz:** SQLite açık kaynaklı bir yazılımdır, yani kullanımı ve dağıtımı ücretsizdir. SQLite kodu kamuya açıktır. Bu tam olarak açık kaynak felsefesine uymasada istediğiniz her şeyi izin almadan yapabileceğiniz anlamına gelmektedir.
 
-Bunun haricinde daha önceki notlarımız tekrar edersek, SQLite dünyanın en çok kullanılan veritabanıdır.
+5. **Kararlılık:** SQLite ABD Kongre Kütüphanesi tarafından uzun süreli arşiv olarak tavsiye edilmiştir.
+Buda SQLite verilerinin çok uzun süre boyunca destekleneceği anlamına gelmektedir.
+
+6. **En çok kullanılan veritabanı motoru:** SQLite dünyanın en çok kullanılan veritabanıdır.
 Dikkat en çok para kazandıranıdır demiyoruz.	
-
-[SQLite web sitesine](https://www.sqlite.org/index.html) göre, SQLite Nedir?
-
-> ... SQLite dünyada en çok kullanılan veritabanı motorudur. 
-> SQLite, tüm cep telefonlarında ve çoğu bilgisayarda yerleşik olarak bulunur ve insanların her gün kullandığı sayısız başka uygulamanın içinde paketlenmiş olarak gelir. 
-
-> ... Aktif kullanımda 1 trilyondan fazla (1e12) SQLite veritabanı vardır [5].
 
 
 Modern bilgisayarlar ile SQLite ile web sitesi çalıştırma çok daha kolaylaşmıştır.

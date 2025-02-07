@@ -53,7 +53,15 @@ SQLite için:
 
 
 Açık kaynaklı ve ücretsiz bir araç olan DBeaver çok güçlü değildir.
-Ancak Oracle SQL Developer ve SQL-Server Management Studio, GUI araçlarını kullanarak yukarıda belirtilen her nesnenin oluşturulmasına, değiştirilmesine ve drop edilmesine izin verir.
+Ancak Oracle SQL Developer ve SQL-Server Management Studio, GUI araçlarını kullanarak yukarıda belirtilen her nesnenin oluşturulmasına, değiştirilmesine ve düşürülmesine (drop) izin verir.
+
+
+## Diğer Nesneler
+
+SQL Server ve Oracle kurumsal paralı veri tabanları olarak çok daha fazla çeşit nesne çeşidi ile çalışırlar.
+Bundan dolayı, bu nesnelerin oluşturulması/değiştirilmesi ve düşürülmesi için gerekli komutlara sahiptirler.
+Giriş seviyesinde bir kurs olduğu için bu diğer nesnelerin detaylı bir şekilde incelemeyeceğiz.
+
 
 
 

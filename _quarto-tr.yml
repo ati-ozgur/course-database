@@ -54,6 +54,7 @@ book:
         - course-contents/sql-why-learn-tr.qmd
         - course-contents/sql-history-tr.qmd
         - course-contents/sql-introduction-tr.qmd
+        - course-contents/database-schema-object-names-tr.qmd
         - course-contents/sql-standard-tr.qmd
         - course-contents/sql-dialects-tr.qmd
         - course-contents/sql-command-types-tr.qmd

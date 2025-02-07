@@ -1,69 +1,76 @@
-## SQL Basic Select examples
-
-### Temel SELECT Sorgu Örnekleri
+## SQL Basit Select Örnekleri
 
 
-#### AdventureWorks2012 Tüm Kolonlar
+**Chinook Tüm kolonları  * yıldız karaketeri ile** 
 
 ```sql
-    SELECT * FROM Production.Product;
-```
-
-#### AdventureWorks2012  Tablo Takma İsim (Alias)
-
-```sql
-SELECT P.* FROM Production.Product P;
+SELECT * FROM Customer;
 ```
 
 
+Kolon isimleri ile SELECT
 
-#### AdventureWorks2012 Kolon Hesaplama
 
 ```sql
-   SELECT Name AS UrunAdi
-   , ListPrice * 0.9 AS SatisFiyati
-FROM Production.Product;
+SELECT FirstName, LastName FROM Customer;   
+```
+
+** Hesaplanan kolonlar **
+
+```sql
+SELECT FirstName || ' ' || LastName FROM Customer;
 ```
 
 
+** Takma Ad Kolon**
 
 
-#### AdventureWorks2012 More Complex Example
+```sql
+SELECT FirstName || ' ' || LastName AS FullName FROM Customer;
+```
 
-Explanation is later
+Kolon takma adları özellikle hesaplanan kolonlar (calculated columns) için çok kullanışlıdır.
+
+
+** Takma Ad Tablo **
+
+
+```sql
+SELECT c.FirstName, c.LastName  FROM Customer c;
+```
+
+Tablo takma adı, özellikle birden fazla tablodan SELECT kullanarak bilgileri aldığımız, tablolardaki satır  ve sütun adları aynı olduğunda kullanışlıdır.
+Hangi tabloadi.kolonadi kullandığımızı ayırt etmemiz gerekir.
+Aşağıdaki örneğe bakınız
+
+
 
 ```sql
 SELECT 
-O.OrderDate
-, COUNT(O.SalesOrderID) AS OrderCount
-FROM Sales.SalesOrderHeader O
-WHERE O.Status = 5
-GROUP BY O.OrderDate
-HAVING COUNT(O.SalesOrderID) > 1
-ORDER BY O.OrderDate DESC;
+c.FirstName || ' ' || c.LastName As CustomerName
+, e.FirstName || ' ' || e.LastName AS SupportEmployeeName 
+FROM Customer c inner join Employee e on c.SupportRepId = e.EmployeeId 
 ```
 
 
-#### (AdventureWorks2012) Kolon Adlari ile
 
+
+**Daha Karışık Örnek**
+
+Açıklaması daha sonra
 
 ```sql
-    SELECT Name
-    , ListPrice 
-    FROM Production.Product P;
-    
-    SELECT P.Name
-    , P.ListPrice 
-    FROM Production.Product;
+select CustomerId
+,sum(total) as TotalInvoice 
+from Invoice 
+group by CustomerId
+order by TotalInvoice desc;
 ```
 
-#### (AdventureWorks2012) Kolon Takma Adı
 
-```sql
-    SELECT Name AS ADI
-    , ListPrice AS "Liste Fiyati" 
-    FROM Production.Product P;
-```
+
+
+
 
 
 

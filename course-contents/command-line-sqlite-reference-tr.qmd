@@ -21,7 +21,7 @@ Sadece veritabanı komutları aşağıda verilmiştir.
 SQLite komutları normalde ; noktalı virgül kullanılarak bitirilmelidir.
 
 
-### Komut girdisi
+## Komut girdisi
 
 SQLite CLI 3 çeşit komut kabul eder.
 
@@ -36,7 +36,7 @@ Noktalı virgül tercih ediniz.
 
 
 
-### Yardım ve Yapılandırma
+## Yardım ve Yapılandırma
 
 - **.help**
 Yardım alınabilecek komut listesini verir.
@@ -66,7 +66,7 @@ veri tabanı yapılandırmasını gösterir.
 [Bakınız SQLite derleme](https://www.sqlite.org/compile.html)
 
 
-### Çıktı kontrolü
+## Çıktı kontrolü
 
 - **.changes**
 
@@ -194,7 +194,7 @@ Aşağıdaki komutu deneyin.
 .print Merhaba Dünya
 ```
 
-### Dosyalardan komut çalıştırma
+## Dosyalardan komut çalıştırma
 
 - **.read**
 SQL veya sqlite komutlarını bir dosyadan okumanızı sağlar.
@@ -212,7 +212,7 @@ Aşağıdaki komutu sqlite3 ile deneyiniz
 .read ornek.sql
 ```
 
-### Şema Bilgisi
+## Şema Bilgisi
 
 - **.tables**
 tablo listesi gösterir.
@@ -251,7 +251,7 @@ Bu bağlantı sonrasında, SQL Standardı ŞEMA_ADI.NESNE_ADI isimlendirmesini k
 İlk bağlanılan dosya her zaman main şeması olarak görülür.
 
 
-### Yedekleme
+## Yedekleme
 
 - **.save**
 - **.backup**
@@ -318,7 +318,7 @@ Eğer değişmesini istemediğiniz tablolar var ise, bu komutu çalıştırıp, 
 
 
 
-### Komut satırı özellikleri 
+## Komut satırı özellikleri 
 
 - **.shell**
 - **.system**
@@ -343,7 +343,7 @@ Aşağıdaki komutu deneyin.
 
 
 
-### Veri içeri alma/Dışarı çıkarm
+## Veri içeri alma/Dışarı çıkarm
 
 - **.import**
 
@@ -359,7 +359,7 @@ SELECT EmployeeId,FirstName FROM Employee;
 ```
 
 
-### Diğer
+## Diğer
 
 **.load**
 
@@ -368,7 +368,7 @@ Genişlemeler SQLite ana çekirdekte olmayan özelliklerin yüklenmesine izin ve
 Bu sayede bu özellikler kullanılabilir.
 Genişlemeleri ayrı bir bölümde inceleyeceğiz.
 
-### SQL Ayarlama
+## SQL Ayarlama
 
 - **.eqp**
 
@@ -396,7 +396,7 @@ SELECT * FROM Customer where FirstName LIKE 'A%';
 
 ```
 
-### normal komut satırında kullanma
+## normal komut satırında kullanma
 
 sqlite3 bash, cmd veya powershell üstünde çağırarak kullanabilirsiniz.
 Bu tür kullanımda sonuçlar stdout'a yazılacaktır.

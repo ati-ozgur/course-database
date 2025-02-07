@@ -2,5 +2,9 @@
 
 - SQL is developed at IBM in the 1970s by Donald D. Chamberlin and Raymond F. Boyce.
 - SQL is based on the article of Edgar F. Codd "A Relational Model of Data for Large Shared Data Banks" @Codd1970relational
+- Entity-relationship model introduced by Chen.
 - First commercial version was released by Oracle in 1979.
+
+
 - Although it is defined as declarative, it also has procedural elements.
+- 

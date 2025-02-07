@@ -1,2 +1,38 @@
-# Veri Sözlüğü
+# Veri Sözlüğü (Data Dictionary)
 
+DDL Veri tanım dili komutlarının sonuçları veri sözlüğünde saklanır.
+Her veri tabanı veri sözlüğünü nasıl oluşturucağı konusunda serbesttir.
+Bu bilgilere ulaşmak için her veritabanı tablo ve görünümler sunar.
+
+## Şema görünümleri
+
+Sistem görünümleri, veritabanı sisteminin kendisi hakkında dinamik bilgiler verir.
+
+Sistem görünümlerine en yararlı örnek SQL Standard Information şema görünümleridir:
+Bu görünümler, veritabanlarından tablo, sütun, görünüm ve diğer nesne bilgilerini almak için kullanılır.
+
+- INFORMATION_SCHEMA.TABLES
+- INFORMATION_SCHEMA.COLUMNS
+- INFORMATION_SCHEMA.VIEWS
+- and others
+
+SQL Standard'ın bu çok kullanışlı özelliği için veritabanına özgü belgelere bakın.
+Bilgi şeması görünümleri aşağıdaki veritabanları tarafından desteklenmektedir.
+
+- Sql server
+- mysql
+- [postgre sql](https://www.postgresql.org/docs/current/information-schema.html) and other databases.
+
+Ne yazık ki hem sqlite hem de oracle bu standardı desteklemiyor.
+[Bağlantı wikipedia sayfası](https://en.wikipedia.org/wiki/Information_schema) hangi veri tabanlarının bu özelliği desteklediğini gösterir.
+
+- [Sql Server Information Schema Views](https://learn.microsoft.com/en-us/sql/relational-databases/system-information-schema-views/system-information-schema-views-transact-sql?view=sql-server-ver16)
+
+
+Bu bilgilere veritabanına özgü tablo ve görünümlerden de ulaşılabilir.
+
+- [sqlite Schema Table](https://www.sqlite.org/schematab.html)
+
+- [Oracle data dictionary views](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/data-dictionary-and-dynamic-performance-views.html)
+
+- [SQL Server System catalog views](https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq?view=sql-server-ver16)

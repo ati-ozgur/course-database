@@ -48,11 +48,6 @@ book:
         - course-contents/er-model-tr.qmd
         - course-contents/er-model-mermaid-diagrams-tr.qmd
 
-    - part: "DDL (Veri Tanım Dili) Giriş"
-      chapters:
-        - course-contents/sql-DDL-data-definition-language-tr.qmd
-        - course-contents/sql-data-dictionary-tr.qmd
-        - course-contents/sql-data-dictionary-sqlite-tr.qmd
 
     - part: "SQL Giriş"
       chapters:
@@ -62,6 +57,12 @@ book:
         - course-contents/sql-standard-tr.qmd
         - course-contents/sql-dialects-tr.qmd
         - course-contents/sql-command-types-tr.qmd
+
+    - part: "DDL (Veri Tanım Dili) Giriş"
+      chapters:
+        - course-contents/sql-DDL-data-definition-language-tr.qmd
+        - course-contents/sql-data-dictionary-tr.qmd
+        - course-contents/sql-data-dictionary-sqlite-tr.qmd
 
     - part: "SQL DQL (Select)"
       chapters:

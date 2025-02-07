@@ -1,2 +1,34 @@
 # Veri Sözlüğü SQLite
 
+SQLite veri sözlüğü SQLite şema tablosunda tutulur.
+
+- [SQLite Schema Table](https://www.sqlite.org/schematab.html)
+
+Bu tablonun yapısı aşağıdaki gibidir.
+
+```sql
+CREATE TABLE sqlite_schema(
+  type text,
+  name text,
+  tbl_name text,
+  rootpage integer,
+  sql text
+);
+```
+
+**type** aşağıdakilerden biridir. Bunlar SQLite'ın DDL (CREATE/DROP/ALTER) için izin verdiği veritabanı nesne tipleridir.
+
+ - 'table'
+ - 'index'
+ - 'view'
+ - 'trigger'
+
+**name** nesnenin ismi
+
+**tbl_name** nesnenin ilişkili olduğu tablonun ismi
+
+**rootpage** tablo ve indeksler için verilerin tutulduğu b+ agacının başlangıç sayfası. views, triggers, ve sanal tablolar (virtual tables) için bu değer null ve 0'dır.
+
+**sql** bu nesnenin DLL betiği
+
+Bu tablonun kullanıcılar tarafından değiştirilmemesi tavsiye edilir.

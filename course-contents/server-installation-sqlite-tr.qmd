@@ -1,4 +1,4 @@
-# Sunucu Kurulumları SQLite
+# Kurulumlar SQLite
 
 ## Sqlite
 

@@ -5,6 +5,18 @@
 Dillere göre özel sürücüler, populer programlama dilleri için vardır.
 Örneğin
 
+SQLite
+
+- [.NET (C#-VB.NET) SQLite](https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/?tabs=net-cli)
+- [Python SQLite](https://docs.python.org/3/library/sqlite3.html)
+- [PHP SQLite](https://www.php.net/manual/en/book.sqlite3.php)
+- [Java JDBC SQLite](https://github.com/xerial/sqlite-jdbc)
+- [Nodejs SQLite](https://nodejs.org/api/sqlite.html)
+- [Ruby SQLite](https://github.com/sparklemotion/sqlite3-ruby)
+
+
+
+
 SQL Server
 
  - .NET (C#, VB.NET)

@@ -18,7 +18,7 @@ Ancak öğrenme amacıyla indirmenizi ve komut satırını kullanmanızı öneri
 
 1. sqlite indir
 2. komut satırını açın
-3. [chinook db](https://github.com/ati-ozgur/course-database/raw/refs/heads/main/databases/Chinook-auto-increment.db) dosyasını indirin.
+3. [chinook sqlite](https://github.com/ati-ozgur/course-database/raw/refs/heads/main/databases/chinook.sqlite) dosyasını indirin.
 4. Komut satırında içeriği gösterin.
 
 

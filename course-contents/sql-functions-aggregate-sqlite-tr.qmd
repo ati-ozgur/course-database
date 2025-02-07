@@ -1,0 +1,76 @@
+# Toplam (Aggregate) Sqlite fonksiyonları
+
+:::{.callout-important}
+İlk önce SQL Standardında olan toplam fonksiyonları için  [Bölüm -@sec-sql-functions-aggregate] bakınız.
+:::
+
+
+- **GROUP_CONCAT(X,Y)**
+- **STRING_AGG(X,Y)**
+
+GROUP_CONCAT(deger, ayraç) verilen degerin non null olanları, ayraç kullanarak, string toplaması (concat) yaparak döndürür. 
+Ayraç değeri verilmezse virgul , kabul edilir.
+
+GROUP_CONCAT ve STRING_AGG aynı fonksiyondur.
+Biri diğerinin takma adı (alias) olarak sunulmuştur.
+STRING_AGG PostgreSQL ve SQL-Server ile uyumlu olmak için, GROUP_CONCAT ise MySQL ile uyumlu olmak için vardır.
+
+
+
+```sql
+SELECT GROUP_CONCAT(c.FirstName)
+FROM Customer c;
+```
+
+
+```sql
+SELECT GROUP_CONCAT(c.FirstName,'|')
+FROM Customer c;
+```
+
+Aşağıdaki sorgu bir albumdeki parçaların isimleri tek bir string değer olarak döndürür.
+
+```sql
+SELECT 
+GROUP_CONCAT(t.Name,'|')
+FROM Track t 
+WHERE t.AlbumId  = 154;
+```
+
+
+
+
+
+- **TOTAL(X)**
+- **SUM(X)**
+
+SQL standardına göre, SUM fonksiyonu eğer çalıştığı tüm satırlar null ise null döndürür.
+SQLite tasarım problemi olarak gördüğü bu durum için Total isminde bir fonksiyon eklemiştir.
+
+
+Örnek 1 
+```sql
+SELECT SUM(Null) AS ResultSum
+,TOTAL(Null)  AS ResultTotal
+```
+
+
+```sql
+{{< include Labs/Sum-vs-Total.sql >}}
+```
+
+- **DECIMAL_SUM(X)**
+
+Kayan noktalı (floating points) sayılar yaklaşık sayılardır.
+Bu sayıların toplamında yaklaşım hataları yapılabilir.
+Eğer uygulamanız bu hataları kabul edemez ise, örneğin para hesapları yapılıyorsa, bu durumda bu fonksiyonu kullanmalısınız.
+Bu fonksiyon normalde SQLite ile gelmez.
+Ayrıca yüklenebilen genişleme (loadable extension) olarak eklenmesi gerekir.
+SQLite extension bölümüne bakınız.
+TODO link ekle.
+
+
+
+
+
+- [sqlite toplam fonksiyonları yardım dokumanı](https://www.sqlite.org/lang_aggfunc.html)

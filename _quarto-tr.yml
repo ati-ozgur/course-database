@@ -79,6 +79,7 @@ book:
         - course-contents/sql-functions-null-oracle-tr.qmd
 
         - course-contents/sql-functions-aggregate-tr.qmd
+        - course-contents/sql-functions-aggregate-sqlite-tr.qmd
         - course-contents/sql-group-by-tr.qmd
         - course-contents/sql-orderby-tr.qmd
         - course-contents/sql-limit-top-tr.md

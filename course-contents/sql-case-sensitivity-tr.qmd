@@ -78,6 +78,15 @@ Ve bu tabloyu sorgularken yine oluşturulduğu gibi sorgulamamız gerekir.
 SELECT * FROM "tEsT4";
 ```
 
+Bu derste kullanılan Chinook veritabanı DLL betiklerine bakılırsa, bu veritabanındaki nesnelerin hepsi "" ile oluşturulmuştur.
+Bunda dolayı dersimizin örnek veritabanında sorguları çalıştırırken tüm nesneler "" arasında kullanılmalıdır.
+Aşağıdaki örneğe bakınız.
+
+```sql
+SELECT c."FirstName",c."LastName"  FROM "Customer" c ;
+```
+
+
 ## Betik (String) karşılaştırmaları
 
 Veritabanında kullanılan karakter kodlaması (character encoding) ve veritabanı ayarlarına (collation settings) göre, bu sorgular büyük küçük harf duyarlılığı ayarlanabilir.

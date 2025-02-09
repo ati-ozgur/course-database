@@ -9,7 +9,7 @@
 
 
 
-## Neden 4: SQL, daha yeni sorgu dillerine kıyasla daha iyidir {.unnumbered} 
+## SQL, daha yeni sorgu dillerine kıyasla daha iyidir 
 
 Bakınız:
 

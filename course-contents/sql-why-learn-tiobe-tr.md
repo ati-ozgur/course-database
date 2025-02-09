@@ -1,5 +1,5 @@
 
-## Neden 1: SQL popülerdir ve yaygın olarak kullanılır {.unnumbered} 
+## SQL popülerdir ve yaygın olarak kullanılır 
 
 SQL [tiobe dizininde 8 numaradır](https://www.tiobe.com/tiobe-index/sql/).
 SQL'in bu listede yeni olduğunu unutmayın çünkü 2018'den önce programlama dili olarak kabul edilmiyordu.

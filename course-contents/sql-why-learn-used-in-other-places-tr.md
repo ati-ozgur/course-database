@@ -1,5 +1,4 @@
-## Neden 3: SQL, veritabanları dışında da kullanılır  {.unnumbered} 
-
+## SQL, veritabanları dışında da kullanılır  
 
 SQL, veri biliminde yaygın olarak kullanılır.
 Veri biliminde, SQL bellekte çalışan veri çerçevesi (data frames) içinde ve normal veritabanlarında kullanılır.

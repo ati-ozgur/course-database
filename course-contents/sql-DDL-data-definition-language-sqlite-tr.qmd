@@ -25,8 +25,7 @@ SQLite için:
 3. DBeaver Demo Drop Table
 
 1. DBeaver Demo Create View
-2. DBeaver Demo Alter View
-3. DBeaver Demo Drop View
+2. DBeaver Demo Drop View
 
 
 Açık kaynaklı ve ücretsiz bir araç olan DBeaver çok güçlü değildir.

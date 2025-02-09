@@ -1,0 +1,11 @@
+# SQL Kayan Noktalı (Floating points) Veri Tipleri
+
+https://www.sqlite.com/floatingpoint.html
+
+
+TODO Ekstra notlar daha sonra
+
+```sql
+SELECT 1152693165.1106291898-1152693165.1106280772;
+```
+

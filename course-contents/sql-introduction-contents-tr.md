@@ -10,7 +10,8 @@
 	+ Matematik
 	+ JSON
 	+ NULL
-- Group By ve Veri Birleştirme
+- Order by Sıralama
+- Group By ve Having
 - Subqueries - İç Sorgular
 - Sorgu satır sayısı limitleme
 - Sanal Tablolar (Views,WITH,Temp Tables)

@@ -81,3 +81,19 @@ Employee M ON E1.ReportsTo = M.EmployeeId
 ) Y
 WHERE Y.ManagerFullName LIKE '%ar%'
 ```
+
+
+{{< include ../course-contents/sql-select-ordering-semantic-tr.qmd >}}
+
+
+## Anlamsal sıralama ve takma ad kullanımı
+
+Bir takma adı kullanabilmemiz için bu takma adın anlamsal sıralamada daha önce verilmesi gerekmektedir.
+Örneğin aşağıdaki sorgu çalışmaz çünkü takma SELECT sırasında veriliyor ama WHERE aşamasında kullanılmak isteniyor.
+Anlamsal sıralamada SELECT daha sonra geldiği için SQL motoru bu takmadı bilmiyor ve bu yüzden hata veriyor.
+
+
+```sql
+SELECT C.FirstName || ' '|| C.LastName AS TamAdi  FROM Customer AS C
+WHERE C.TamAdi LIKE 'A%';
+```

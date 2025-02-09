@@ -31,9 +31,6 @@ Basit durumlar için iki sıralama vereceğiz ve bunları temel alarak daha kar�
 
 
 
-{{< include ../course-contents/sql-select-ordering-semantic-tr.qmd >}}
-
-
 
 
 {{< include ../course-contents/sql-select-examples-tr.md >}}

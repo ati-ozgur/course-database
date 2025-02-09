@@ -8,7 +8,13 @@
 - 1970: Chen tarafından ortaya atılan varlık-ilişki modeli.
 - İlk ticari sürüm Oracle firması tarafından 1979'da çıkmıştır.
 - 1984: Ön SQL standardı yayınlandı.
+- 1990'lı yıllar: Nesneye yönelik veri tabanları
+- 2000'li yıllar: XML Veri tabanları
+- 2010'li yıllar: JSON belge Veri tabanları
+- 2010'li yıllar: Çizge (Graph) veri tabanları
+- 2020'li yıllar: Vektör veri tabanları
 
+Ayrıca SQL standartlarının tarihide SQL açısından önemlidir.
 
 {{< include ../course-contents/sql-standard-tr.qmd >}}
 

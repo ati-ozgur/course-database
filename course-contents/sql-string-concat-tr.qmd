@@ -17,4 +17,13 @@ SELECT C.FirstName + ' ' + C.LastName AS TamAdi  FROM Customer AS C;
 
 Kullanılan veritabanında göre bu 2 işaretten biri yaygındır.
 
+Aynı işlem CONCAT fonksiyonu ilede yapılabilir.
 
+- **concat(X,...)**
+
+Bu fonksiyon kendisine verilen argumanları birleştirerek döndürür.
+Aşağıdaki sorgu, SQLite, SQL-Server ve Oracle veritabanlarında çalışır.
+
+```sql
+SELECT CONCAT(C.FirstName,' ',C.LastName) AS TamAdi  FROM Customer AS C;
+```

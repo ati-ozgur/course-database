@@ -61,6 +61,7 @@ book:
     - part: "DDL (Veri Tanım Dili) Giriş"
       chapters:
         - course-contents/sql-DDL-data-definition-language-tr.qmd
+        - course-contents/sql-DDL-data-definition-language-sqlite-tr.qmd
         - course-contents/sql-data-dictionary-tr.qmd
         - course-contents/sql-data-dictionary-sqlite-tr.qmd
 

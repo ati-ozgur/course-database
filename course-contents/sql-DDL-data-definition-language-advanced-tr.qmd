@@ -1,4 +1,6 @@
-# Veri Tanım Dili (DDL) (data definition language) İleri Seviye
+# DDL İleri Seviye
+
+Veri Tanım Dili (DDL) (data definition language) İleri Seviye
 
 ## CREATE Örnekleri
 

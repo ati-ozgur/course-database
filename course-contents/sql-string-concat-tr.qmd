@@ -48,9 +48,6 @@ Betik (string) tanımlarında her zaman **''** karakterlerini kullanınız.
 ## SQL Betik Birleştirme (String concat)
 
 
-
-SELECT 'Atilla', "Atilla" FROM dual;
-
 SQL ile çalışırken betik birleştirme çok ihtiyaç duyarız.
 Bir çok veritabanında iki boru **||** işareti bu amaçla kullanılır.
 Aşağıdaki sorgu, Oracle ve SQLite üzerinde betik birleştirmeyi göstermektedir.

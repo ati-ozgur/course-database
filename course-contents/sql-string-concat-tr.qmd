@@ -1,4 +1,55 @@
-# SQL Betik Birleştirme (String concat)
+# SQL Betikler ve Betik Birleştirme
+
+## SQL Betik tanımı
+
+SQL dilinde betik tanımı **''** karakterleri arasında istenilen karakterlerin yazımı ile yapılır.
+Aşağıdaki sorguda 'Atilla' bir betik tanımıdır.
+Veritabanlarından FROM kullanımına göre her veri tabanında bu betik tanımı ve sorgu geçerlidir.
+Aşağıdaki sorgu SQLite ve SQL-Server'da çalışır.
+
+```sql
+SELECT 'Atilla';
+```
+Aynı sorgunun Oracle'da çalışması için dummy tablo olan dual kulanılmalıdır.
+
+```sql
+SELECT 'Atilla' FROM dual;
+```
+
+Bazı veritabanlar "" ilede betik tanımını izin verirler.
+Bu sadece bazı veritabanlarında örneğin, SQLite ve MySQL, çalışır.
+Bu betik tanımını kullanmayınız.
+Aşağıdaki sorgu SQLite çalışır.
+
+```sql
+SELECT 'Atilla', "Atilla";
+```
+
+Ama SQL-Server'da hata mesajı verir.
+
+> SQL Error [207] [S0001]: Invalid column name 'Atilla'.
+
+Aynı şekilde aşağıdaki sorgu 
+
+```sql
+SELECT 'Atilla', "Atilla" FROM dual;
+```
+
+Oracle'da hata mesajı verir.
+
+> SQL Error [904] [42000]: ORA-00904: "Atilla": invalid identifier
+
+:::{.callout-tip}
+Betik (string) tanımlarında her zaman **''** karakterlerini kullanınız.
+:::
+
+
+
+## SQL Betik Birleştirme (String concat)
+
+
+
+SELECT 'Atilla', "Atilla" FROM dual;
 
 SQL ile çalışırken betik birleştirme çok ihtiyaç duyarız.
 Bir çok veritabanında iki boru **||** işareti bu amaçla kullanılır.
@@ -27,3 +78,7 @@ Aşağıdaki sorgu, SQLite, SQL-Server ve Oracle veritabanlarında çalışır.
 ```sql
 SELECT CONCAT(C.FirstName,' ',C.LastName) AS TamAdi  FROM Customer AS C;
 ```
+
+:::{.callout-tip}
+Eğer veritabanı bağımsız SQL yazmanız gerekiyorsa CONCAT fonksiyonunu tercih ediniz.
+:::

@@ -114,3 +114,7 @@ Eğer gelen sonuçta CI varsa bu Case Insenstive, yani büyük küçük harf duy
 SELECT SYS_CONTEXT('USERENV','NLS_SORT')  FROM dual;
 ```
 
+SQLite normalde binary, byte byte karşılaştırma, yapar.
+Bu collation değiştirilebilir ve kullanıcı collation'ları eklenebilir.
+Eğer betik karşılaştırmalarınız beklediğiniz sonuçları vermiyorsa ilk kontrol etmeniz gereken veritabanı collatiıon özellikleridir.
+Bu konuyu ileride daha ayrıntılı olarak her veritabanı için inceleyeceğiz.

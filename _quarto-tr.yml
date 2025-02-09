@@ -134,6 +134,8 @@ book:
         - course-contents/database-desing-patterns-en.qmd
         
         - course-contents/sql-data-types-tr.qmd
+        - course-contents/sql-data-types-string-tr.qmd
+        - course-contents/sql-data-types-string-collation-tr.qmd
         - course-contents/sql-data-types-float-tr.qmd
         - course-contents/sql-data-types-sqlite-tr.qmd
         - course-contents/sql-data-types-sqlserver-tr.qmd

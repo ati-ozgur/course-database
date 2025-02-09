@@ -24,3 +24,16 @@ SELECT * FROM Track t
 WHERE t.Name GLOB 'Lo[sv]*'
 ```
 
+## GLOB fonksiyonu
+
+**glob(X,Y)**
+
+Bu fonksiyon "Y GLOB X" kullanımına eşittir.
+Yukarıdaki örnekler bu fonksiyon ile'de çalıştırılabilir.
+X arama deseni, Y ise arama yapılacak betiktir.
+Aşağıdaki 2 kullanım bundan dolayı eşittir.
+
+```sql
+name GLOB '*ati*'
+glob('*ati*',name)
+```

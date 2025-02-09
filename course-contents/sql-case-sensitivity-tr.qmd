@@ -1,0 +1,107 @@
+# SQL Büyük/Küçük harf duyarlılığı
+
+## SQL Anahtar kelimeleri
+
+, SELECT, FROM, WHERE.., büyük küçük harf duyarlı değildir.
+Aşağıdaki 2 sorgu aynı şekilde çalışır.
+Ama diğer kelimelerden ayırmak için SQL anahtar kelimelerini tümüyle büyük harf ile yazmanız tavsiye edilir.
+
+
+```sql
+SELECT * FROM Customer;
+```
+
+```sql
+select * from Customer;
+```
+
+## Veritabanı nesne isimleri
+
+Kullanıdığınız veri tabanına göre bu değişir.
+Örneğin, aşağıdaki 4 sorgu, SQLite ve SQL-Server veritabanlarında çalışır.
+
+```sql
+SELECT * FROM customer;
+SELECT * FROM CUSTOMER;
+SELECT * FROM Customer;
+SELECT * FROM CuStOmEr;
+```
+
+Ama Oracle veri tabanında bu sorgular aşağıdaki hatayı verirler.
+
+> SQL Error [942] [42000]: ORA-00942: table or view does not exist
+> Error position: line: 4 pos: 14
+
+Oracle veritabanında aşağıdaki sorguyu deneyelim.
+
+```sql
+CREATE TABLE TEST1( ID int);
+CREATE TABLE test2( ID int);
+CREATE TABLE tEsT3( ID int);
+
+```
+
+
+DBeaver üstünde tablo listesini yenilersek (refresh) aşağıdaki resimde olduğu gibi 3 yeni tablomuzu görebiliriz.
+
+![Note](images/oracle-test-table-names.png)
+
+
+Gördüğünüz gibi Oracle için TEST, test veya tEsT kullanımı fark etmedi.
+Tabloları oluştururken hepsini büyük harf ile oluşturdu.
+Aynı şekilde bu tablolara SELECT sorgu yapmak istersek,
+
+```sql
+SELECT * FROM test1;
+SELECT * FROM test2;
+SELECT * FROM test3;
+SELECT * FROM TEST1;
+SELECT * FROM TEST2;
+SELECT * FROM TEST3;
+```
+
+Oracle bu şekilde oluşturulmuş tablolarda büyük veya küçük harf ile sorgulamamıza izin verir.
+Türkçe karakter ı,I bu kullanımda sorun oluşturabilir.
+
+Peki neden daha önce hata alıyorduk.
+Oracle üstünde tablo veya nesne isimlerinin tümüyle büyük ve tümüyle küçük harf dönüşmesini **""** karakterleri kullanarak önleyebiliriz.
+Örneğin aşağıdaki tablo isminin tam verildiği gibi oluşturulacaktır.
+
+```sql
+CREATE TABLE "tEsT4"( "Id" int);
+
+```
+
+Ve bu tabloyu sorgularken yine oluşturulduğu gibi sorgulamamız gerekir.
+
+```sql
+SELECT * FROM "tEsT4";
+```
+
+## Betik (String) karşılaştırmaları
+
+Veritabanında kullanılan karakter kodlaması (character encoding) ve veritabanı ayarlarına (collation settings) göre, bu sorgular büyük küçük harf duyarlılığı ayarlanabilir.
+
+Oracle ve SQLite WHERE büyük/küçük harf duyarlıdır.
+Aşağıdaki sorgulardan sadece ikincisi sonuç getirir.
+SQL-Server'da aşağıdaki 2 sorguda sonuç getirir.
+
+```sql
+SELECT * FROM "Customer" c WHERE c."FirstName"  = 'daan';
+SELECT * FROM "Customer" c WHERE c."FirstName"  = 'Daan';
+```
+
+SQL-Server'da collation bilgisi aşağıdaki sorgu ile bulunabilir.
+Eğer gelen sonuçta CI varsa bu Case Insenstive, yani büyük küçük harf duyarlı değil anlamına gelir.
+
+```sql
+SELECT CONVERT (varchar(256), SERVERPROPERTY('collation'));  
+```
+
+Oracle'da collation bilgisi aşağıdaki sorgu ile bulunabilir.
+Eğer gelen sonuçta CI varsa bu Case Insenstive, yani büyük küçük harf duyarlı değil anlamına gelir.
+
+```sql
+SELECT SYS_CONTEXT('USERENV','NLS_SORT')  FROM dual;
+```
+

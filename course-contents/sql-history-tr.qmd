@@ -1,4 +1,4 @@
-## SQL Tarihi
+## SQL Tarihi ve SQL Standardları
 
 -  Edgar F. Codd "A Relational Model of Data for Large Shared Data Banks" @Codd1970relational
 

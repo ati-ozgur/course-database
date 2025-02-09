@@ -1,5 +1,5 @@
 
-## Şema görünümleri
+## Bilgi Şeması (Information Schema) görünümleri
 
 Sistem görünümleri, veritabanı sisteminin kendisi hakkında dinamik bilgiler verir.
 
@@ -11,7 +11,7 @@ Bu görünümler, veritabanlarından tablo, sütun, görünüm ve diğer nesne b
 - INFORMATION_SCHEMA.VIEWS
 - and others
 
-SQL Standard'ın bu çok kullanışlı özelliği için veritabanına özgü belgelere bakın.
+SQL Standard'ın bu çok kullanışlı özelliği için veritabanının kendi yardım belgelerine bakınız.
 Bilgi şeması görünümleri aşağıdaki veritabanları tarafından desteklenmektedir.
 
 - [Sql server](https://learn.microsoft.com/en-us/sql/relational-databases/system-information-schema-views/system-information-schema-views-transact-sql?view=sql-server-ver16)

@@ -10,7 +10,10 @@
 - 1984: Ön SQL standardı yayınlandı.
 
 
+{{< include ../course-contents/sql-standard-tr.qmd >}}
 
+
+        - course-contents/.qmd
 
 
 

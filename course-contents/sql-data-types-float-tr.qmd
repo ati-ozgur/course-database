@@ -9,3 +9,6 @@ TODO Ekstra notlar daha sonra
 SELECT 1152693165.1106291898-1152693165.1106280772;
 ```
 
+
+Equality, eşitlik problemleri
+aritmetik problemleri

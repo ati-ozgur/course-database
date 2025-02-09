@@ -68,6 +68,7 @@ book:
     - part: "SQL DQL (Select)"
       chapters:
         - course-contents/sql-select-tr.qmd
+        - course-contents/sql-alias-tr.qmd
         - course-contents/sql-comments-tr.qmd
         - course-contents/sql-select-distinct-tr.md
         - course-contents/sql-where-tr.qmd

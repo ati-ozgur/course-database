@@ -1,0 +1,83 @@
+# SQL Takma ad (Alias)
+
+SQL Takma adları tablo ve kolonlarımıza verdiğimiz kısa isimlerdir.
+Özellikle uzun sorguları daha anlaşılır yaparlar.
+Takma ad verirken **AS** kullanılması tavsiye edilir ama bir çok veritabanı motoru AS kullanmadan da takma ad verilmesine izin verir.
+
+
+```sql
+SELECT C.* FROM Customer C;
+```
+
+```sql
+SELECT C.* FROM Customer AS C;
+```
+
+Buradaki C.* kullanımı takma ad verdiğimiz bir tablonun tüm kolonlarını seçmek için güzel bir kullanımdır.
+
+Özellikle sorgulardaki hesaplanan kolonlara isim vermek için yararlıdırlar.
+
+```sql
+SELECT C.FirstName || ' '|| C.LastName AS TamAdi  FROM Customer AS C;
+```
+
+Benzer bir şekilde toplam fonksiyonlarına isim vermek için de yararlıdırlar.
+
+```sql
+SELECT AVG(Total) AS OrtalamaFaturaDegeri FROM Invoice i;
+```
+
+Takma adın bir diğer yararı GUI araçlarında otomatik sorgu yazımında yardımcı olmalarıdır.
+
+![Dbeaver Sorgu Yardımcısı](images/dbeaver-alias-intellisense.png){width=80%}
+
+
+
+İleride göreceğimiz birleşim (join) kullanımında da çok işe yararlar.
+Eğer 2 aynı tablo aynı kolon isimlerine sahip iseler ya bunların tablo_adi.kolon_adi diye uzun uzun yazmamız gerekir.
+Ama takma adi kullanımı ile bunlar daha anlaşılır olurlar.
+Aşağıdaki örneğe bakınız.
+
+```sql
+SELECT
+Track.TrackId, Track.Name,Album.AlbumId, 
+Album.Title,Artist.ArtistId, Artist.Name
+FROM Track  
+JOIN Album  ON Album.AlbumId = Track.AlbumId
+JOIN Artist  ON Artist.ArtistId = Album.ArtistId;
+```
+
+Bu sorgu takma adlar kullanarak hem daha kısa hem daha anlaşılır olarak yazılabilir.
+
+```sql
+SELECT
+T.TrackId, T.Name As TrackName,A.AlbumId, 
+A.Title,Ar.ArtistId, Ar.Name AS ArtistName
+FROM Track T 
+JOIN Album  A ON A.AlbumId = T.AlbumId
+JOIN Artist Ar ON Ar.ArtistId = A.ArtistId;
+```
+
+Eğer aynı tabloyu kendi kendine birleştiriyorsak takma ad kullanımı bir zorunluluktur.
+Aşağıdaki sorguyu takma ad kullanmadan yazamayız.
+
+```sql
+SELECT E1.EmployeeId, E1.FirstName ,E1.LastName,   
+M.FirstName || ' ' || M.LastName AS ManagerFullName
+FROM Employee E1 INNER JOIN 
+Employee M ON E1.ReportsTo = M.EmployeeId;
+```
+
+Benzer bir şekilde karışık alt sorgulara isim vermek içinde yararlıdırlar.
+
+
+```sql
+SELECT * FROM
+(
+SELECT E1.EmployeeId, E1.FirstName ,E1.LastName,   
+M.FirstName || ' ' || M.LastName AS ManagerFullName
+FROM Employee E1 INNER JOIN 
+Employee M ON E1.ReportsTo = M.EmployeeId
+) Y
+WHERE Y.ManagerFullName LIKE '%ar%'
+```

@@ -1,0 +1,13 @@
+# Veri Tanım Dili (DDL) (data definition language) İleri Seviye
+
+## CREATE Örnekleri
+
+## DROP Örnekleri
+
+## ALTER Örnekleri
+
+
+
+## Oluşturulan/Sanal Kolonlar
+
+[Oluşturulan Kolonlar sqlite](https://www.sqlite.org/gencol.html)

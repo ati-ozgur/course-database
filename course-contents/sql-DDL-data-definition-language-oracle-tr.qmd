@@ -1,0 +1,16 @@
+# Veri Tanım Dili (DDL) (data definition language) Oracle
+
+
+
+::: {#fig-oracle-objects layout-ncol=2}
+
+dbeaver-sqlite-objects-all
+
+![Dbeaver oracle objects](images/dbeaver-oracle-objects-all.png)
+
+![SQL Developer oracle objects](images/sqldeveloper-oracle-objects-all.png)
+
+Oracle Objects
+:::
+
+

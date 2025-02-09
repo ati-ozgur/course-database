@@ -52,15 +52,18 @@ Oracle bir numaralı kurumsal paralı veritabanı olarak çok çeşitli nesneler
 SQL Server, Oracle'dan daha az olmasına rağmen, yine de çok daha fazla çeşit nesne çeşidi desteklemektedir.
 Bundan dolayı, bu nesnelerin oluşturulması/değiştirilmesi ve düşürülmesi için gerekli komutlara sahiptirler.
 
+::: {#fig-dbeaver-objects layout-ncol=3}
 
-::: {#fig-oracle-objects layout-ncol=2}
+![Dbeaver SQLite objects](images/dbeaver-sqlite-objects-all.png)
 
-![Dbeaver oracle objects](images/dbeaver-oracle-objects-all.png)
 
-![SQL Developer oracle objects](images/sqldeveloper-oracle-objects-all.png)
+![Dbeaver Oracle objects](images/dbeaver-oracle-objects-all.png)
 
-Oracle Objects
+![Dbeaver SQL-Server objects](images/dbeaver-sqlserver-objects-all.png)
+
+DBeaver farklı veritabanları Nesne Desteği 
 :::
+
 
 
 Giriş seviyesinde bir kurs olduğu için bu diğer nesneleri detaylı bir şekilde incelemeyeceğiz.

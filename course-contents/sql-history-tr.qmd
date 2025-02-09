@@ -19,7 +19,3 @@ Ayrıca SQL standartlarının tarihide SQL açısından önemlidir.
 {{< include ../course-contents/sql-standard-tr.qmd >}}
 
 
-        - course-contents/.qmd
-
-
-

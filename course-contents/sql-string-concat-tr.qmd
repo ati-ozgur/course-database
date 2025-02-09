@@ -1,0 +1,20 @@
+# SQL Betik Birleştirme (String concat)
+
+SQL ile çalışırken betik birleştirme çok ihtiyaç duyarız.
+Bir çok veritabanında iki boru **||** işareti bu amaçla kullanılır.
+Aşağıdaki sorgu, Oracle ve SQLite üzerinde betik birleştirmeyi göstermektedir.
+
+```sql
+SELECT C.FirstName || ' ' || C.LastName AS TamAdi  FROM Customer AS C;
+```
+
+Aynı özelliği SQL-Server'da **+** işareti ile yaparız.
+
+
+```sql
+SELECT C.FirstName + ' ' + C.LastName AS TamAdi  FROM Customer AS C;
+```
+
+Kullanılan veritabanında göre bu 2 işaretten biri yaygındır.
+
+

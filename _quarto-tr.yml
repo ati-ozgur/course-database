@@ -110,7 +110,6 @@ book:
         - course-contents/sql-DML-insert-en.qmd
         - course-contents/sql-DML-update-en.qmd
         - course-contents/sql-DML-delete-en.qmd
-        - course-contents/sql-truncate-table-tr.md
         - course-contents/sql-DCL-data-control-language-tr.qmd
         - course-contents/sql-TCL-transactional-control-language-tr.qmd
     - part: "Veri tabanı Kavramları"
@@ -139,11 +138,12 @@ book:
         - course-contents/database-design-from-spreadsheets-en.qmd
         - course-contents/database-design-questions-answers-en.qmd
         - course-contents/database-design-normal-forms.qmd
-        - course-contents/sql-DDL-data-definition-language-advanced-tr.qmd
 
     - part: "DDL (Veri Tanım Dili) İleri"
       chapters:
+        - course-contents/sql-DDL-data-definition-language-advanced-tr.qmd
         - course-contents/sql-DML-alter-table-tr.qmd
+        - course-contents/sql-truncate-table-tr.md
 
 
     - part: "SQL Tuning"

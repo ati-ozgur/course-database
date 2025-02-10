@@ -1,5 +1,0 @@
-# SQL NULL Fonksiyonları
-
-{{< include ../course-contents/sql-functions-null-sql-standard-tr.qmd >}}
-
-

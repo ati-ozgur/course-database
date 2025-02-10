@@ -78,7 +78,7 @@ book:
 
 
         - course-contents/sql-null-tr.qmd
-        - course-contents/sql-functions-null-tr.qmd
+        - course-contents/sql-functions-null-sql-standard-tr.qmd
         - course-contents/sql-functions-null-sqlite-tr.qmd
         - course-contents/sql-functions-null-sql-server-tr.qmd
         - course-contents/sql-functions-null-oracle-tr.qmd

@@ -1,6 +1,6 @@
 # SQL NULL Fonksiyonları SQL Standard
 
-**coalesce(X,Y,...)**
+## Coalesce(X,Y,...)
 
 - coalesce() işlevi, NULL olmayan ilk bağımsız değişkenini döndürür.
 - Tüm bağımsız değişkenler null ise, NULL döndürür.
@@ -28,7 +28,7 @@ FROM Customer c
 ```
 
 
-**nullif(X,Y)**
+## nullif(X,Y)
 
 - Eğer X ve Y farklıysa, ilk argüman olan X'i döndürür.
 - Eğer X ve Y aynı ise null döndürür.
@@ -47,7 +47,7 @@ NULLIF(NULL,NULL)
 ```
 
 
-**case**
+## Case
 
 Yukarıda kullanılan coalesce ifadesi case kullanılarak ta yazılabilir.
 

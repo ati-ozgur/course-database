@@ -1,0 +1,31 @@
+# SQL Case ifadesi
+
+
+SQL case ifadesi C-tipi dillerdeki switch'e benzer ama daha güçlüdür.
+En basit hali aşağıdaki gibidir.
+
+```sql
+CASE AramaCumlesi
+  WHEN cumle1 THEN sonuc1
+  WHEN cumle2 THEN sonuc2
+  WHEN cumle3 THEN sonuc3
+  ELSE VarsayilanSonuc
+END 
+```
+
+Basit bir örnek olarak cinsiyet bilgisinin uzun hale çevrilmesini yazabiliriz.
+
+
+```sql
+SELECT Adi,
+Soyadi,
+CASE Cinsiyet
+	WHEN 'e' THEN 'ERKEK'
+	WHEN 'k' THEN 'KADIN'
+	ELSE 'BILINMIYOR'
+	END AS CinsiyetUzun
+FROM ORTAK.KISI;
+```
+
+
+

@@ -2,7 +2,9 @@
 
 ## SQL Betik tanımı
 
-SQL dilinde betik tanımı **''** karakterleri arasında istenilen karakterlerin yazımı ile yapılır.
+SQL dilinde betik tanımı ' tırnak karakterleri arasında istenilen karakterlerin yazımı ile yapılır, örneğin: 'Atilla'
+
+
 Aşağıdaki sorguda 'Atilla' bir betik tanımıdır.
 Veritabanlarından FROM kullanımına göre her veri tabanında bu betik tanımı ve sorgu geçerlidir.
 Aşağıdaki sorgu SQLite ve SQL-Server'da çalışır.
@@ -10,6 +12,7 @@ Aşağıdaki sorgu SQLite ve SQL-Server'da çalışır.
 ```sql
 SELECT 'Atilla';
 ```
+
 Aynı sorgunun Oracle'da çalışması için dummy tablo olan dual kulanılmalıdır.
 
 ```sql

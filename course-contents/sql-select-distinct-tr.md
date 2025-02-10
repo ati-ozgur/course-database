@@ -65,7 +65,7 @@ SELECT DISTINCT City FROM customer;
 ```
 53 satır.
 
-### Sorular
+## Sorular
 
 1. Tekrar eden satırlar nasıl bulunur?
 Örnek olarak son sorgumuzda hangi şehirler birden fazladır?

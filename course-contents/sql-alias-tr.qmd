@@ -15,6 +15,9 @@ SELECT C.* FROM Customer AS C;
 
 Buradaki C.* kullanımı takma ad verdiğimiz bir tablonun tüm kolonlarını seçmek için güzel bir kullanımdır.
 
+
+## Takma ad hesaplanan kolonlar
+
 Özellikle sorgulardaki hesaplanan kolonlara isim vermek için yararlıdırlar.
 
 ```sql
@@ -27,15 +30,19 @@ Benzer bir şekilde toplam fonksiyonlarına isim vermek için de yararlıdırlar
 SELECT AVG(Total) AS OrtalamaFaturaDegeri FROM Invoice i;
 ```
 
+## Takma ad GUI sorgu yazımı
+
+
 Takma adın bir diğer yararı GUI araçlarında otomatik sorgu yazımında yardımcı olmalarıdır.
 
 ![Dbeaver Sorgu Yardımcısı](images/dbeaver-alias-intellisense.png){width=80%}
 
 
+## Takma ad GUI birleşim (join) 
 
 İleride göreceğimiz birleşim (join) kullanımında da çok işe yararlar.
 Eğer 2 aynı tablo aynı kolon isimlerine sahip iseler ya bunların tablo_adi.kolon_adi diye uzun uzun yazmamız gerekir.
-Ama takma adi kullanımı ile bunlar daha anlaşılır olurlar.
+Ama takma ad kullanımı ile bunlar daha anlaşılır olurlar.
 Aşağıdaki örneğe bakınız.
 
 ```sql
@@ -58,6 +65,9 @@ JOIN Album  A ON A.AlbumId = T.AlbumId
 JOIN Artist Ar ON Ar.ArtistId = A.ArtistId;
 ```
 
+## Takma ad GUI aynı tablo birleşim (self-join) 
+
+
 Eğer aynı tabloyu kendi kendine birleştiriyorsak takma ad kullanımı bir zorunluluktur.
 Aşağıdaki sorguyu takma ad kullanmadan yazamayız.
 
@@ -67,6 +77,8 @@ M.FirstName || ' ' || M.LastName AS ManagerFullName
 FROM Employee E1 INNER JOIN 
 Employee M ON E1.ReportsTo = M.EmployeeId;
 ```
+
+## Takma ad alt sorgu isim verme
 
 Benzer bir şekilde karışık alt sorgulara isim vermek içinde yararlıdırlar.
 

@@ -21,6 +21,12 @@ coalesce, sqlite, oracle, sql server, postgres, mysql .... gibi birçok farklı 
      ) AS FullName FROM COMMON.PERSON;
 ```
 
+```sql
+SELECT C.CustomerId,
+COALESCE (C.Company,'Firma bilgisi yok') AS Company 
+FROM Customer c
+```
+
 
 **nullif(X,Y)**
 

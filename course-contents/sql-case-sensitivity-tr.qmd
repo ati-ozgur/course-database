@@ -2,7 +2,7 @@
 
 ## SQL Anahtar kelimeleri
 
-, SELECT, FROM, WHERE.., büyük küçük harf duyarlı değildir.
+SQL anahtar kelimeleri, SELECT, FROM, WHERE.., büyük küçük harf duyarlı değildir.
 Aşağıdaki 2 sorgu aynı şekilde çalışır.
 Ama diğer kelimelerden ayırmak için SQL anahtar kelimelerini tümüyle büyük harf ile yazmanız tavsiye edilir.
 
@@ -89,7 +89,7 @@ SELECT c."FirstName",c."LastName"  FROM "Customer" c ;
 
 ## Betik (String) karşılaştırmaları
 
-Veritabanında kullanılan karakter kodlaması (character encoding) ve veritabanı ayarlarına (collation settings) göre, bu sorgular büyük küçük harf duyarlılığı ayarlanabilir.
+Veritabanında kullanılan karakter kodlaması (character encoding) ve veritabanı harmanlama ayarlarına (collation settings) göre, bu sorgular büyük küçük harf duyarlılığı ayarlanabilir.
 
 Oracle ve SQLite WHERE büyük/küçük harf duyarlıdır.
 Aşağıdaki sorgulardan sadece ikincisi sonuç getirir.
@@ -100,14 +100,14 @@ SELECT * FROM "Customer" c WHERE c."FirstName"  = 'daan';
 SELECT * FROM "Customer" c WHERE c."FirstName"  = 'Daan';
 ```
 
-SQL-Server'da collation bilgisi aşağıdaki sorgu ile bulunabilir.
+SQL-Server'da harmanlama (collation) bilgisi aşağıdaki sorgu ile bulunabilir.
 Eğer gelen sonuçta CI varsa bu Case Insenstive, yani büyük küçük harf duyarlı değil anlamına gelir.
 
 ```sql
 SELECT CONVERT (varchar(256), SERVERPROPERTY('collation'));  
 ```
 
-Oracle'da collation bilgisi aşağıdaki sorgu ile bulunabilir.
+Oracle'da harmanlama (collation) bilgisi aşağıdaki sorgu ile bulunabilir.
 Eğer gelen sonuçta CI varsa bu Case Insenstive, yani büyük küçük harf duyarlı değil anlamına gelir.
 
 ```sql
@@ -115,6 +115,6 @@ SELECT SYS_CONTEXT('USERENV','NLS_SORT')  FROM dual;
 ```
 
 SQLite normalde binary, byte byte karşılaştırma, yapar.
-Bu collation değiştirilebilir ve kullanıcı collation'ları eklenebilir.
-Eğer betik karşılaştırmalarınız beklediğiniz sonuçları vermiyorsa ilk kontrol etmeniz gereken veritabanı collatiıon özellikleridir.
-Bu konuyu ileride daha ayrıntılı olarak her veritabanı için inceleyeceğiz.
+Bu harmanlama (collation) değiştirilebilir ve kullanıcı harmanlamaları eklenebilir.
+Eğer betik karşılaştırmalarınız beklediğiniz sonuçları vermiyorsa ilk kontrol etmeniz gereken veritabanı harmanlama özellikleridir.
+Bu konuyu ileride daha ayrıntılı olarak her veritabanı için ayrı ayrı inceleyeceğiz.

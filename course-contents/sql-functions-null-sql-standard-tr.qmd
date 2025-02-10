@@ -49,5 +49,18 @@ NULLIF(NULL,NULL)
 
 **case**
 
-SQL Case 
-TODO
+Yukarıda kullanılan coalesce ifadesi case kullanılarak ta yazılabilir.
+
+```sql
+SELECT C.CustomerId,
+(case 
+    when C.Company IS NULL then 'Firma bilgisi yok'
+    else C.Company
+end
+) AS Company 
+FROM Customer C
+```
+
+İlgili kolon veya ifade için IS NULL when kullanımı içinde istenildiği gibi yazılabilir.
+Yukarıdaki gibi basit null değişimleri için, daha kısa ve anlaşılır olduğu için coalesce kullanımı tavsiye edilir.
+

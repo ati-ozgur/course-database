@@ -22,6 +22,7 @@
 | Manipulation               | İşleme                      |
 | row                        | satır                       |
 | Primary Key                | Birincil Anahtar            |
+| string	                 | betik					   |
 | Update                     | Güncelle/Güncelleştir       |
 | table                      | tablo                       |
 | type                       | tip                         |

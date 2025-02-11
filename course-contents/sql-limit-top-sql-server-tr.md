@@ -1,8 +1,7 @@
 # SQL Sonuçları Limitleme TOP 
 
-## SQL Standard
+SQL Server fetch first ifadesini destekler ancak kendi TOP uzantısı da vardır.
 
-## SQL Server
 
 - TOP kelimesi gelen sonuçları sayısal veya yüzdesel olarak limitleyebilirsiniz.
 - Eğer ORDER BY ile kullanırsanız sıralamaya göre limit yaparsınız.
@@ -10,28 +9,25 @@
 
 
 ```sql
-SELECT TOP 1 ADI 
-FROM ORTAK.KISI  
-ORDER BY ADI;
+SELECT TOP 1 FirstName 
+FROM  Customer 
+ORDER BY FirstName;
 ```
 
 ```sql
-SELECT TOP 10 Percent ADI 
-FROM ORTAK.KISI  
-ORDER BY ADI;
+SELECT TOP 10 Percent FirstName 
+FROM Customer 
+ORDER BY FirstName;
 ```
 
 
 ```sql
-SELECT TOP 10 WITH TIES ADI 
-FROM ORTAK.KISI 
-ORDER BY ADI;
+SELECT TOP 10 WITH TIES FirstName 
+FROM Customer
+ORDER BY FirstName;
 ```
 
 WITH TIES: Eğer mümkünse mükerrer kayıtlarıda getirir.
 
 
-## Sqlite
-
-## Oracle
 

@@ -1,0 +1,49 @@
+### Intersect için örnek sorular
+
+#### İki farklı tabloda ortak kolon adları
+
+Aşağıdaki iki tabloyu düşünün: Employee ve Customer.
+Employee ve Customer tablolarında hangi isimlerin ortak olduğunu bulacak bir sorgu yazın.
+
+```{mermaid}
+erDiagram
+    Employee {
+        int employee_id
+        text employee_name
+    }
+    Customer {
+        int customer_id
+        text customer_name
+    }  
+```
+
+Bu soru, iç birleştirme (inner join) kullanılarak da çözülebilir ancak küme işlemi kesişiminin anlaşılması daha kolaydır.
+Aşağıdaki sorgu, cevabımızı verecektir
+
+
+```sql
+SELECT employee_name FROM Employee;
+INTERSECT
+SELECT customer_name FROM Customer;
+```
+
+**Chinook Örnek**
+
+Benzer bir örneği Chinook veritabanı için çalıştırırsak, aşağıdaki sorguyu çalıştırırız.
+
+
+```sql
+SELECT c.FirstName from Customer c
+INTERSECT
+SELECT e.FirstName from Employee e 
+```
+
+sonuçlar aşağıda iki isimdir.
+
+```
+Robert
+Steve
+```
+
+
+

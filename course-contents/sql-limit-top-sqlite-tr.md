@@ -1,7 +1,9 @@
 # SQLite Sonuçları Limitleme  
 
 
-sqlite, mysql ve postgres'de de kullanılan limit ifadesini destekler.
+SQLite, MySql ve Postgres'de de kullanılan limit ifadesini destekler.
+LIMIT ifadesi, tüm SELECT ifadesi tarafından kaç satır döndüreleceğini belirtir.
+
 
 
 ```sql
@@ -29,3 +31,15 @@ SELECT * FROM Customer
 LIMIT (SELECT COUNT(*) FROM Employee) 
 OFFSET (SELECT COUNT(*) FROM Employee)
 ```
+
+LIMIT ve OFFSET bir arada kullanım yerine, aşağıdaki gibi virgül ile kullanımda yapılabilir.
+Buradaki sorun ilk ifade offset ikincisi limit değeri olmasıdır.
+Aşağıdaki sorgu 10 satır döndürür.
+Bu kafa karışıklığına yol açabileceği için normal limit ve offset kullanın.
+
+```sql
+SELECT * FROM Customer
+LIMIT 5,10
+```
+
+

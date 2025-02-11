@@ -1,0 +1,24 @@
+## EXCEPT
+
+İkinci sonuç kümesi birinci sonuç kümesinden çıkarılır.
+EXCEPT anahtar sözcüğü SQL standardıdır.
+
+
+
+```sql
+SELECT c.FirstName FROM Customer c
+EXCEPT
+SELECT e.FirstName FROM Employee e
+```
+
+55 satır
+
+```sql
+SELECT e.FirstName FROM Employee e
+EXCEPT
+SELECT c.FirstName FROM Customer c
+```
+
+6 satır.
+
+

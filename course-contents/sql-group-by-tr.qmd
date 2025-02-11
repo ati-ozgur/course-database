@@ -11,8 +11,25 @@ GROUP by genellikle aşağıdaki gibi toplama fonksiyonları ile kullanılır:
 - max
 - count
 
+Basit bir örnek olarak hangi şehirlerde kaç müşterimiz var.
+
 ```sql
-SELECT CustomerId , COUNT(*) as invoice_count, SUM(Total) as total_sales
+SELECT COUNT(*),City FROM Customer
+GROUP BY City
+```
+
+Yukarıdaki sorgu
+
+- Tüm Müşterileri şehir (city) değerine göre gruplandırır
+- Her şehir için müşteri sayısını bulur.
+
+
+Biraz daha karışık bir örnek olarak, müşterilerimize göre fatura sayımız ve toplam fatura değeri:
+
+```sql
+SELECT CustomerId , 
+COUNT(*) as invoice_count, 
+SUM(Total) as total_sales
 FROM Invoice
 GROUP BY CustomerId;
 ```
@@ -52,7 +69,7 @@ ORDER BY 2
 ```
 
 
-Aşağıdaki sorgu parça sayısı 15 ile 20 arasında olab albumleri göstermektedir.
+Aşağıdaki sorgu parça sayısı 15 ile 20 arasında olan albumleri göstermektedir.
 
 ```sql
 SELECT 
@@ -63,6 +80,7 @@ GROUP BY t.AlbumId
 HAVING ParcaSayisi BETWEEN 15 and 20
 ORDER BY 2 DESC
 ```
+
 
 **GROUP BY gerçek yaşam örneği**
 

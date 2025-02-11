@@ -2,7 +2,6 @@
 
 
 SQL case ifadesi C-tipi dillerdeki if-then-else ifadesine benzer ama daha güçlüdür.
-En basit hali aşağıdaki gibidir.
 
 Case ifadesinin iki yapısı vardır.
 Birinci yapıda case ifadesinin hemen arkasından, ilk WHEN kelimesine gelmeden önce bir ifade gelir.

@@ -88,7 +88,12 @@ book:
         - course-contents/sql-group-by-tr.qmd
         - course-contents/sql-having-tr.qmd
         - course-contents/sql-orderby-tr.qmd
-        - course-contents/sql-limit-top-tr.md
+
+        - course-contents/sql-limit-top-standard-tr.md
+        - course-contents/sql-limit-top-sqlite-tr.md
+        - course-contents/sql-limit-top-oracle-tr.md
+        - course-contents/sql-limit-top-sql-server-tr.md
+
         - course-contents/sql-set-tr.qmd
         - course-contents/sql-join-tr.qmd
         - course-contents/sql-subqueries-tr.qmd

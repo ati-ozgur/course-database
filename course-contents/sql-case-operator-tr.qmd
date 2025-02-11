@@ -1,8 +1,15 @@
 # SQL Case ifadesi
 
 
-SQL case ifadesi C-tipi dillerdeki switch'e benzer ama daha güçlüdür.
+SQL case ifadesi C-tipi dillerdeki if-then-else ifadesine benzer ama daha güçlüdür.
 En basit hali aşağıdaki gibidir.
+
+Case ifadesinin iki yapısı vardır.
+Birinci yapıda case ifadesinin hemen arkasından, ilk WHEN kelimesine gelmeden önce bir ifade gelir.
+Bu opsiyonel ifadeye taban (base) ifade denilir.
+Birinci kullanımda taban ifadesi bir kere kontrol edilir ve her WHEN ifadesi ile karşılaştırılır.
+Örneği aşağıdadır.
+
 
 ```sql
 CASE AramaCumlesi
@@ -15,17 +22,68 @@ END
 
 Basit bir örnek olarak cinsiyet bilgisinin uzun hale çevrilmesini yazabiliriz.
 
-
 ```sql
-SELECT Adi,
-Soyadi,
+SELECT
 CASE Cinsiyet
-	WHEN 'e' THEN 'ERKEK'
-	WHEN 'k' THEN 'KADIN'
-	ELSE 'BILINMIYOR'
-	END AS CinsiyetUzun
+  WHEN 'e' THEN 'ERKEK'
+  WHEN 'k' THEN 'KADIN'
+  ELSE 'BILINMIYOR'
+  END AS CinsiyetUzun
 FROM ORTAK.KISI;
 ```
 
+Eğer taban ifadesi kullanılmıyorsa, ikinci yapı, her WHEN ifadesi bir doğru yanlış olarak değerlendirilir.
+Eğer WHEN doğru ise then ifadesi çalıştırılır ve case biter.
+Eğer WHEN yanlış ise bir sonraki WHEN çalıştırılır.
+Eğer hiçbir WHEN doğru değilse, en son ELSE ifadesinin sonucu gelir.
 
+Bir önceki cinsiyet örneğinin ikinci case yapısında yazımı aşağıdaki gibidir.
 
+```sql
+SELECT
+CASE 
+  WHEN Cinsiyet = 'e' THEN 'ERKEK'
+  WHEN Cinsiyet = 'k' THEN 'KADIN'
+  ELSE 'BILINMIYOR'
+  END AS CinsiyetUzun
+FROM ORTAK.KISI;
+```
+
+Eğer hiç bir WHEN ifadesi doğru değil ve ELSE ifadesi yoksa case sonucu null olur.
+
+İkinci yapı çok güçlüdür ve bir çok ifade zincirleme kontrol edilebilir.
+
+Tarih (Date) fonksiyonları ile daha kolay yapılabilir ama fatura ayını türkçe yazmak için aşağıdaki örneğe bakınız.
+
+```sql
+SELECT 
+substr(i.InvoiceDate,6,2),
+(case
+  when substr(i.InvoiceDate,6,2) = '01' then 'Ocak'
+  when substr(i.InvoiceDate,6,2) = '02' then 'Şubat'
+  when substr(i.InvoiceDate,6,2) = '03' then 'Mart'
+  when substr(i.InvoiceDate,6,2) = '04' then 'Nisan'
+  when substr(i.InvoiceDate,6,2) = '05' then 'Mayıs'
+  when substr(i.InvoiceDate,6,2) = '06' then 'Haziran'
+  when substr(i.InvoiceDate,6,2) = '07' then 'Temmuz'
+  when substr(i.InvoiceDate,6,2) = '08' then 'Ağustos'
+  when substr(i.InvoiceDate,6,2) = '09' then 'Eylül'
+  when substr(i.InvoiceDate,6,2) = '10' then 'Ekim'
+  when substr(i.InvoiceDate,6,2) = '11' then 'Kasım'
+  when substr(i.InvoiceDate,6,2) = '12' then 'Aralık'
+  else 'AY bilinmiyor'
+end) AY_TURKCE
+FROM Invoice i;
+```
+
+Aynı şekilde case ifadesi null işleme içinde kullanılabilir.
+
+```sql
+SELECT C.CustomerId,
+(case 
+    when C.Company IS NULL then 'Firma bilgisi yok'
+    else C.Company
+end
+) AS Company 
+FROM Customer C
+```

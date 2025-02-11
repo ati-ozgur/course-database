@@ -1,14 +1,93 @@
-# SQL  Sonuçları Sıralama - ORDER BY
+# SQL Select Order by
+
+- Sıralama ORDER BY kullanılarak bir veya daha fazla sütun ile yapılabilir.
+
+Sorguda order by kullanılmazsa, veritabanı motoru sonuç kümesini istediği sırada döndürmekte serbesttir.
 
 
-- ORDER BY kullanarak bir veya daha fazla kolon ile sıralama yapılabilir.
-- SELECT sırasında oluşturulan takma isimler (alias) kullanılabilir.
-- SELECT ile çekilmeyen kolonlar kullanılabilir.
-- ASC (Ascending-Artarak) veya DESC (Descending-Azalarak) belirtilebilir. 
-ASC varsayılan kelimedir.
-- Kolon adı yerine, gelen sonuç setindeki sıra numara olarak kullanılabilir.
+```sql
+SELECT * FROM Customer c 
+order by FirstName
+```
+
+```sql
+SELECT * FROM Customer c 
+order by Country , State, City
+```
+
+- SELECT sırasında oluşturulan takma adlar (alias) kullanılabilir.
 
 
+```sql
+SELECT CustomerId as Id,FirstName,LastName 
+FROM Customer c 
+ORDER BY Id
+```
+
+
+- SELECT ile alınmayan sütunlar kullanılabilir.
+
+
+```sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+ORDER BY Country , State, City
+```
+
+- ASC (Ascending,Artan) veya DESC (Descending,Azalan) olarak belirtilebilir. 
+- ASC varsayılan kelimedir.
+
+
+```sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+ORDER BY CustomerId DESC
+```
+
+```sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+ORDER BY Country DESC, State DESC, City DESC
+```
+
+
+- Sütun adı yerine, sonuç kümesindeki sütun numarası kullanılabilir.
+Bu özellikle karışık fonksiyonlar select içinde kullanıldığında kullanışlıdır.
+
+
+```sql
+SELECT CustomerId,FirstName,LastName FROM Customer c 
+ORDER BY 1 DESC
+```
+
+Çoğu kullanıcı sonuç kümesinin sıralı olmasını beklediğinden, tablo ve diğer listelerde ORDER BY kullanılmalıdır.
+Örneğin, şehirlere göre sıralamanın basit bir kullanıcı arayüzü kullanımıdır.
+Bir adres seçimi açılır kutu listesinde, en önemli şehirleri ilk olarak görmek isteriz.
+
+Aşağıdaki örneklerde, şehirlerin yalnızca isimlerine göre sıralandığını görüyoruz.
+
+
+```sql
+SELECT CityId, CityName from Cities
+ORDER BY  CityName
+```
+
+Kullanıcıların çoğu İstanbul ve Ankara'dan geleceği için bu sıralama çok iyi değildir.
+Sorguyu değiştirelim, böylece bu iki şehir sonuç kümesinde ilk sırada gelecektir.
+Şehirler tablosuna OrderPriority (sıralama önceliği) sütununu eklememiz gerekiyor.
+Ve bu sütun için İstanbul ve Ankara'ya değerler ekleyin.
+Çünkü İstanbul ve Ankara'nın OrderPriority değerleri diğer şehirlere göre daha yüksektir, 
+şehir listesini aşağıdaki gibi görürüz:
+
+
+
+- İstanbul
+- Ankara
+- Adana
+- ...
+
+
+```sql
+SELECT CityId, CityName, OrderPriority from Cities
+ORDER BY OrderPriority DESC, CityName ASC
+```
 
 
 

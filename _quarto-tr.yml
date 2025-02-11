@@ -101,6 +101,8 @@ book:
         - course-contents/sql-paging-tr.qmd
         - course-contents/sql-views-tr.qmd
         - course-contents/sql-virtual-tables-tr.qmd
+        - course-contents/sql-virtual-tables-sqlite-tr.qmd
+
 
     - part: "SQL: Functions, Stored Procedures, Triggers, Extensions"
       chapters:

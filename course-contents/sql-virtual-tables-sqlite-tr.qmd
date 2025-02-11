@@ -1,0 +1,15 @@
+# SQLite Sanal Tabloları (virtual tables)
+
+- [sqlite dokümantasyonundan](https://www.sqlite.org/vtab.html)
+
+>Sanal tablo, açık bir SQLite veritabanı bağlantısıyla kayıtlı bir nesnedir. 
+> Bir SQL ifadesinin perspektifinden, sanal tablo nesnesi diğer herhangi bir tablo veya görünüm gibi görünür. 
+> Ancak sahne arkasında, sanal tablodaki sorgular ve güncellemeler, veritabanı dosyasında okuma ve yazma yapmak yerine sanal tablo nesnesinin geri çağırma yöntemlerini çağırır.
+
+Sqlite sanal tablolarının çok ilginç kullanım örnekleri var.
+
+- [csv file](https://www.sqlite.org/csv.html)
+- [zip file](https://www.sqlite.org/zipfile.html)
+
+[sqlite için diğer sanal tabloların belgelerine](https://www.sqlite.org/vtablist.html) bakın
+

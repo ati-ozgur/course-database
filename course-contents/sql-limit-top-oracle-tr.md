@@ -42,6 +42,19 @@ SELECT * FROM
 WHERE ROWNUM <= 10;
 ```
 
+Veya WITH kullanılabilir.
+
+```sql
+WITH SIRALI_MUSTERILER AS 
+(
+	SELECT "CustomerId","FirstName"
+	FROM "Customer"
+	ORDER BY "FirstName"
+)
+SELECT * FROM SIRALI_MUSTERILER WHERE ROWNUM <= 10;
+```
+
+
 Ayrıca ROWNUM sonuçlar getirilirken hesaplanır.
 Örneğin aşağıdaki sorgu
 
@@ -64,15 +77,24 @@ FROM "Customer"
 WHERE ROWNUM = 1;
 ```
 
-Yine aynı şekilde sanal tablo/alt sorgu dizimi ile 10. satır alabiliriz.
+Yine aynı şekilde sanal tablo/alt sorgu/WITH dizimleri ile 10. satır alabiliriz.
 
 
 
 ```sql
 SELECT * FROM 
 (
-	SELECT "CustomerId","FirstName"
+	SELECT "CustomerId","FirstName", ROWNUM AS NUM
 	FROM "Customer"
 )
-WHERE ROWNUM = 10;
+WHERE NUM = 10;
+```
+
+```sql
+WITH TEMP AS 
+(
+	SELECT "CustomerId","FirstName",ROWNUM AS NUM
+	FROM "Customer"
+)
+SELECT * FROM TEMP WHERE NUM = 10;
 ```

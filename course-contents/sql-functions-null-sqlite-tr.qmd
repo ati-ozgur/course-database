@@ -9,4 +9,26 @@ SQL Standardı coalesce, nullif ve case dışında ekstra sqlite null işleme fo
 Coalesce fonksiyonunun 2 arguman ile çalışan versiyonudur.
 Her durumda coalesce tercih ediniz.
 
+**IIF(X,Y,Z)**
+
+IIF fonksiyonu null kontrölü için kullanılabilir.
+SQL-Server uyumluluğu için eklenmiş bu fonksiyon, eğer kontrol edilen ifade (X) doğru ise Y değerini, yanlış ise Z değerini döndürür.
+Aşağıda null kontrolü için bu kullanım görülebilir.
+
+
+
+```sql
+SELECT C.CustomerId,
+IIF(C.Company IS NOT NULL,c.Company,'Firma bilgisi yok')
+IIF(C.Company IS NULL,'Firma bilgisi yok',c.Company)
+FROM Customer C
+```
+
+IIF fonksiyonu aşağıdaki case ifadesi eşittir.
+Case SQL standardı olduğu için IIF kullanımı yerine tercih edilmelidir.
+
+
+```sql
+CASE WHEN x THEN y ELSE z END". 
+```
 

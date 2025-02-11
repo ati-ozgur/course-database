@@ -158,8 +158,11 @@ book:
       chapters:
         - course-contents/sql-indexes-intro-en.qmd
 
-    - course-contents/suggested-readings-tr.md
-    - course-contents/suggested-books-tr.md
+    - part: "Ekler"
+      chapters:
+        - course-contents/suggested-readings-tr.md
+        - course-contents/suggested-books-tr.md
+        - course-contents/sozluk.qmd
     - summary-tr.qmd
     - references-tr.qmd
 

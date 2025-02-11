@@ -1,0 +1,5 @@
+# Sözlük
+
+Kitap sırasında çok kullanılan ingilizce ifadelerin türkçeleri aşağıda verilmiştir.
+
+{{< include ../course-contents/tables/table-sozluk.md >}}

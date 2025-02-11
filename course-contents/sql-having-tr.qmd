@@ -1,0 +1,65 @@
+# SQL Having
+
+Having anahtar kelimesi group by arkasından filtreleme yapmak için kullanılır.
+
+
+SQL'de **HAVING** ve **WHERE** ifadeleri arasındaki fark, sorgu çalışırken nerede uygulandıklarıdır.
+
+Öncelikle select query list'i hatırlayalım.
+Aşağıda order by gibi bazı ifadelerin atlandığı basitleştirilmiş bir versiyon bulunmaktadır.
+
+- SELECT select_list [ INTO new_table ]
+- [ FROM table_source ] 
+- [ WHERE search_condition ]
+- [ GROUP BY group_by_expression ]
+- [ HAVING search_condition ]
+
+**WHERE kullanımı**
+
+
+- WHERE ifadesi, herhangi bir GROUP BY veya Toplam (aggregation) fonksiyonundan önce satırları filtrelemek için kullanılır.
+- WHERE, FROM bilgilerini kullanarak satır seviyesindeki değerlere göre filtreler.
+- WHERE, SELECT, UPDATE ve DELETE ifadeleriyle kullanılabilir.
+
+
+```sql
+SELECT i.CustomerId , COUNT(i.InvoiceId) as invoice_count
+FROM Invoice i
+WHERE i.Total > 4
+GROUP BY i.CustomerId ;
+```
+
+
+Bu sorgu önce 4'ten büyük faturaları filtreler, sonra kalan satırlarda her müşteri için kaç fatura olduğunu sayar.
+Bu sorgu şu soruyu yanıtlar: Her müşterinin 4'ten büyük kaç faturası var?.
+
+
+
+
+**HAVING kullanımı**
+
+- HAVING ifadesi, gruplamadan sonra satırları filtrelemek için kullanılır.
+- HAVING ifadesi toplam (aggregate) fonksiyonlarını kullanabilir.
+- HAVING ifadesi SELECT ifadeleri ve GROUP BY ile kullanılır.
+
+
+```sql
+SELECT i.CustomerId , SUM(i.Total) as total_sales
+FROM Invoice i
+GROUP BY i.CustomerId 
+HAVING SUM(i.Total) > 45;
+```
+
+**Temel Farklar**
+
+1. Çalışma sırası: WHERE gruplamadan önce çalışırken HAVING gruplamadan sonra çalışır.
+2. Toplama işlevleri: HAVING toplama işlevlerini kullanabilir (COUNT, SUM, AVG gibi), WHERE ise kullanamaz
+3. GROUP BY ile kullanım: HAVING, GROUP BY ile kullanılır
+4. İşlem türleri: WHERE satırlarda çalışırken HAVING, gruplanıp toplanmış verilerde çalışır
+
+
+Uygulamada, WHERE ve HAVING'i birlikte görmek yaygındır; WHERE tek tek satırları, HAVING ise gruplanmış sonuçları filtreler.
+
+
+
+

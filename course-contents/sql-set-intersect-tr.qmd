@@ -13,3 +13,4 @@ SELECT e.FirstName FROM Employee e
 
 Yani Müşteri  ve Çalışan tablolarında sadece 2 isim aynıdır.
 
+INTERSECT ifadesi için UNION konusunda anlatılan, 2 sorgudaki kolon sayısının ve veri yapılarının aynı olması kısıtı aynen geçerlidir.

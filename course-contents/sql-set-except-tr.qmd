@@ -21,4 +21,5 @@ SELECT c.FirstName FROM Customer c
 
 6 satır.
 
+EXCEPT ifadesi için UNION konusunda anlatılan, 2 sorgudaki kolon sayısının ve veri yapılarının aynı olması kısıtı aynen geçerlidir.
 

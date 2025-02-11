@@ -42,4 +42,13 @@ SELECT * FROM Customer
 LIMIT 5,10
 ```
 
+Eğer LIMIT ifadesi, set operasyonları ile birleşik bir sorgu için çalıştırılırsa 2 sorgunun toplam sonucu için birden çalışır.
+Aşağıdaki sorgu Employee ve Customer tablolarını birleştirir arkasından limit uygulanır.
 
+
+```sql
+SELECT FirstName FROM Employee
+UNION
+SELECT FirstName FROM Customer
+LIMIT 20
+```

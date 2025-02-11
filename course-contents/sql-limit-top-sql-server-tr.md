@@ -1,6 +1,6 @@
-# SQL Sonuçları Limitleme TOP 
+# SQL-Server Sonuçları Limitleme TOP 
 
-SQL Server fetch first ifadesini destekler ancak kendi TOP uzantısı da vardır.
+SQL-Server fetch first ifadesini destekler ancak kendi TOP uzantısı da vardır.
 
 
 - TOP kelimesi gelen sonuçları sayısal veya yüzdesel olarak limitleyebilirsiniz.

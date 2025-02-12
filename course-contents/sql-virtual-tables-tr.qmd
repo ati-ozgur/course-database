@@ -4,13 +4,34 @@ Sanal tablo jargonu, veritabanında verileri saklanmayan ancak sql ifadelerinizd
 
 Görünümler (views) sanal tablolar için en bilinen örnektir.
 CREATE VIEW ifadesini kullanarak görünümler oluşturuyoruz.
-
 Normalde, görünüm verileri veritabanımızda saklanmaz.
 Yalnızca görünüm sorgu tanımı veri sözlüğünde saklanır.
 Bu konu hakkında daha fazla bilgi için ders notlarındaki görünümlere @sec-sql-views bakınız.
 
+Alt sorgular sanal tablo gibi davranabilir.
+Aşağıda basit bir örnek görebilirsiniz.
+
+```sql
+SELECT * FROM
+(
+	SELECT FirstName,LastName FROM Customer;
+)
+```
+
+
+
 WITH ifadeleri de sanal tablolar gibi davranır.
 Ayrıca FROM ifadelerinde tablo yerine alt sorgu kullanıldığında bu alt sorgular da sanal tablolar gibi davranır.
+
+```sql
+WITH T as
+(
+	SELECT FirstName,LastName FROM Customer;
+)
+SELECT * FROM T;
+```
+
+
 
 Bazı fonksiyonlar tablo benzeri veri döndürebilir.
 Bu fonksiyon sonuçları sanal tablo veya satır içi görünümler olarak düşünülebilir.

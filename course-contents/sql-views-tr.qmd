@@ -72,5 +72,5 @@ I dislike this feature and never uses it.
 {{< include ../course-contents/sql-views-materialized-en.qmd >}}
 
 
-{{< include ../course-contents/sql-views-system-en.qmd >}}
+{{< include ../course-contents/sql-views-system-tr.qmd >}}
 

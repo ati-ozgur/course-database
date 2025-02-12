@@ -45,6 +45,13 @@ FROM   OGRENCI RIGHT JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 ```
 
+![Sağ Birleştirme Satır Örneği](images/join-right.png)
+
+Yukarıdaki örnekte X ve Y tablolarındaki aynı anahtar değerleri (1 ve 2) birleştirilir. 
+Sağ birleştirme yaptığımız için Y tablosundaki 4 anahtar değeride sonuca getirilir.
+Ama bu 4 değerinin bir karşılığı olmadığı için sonuç olarak null değeri gözükecektir.
+X tablosundaki 3 anahtar değeri 2 tabloda birden aynı olmadığı için birleştirme sonucuna getirilmemiştir.
+
 ### Tam Dış Birleştirme (Full Outer Join)
 
 ![Tam birleştirme Venn diyagram](images/join-full-outer-example1-tr.png){width=4in}

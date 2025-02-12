@@ -41,7 +41,7 @@ Daha sonra, **özyinelemeli-select** ve cte_sorgusu kısımlarımızın her ikis
 
 
 
-** Örnek 1a: sayı sayma** 
+**Örnek 1a: sayı sayma** 
 
 [sqlite dokümantasyonundan değiştirilmiştir](https://www.sqlite.org/lang_with.html).
 Aşağıdaki sorgu 100'e kadar sayar.
@@ -84,6 +84,7 @@ SELECT x FROM num;
 
 Sayıları toplamaya yönelik bir örnek daha oluşturalım.
 
+```sql
 WITH RECURSIVE TotalSum AS (
   SELECT
     0 AS Count,
@@ -96,3 +97,4 @@ WITH RECURSIVE TotalSum AS (
   WHERE Count <= 100
 )
 SELECT * FROM TotalSum;
+```

@@ -11,6 +11,37 @@ Sqlite sanal tablolarının çok ilginç kullanım örnekleri var.
 - [csv file](https://www.sqlite.org/csv.html)
 - [zip file](https://www.sqlite.org/zipfile.html)
 
+
+## CSV Sanal Tabloları örnek
+
+1. csv extension'u yükleyin.
+
+```sql
+.load sqlite-extensions/csv.so 
+```
+
+2. Örnek csv dosyası oluştur.
+
+```sql
+.mode csv 
+.headers on
+.once deneme.csv 
+SELECT FirstName,LastName FROM Customer; 
+```
+
+3. Sanal CSV tablosu oluştur.
+
+```sql
+CREATE VIRTUAL TABLE temp.t1 USING csv(filename='deneme.csv');
+```
+
+4. Sanal CSV tablosunu sorgula.
+
+```sql
+SELECT * FROM t1; 
+```
+
+
 ## Zip Sanal Tabloları örnek
 
 1. Örnek bir zip dosyası oluşturalım.

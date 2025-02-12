@@ -11,5 +11,36 @@ Sqlite sanal tablolarının çok ilginç kullanım örnekleri var.
 - [csv file](https://www.sqlite.org/csv.html)
 - [zip file](https://www.sqlite.org/zipfile.html)
 
+## Zip Sanal Tabloları örnek
+
+1. Örnek bir zip dosyası oluşturalım.
+
+```bash
+zip -r oracle-chinook.zip oracle-chinook/
+```
+
+2. sqlite3 açalım
+
+3. 
+
+```sql
+SELECT name FROM zipfile('oracle-chinook.zip'); 
+```
+
+4. 
+
+```sql
+CREATE VIRTUAL TABLE temp.zip USING zipfile('oracle-chinook.zip');
+```
+
+5. normal bir dosya ekleme
+
+```sql
+INSERT INTO temp.zip(name, data) VALUES('a.txt', 'Atilla Özgür');   
+```
+
+ 
+
 [sqlite için diğer sanal tabloların belgelerine](https://www.sqlite.org/vtablist.html) bakın
+
 

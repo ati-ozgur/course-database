@@ -12,12 +12,12 @@ Sol Dış Birleştirme veya Sol Birleştirme olarak bilinir.
 
 
 
-![join-left-example1-en](images/join-left-example1-tr.png){width=4in}
+![Sol Birleştirme Venn diyagram](images/join-left-example1-tr.png){width=4in}
 
 Sol birleştirmede, SQL yazımı sırasında sol (left) tarafta kalan tablodaki tüm satırlar getirilir.
 
 
-![join-left](images/join-left.png)
+![Sol Birleştirme Satır Örneği](images/join-left.png)
 
 
 Yukarıdaki örnekte X ve Y tablolarındaki aynı anahtar değerleri (1 ve 2) birleştirilir. 
@@ -36,7 +36,7 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 
 ### Sağ Dış Birleştirme (Right Outer Join)
 
-![join-right-example1-en](images/join-right-example1-tr.png)
+![Sağ Birleştirme Venn diyagram](images/join-right-example1-tr.png){width=4in}
 
 
 ```sql
@@ -47,7 +47,7 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 
 ### Tam Dış Birleştirme (Full Outer Join)
 
-![join-full-outer-example1-en](images/join-full-outer-example1-tr.png)
+![Tam birleştirme Venn diyagram](images/join-full-outer-example1-tr.png){width=4in}
 
 
 ```sql

@@ -1,0 +1,24 @@
+## Somutlaştırılmış görünümler (materializedViews )
+
+
+Normalde, bir görünümü sorgulamak sanal bir tabloyu sorgulamak gibidir.
+Sorgu sırasında gerekli veriler kullanılan tablolardan çekilir.
+Performans nedenlerinden dolayı, görünümlerden elde edilen sonuçların daha hızlı olması gerekebilir.
+SQL Server ve Oracle bu amaç için somutlaştırılmış görünümler sunar.
+Sql Server terminolojisi için hem dizinlenmiş (indexed) hem de somutlaştırılmış görünümleri kullanır.
+Dizinlenmiş görünümler, daha hızlı hale getirmek için somutlaştırılmış görünümlere eklenebilir.
+
+
+
+
+- [Oracle Materialized View](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/CREATE-MATERIALIZED-VIEW.html)
+- [SQL Server indexed views](https://learn.microsoft.com/en-us/sql/relational-databases/views/create-indexed-views?view=sql-server-ver16)
+
+
+PostgreSQL, IBM DB2 ve Sybase SQL Anywhere gibi diğer veritabanları da bu kavramı destekler
+
+
+Sonuçların fiziksel depolamada ne sıklıkla güncellendiğine yenileme sıklığı denir.
+Bu tür görünümler sıklıkla güncellenen tablolarla ilgili sorunlara sahip olabilir ancak toplu sorgular için çok faydalıdır.
+
+

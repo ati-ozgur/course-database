@@ -6,14 +6,14 @@
 - birleştirme işlemini Venn diagram olarak düşünmek iyi olur.
 - Ama aslında, bu bir küme işlemi değildir
 
-![join-inner-example1-tr](images/join-inner-example1-tr.png)
+![join-inner-example1-tr](images/join-inner-example1-tr.png){width=4in}
 
 Aşağıda iç birleştirme (inner join) için aşağıda başka bir örnek resim görebilirsiniz.
 
 ![iç birleştirme (inner join)](images/join-inner.png)
 
-Yukarıdaki örnekte X ve Y tablolarındaki anahtar değerleri 1 ve 2 birleştirilir.
-Ama X tablosundaki 3 anahtar değeri ve Y tablosundaki 4 anahtar değeri 2 tabloda birden olmadığı için iç birleştirme sonucuna getirilmemiştir.
+Yukarıdaki örnekte X ve Y tablolarındaki aynı anahtar değerleri (1 ve 2) birleştirilir.
+Ama X tablosundaki 3 anahtar değeri ve Y tablosundaki 4 anahtar değeri 2 tabloda birden aynı olmadığı için iç birleştirme sonucuna getirilmemiştir.
 
 
 ## JOIN Birleştirme Söz Dizimi

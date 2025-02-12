@@ -1,4 +1,4 @@
-# SQL-Select Paging-Sayfalama
+# SQL Sayfalama (Paging)
 
 Sonuçları Sayfalama - OFFSET-FETCH komutu ORDER BY ile KULLANILARAK Yapılabilir.
 

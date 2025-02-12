@@ -1,4 +1,4 @@
-# SQL JOIN
+# SQL Birleştirme (JOIN)
 
 ## Birden fazla tabloyu JOIN ile sorgulama Konular {.unnumbered .unlisted}
 

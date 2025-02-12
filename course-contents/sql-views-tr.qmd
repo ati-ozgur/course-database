@@ -1,13 +1,16 @@
 # SQL Görünümler (Views) {#sec-sql-views}
 
-Views allows you to store your select queries in databases.
-It is very useful for abstracting especially common and complex queries.
-The following figure shows a view that includes columns from multiple tables:
+
+Görünümler, seçme sorgularınızı veritabanlarında veri sözlüğünde saklamınıza izin verir.
+Bu şekilde saklanan görünümler sanal tablo gibi çalışırlar.
+Özellikle yaygın ve karmaşık sorguları soyutlamak için çok kullanışlıdır.
+Aşağıdaki şekil, birden fazla tablodan sütunlar içeren bir görünümü göstermektedir:
+
 
 ![view example multiple columns from multiple tables](images/view-example1.png)
 
-Views are common concept in databases and all databases supports it.
-See documentation for our example databases.
+Görünümler veritabanlarında yaygın bir kavramdır ve tüm veritabanları bunu destekler.
+Örnek veritabanlarımız için belgelere bakın.
 
 - [sqlite views](https://www.sqlite.org/lang_createview.html)
 - [sql server views](https://learn.microsoft.com/en-us/sql/relational-databases/views/views?view=sql-server-ver16)
@@ -16,10 +19,10 @@ See documentation for our example databases.
 
 
 
-**simple lab**
+**Basit lab**
 
 
-1. give Chinook database example, join query
+1. Chinook veritabanı join örnek sorgusu
 
 
 ```sql
@@ -32,7 +35,7 @@ ON A.ArtistId  = B.ArtistId
 INNER JOIN Track T ON T.AlbumId  = B.AlbumId   
 ```
 
-2. create view name as select statement
+2. "create view name as select" kullanarak görünüm oluşturma
 
 ```sql
 CREATE VIEW ArtistTracks
@@ -46,27 +49,34 @@ ON A.ArtistId  = B.ArtistId
 INNER JOIN Track T ON T.AlbumId  = B.AlbumId   
 ```
 
-3. select from view.
+3. select from view
 
 ```sql
 select * from ArtistTracks;
 ```
 
-**note**
 
-Common example in the books is following:
-In client-server databases, it could also be used to control access.
-Instead of giving access to tables, you could give access to view itself. 
-I have never seen this usage.
+:::{.callout-note}
+Kitaplardaki yaygın bir örnek erişim kontrolü (access control) üzerinedir.
+Tablolara kendisine erişim vermek yerine, görünümün kendisine erişim verebilirsiniz.
+Bu kullanımı hiç görmedim.
+:::
 
 
-**note**
+:::{.callout-note}
+Kitaplardaki yaygın bir örnek erişim kontrolü (access control) üzerinedir.
+Tablolara kendisine erişim vermek yerine, görünümün kendisine erişim verebilirsiniz.
+Bu kullanımı hiç görmedim.
+:::
 
-Views could be target of insert statements if rows in the views correspond to 1-to-1 to underlying tables, for example aggregate queries will never work. 
 
-Sqlite allows this feature when the view is single table only.
 
-I dislike this feature and never uses it.
+:::{.callout-note}
+Görünümlerdeki satırlar, altta yatan tablolara 1'e 1 karşılık geliyorsa, görünümler INSERT ifadelerinin hedefi olabilir; örneğin, toplu sorgular (min,max) için asla çalışmayacaktır.
+Sqlite, görünüm yalnızca tek tablo olduğunda bu özelliğe izin verir.
+Ben bu özelliği sevmiyorum ve asla kullanmıyorum.
+:::
+
 
 
 {{< include ../course-contents/sql-views-materialized-en.qmd >}}

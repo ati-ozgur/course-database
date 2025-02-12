@@ -64,6 +64,13 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 ```
 
 
+![Tam Birleştirme Satır Örneği](images/join-full.png)
+
+Yukarıdaki örnekte X ve Y tablolarındaki aynı anahtar değerleri (1 ve 2) birleştirilir. 
+Hem sağ hem sol birleştirme yaptığımız için X tablosundaki 3 anahtar değeride sonuca getirilir.
+Ama bu 3 değerinin bir karşılığı olmadığı için sonuç olarak null değeri gözükecektir.
+Hem sağ hem sol birleştirme yaptığımız için Y tablosundaki 4 anahtar değeride sonuca getirilir.
+Ama bu 4 değerinin bir karşılığı olmadığı için sonuç olarak null değeri gözükecektir.
 
 
 

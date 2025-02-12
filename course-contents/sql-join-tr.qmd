@@ -1,6 +1,6 @@
 # SQL JOIN
 
-## Birden fazla tabloyu JOIN ile sorgulama Konular
+## Birden fazla tabloyu JOIN ile sorgulama Konular {.unnumbered .unlisted}
 
 - Join-Birleşim Kavramı
 - Join-Birleşim Söz dizimi 
@@ -15,8 +15,6 @@
 
 {{< include ../course-contents/sql-join-concept-tr.md >}}
 
-
-{{< include ../course-contents/sql-join-syntax-tr.qmd >}}
 
 
 {{< include ../course-contents/sql-join-inner-tr.md >}}

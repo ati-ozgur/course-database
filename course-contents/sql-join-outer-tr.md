@@ -1,4 +1,4 @@
-## Outer Join  - Dış Birleşim
+## Dış Birleştirme (Outer Join)
 
 - Belirtilen tablodan tüm satırları getirirken, diğer tablodan sadece eşleşen satırları getirir.
 - Bir tablonun satırlarının tümü getirilir.
@@ -7,7 +7,12 @@
 - Örneğin İletişim bilgisi olmayan öğrenciler için iletişim bilgisi kısmında NULL yazılacaktır.
 
 
-![join-left-example1-en](images/join-left-example1-en.png)
+![join-left-example1-en](images/join-left-example1-en.png){width=4in}
+
+
+![join-left](images/join-left.png)
+
+
 ![join-right-example1-en](images/join-right-example1-en.png)
 ![join-full-outer-example1-en](images/join-full-outer-example1-en.png)
 

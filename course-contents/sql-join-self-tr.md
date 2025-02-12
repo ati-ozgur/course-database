@@ -6,7 +6,12 @@
 - Takma isim verirken anlamlı bir isim vermeniz sql'ı daha sonra daha iyi anlamınız sağlayacaktır.
 
 
-self-join-northwind-example1
+
+**Chinook Yönetici Örneği**
+
+Chinook kim hangi yöneticiye rapor veriyor:
+
+- Aşağıdaki örnekte takma adlar için M (Manager-Yönetici) kullanılmıştır.
 
 ```sql
 SELECT E.EmployeeID
@@ -16,10 +21,8 @@ SELECT E.EmployeeID
       , M.EmployeeID as ManagerID
       , M.LastName AS ManagerLastName
       ,M.FirstName AS ManagerFirstName
-  FROM dbo.Employees E 
-  INNER JOIN dbo.Employees M
+  FROM Employee E 
+  INNER JOIN Employee M
   ON E.ReportsTo = M.EmployeeID 
 ```
-
-
 

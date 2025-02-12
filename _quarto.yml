@@ -2,6 +2,9 @@ project:
   type: book
   execute-dir: "project"
   output-dir: ./_site
+  preview:
+    port: 4200
+    browser: true
 
 book:
   author: "Atilla Özgür"

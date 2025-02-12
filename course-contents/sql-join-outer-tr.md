@@ -36,23 +36,8 @@ ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 
 ### Sağ Dış Birleştirme (Right Outer Join)
 
-![join-right-example1-en](images/join-right-example1-en.png)
+![join-right-example1-en](images/join-right-example1-tr.png)
 
-
-
-![join-full-outer-example1-en](images/join-full-outer-example1-en.png)
-
-
-
-SQL-left-join-syntax-ansi-sql-92
-
-
-
-## Outer Join Right  - Dıştan Birleşim Sağdan
-
-![join-left-example1-en](images/join-right-example1-en.png)
-
-RIGHT JOIN ANSI SQL
 
 ```sql
 SELECT OgrenciNo,IletisimTipi,IletisimDegeri
@@ -60,18 +45,19 @@ FROM   OGRENCI RIGHT JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 ```
 
+### Tam Dış Birleştirme (Full Outer Join)
 
-## Full Outer Join  - Ful Dış Birleşim
+![join-full-outer-example1-en](images/join-full-outer-example1-tr.png)
 
-
-![join-left-example1-en](images/join-full-outer-example1-en.png)
-
-SQL-full-outer-join-syntax-ansi-sql-92
 
 ```sql
 SELECT OgrenciNo,IletisimTipi,IletisimDegeri
 FROM   OGRENCI FULL OUTER JOIN ILETISIM
 ON  OGRENCI.OgrenciKey = ILETISIM.OgrenciKey;
 ```
+
+
+
+
 
 

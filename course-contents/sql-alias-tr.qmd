@@ -38,7 +38,7 @@ Takma adın bir diğer yararı GUI araçlarında otomatik sorgu yazımında yard
 ![Dbeaver Sorgu Yardımcısı](images/dbeaver-alias-intellisense.png){width=80%}
 
 
-## Takma ad GUI birleşim (join) 
+## Takma ad birleşim (join) 
 
 İleride göreceğimiz birleşim (join) kullanımında da çok işe yararlar.
 Eğer 2 aynı tablo aynı kolon isimlerine sahip iseler ya bunların tablo_adi.kolon_adi diye uzun uzun yazmamız gerekir.
@@ -65,7 +65,7 @@ JOIN Album  A ON A.AlbumId = T.AlbumId
 JOIN Artist Ar ON Ar.ArtistId = A.ArtistId;
 ```
 
-## Takma ad GUI aynı tablo birleşim (self-join) 
+## Takma ad aynı tablo birleşim (self-join) 
 
 
 Eğer aynı tabloyu kendi kendine birleştiriyorsak takma ad kullanımı bir zorunluluktur.
@@ -107,5 +107,19 @@ Anlamsal sıralamada SELECT daha sonra geldiği için SQL motoru bu takmadı bil
 
 ```sql
 SELECT C.FirstName || ' '|| C.LastName AS TamAdi  FROM Customer AS C
-WHERE C.TamAdi LIKE 'A%';
+WHERE 
+C.TamAdi LIKE 'A%';
+```
+
+Ama FROM sırasında verdiğim takma ad anlamsal sıralamada sonrasında gelenlerde örneğin WHERE kullanılabiliyor.
+
+
+Anlamsal sıralamada SELECT daha sonra geldiği için SQL motoru bu takmadı bilmiyor ve bu yüzden hata veriyor.
+Aşağıdaki sorgu çalışıyor.
+
+
+```sql
+SELECT C.FirstName || ' '|| C.LastName AS TamAdi  FROM Customer AS C
+WHERE 
+C.FirstName LIKE 'A%';
 ```

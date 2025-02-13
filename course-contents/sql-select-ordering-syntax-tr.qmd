@@ -2,11 +2,11 @@
 
 
 Aşağıdaki sıralama [sql server dokümanlarından](https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16) alınmıştır ve basitleştirilmiştir.
-
+Köşeli parentezler nelerin [] zorunlu olmadığını göstermektedir.
+Daha önce belirtildiği gibi FROM, SQL standardına göre zorunlu olmasına rağmen bir çok veritabanı FROM olmadan tek başına SELECT çalıştırılmasına izin vermektedir.
 
 
 - SELECT seçilen kolonlar
-- SELECT select_list 
 - [ FROM tablo kaynağı ] 
 - [ WHERE arama kriterleri ]
 - [ GROUP BY gruplama ifadeleri ]

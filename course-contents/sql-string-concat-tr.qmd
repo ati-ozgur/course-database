@@ -73,12 +73,23 @@ Aynı işlem CONCAT fonksiyonu ilede yapılabilir.
 - **concat(X,...)**
 
 Bu fonksiyon kendisine verilen argumanları birleştirerek döndürür.
-Aşağıdaki sorgu, SQLite, SQL-Server ve Oracle veritabanlarında çalışır.
+Aşağıdaki sorgu, SQLite ve SQL-Server veritabanlarında çalışır.
 
 ```sql
 SELECT CONCAT(C.FirstName,' ',C.LastName) AS TamAdi  FROM Customer AS C;
 ```
 
+Ama Oracle'da ne yazıkki CONCAT sadece 2 arguman ile çalışıyor.
+
+```sql
+SELECT CONCAT(CONCAT(C."FirstName",' '),C."LastName") AS TamAdi
+FROM "Customer"  C;
+```
+
+Oracle için CONCAT kullanışsız bir fonksiyondur.
+
+
 :::{.callout-tip}
-Eğer veritabanı bağımsız SQL yazmanız gerekiyorsa CONCAT fonksiyonunu tercih ediniz.
+Eğer veritabanı bağımsız SQL yazmanız gerekiyorsa CONCAT fonksiyonunu tercih edebiliriz.
+Ama ne yazık ki CONCAT bile tam veri tabanı bağımsız kod yazmaya yeterli değil.
 :::

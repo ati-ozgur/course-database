@@ -50,9 +50,41 @@ FROM ORTAK.KISI;
 
 Eğer hiç bir WHEN ifadesi doğru değil ve ELSE ifadesi yoksa case sonucu null olur.
 
+**Chinook örnek taban ifadesi**
+
+Tarih (Date) fonksiyonları ile daha kolay yapılabilir ama fatura ayını türkçe yazmak için aşağıdaki taban ifadesi kullanan örneğe bakınız.
+
+
+```sql
+SELECT 
+substr(i.InvoiceDate,6,2),
+(case substr(i.InvoiceDate,6,2)
+  when '01' then 'Ocak'
+  when '02' then 'Şubat'
+  when '03' then 'Mart'
+  when '04' then 'Nisan'
+  when '05' then 'Mayıs'
+  when '06' then 'Haziran'
+  when '07' then 'Temmuz'
+  when '08' then 'Ağustos'
+  when '09' then 'Eylül'
+  when '10' then 'Ekim'
+  when '11' then 'Kasım'
+  when '12' then 'Aralık'
+  else 'AY bilinmiyor'
+end) AY_TURKCE
+FROM Invoice i;
+```
+
+
 İkinci yapı çok güçlüdür ve bir çok ifade zincirleme kontrol edilebilir.
 
-Tarih (Date) fonksiyonları ile daha kolay yapılabilir ama fatura ayını türkçe yazmak için aşağıdaki örneğe bakınız.
+
+**Chinook örnek taban ifadesi kullanmayan**
+
+
+Tarih (Date) fonksiyonları ile daha kolay yapılabilir ama fatura ayını türkçe yazmak için aşağıdaki taban ifadesi kullanmayan  örneğe bakınız.
+
 
 ```sql
 SELECT 

@@ -157,6 +157,24 @@ SELECT COUNT(*) FROM Customer
 WHERE Company IS NULL;
 ```
 
+**UNION**
+
+NULL değerleri UNION sorgularında 1 tane gibi gösterilir.
+Aşağıdaki sorguda bir tek NULL gelmektedir.
+
+
+```sql
+SELECT State FROM Customer
+UNION
+SELECT State FROM Employee
+```
+
+Ama State değeri NULL olan 29 Müşteri vardır. 
+
+```sql
+SELECT COUNT(*) FROM Customer
+WHERE State IS NULL;
+```
 
 ## 3 Değerli Mantık (NULL, True, False)
 

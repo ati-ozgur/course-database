@@ -140,6 +140,22 @@ Yukarıdaki sorgunun aşağıdaki null karşılaştırmasından pek farkı yoktu
 select null = null, null != null;
 ```
 
+**SELECT DISTINCT**
+
+NULL değerleri SELECT DISTINCT sorgularında 1 tane gibi gösterilir.
+Aşağıdaki sorguda bir tek NULL gelmektedir.
+
+
+```sql
+SELECT DISTINCT Company FROM Customer
+```
+
+Ama Firma değeri NULL olan 49 Müşteri vardır.
+
+```sql
+SELECT COUNT(*) FROM Customer
+WHERE Company IS NULL;
+```
 
 
 ## 3 Değerli Mantık (NULL, True, False)

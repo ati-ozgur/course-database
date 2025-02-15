@@ -78,6 +78,7 @@ book:
         - course-contents/sql-case-operator-tr.qmd
 
         - course-contents/sql-null-tr.qmd
+        - course-contents/sql-null-sqlite-tr.qmd
         - course-contents/sql-functions-null-sql-standard-tr.qmd
         - course-contents/sql-functions-null-sqlite-tr.qmd
         - course-contents/sql-functions-null-sql-server-tr.qmd

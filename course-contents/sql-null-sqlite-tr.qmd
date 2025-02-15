@@ -1,0 +1,3 @@
+# NULL SQLite üzerinde nasıl çalışır
+
+TODO

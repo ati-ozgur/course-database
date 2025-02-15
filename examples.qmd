@@ -2,6 +2,15 @@
 
 export QUARTO_CHROMIUM_HEADLESS_MODE=none
 
+
+```sql
+SELECT * FROM Product;
+```
+```sql
+{{< include source/a.sql >}}
+```
+
+
 A4 paper size
 A4 size     210 x 297 mm    8.3 x 11.7 in
 
@@ -12,9 +21,6 @@ daha fazla bilgi için [Bölüm -@sec-temeller-aciklamalar] bakınız.
 
 
 
-```sql
-SELECT * FROM Production.Product;
-```
 
 ![Note](images/image-name.png)
 ![Note](images/image-name.png){width=300}

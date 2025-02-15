@@ -190,8 +190,8 @@ Aşağıdaki tablo [SQLite'da ve Diğer Veritabanı Motorlarında NULL İşleme]
 
 {{< include ../course-contents/tables/table-null-handling-databases-tr.md >}}
 
-Yukarıdaki tabloda görülebileceği gibi çalıştığımız 3 veri tabanında da null aynı çalışmaktadır.
-
+Yukarıdaki tabloda görülebileceği gibi çalıştığımız 3 veri tabanında da null hemen hemen aynı çalışmaktadır.
+Bir tek Tablolarda Unique değerler için SQL-Server farklı çalışmaktadır.
 
 
 

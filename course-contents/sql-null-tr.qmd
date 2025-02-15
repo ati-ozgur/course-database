@@ -7,8 +7,53 @@ SELECT * FROM Customer
 WHERE Company is NULL;
 ```
 
+## Null Matematiksel İşlemler
 
-- İşlem yaparken matematikteki $\infty$ gibi düşünebilirsiniz.
+İşlem yaparken matematikte ki $\infty$ gibi bir sabit olarak düşünebilirsiniz.
+NULL ile yapılan matematiksel işlemler NULL döndürür.
+
+
+**Null ile toplama çıkarma çarpma bölme**
+
+Null’a herhangi bir şey toplama çıkarma çarpma bölme sonucu null olur.
+
+- 3 + NULL = NULL
+- NULL + 3 = NULL
+- 3 - NULL = NULL
+- NULL - 3 = NULL
+- 3 / NULL = NULL
+- NULL / 3 = NULL
+- 3 * NULL = NULL
+- NULL * 3 = NULL
+
+
+```sql
+select 3 + NULL as toplama1
+, NULL + 3 as toplama2
+, 3 - NULL as cıkarma1
+, NULL - 3 as cıkarma2
+, 3 / NULL as bolme1
+, NULL / 3 as bolme2
+, 3 * NULL as carpma1
+, NULL * 3 as carpma2;
+```
+
+
+- Null’u sıfırla çarpmak null’ı verir 
+
+
+```sql
+select 0 * null, null * 0;
+```
+
+
+- 'str degeri' + NULL = NULL
+
+
+
+
+
+
 
 Bir Sonsuz değeri, diğer bir sonsuz değere eşit değildir.
 
@@ -18,16 +63,11 @@ Aynı şekilde, bir NULL değeri, diğer bir NULL değere eşit değildir.
 
 - NULL $!=$ NULL
 
-NULL ile yapılan işlemler NULL döndürür.
-
-- 3 + NULL = NULL
-- 'str degeri' + NULL = NULL
 
 
 
-```sql
-SELECT NULL + 5;
-```
+
+
 
 ```sql
 SELECT 'str degeri' + NULL;

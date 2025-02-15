@@ -46,14 +46,14 @@ select 3 + NULL as toplama1
 select 0 * null, null * 0;
 ```
 
+**NULL ile betik birleştirme**
 
 - 'str degeri' + NULL = NULL
 
-
-
-
-
-
+```sql
+SELECT 'str degeri' + NULL;
+```
+**NULL eşitlik**
 
 Bir Sonsuz değeri, diğer bir sonsuz değere eşit değildir.
 
@@ -63,27 +63,84 @@ Aynı şekilde, bir NULL değeri, diğer bir NULL değere eşit değildir.
 
 - NULL $!=$ NULL
 
-
-
-
-
-
-
 ```sql
-SELECT 'str degeri' + NULL;
+select null = null, null != null;
 ```
 
-- karşılaştırmalar null değerleri için her zaman yanlış(false) döndürür
+Karşılaştırmalar null değerleri için her zaman yanlış(false) döndürür
+
     * NULL = NULL returns NULL
-    * NULL IS NULL returns true
+    * NULL != NULL returns NULL
 
 ```sql
-SELECT NULL = NULL;
+select null = null, null != null;
 ```
+
+**Bir değerin null olup olmadığı IS NULL ile kontrol edilmelidir.**
+
+NULL IS NULL returns true
+
 
 ```sql
 SELECT NULL IS NULL;
 ```
+
+Aşağıdaki sorgu 0 satır döndürür.
+Çünkü Company değeri NULL olan satırlarda bile NULL karşılaştırmaları NULL döndürür.
+NULL ise doğru yanlış değeri olarak hep yanlış düşünülür.
+Bundan dolayı hiç satır gelmez.
+
+```sql
+SELECT * FROM Customer
+WHERE Company = NULL;
+```
+
+Bu sorgunun doğru yazımı IS NULL iledir.
+
+```sql
+SELECT * FROM Customer
+WHERE Company is NULL;
+```
+
+
+**NULL ve false**
+
+Null ve false karşılaştırması false sonucu verir çünkü AND işleminde bir taraf yanlış ise diğer tarafın ne olduğu önemli değildir.
+
+
+select 
+null AND false as NullVeYanlış1
+,NOT (null AND false) as NOT_NullVeYanlış
+,NOT NULL as NOT_NULL
+;
+
+
+**NULL veya Doğru**
+
+Null veya doğru karşılaştırması doğru sonucu verir çünkü OR işleminde bir taraf doğru ise diğer tarafın ne olduğu önemli değildir.
+
+```sql
+select null OR true;
+```
+
+**NULL ve Case**
+
+Case ifadesinde NULL kontrolü IS NULL ile yapılmalıdır.
+Aşağıdaki sorgu 0 sonucu verir.
+Case ifadesinde null sonucu elde edildiği için ELSE çalıştırılır.
+
+
+```sql
+select CASE WHEN null THEN 1 ELSE 0 END;
+```
+Yukarıdaki sorgunun aşağıdaki null karşılaştırmasından pek farkı yoktur.
+
+
+```sql
+select null = null, null != null;
+```
+
+
 
 ## NULL ile çalışma 2
 

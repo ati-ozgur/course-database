@@ -52,6 +52,16 @@ SELECT NULL IS NULL;
 {{< include ../course-contents/tables/table-null-not-operation.md >}}
 
 
+## NULL veri tabanlarında çalışma
+
+Aşağıdaki tablo [SQLite'da ve Diğer Veritabanı Motorlarında NULL İşleme](https://www.sqlite.org/nulls.html) dokumantasyonundan alınmış ve türkçeleştirilmiştir.
+
+
+{{< include ../course-contents/tables/table-null-handling-databases-tr.md >}}
+
+Yukarıdaki tabloda görülebileceği gibi çalıştığımız 3 veri tabanında da null aynı çalışmaktadır.
+
+
 
 
 

@@ -142,7 +142,7 @@ select null = null, null != null;
 
 
 
-## NULL ile çalışma 2
+## 3 Değerli Mantık (NULL, True, False)
 
 {{< include ../course-contents/tables/table-null-3-valued-logic.md >}}
 

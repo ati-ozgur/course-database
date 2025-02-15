@@ -1,3 +1,14 @@
 # NULL SQLite üzerinde nasıl çalışır
 
-TODO
+
+Aşağıdaki betik'i çalıştırarak null değerlerin SQLite üstünde nasıl çalıştığını test ediniz.
+Betik ve aşağıdaki açıklama [SQLite'da ve Diğer Veritabanı Motorlarında NULL İşleme](https://www.sqlite.org/nulls.html) dokumantasyonundan alınmış ve türkçeleştirilmiştir.
+
+> SQL'in NULL'ları ele alış biçiminin kaprisli olduğuna ve mantıkla çıkarılamayacağına karar verdim.
+> Deneyle keşfedilmesi gerekir.
+> Bu amaçla, çeşitli SQL veritabanlarının NULL'larla nasıl başa çıktığını test etmek için aşağıdaki betiği hazırladım.
+> Amacım, bu betikten toplanan bilgileri kullanarak SQLite'ı mümkün olduğunca diğer veritabanlarına benzetmek.
+
+```sql
+{{< include Labs/sqlite-null-test-tr.sql >}}
+```

@@ -105,7 +105,7 @@ Bir web uygulama güvenlik duvarı olan Wafris, bu geçişle 3 kat performans iy
 Aşağıdaki [blog yazısı: Yeniden Mimarlık: Redis'ten SQLite'a](https://wafris.org/blog/rearchitecting-for-sqlite) ve [video: Mike Buckbee ile Redis'ten SQLite'a Geçiş](https://www.youtube.com/watch?v=EwDuYId5v8k)'e bakın.
 Lütfen veritabanından okumanın veritabanına yazmaktan çok daha önemli olduğu çok özel bir kullanım durumlarına sahip olduklarını unutmayın.
 
-
+https://shopify.engineering/scaling-inventory-reservations
 
 ## Kafka
 

@@ -101,7 +101,7 @@ Wafris, a web application firewall, achieved 3x performance improvements with th
 See following [blog post:  Rearchitecting: Redis to SQLite ](https://wafris.org/blog/rearchitecting-for-sqlite) and [video: Moving from Redis to SQLite with Mike Buckbee](https://www.youtube.com/watch?v=EwDuYId5v8k).
 Please note that they have a very specific use case where reading from database was way more important than writing to database.
 
-
+https://shopify.engineering/scaling-inventory-reservations
 
 
 ## Kafka
